@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fff;
     --foreground: #ededed;
   }
 }
@@ -21,4 +21,182 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header top  */
+.head_nav_top_all{
+  width: 100%;
+}
+
+/* nabar  */
+.navbar-ul-head li:hover {
+  background-color: #8334e4;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  list-style: none;
+}
+
+#navbar {
+  /* position: fixed; */
+  /* top: 60px; */
+  /* left: 0; */
+  width: 100%;
+  background: #dfc7fd;
+  transition: transform 0.3s ease-in-out;
+  z-index: 49;
+}
+
+.navbar-ul-head li {
+  padding: 7px;
+  width: 5rem;
+  text-align: center;
+
+}
+
+.navbar-ul-head li:hover .img-head-nav {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-ul-head li:hover .head-spn {
+  color: #fff;
+}
+
+.navbar-ul-head span {
+  font-size: 12px;
+  line-height: 13px;
+  color: #2f1254;
+}
+
+.navbar-ul-head li a {
+  gap: 5px;
+}
+.drop-free-new:hover .free-service-drop-n {
+  display: block;
+}
+
+.drop-free-new {
+  position: relative;
+  transition: 0.4s;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+  margin: 0 0px;
+  width: 110px;
+}
+.free-service-drop-n {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -60px;
+  background-color: #dfc7fd;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.drop-free-new:hover .free-service-drop-n {
+  display: block;
+}
+.free-service-drop-n li:hover .free-drp-img {
+  filter: brightness(0) invert(1);
+}
+.free-ser-spn{
+  color: #000;
+  font-size: 12px;
+}
+.free-service-drop-n li:hover .free-ser-spn{
+  color: #fff;
+}
+.free-service-drop-n li:hover .a-wh{
+  color: #fff;
+}
+.free-service-drop-n li:hover i{
+  color: #fff;
+}
+.free-service-drop-n li {
+  list-style: none;
+  padding: 8px;
+  /* border-bottom: 1px solid #f0f0f0; */
+  cursor: pointer;
+  width: 100%;
+}
+.free-drp-a {
+  justify-content: start;
+  gap: .7rem;
+}
+.free-service-drop-n li:hover {
+  background-color: #8334e4;
+  border-radius: 8px;
+}
+
+
+/* main body content  */
+.main_body-content{
+  /* width: 100vw; */
+}
+.service-card-top {
+  width: 12rem;
+}
+.icreact {
+  padding: .7rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  color: #000;
+}
+.user-sign-up {
+  border: 1px solid #00000030;
+  border-radius: 10px;
+}
+
+/* Astro services  */
+.main-product-store-home {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  cursor: grab;
+}
+.main-product-store-home::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+
+}
+.free_store_pro-home {
+  width: 350px;
+  min-width: 300px;
+  position: relative;
+  margin-right: 10px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+.store-img-home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.name_free_str {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  z-index: 9;
+  /* font-size: 1.2rem; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px 10px;
+  background-color: #0000006d;
 }
