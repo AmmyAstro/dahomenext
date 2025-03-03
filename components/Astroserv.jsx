@@ -25,8 +25,8 @@ export default function Astroserv() {
       {astroservices.map((astroser,index) => (
         <Link href="#" key={index} className="free_store_pro-home" >
           <Image className="store-img-home"
-            src={astroser.img} 
-            height="120" width="120" loading="lazy" alt="Horoscope Sign"/>
+            src={astroser.img}  unoptimized
+            height={120} width={120} loading="lazy" alt="Horoscope Sign"/>
           <p className="name_free_str text-md">{astroser.name} </p>
         </Link>
       ))};

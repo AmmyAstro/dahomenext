@@ -200,3 +200,175 @@ body {
   padding: 15px 10px;
   background-color: #0000006d;
 }
+
+
+/* Puja Home  */
+.puja-images-marquee-sec {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #2724247b;
+}
+.puja-image-gradient-l {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  z-index: 2;
+  height: 100%;
+  background: linear-gradient(90deg, #000000df, hsla(0, 0%, 100%, 0));
+}
+
+.puja-image-gradient-r {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  z-index: 2;
+  height: 100%;
+  background: linear-gradient(-90deg, #000000df, hsla(0, 0%, 100%, 0));
+}
+.puja-images-sec img {
+  width: 22rem;
+  height: 12rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.puja-images-sec {
+  gap: 15px;
+  animation: topSection_animation 10s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes topSection_animation {
+  0% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(10%);
+  }
+}
+.puja-card-top {
+  width: 15rem;
+  height: 8rem;
+  gap: 10px;
+  justify-content: space-between;
+  background: #00000095;
+}
+.puja-ser-img {
+  background: #fff;
+  padding: .5rem;
+  border-radius: 50%;
+}
+.remedies-card-top {
+  width: 13rem;
+  padding: 1rem;
+}
+.calculator-card-top {
+  gap: 1px;
+  width: 13rem;
+  gap: 5px;
+  justify-content: space-between;
+}
+.puja-sec-main::-webkit-scrollbar {
+  display: none;
+}
+.puja-on-image {
+  object-fit: cover;
+  height: 13rem;
+  box-shadow: 3px 3px 13px #a3b1c6, -3px -3px 13px #ffffff;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.puja-sec-main {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 5px;
+}
+.puja-on-card-hom {
+  padding: 0.5rem;
+  background: linear-gradient(90.6deg, #62587d10 0.47%, #69544213 137.94%);
+  border-radius: 20px;
+  position: relative;
+  width: 22rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 20rem;
+  margin-right: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+.puja-sec-img {
+  width: 100%;
+  position: relative;
+}
+.puj-line {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  background: linear-gradient(90.6deg, #6b4dbcce 0.47%, #f2984aa2 137.94%);
+  border-radius: 15px 15px 0 0;
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.puja-des-home {
+  color: #8334e4;
+  font-weight: 500;
+}
+.pu-add-tm {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: rgb(255, 145, 0);
+}
+.book-puja-hm {
+  font-size: 0.85rem;
+  padding: .8rem .4rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 8.5rem;
+  box-shadow: 6px 6px 10px #a3b1c6, -6px -6px 10px #ffffff;
+}
+
+/* QR COde Download App  */
+.app-img-content {
+  width: 80%;
+  justify-self: center;
+}
+.content-wrapper-spin-im {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spinn-app-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.spin-image-back {
+  height: 35rem;
+  position: relative;
+  clip-path: circle(17rem);
+}
+.mob-app-image {
+  position: absolute;
+  height: 30rem;
+  max-width: 100%;
+}

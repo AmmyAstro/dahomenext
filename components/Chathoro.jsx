@@ -77,8 +77,8 @@ export default function Chathoro() {
                 <Image
                   src={chatbox.src}
                   className="w-7 h-7 sm:w-15 sm:h-15 md:w-15 md:h-15 rounded-full mb-2"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="Image 1"
                   loading="lazy"
                 />

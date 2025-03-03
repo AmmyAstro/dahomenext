@@ -159,8 +159,8 @@ export default function Astrocard() {
                         <Image
                           src={astrocard.src}
                           className="w-17 h-17 md:w-24 md:h-24 rounded-full border-4 border-yellow-400 shadow-md"
-                          width="20"
-                          height="20"
+                          width={20}
+                          height={20}
                           loading="lazy"
                           alt={astrocard.alt}
                         />

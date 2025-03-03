@@ -2,8 +2,12 @@ import Astrocard from "@/components/Astrocard";
 import Astroserv from "@/components/Astroserv";
 import Banner from "@/components/Banner";
 import Chathoro from "@/components/Chathoro";
+import Downapp from "@/components/Downapp";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
+import Pujahome from "@/components/Pujahom";
+import Pujaupcom from "@/components/Pujaupcom";
+import RemeCalc from "@/components/Remecalc";
 
 export default function Home() {
   return (
@@ -15,8 +19,12 @@ export default function Home() {
      <div className="main_body-content flex flex-col  ">
      <Banner />
      <Chathoro />
-     <Astrocard/>
+     <Astrocard/>  
      <Astroserv/>
+     <RemeCalc/>
+     <Pujahome/>
+     <Pujaupcom/>
+     <Downapp/>
      </div>
     </div>
   );

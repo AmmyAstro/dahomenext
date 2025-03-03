@@ -27,8 +27,8 @@ export default function NavBar() {
           <Image
             className="img-head-nav"
             src={navit.src}
-            width="35"
-            height="35"
+            width={35}
+            height={35}
             loading="lazy"
             alt="navbar-image"
           />
@@ -43,8 +43,8 @@ export default function NavBar() {
             <Image
               className="img-head-nav"
               src="/ds-img/menu-online.webp"
-              width="35"
-              height="35"
+              width={35}
+              height={35}
               loading="lazy"
               alt="navbar-image"
             />
@@ -56,8 +56,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/bracelet.png"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn "> Bracelets</p>
@@ -68,7 +68,7 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/pendant.png"
-                  width="35"
+                  width={35}
                   height="35"
                   alt="free image"
                 />
@@ -80,8 +80,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/marriage.png"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Rings</p>
@@ -92,8 +92,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/menu-match.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Vastu Products</p>
@@ -104,8 +104,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/mala.png"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Divine Malas</p>
@@ -128,8 +128,8 @@ export default function NavBar() {
             <Image
               className="img-head-nav"
               src="/ds-img/dhwani.webp"
-              width="35"
-              height="35"
+              width={35}
+              height={35}
               loading="lazy"
               alt="navbar-image"
             />
@@ -141,8 +141,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/horoscope.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Horoscope</p>
@@ -153,8 +153,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/numerology.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Numerology</p>
@@ -165,8 +165,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/kundli.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Kundli</p>
@@ -177,8 +177,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/menu-match.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Match Making</p>
@@ -189,8 +189,8 @@ export default function NavBar() {
                 <Image
                   className="free-drp-img"
                   src="/ds-img/panchang.webp"
-                  width="35"
-                  height="35"
+                  width={35}
+                  height={35}
                   alt="free image"
                 />
                 <p className="free-ser-spn">Panchang</p>
