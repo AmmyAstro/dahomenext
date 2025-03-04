@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Downapp() { 
   return (
   <section className=" m-2  rounded-2xl relative">
-      <div className="absolute inset-0 shadow-lg flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
     <div className="w-full h-full bg-cover bg-center opacity-80"     style={{ backgroundImage: "url('/ds-img/bg-dsw.webp')"}}>
     </div>
   </div>

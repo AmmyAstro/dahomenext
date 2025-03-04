@@ -1,13 +1,20 @@
+import Aboutdirect from "@/components/Aboutdirect";
 import Astrocard from "@/components/Astrocard";
 import Astroserv from "@/components/Astroserv";
+import Astrostore from "@/components/Astrostore";
 import Banner from "@/components/Banner";
+import Blogsection from "@/components/Blogsection";
 import Chathoro from "@/components/Chathoro";
+import Consulque from "@/components/Consulque";
+import Credent from "@/components/Credent";
 import Downapp from "@/components/Downapp";
+import FAQue from "@/components/FAQue";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 import Pujahome from "@/components/Pujahom";
 import Pujaupcom from "@/components/Pujaupcom";
 import RemeCalc from "@/components/Remecalc";
+import Testimon from "@/components/Testimon";
 
 export default function Home() {
   return (
@@ -25,6 +32,13 @@ export default function Home() {
      <Pujahome/>
      <Pujaupcom/>
      <Downapp/>
+     <Astrostore/>
+     <Consulque/>  
+     <Aboutdirect/>
+     <Credent />
+     <Blogsection/>
+     <FAQue/>
+     <Testimon/>
      </div>
     </div>
   );
