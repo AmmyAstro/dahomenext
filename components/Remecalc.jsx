@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 // import styles from "./NavBar.module.css"
 const remedbox = [
   { id: 1, ulname: "Gemstones" },
@@ -15,7 +14,7 @@ const remedbox = [
   { id: 9, ulname: "Share Market Astrology" },
   { id: 10, ulname: "Court Legal Issue" },
 ];
-export default function RemeCalc() {
+export default function Remecalc() {
 
   return (
     <div className="astrology-remedies-section flex flex-col items-center justify-center relative w-full mx-auto py-0 md:py-10 px-6">
