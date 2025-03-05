@@ -542,7 +542,8 @@ body {
 }
 
 .footer_head li a:hover {
-  text-decoration: underline;
+  text-decoration: underline;  transform: scale(1.04);
+
 }
 .foot-con-trst {
   width: 100%;
@@ -577,4 +578,8 @@ body {
 }
 .footer-new {
   background-color: rgb(47, 18, 84);
+}
+.foot-horo-link li a:hover{
+  text-decoration: underline;
+  transform: scale(1.04);
 }

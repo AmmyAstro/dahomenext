@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-// import styles from "./NavBar.module.css"
+import { RiArrowRightSLine } from "react-icons/ri";// import styles from "./NavBar.module.css"
 
 export default function Footerlinks() {
   const footlink = [
@@ -50,10 +49,10 @@ export default function Footerlinks() {
                 </h5>
 
 
-                <ul  className="foot-horo-link">
+                <ul  className="foot-horo-link ">
                 {footlink.map((flink) => (
-                  <li key={flink.id} >
-                    <i className="fa fa-solid fa-chevron-right"></i>
+                  <li key={flink.id} className="flex items-center gap-0.5">
+                   <RiArrowRightSLine className="text-yellow-400 "/>
                     <a href="{{ url('horoscope/aries') }}">{flink.ulname}</a>
                   </li>
                   ))}
@@ -73,8 +72,8 @@ export default function Footerlinks() {
 
                 <ul  className="footer_head">
                 {implink.map((impli) => (
-                  <li key={impli.id} >
-                    <i className="fa fa-solid fa-chevron-right"></i>
+                  <li key={impli.id} className="flex items-center gap-0.5">
+                 <RiArrowRightSLine className="text-yellow-400 "/>
                     <a href="{{ route('chat.astro') }}">{impli.ulname}</a>
                   </li>
                             ))}
@@ -94,8 +93,8 @@ export default function Footerlinks() {
 
                 <ul       className="footer_head">
                 {othrlinks.map((otlin) => (
-                  <li key={otlin.id}>
-                    <i className="fa fa-solid fa-chevron-right"></i>
+                  <li key={otlin.id} className="flex items-center gap-0.5">
+              <RiArrowRightSLine className="text-yellow-400 "/>
                     <a href="{{ route('chat.astro') }}">{otlin.ulname}</a>
                   </li>
                        ))}
@@ -114,23 +113,20 @@ export default function Footerlinks() {
                     <b>Astrologer</b>
                   </a>
                 </li>
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a href="{{ route('signin') }}"> Astrologer Login</a>
+                <li className="flex items-center gap-0.5"> 
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ route('signin') }}"> Astrologer Login</a>
                 </li>
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a
-                    href="https://docs.google.com/forms/d/1VDdBy2ZPtnXu0ok9V4o0m9M78bk0jdtZ9L5qFmRVY_w/edit#responses"
+                <li className="flex items-center gap-0.5">
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a
+                    href="#"
                     target="_blank"
                   >
                     Astrologers Registration
                   </a>
                 </li>
 
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a href="{{url('page/disclaimer')}}" target="_blank">
+                <li className="flex items-center gap-0.5">
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{url('page/disclaimer')}}" target="_blank">
                     Disclaimer
                   </a>
                 </li>
@@ -142,23 +138,20 @@ export default function Footerlinks() {
             <div className="contact_list w-1/2 md:w-1/4 items-center flex flex-col">
               <h5 className="ab-po-h underline underline-offset-4">Contact Us</h5>
               <ul className="footer_head">
-                <li>
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  <a href="#" >
+                <li className="flex items-center gap-0.5">
+                     <a href="#" >
                     908, 9th Floor, Mercantile
                     <br />
                     House, KG Marg, New Delhi
                   </a>
                 </li>
                 <li>
-                  <i className="fa fa fa-regular fa-envelope"></i>
-                  <a href="mailto:support@dhwaniastro.com">
+                       <a href="mailto:support@dhwaniastro.com">
                     support@dhwaniastro.com
                   </a>
                 </li>
                 <li>
-                  <i className="fa fa-solid fa-phone"></i>
-                  <a href="tel:916366526901">+91 6366526901</a>
+                        <a href="tel:916366526901">+91 6366526901</a>
                 </li>
               </ul>
             </div>
@@ -169,17 +162,14 @@ export default function Footerlinks() {
               </h5>
 
               <ul className="footer_head flex items-start flex-col">
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a href="{{ url('about-us') }}">About Us </a>
+                <li className="flex items-center gap-0.5">
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('about-us') }}">About Us </a>
                 </li>
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a href="{{ url('privacy-policy') }}">Privacy Policy </a>
+                <li className="flex items-center gap-0.5">
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('privacy-policy') }}">Privacy Policy </a>
                 </li>
-                <li>
-                  <i className="fa fa-solid fa-chevron-right"></i>
-                  <a href="{{ url('refund-policy') }}">Refund Policy </a>
+                <li className="flex items-center gap-0.5">
+                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('refund-policy') }}">Refund Policy </a>
                 </li>
               </ul>
             </div>
