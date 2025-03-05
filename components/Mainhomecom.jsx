@@ -5,8 +5,8 @@ import Banner from "./Banner";
 import Chathoro from "./Chathoro";
 import Astrocard from "./Astrocard";
 import Astroserv from "./Astroserv";
-import RemeCalc from "./Remecalc";
-import Pujahome from "./Pujahom";
+import RemeCalc from "./RemeCalc";
+import Pujahome from "./Pujahome";
 import Pujaupcom from "./Pujaupcom";
 import Downapp from "./Downapp";
 import Astrostore from "./Astrostore";
@@ -26,7 +26,7 @@ export default function Mainhomecom() {
    
 
   return (
-    <div className="">
+    <div className="dawebnew">
     <div className="head_nav_top_all fixed top-0 left-0 z-999">
       <Header />
       <NavBar />
