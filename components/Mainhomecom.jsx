@@ -5,7 +5,7 @@ import Banner from "./Banner";
 import Chathoro from "./Chathoro";
 import Astrocard from "./Astrocard";
 import Astroserv from "./Astroserv";
-import RemeCalc from "./RemeCalc";
+// import RemeCalc from "./RemeCalc";
 import Pujahome from "./Pujahome";
 import Pujaupcom from "./Pujaupcom";
 import Downapp from "./Downapp";
@@ -36,7 +36,8 @@ export default function Mainhomecom() {
    <Chathoro />
    <Astrocard/>  
    <Astroserv/>
-   <RemeCalc/>
+   {/* <RemeCalc/> */}
+   {/* <RemeCalc/> */}
    <Pujahome/>
    <Pujaupcom/>
    <Downapp/>
