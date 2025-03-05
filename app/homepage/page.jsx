@@ -1,4 +1,5 @@
 import Aboutdirect from "@/components/Aboutdirect";
+import AboutUs from "@/components/AboutUs";
 import Astrocard from "@/components/Astrocard";
 import Astroserv from "@/components/Astroserv";
 import Astrostore from "@/components/Astrostore";
@@ -9,6 +10,7 @@ import Consulque from "@/components/Consulque";
 import Credent from "@/components/Credent";
 import Downapp from "@/components/Downapp";
 import FAQue from "@/components/FAQue";
+import Footerlinks from "@/components/Footerlinks";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 import Pujahome from "@/components/Pujahom";
@@ -39,6 +41,8 @@ export default function Home() {
      <Blogsection/>
      <FAQue/>
      <Testimon/>
+     <AboutUs />
+     <Footerlinks/>
      </div>
     </div>
   );

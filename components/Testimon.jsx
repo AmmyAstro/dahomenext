@@ -101,10 +101,10 @@ export default function Testimon() {
                     </p>
 
                     <p className="text-gray-600 mt-3 text-xs md:text-sm">
-                   <div className="flex "> <SiComma  className="text-yellow-400 rotate-180"/>   <SiComma  className="text-yellow-400 rotate-180"/></div>
+                   <span className="flex "> <SiComma  className="text-yellow-400 rotate-180"/>   <SiComma  className="text-yellow-400 rotate-180"/></span>
 
                       {test.para}
-                      <div className="flex justify-end"> <SiComma  className="text-yellow-400"/>   <SiComma  className="text-yellow-400"/></div>
+                      <span className="flex justify-end"> <SiComma  className="text-yellow-400"/>   <SiComma  className="text-yellow-400"/></span>
                       </p>
                   </div>
                 </div>

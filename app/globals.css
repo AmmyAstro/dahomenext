@@ -498,3 +498,85 @@ body {
   color: #383535;
   color: #fff;
 }
+
+/* About Us section   */
+.input-email {
+  border-radius: 8px 0 0 8px;
+}
+
+.input-email::placeholder {
+  color: #888;
+  font-size: .8rem;
+}
+.submit-email {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Footer  */
+.footer-cont {
+  padding: 1rem 0;
+}
+.ds-imp-links {
+  padding: 2rem 0;
+}
+.ab-po-h {
+  font-size: 20px;
+  color: #ffd70a;
+  margin-bottom: .5rem;
+}
+.foot-horo-link li i {
+  color: #ffd70a;
+}
+
+.foot-horo-link li a {
+  font-size: .9rem;
+  font-weight: 450;
+  color: #fff !important;
+}
+.footer_head li i {
+  color: #ffd70a;
+}
+
+.footer_head li a {
+  font-size: .9rem;
+  font-weight: 450;
+  color: #fff !important;
+}
+
+.footer_head li a:hover {
+  text-decoration: underline;
+}
+.foot-con-trst {
+  width: 100%;
+  justify-content: space-around;
+}
+.ab-pr-po a {
+  color: #fff !important;
+}
+.fot_link {
+  gap: .7rem;
+}
+.foot-li {
+  background: #b173ff;
+  border-radius: 100px;
+  padding: .3rem 1rem;
+  width: 16rem;
+}
+.foot-li a {
+  gap: .3rem;
+}.foot-h-sp {
+  font-size: 16px;
+}.ft-span {
+  display: block;
+  font-size: 14px;
+  font-family: poppins;
+  color: white;
+}.dwonload-img {
+  width: 8rem;
+}
+.foot-down-app {
+  display: none;
+}
+.footer-new {
+  background-color: rgb(47, 18, 84);
+}
