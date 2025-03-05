@@ -3,20 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 // import styles from "./NavBar.module.css"
-
+const remedbox = [
+  { id: 1, ulname: "Gemstones" },
+  { id: 2, ulname: "Yantras" },
+  { id: 3, ulname: "Rudraksha" },
+  { id: 4, ulname: "Feng-Shui" },
+  { id: 5, ulname: "Jadi (Tree Roots" },
+  { id: 6, ulname: "Property Astrology" },
+  { id: 7, ulname: "Buisness Astrology" },
+  { id: 8, ulname: "All about Vastu" },
+  { id: 9, ulname: "Share Market Astrology" },
+  { id: 10, ulname: "Court Legal Issue" },
+];
 export default function RemeCalc() {
-  const remedbox = [
-    { id: 1, ulname: "Gemstones" },
-    { id: 2, ulname: "Yantras" },
-    { id: 3, ulname: "Rudraksha" },
-    { id: 4, ulname: "Feng-Shui" },
-    { id: 5, ulname: "Jadi (Tree Roots" },
-    { id: 6, ulname: "Property Astrology" },
-    { id: 7, ulname: "Buisness Astrology" },
-    { id: 8, ulname: "All about Vastu" },
-    { id: 9, ulname: "Share Market Astrology" },
-    { id: 10, ulname: "Court Legal Issue" },
-  ];
+
   return (
     <div className="astrology-remedies-section flex flex-col items-center justify-center relative w-full mx-auto py-0 md:py-10 px-6">
       <div className="absolute inset-0 flex items-center justify-center">
@@ -59,8 +59,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy" unoptimized 
-              />
+                loading="lazy" unoptimized  />
             </div>
 
             <div className="calculator-card-top bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
@@ -73,8 +72,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy" unoptimized
-              />
+                loading="lazy" unoptimized />
             </div>
 
             <div className="calculator-card-top bg-fuchsia-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
@@ -87,7 +85,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy"    unoptimized           />
+                loading="lazy"    unoptimized   />
             </div>
 
             <div className="calculator-card-top bg-violet-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
@@ -100,8 +98,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy" unoptimized
-              />
+                loading="lazy" unoptimized />
             </div>
 
             <div className="calculator-card-top bg-purple-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
@@ -114,8 +111,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy" unoptimized
-              />
+                loading="lazy" unoptimized />
             </div>
 
             <div className="calculator-card-top bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
@@ -128,8 +124,7 @@ export default function RemeCalc() {
                 alt="free calculator image"
                 height={15}
                 width={15}
-                loading="lazy" unoptimized
-              />
+                loading="lazy" unoptimized />
             </div>
           </div>
         </div>
