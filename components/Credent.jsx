@@ -72,7 +72,7 @@ export default function Credent() {
             {creden.map((cred) => (
               <div
                 key={cred.id} style={{ backgroundColor: cred.clr }}
-                className=" pro-card-top rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
+                className=" pro-card-top w-28 md:w-40 rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
               >
                 <Image
                   src={cred.src}
@@ -94,7 +94,7 @@ export default function Credent() {
             {glances.map((glan) => (
               <div
                 key={glan.id}
-                className=" pro-card-top bg-[#fff] rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
+                className=" pro-card-top bg-[#fff] w-28 md:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
               >
                 <Image
                   src={glan.src}
@@ -109,7 +109,7 @@ export default function Credent() {
               </h3>
               </div>
             ))}
-            ;
+            
           </div>
         </div>
       </div>

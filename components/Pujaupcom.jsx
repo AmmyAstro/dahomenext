@@ -69,11 +69,11 @@ export default function Pujaupcom() {
       </h1>
       <div className="puja-sec-main flex px-10 py-3 ">
         {pujaup.map((pujup, index) => (
-          <div key={index} className="puja-on-card-hom">
+          <div key={index} className="puja-on-card-hom w-50 min-w-48 md:min-w-92">
             <div className="puja-sec-left d-flex align-items-start flex-column">
               <div className="puja-sec-img">
                 <Image
-                  className="puja-on-image"
+                  className="puja-on-image h-25 md:h-50"
                   src={pujup.img}
                   alt="Puja Image"
                   height={35}
@@ -86,8 +86,8 @@ export default function Pujaupcom() {
                 </div>
               </div>
 
-              <div className="puja-sec-detail d-flex flex-column">
-                <h1 className="puja-card-h mb-0 text-xs md:text-md">
+              <div className="puja-sec-detail d-flex flex-column py-2">
+                <h1 className="puja-card-h mb-0 text-[#000] text-xs md:text-md">
                   {pujup.pujaname}
                 </h1>
                 <span className="puja-des-home text-xs md:text-md">
@@ -103,7 +103,7 @@ export default function Pujaupcom() {
                         height={6}
                         width={6} unoptimized
                       />
-                      <h6 className="pu-add-h text-xs text-[#000] md:text-md">
+                      <h6 className="pu-add-h text-[10px] text-[#000] md:text-md">
                         {pujup.pujaadd}
                       </h6>
                     </div>
@@ -116,7 +116,7 @@ export default function Pujaupcom() {
                           height={6}
                           width={6} unoptimized
                         />
-                        <h6 className="pu-add-tm text-xs md:text-md">
+                        <h6 className="pu-add-tm text-[10px] md:text-md">
                           {pujup.pujaocc}
                         </h6>
                       </div>

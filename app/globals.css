@@ -136,14 +136,12 @@ body {
 
 /* main body content  */
 
-.service-card-top {
-  width: 12rem;
-}
+
 .icreact {
-  padding: .7rem;
+  padding: .5rem;
   border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   color: #000;
 }
 .user-sign-up {
@@ -165,11 +163,10 @@ body {
 
 }
 .free_store_pro-home {
-  width: 350px;
-  min-width: 300px;
+  /* width: 350px; */
   position: relative;
   margin-right: 10px;
-  height: 250px;
+  /* height: 250px; */
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
@@ -195,7 +192,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 15px 10px;
+  padding: 8px 10px;
   background-color: #0000006d;
 }
 
@@ -232,8 +229,8 @@ body {
   background: linear-gradient(-90deg, #000000df, hsla(0, 0%, 100%, 0));
 }
 .puja-images-sec img {
-  width: 22rem;
-  height: 12rem;
+  /* width: 22rem; */
+  /* height: 12rem; */
   border-radius: 10px;
   object-fit: cover;
 }
@@ -253,8 +250,8 @@ body {
   }
 }
 .puja-card-top {
-  width: 15rem;
-  height: 8rem;
+  /* width: 15rem; */
+  /* height: 8rem; */
   gap: 10px;
   justify-content: space-between;
   background: #00000095;
@@ -265,12 +262,12 @@ body {
   border-radius: 50%;
 }
 .remedies-card-top {
-  width: 13rem;
+  /* width: 13rem; */
   padding: 1rem;
 }
 .calculator-card-top {
   gap: 1px;
-  width: 13rem;
+  /* width: 13rem; */
   gap: 5px;
   justify-content: space-between;
 }
@@ -279,7 +276,7 @@ body {
 }
 .puja-on-image {
   object-fit: cover;
-  height: 13rem;
+  /* height: 13rem; */
   box-shadow: 3px 3px 13px #a3b1c6, -3px -3px 13px #ffffff;
   width: 100%;
   border-radius: 10px;
@@ -296,11 +293,11 @@ body {
   background: linear-gradient(90.6deg, #62587d10 0.47%, #69544213 137.94%);
   border-radius: 20px;
   position: relative;
-  width: 22rem;
+  /* width: 22rem; */
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 20rem;
+  /* min-width: 20rem; */
   margin-right: 10px;
   object-fit: cover;
   cursor: pointer;
@@ -327,14 +324,14 @@ body {
   font-weight: 500;
 }
 .pu-add-tm {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   font-weight: 500;
   margin-bottom: 0;
   color: rgb(255, 145, 0);
 }
 .book-puja-hm {
-  font-size: 0.85rem;
-  padding: .8rem .4rem;
+  font-size: .8rem;
+  padding: .5rem .4rem;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -344,7 +341,7 @@ body {
 
 /* QR COde Download App  */
 .app-img-content {
-  width: 80%;
+  width: 90%;
   justify-self: center;
 }
 .content-wrapper-spin-im {
@@ -361,21 +358,20 @@ body {
   position: relative;
 }
 .spin-image-back {
-  height: 35rem;
+  /* height: 35rem; */
   position: relative;
   clip-path: circle(17rem);
 }
 .mob-app-image {
   position: absolute;
-  height: 30rem;
-  max-width: 100%;
+  height: 21rem;
+  max-width: 53%;
 }
 
 
 /* Consulation Queries secction  */
 .consul-card-top {
-  width: 22rem;
-  height: 12rem;
+  /* width: 12rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,27 +380,27 @@ body {
   overflow: hidden !important;
 }
 .consul-box {
-  background-color: #ffffff;
-  border-radius: 91px;
-  width: 12rem;
-  height: 8rem;
-  top: 9.5rem;
-  left: 6rem;
+  background-color: #fff;
+    border-radius: 91px;
+    width: 12rem;
+    height: 8rem;
+    top: 8.5rem;
+    left: 5rem;
 }
 
 .consul-box span {
   position: relative;
   left: -3px;
-  top: 0.5rem;
+  top: 0.2rem;
 }
 .exp-card-top{
-  width: 12rem;
+  /* width: 8rem; */
 }
 .pro-card-top {
   gap: 10px;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 10rem;
+  /* width: 10rem; */
 }
 
 /* Blog Section  */
@@ -559,7 +555,7 @@ body {
   background: #b173ff;
   border-radius: 100px;
   padding: .3rem 1rem;
-  width: 16rem;
+  width: fit-content;
 }
 .foot-li a {
   gap: .3rem;
@@ -582,4 +578,49 @@ body {
 .foot-horo-link li a:hover{
   text-decoration: underline;
   transform: scale(1.04);
+}
+
+
+
+@media ( 319px <= width <= 430px){
+.foot-h-sp {
+  font-size: 14px;
+}
+.footer_head li a {
+  font-size: .7rem;
+  font-weight: 450;
+  color: #fff !important;
+}
+.foot-horo-link li a {
+  font-size: .7rem;
+  font-weight: 450;
+  color: #fff !important;
+}
+.ab-po-h {
+  font-size: 15px;
+  color: #ffd70a;
+  margin-bottom: .5rem;
+}
+.foot-h-sp {
+  font-size: 11px;
+}
+.bl-im {  
+  height: 23vh;
+}
+.bl-h {
+  font-size: .7rem;
+  color: #000;
+  margin-bottom: 0;
+}
+.bl-btn {
+  padding: .3rem .6rem;
+  border-radius: 25px;
+  font-size: .7rem;
+  background: linear-gradient(90.6deg, #6a4dbc 0.47%, #f2994a 137.94%);
+  border: none;
+  outline: none;
+  color: #fff;
+  width: fit-content;
+}
+
 }

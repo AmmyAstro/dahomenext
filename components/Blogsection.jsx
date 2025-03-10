@@ -54,12 +54,12 @@ export default function Blogsection() {
   ];
 
   return (
-    <section className="flex flex-col items-center self-center md:max-w-7xl my-4">
+    <section className="flex flex-col w-full items-center self-center md:max-w-7xl my-4 p-3">
         <div className="py-3">
         <h1 className="relative text-[#2f1254] text-md md:text-2xl text-center font-semibold">
           • Latest<strong> Blogs</strong> •
         </h1>
-        <span className="relative text-[#2f1254] text-sm text-center  ">Read and enlighten yourself with precise knowledge
+        <span className="relative text-[#2f1254] text-xs md:text-sm text-center  ">Read and enlighten yourself with precise knowledge
           of Astrology and Vastu shaastra blogs written by our experts.</span>
 
         </div>
@@ -67,7 +67,7 @@ export default function Blogsection() {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={2}
           navigation={true}
           // pagination={{ clickable: true }}
           autoplay={false}
@@ -75,6 +75,28 @@ export default function Blogsection() {
           className="mySiperblog"
           style={{
             "--swiper-navigation-color": "#8334e4",
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 2, 
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2, 
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 3, 
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3, 
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 3, 
+              spaceBetween: 20,
+            },
           }}
         >
           {blogcardarray.map((blgsec) => (
@@ -96,7 +118,7 @@ export default function Blogsection() {
                       <h6 className="bl-h">{blgsec.ulname}</h6>
                     </div>
                     <div className="bldate  items-center justify-between ">
-                      <span className="bldat1 flex items-center justify-between flex-column">
+                      <span className="bldat1 flex items-center justify-between flex-col">
                         <span className="bl-d-t flex items-center text-[#000]">
                         <FaCalendarAlt />&nbsp;
                           {blgsec.dat}
@@ -118,7 +140,7 @@ export default function Blogsection() {
               </Link>
             </SwiperSlide>
           ))}
-          ;
+          
         </Swiper>
       </div>
     </section>

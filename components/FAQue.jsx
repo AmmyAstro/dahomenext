@@ -42,7 +42,7 @@ export default function FAQue() {
 
   return (
 
-        <div className="max-w-7xl mx-auto bg-white p-1 md:p-6 px-4">
+        <div className="max-w-7xl mx-auto bg-white p-1 md:p-6 px-4 py-3">
           <h2 className="relative text-[#2f1254] text-md md:text-2xl py-5 text-center font-semibold">
             • Frequently Asked Questions •
           </h2>

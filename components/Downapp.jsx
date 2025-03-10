@@ -15,16 +15,16 @@ export default function Downapp() {
       exclusive features anytime, anywhere •</h1>
   </div>
 
-  <div className="app-img-content  flex  md:flex-row items-center  justify-around ">
+  <div className="app-img-content  flex  flex-col md:flex-row items-center  justify-around ">
     <div className="content-wrapper-spin-im">
       <div className="spinn-app-img overflow-hidden">
-        <Image className="spin-image-back w-full  " src="/ds-img/image.png" alt="spin chakra image" unoptimized loading="lazy" width={50} height={50}/>
+        <Image className="spin-image-back w-full  h-90 md:h-120" src="/ds-img/image.png" alt="spin chakra image" unoptimized loading="lazy" width={50} height={50}/>
         <Image className="mob-app-image w-65" src="/ds-img/bckmob.webp" alt="app image" loading="lazy" unoptimized width={50} height={50}/>
       </div>
 
     </div>
 
-    <div className="down-app-scan   rounded-lg p-1 md:p-5  flex flex-col items-center justify-between">
+    <div className="down-app-scan   rounded-lg p-1 md:p-5  flex md:flex-col gap-5 items-center justify-between">
       <h1 className="text-[#000] text-[20px] align-center"> <span className="text-xl md:text-3xl font-bold">Scan</span><span
           className="text-[#2f1254] text-2xl md:text-4xl  font-bold"> QR</span> <br /> To Get the App</h1>
 

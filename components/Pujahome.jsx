@@ -29,7 +29,7 @@ export default function Pujahome() {
           <div  
             className="relative py-3 grid max-w-7xl items-center justify-center grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 z-10">
                   {pujasku.map((pujali) => (
-            <div key={pujali.id} className="puja-card-top rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div key={pujali.id} className="puja-card-top w-45 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <Image className="w-11 md:w-15 puja-ser-img" src={pujali.src} alt="Puja image" height={15} width={15}
                 loading="lazy" unoptimized/>
               <h3 className="text-[10px] md:text-base font-semibold text-[#fff]">{pujali.ulname}</h3>
@@ -43,12 +43,12 @@ export default function Pujahome() {
               <div className="puja-image-gradient-l"></div>
 
               <div className="puja-images-sec flex py-5 px-5">
-                <Image src="/ds-img/puja2.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
-                <Image src="/ds-img/puja1.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
-                <Image src="/ds-img/puja3.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
-                <Image src="/ds-img/puja4.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
-                <Image src="/ds-img/puja5.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
-                <Image src="/ds-img/puja6.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized/>
+                <Image src="/ds-img/puja2.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
+                <Image src="/ds-img/puja1.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
+                <Image src="/ds-img/puja3.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
+                <Image src="/ds-img/puja4.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
+                <Image src="/ds-img/puja5.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
+                <Image src="/ds-img/puja6.webp" alt="Puja image" height={15} width={15} loading="lazy" unoptimized className="w-35 h-25 md:w-50"/>
               </div>
               <div className="puja-image-gradient-r"></div>
             </div>

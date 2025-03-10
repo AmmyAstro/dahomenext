@@ -7,7 +7,7 @@ const remedbox = [
   { id: 2, ulname: "Yantras" },
   { id: 3, ulname: "Rudraksha" },
   { id: 4, ulname: "Feng-Shui" },
-  { id: 5, ulname: "Jadi (Tree Roots" },
+  { id: 5, ulname: "Jadi (Tree Roots)" },
   { id: 6, ulname: "Property Astrology" },
   { id: 7, ulname: "Buisness Astrology" },
   { id: 8, ulname: "All about Vastu" },
@@ -33,9 +33,9 @@ export default function Remecalc() {
             {remedbox.map((rembx) => (
               <div
                 key={rembx.id}
-                className="remedies-card-top bg-[#dccef3e3] rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center"
+                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 shadow-lg p-3 text-center flex flex-col items-center justify-center"
               >
-                <h3 className="md:text-sm text-[10px] text-[#000] ">
+                <h3 className="md:text-sm text-xs text-[#000] ">
                   {rembx.ulname}
                 </h3>
               </div>
@@ -48,8 +48,8 @@ export default function Remecalc() {
             • Free <strong>Calculators</strong> •
           </h1>
           <div className="relative py-3 grid max-w-7xl items-center justify-center grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6 z-10">
-            <div className="calculator-card-top bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px]   text-[#000] ">
+            <div className="calculator-card-top w-45 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+              <h3 className="md:text-sm text-xs   text-[#000] ">
                 Lagna Navamsa Calculator
               </h3>
               <Image
@@ -62,7 +62,7 @@ export default function Remecalc() {
             </div>
 
             <div className="calculator-card-top bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px]  text-[#000] ">
+              <h3 className="md:text-sm text-xs  text-[#000] ">
                 Lucky Date / Unlucky Date
               </h3>
               <Image
@@ -75,7 +75,7 @@ export default function Remecalc() {
             </div>
 
             <div className="calculator-card-top bg-fuchsia-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px] text-[#000] ">
+              <h3 className="md:text-sm text-xs text-[#000] ">
                 Lucky Vehicle Number
               </h3>
               <Image
@@ -88,7 +88,7 @@ export default function Remecalc() {
             </div>
 
             <div className="calculator-card-top bg-violet-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px]  text-[#000] ">
+              <h3 className="md:text-sm text-xs  text-[#000] ">
                 Moon Sign Calculator
               </h3>
               <Image
@@ -101,7 +101,7 @@ export default function Remecalc() {
             </div>
 
             <div className="calculator-card-top bg-purple-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px] text-[#000] ">
+              <h3 className="md:text-sm text-xs text-[#000] ">
                 Nakshatra Calculator
               </h3>
               <Image
@@ -114,7 +114,7 @@ export default function Remecalc() {
             </div>
 
             <div className="calculator-card-top bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-[10px] text-[#000] ">
+              <h3 className="md:text-sm text-xs text-[#000] ">
                 Love Calculator
               </h3>
               <Image

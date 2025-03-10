@@ -3,7 +3,6 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import Banner from "./Banner";
 import Chathoro from "./Chathoro";
-import Astrocard from "./Astrocard";
 import Astroserv from "./Astroserv";
 import Remecalc from "./Remecalc";
 import Pujahome from "./Pujahome";
@@ -18,6 +17,7 @@ import FAQue from "./FAQue";
 import Testimon from "./Testimon";
 import AboutUs from "./AboutUs";
 import Footerlinks from "./Footerlinks";
+import Astrocard from "./Astrocard";
 
 
 
@@ -34,7 +34,7 @@ export default function Mainhomecom() {
    <div className="main_body-content flex flex-col  ">
    <Banner />
    <Chathoro />
-   <Astrocard/>  
+   <Astrocard/>
    <Astroserv/>
    <Remecalc/>
    <Pujahome/>

@@ -72,7 +72,7 @@ export default function Chathoro() {
             {chathorobox.map((chatbox) => (
               <div
                 key={chatbox.id}
-                className="service-card-top bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-5 text-center flex flex-col items-center justify-center"
+                className="service-card-top w-18 md:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 md:py-5 text-center flex flex-col items-center justify-center"
               >
                 <Image
                   src={chatbox.src}
@@ -105,14 +105,36 @@ export default function Chathoro() {
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={20}
-                slidesPerView={7}
+                slidesPerView={4}
                 navigation={true}
                 // pagination={{ clickable: true }}
                 autoplay={false}
                 loop={true}
                 className="mySwiperhoro"
                 style={{
-                  "--swiper-navigation-color": "#8334e4",
+                  "--swiper-navigation-color": "#8334e4",                  
+                }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 4, 
+                    spaceBetween: 10,
+                  },
+                  480: {
+                    slidesPerView: 4, 
+                    spaceBetween: 15,
+                  },
+                  768: {
+                    slidesPerView: 5, 
+                    spaceBetween: 15,
+                  },
+                  1024: {
+                    slidesPerView: 7, 
+                    spaceBetween: 20,
+                  },
+                  1280: {
+                    slidesPerView: 7, 
+                    spaceBetween: 20,
+                  },
                 }}
               >
                 {horoscopes.map((sign, index) => (

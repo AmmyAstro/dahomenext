@@ -19,7 +19,7 @@ export default function Aboutdirect() {
           referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
 
-      <div className="director-box flex flex-col ">
+      <div className="director-box flex flex-col px-3 shadow-lg rounded-lg">
         <p className=" text-[#2f1254] text-md md:text-2xl  font-semibold"> "Unlock Your Destiny With Dhwani Astro"</p>
 
         <p className="text-sm text-[#000]">At Dhwani Astro, we believe astrology is more than just a practice—it’s a guiding force

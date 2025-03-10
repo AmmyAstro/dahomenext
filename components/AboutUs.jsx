@@ -6,7 +6,7 @@ export default function AboutUs() {
 
   return (
 
-    <section className="bg-[#6c5593] p-10">
+    <section className="bg-[#6c5593] p-5">
     <div
       className="about-us-da max-w-6xl gap-3 md:gap-10 flex flex-col md:flex-row items-center justify-between justify-self-center ">
       <div className="image-da w-full md:w-1/5 justify-self-center">

@@ -50,7 +50,7 @@ export default function Testimon() {
   ];
 
   return (
-    <section className="flex flex-col items-center self-center md:max-w-7xl my-4">
+    <section className="flex w-full flex-col items-center self-center md:max-w-7xl my-4 p-3">
       <div className="py-3">
       <h1 className="relative text-[#2f1254] text-md md:text-2xl text-center font-semibold">
         • Client Testimonials <strong> & Success Stories</strong> •
@@ -61,7 +61,7 @@ export default function Testimon() {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={2}
           navigation={true}
           // pagination={{ clickable: true }}
           autoplay={false}
@@ -70,6 +70,28 @@ export default function Testimon() {
           style={{
             "--swiper-navigation-color": "#8334e4",
             "padding": "5rem 0",
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 2, 
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2, 
+              spaceBetween: 15,
+            },
+            768: {
+              slidesPerView: 3, 
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3, 
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 3, 
+              spaceBetween: 20,
+            },
           }}
         >
           {testim.map((test) => (

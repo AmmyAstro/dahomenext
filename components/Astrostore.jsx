@@ -23,11 +23,11 @@ export default function Astrostore() {
 
       <div className="main-product-store-home ">
       {astrostorepro.map((astrostr,index) => (
-        <Link href="#" key={index} className="free_store_pro-home" >
+        <Link href="#" key={index} className="free_store_pro-home w-40 md:w-75 md:h-70 min-w-40 md:min-w-75 h-40" >
           <Image className="store-img-home"
             src={astrostr.img}  unoptimized
             height={120} width={120} loading="lazy" alt="Horoscope Sign"/>
-          <p className="name_free_str text-md">{astrostr.name} </p>
+          <p className="name_free_str text-xs">{astrostr.name} </p>
         </Link>
       ))};
    

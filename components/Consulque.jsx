@@ -50,7 +50,7 @@ export default function Consulque() {
           {consult.map((conque) => (
             <div
               key={conque.id}
-              className="relative consul-card-top bg-violet-200 rounded-full shadow-lg p-3 text-center flex  items-center justify-center"
+              className="relative consul-card-top bg-violet-200 w-45 md:w-85 rounded-lg md:rounded-full shadow-lg p-3 text-center flex  items-center justify-center"
             >
               <h3 className=" absolute text-sm md:text-xl text-[#2f1254] font-semibold">
                 {conque.ulname}
@@ -68,7 +68,7 @@ export default function Consulque() {
               />
             </div>
           ))}
-          ;
+          
         </div>
       </div>
 
@@ -83,14 +83,14 @@ export default function Consulque() {
             {query.map((querr) => (
               <div
                 key={querr.id}
-                className=" exp-card-top bg-violet-200 rounded-full shadow-lg p-3 text-center flex flex-col items-center justify-center"
+                className=" exp-card-top bg-violet-200 w-30 md:w-40 rounded-full shadow-lg p-3 text-center flex flex-col items-center justify-center"
               >
-                <h3 className="  text-sm md:text-[16px]  text-[#2f1254] ">
+                <h3 className="  text-xs md:text-[16px]  text-[#2f1254] ">
                   {querr.ulname}
                 </h3>
               </div>
             ))}
-            ;
+            
           </div>
         </div>
       </div>

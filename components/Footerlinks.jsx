@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { RiArrowRightSLine } from "react-icons/ri";// import styles from "./NavBar.module.css"
+import { RiArrowRightSLine } from "react-icons/ri"; // import styles from "./NavBar.module.css"
 
 export default function Footerlinks() {
   const footlink = [
@@ -39,94 +39,95 @@ export default function Footerlinks() {
     <footer>
       <section className="footer-new  footer-mb">
         <div className="container footer-cont">
-          <div className="ds-imp-links flex items-start justify-around">
-              <div
-               
-                className="horo-links flex flex-col w-1/2 md:w-1/4 items-center"
-              >
-                <h5 className="ab-po-h underline underline-offset-4">
-                  Horoscope Links
-                </h5>
+          <div className="ds-imp-links flex flex-wrap items-start justify-around">
+            <div className="horo-links flex flex-col w-1/2 md:w-1/4 items-center">
+              <h5 className="ab-po-h underline underline-offset-4">
+                Horoscope Links
+              </h5>
 
-
-                <ul  className="foot-horo-link ">
+              <ul className="foot-horo-link ">
                 {footlink.map((flink) => (
                   <li key={flink.id} className="flex items-center gap-0.5">
-                   <RiArrowRightSLine className="text-yellow-400 "/>
-                    <a href="{{ url('horoscope/aries') }}">{flink.ulname}</a>
+                    <RiArrowRightSLine className="text-yellow-400 " />
+                    <a
+                      href="{{ url('horoscope/aries') }}"
+                      className="text-xs md:text-base"
+                    >
+                      {flink.ulname}
+                    </a>
                   </li>
-                  ))}
-                </ul>
-                            
+                ))}
+              </ul>
+            </div>
 
-              </div>
-            
-              <div
-               
-                className="imp-links w-1/2 md:w-1/4 flex flex-col items-center"
-              >
-                <h5 className="ab-po-h underline underline-offset-4">
-                  Important Links
-                </h5>
-      
+            <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
+              <h5 className="ab-po-h underline underline-offset-4">
+                Important Links
+              </h5>
 
-                <ul  className="footer_head">
+              <ul className="footer_head">
                 {implink.map((impli) => (
                   <li key={impli.id} className="flex items-center gap-0.5">
-                 <RiArrowRightSLine className="text-yellow-400 "/>
-                    <a href="{{ route('chat.astro') }}">{impli.ulname}</a>
+                    <RiArrowRightSLine className="text-yellow-400 " />
+                    <a
+                      href="{{ route('chat.astro') }}"
+                      className="text-xs md:text-base"
+                    >
+                      {impli.ulname}
+                    </a>
                   </li>
-                            ))}
-                </ul>
-                  
+                ))}
+              </ul>
+            </div>
 
-              </div>
-            
-              <div
-            
-                className="imp-links w-1/2 md:w-1/4 flex flex-col items-center"
-              >
-                <h5 className="ab-po-h underline underline-offset-4">
-                  Other Links
-                </h5>
-               
+            <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
+              <h5 className="ab-po-h underline underline-offset-4">
+                Other Links
+              </h5>
 
-                <ul       className="footer_head">
+              <ul className="footer_head">
                 {othrlinks.map((otlin) => (
                   <li key={otlin.id} className="flex items-center gap-0.5">
-              <RiArrowRightSLine className="text-yellow-400 "/>
-                    <a href="{{ route('chat.astro') }}">{otlin.ulname}</a>
+                    <RiArrowRightSLine className="text-yellow-400 " />
+                    <a
+                      href="{{ route('chat.astro') }}"
+                      className="text-xs md:text-base"
+                    >
+                      {otlin.ulname}
+                    </a>
                   </li>
-                       ))}
-                </ul>
-              
-              </div>
-         
-            
+                ))}
+              </ul>
+            </div>
+
             <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
               <h5 className="ab-po-h underline underline-offset-4">
                 Dhwani Astro Links
               </h5>
               <ul className="footer_head">
                 <li className="ft_a">
-                  <a href="#" >
+                  <a href="#">
                     <b>Astrologer</b>
                   </a>
                 </li>
-                <li className="flex items-center gap-0.5"> 
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ route('signin') }}"> Astrologer Login</a>
+                <li className="flex items-center gap-0.5">
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a
+                    href="{{ route('signin') }}"
+                    className="text-xs md:text-base">
+                    Astrologer Login
+                  </a>
                 </li>
                 <li className="flex items-center gap-0.5">
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a
-                    href="#"
-                    target="_blank"
-                  >
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a href="#" target="_blank" className="text-xs md:text-base">
                     Astrologers Registration
                   </a>
                 </li>
 
                 <li className="flex items-center gap-0.5">
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{url('page/disclaimer')}}" target="_blank">
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a href="{{url('page/disclaimer')}}" target="_blank" className="text-xs md:text-base">
                     Disclaimer
                   </a>
                 </li>
@@ -134,24 +135,26 @@ export default function Footerlinks() {
             </div>
           </div>
 
-          <div className="foot-con-trst flex content-around ">
+          <div className="foot-con-trst flex flex-wrap content-around ">
             <div className="contact_list w-1/2 md:w-1/4 items-center flex flex-col">
-              <h5 className="ab-po-h underline underline-offset-4">Contact Us</h5>
+              <h5 className="ab-po-h underline underline-offset-4">
+                Contact Us
+              </h5>
               <ul className="footer_head">
                 <li className="flex items-center gap-0.5">
-                     <a href="#" >
+                  <a href="#" className="text-xs md:text-base">
                     908, 9th Floor, Mercantile
                     <br />
                     House, KG Marg, New Delhi
                   </a>
                 </li>
                 <li>
-                       <a href="mailto:support@dhwaniastro.com">
+                  <a href="mailto:support@dhwaniastro.com" className="text-xs md:text-base">
                     support@dhwaniastro.com
                   </a>
                 </li>
                 <li>
-                        <a href="tel:916366526901">+91 6366526901</a>
+                  <a href="tel:916366526901" className="text-xs md:text-base">+91 6366526901</a>
                 </li>
               </ul>
             </div>
@@ -163,13 +166,16 @@ export default function Footerlinks() {
 
               <ul className="footer_head flex items-start flex-col">
                 <li className="flex items-center gap-0.5">
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('about-us') }}">About Us </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a href="{{ url('about-us') }}" className="text-xs md:text-base">About Us </a>
                 </li>
                 <li className="flex items-center gap-0.5">
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('privacy-policy') }}">Privacy Policy </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a href="{{ url('privacy-policy') }}" className="text-xs md:text-base">Privacy Policy </a>
                 </li>
                 <li className="flex items-center gap-0.5">
-                <RiArrowRightSLine className="text-yellow-400 "/>                  <a href="{{ url('refund-policy') }}">Refund Policy </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
+                  <a href="{{ url('refund-policy') }}" className="text-xs md:text-base">Refund Policy </a>
                 </li>
               </ul>
             </div>
@@ -181,58 +187,40 @@ export default function Footerlinks() {
 
               <ul className="fot_link flex  flex-col">
                 <li className="foot-li">
-                  <a
-                    href="#"
-               
-                    
-                    className="flex items-center"
-                  >
-                    <img
+                  <a href="#" className="flex items-center">
+                    <img className="w-5 h-5 md:w-8 md:h-8"
                       src="/ds-img/Privacy.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp">Private &</h5>
-                      <span className="ft-span">Confidential</span>
+                      <h5 className="foot-h-sp text-xs md:text-base">Private & <strong>Confidential</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
-                  <a
-                    href="#"
-                  
-                    
-                    className="flex items-center"
-                  >
-                    <img
+                  <a href="#" className="flex items-center">
+                    <img className="w-5 h-5 md:w-8 md:h-8"
                       src="/ds-img/verifide-icon.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp">Verified Expert</h5>
-                      <span className="ft-span">Astrologer</span>
+                      <h5 className="foot-h-sp text-xs md:text-base">Verified Expert <strong>Astrologer</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
-                  <a
-                    href="#"
-      
-                    
-                    className="flex items-center"
-                  >
-                    <img
+                  <a href="#" className="flex items-center">
+                    <img className="w-5 h-5 md:w-8 md:h-8"
                       src="/ds-img/foot-sure-img.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp">100% Secure</h5>
-                      <span className="ft-span">Payments</span>
+                      <h5 className="foot-h-sp text-xs md:text-base">100% Secure <strong>Payments</strong></h5>
                     </span>
                   </a>
                 </li>
@@ -293,8 +281,7 @@ export default function Footerlinks() {
             <div className="dwn-btn-open">
               <button className="open-btn">App</button>
             </div>
-            <span className="dwn-icon" 
-            >
+            <span className="dwn-icon">
               <i className="fa-regular fa-circle-xmark text-white"></i>
             </span>
           </div>
