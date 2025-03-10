@@ -15,19 +15,19 @@ export default function Astroserv() {
        
       ];
   return (
-    <section className="healing_service_new mt-2 self-center md:max-w-7xl w-full  p-4 ">
+    <section className="healing_service_new mt-2 self-center sm:max-w-7xl w-full  p-4 ">
     <div className="container">
-      <h1 className="relative text-[#2f1254] text-md md:text-2xl py-1  md:py-5 text-center font-semibold">
+      <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1  sm:py-5 text-center font-semibold">
         • Personalize <strong>ASTROLOGY SERVICES</strong> •
       </h1>
 
       <div className="main-product-store-home ">
       {astroservices.map((astroser,index) => (
-        <Link href="#" key={index} className="free_store_pro-home md:w-75 md:h-70 min-w-40 md:min-w-75 h-40" >
+        <Link href="#" key={index} className="free_store_pro-home sm:w-75 sm:h-55 xl:min-w-70 xl:h-70 min-w-40 sm:min-w-55 h-40" >
           <Image className="store-img-home"
             src={astroser.img}  unoptimized
             height={120} width={120} loading="lazy" alt="Horoscope Sign"/>
-          <p className="name_free_str text-xs md:text-base">{astroser.name} </p>
+          <p className="name_free_str text-xs sm:text-base">{astroser.name} </p>
         </Link>
       ))};
    

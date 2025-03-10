@@ -59,7 +59,7 @@ export default function Chathoro() {
   ];
   return (
     <section>
-      <section className="relative w-full mx-auto py-5 md:py-10 px-4">
+      <section className="relative w-full mx-auto py-5 sm:py-10 px-4">
         <div className="absolute inset-0 flex items-center justify-center">
           <div
             className="w-3/3 h-full bg-cover bg-center opacity-3"
@@ -68,33 +68,33 @@ export default function Chathoro() {
         </div>
 
         <div className="service-horocope flex flex-col items-center justify-center">
-          <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-6 z-10">
+          <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-5 gap-2 sm:gap-6 z-10">
             {chathorobox.map((chatbox) => (
               <div
                 key={chatbox.id}
-                className="service-card-top w-18 md:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 md:py-5 text-center flex flex-col items-center justify-center"
+                className="service-card-top w-18 sm:w-32 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
               >
                 <Image
                   src={chatbox.src}
-                  className="w-7 h-7 sm:w-15 sm:h-15 md:w-15 md:h-15 rounded-full mb-2"
+                  className="w-7 h-7  sm:w-14 sm:h-14 rounded-full mb-2"
                   width={35}
                   height={35}
                   alt="Image 1"
                   loading="lazy"
                 />
-                <h3 className="sm:text-sm text-[10px] text-[#000] ">
+                <h3 className="sm:text-xs text-[10px] text-[#000] ">
                   {chatbox.ulname}
                 </h3>
               </div>
             ))}
           </div>
 
-          <div className="horoscope-swipe md:max-w-7xl w-full">
+          <div className="horoscope-swipe sm:max-w-7xl w-full">
             <div className="horo-text p-2 py-1">
-              <h1 className="text-[#2f1254] text-md md:text-2xl pt-4 text-center font-semibold">
+              <h1 className="text-[#2f1254] text-md sm:text-2xl pt-4 text-center font-semibold">
                 • FREE <strong>HOROSCOPE</strong> •
               </h1>
-              <p className="text-[#2f1254] text-[12px] md:text-base text-center">
+              <p className="text-[#2f1254] text-[12px] sm:text-base text-center">
                 You can solve the universe's riddles with our horoscopes. Our
                 astrological knowledge will assist you in making plans for a
                 better and brighter future.
@@ -112,7 +112,9 @@ export default function Chathoro() {
                 loop={true}
                 className="mySwiperhoro"
                 style={{
-                  "--swiper-navigation-color": "#8334e4",                  
+                  "--swiper-navigation-color": "#fff",   
+                  "--swiper-navigation-size": "25px",
+               
                 }}
                 breakpoints={{
                   320: {
@@ -141,10 +143,10 @@ export default function Chathoro() {
                   <SwiperSlide key={index}>
                     <Link href="#">
                       <Image
-                        className="horo-img-home"
+                        className="horo-img-home w-23 h-23 sm:w-28 sm:h-28 xl:w-32 xl:h-32 "
                         src={sign.img}
-                        height={120}
-                        width={130}
+                        height={100}
+                        width={100}
                         loading="lazy"
                         alt={`${sign.name} Horoscope Sign`}
                       />

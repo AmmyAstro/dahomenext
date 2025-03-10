@@ -95,39 +95,39 @@ export default function Astrocard() {
   ];
 
   return (
-    <section className="flex w-full flex-col items-center self-center md:max-w-7xl">
-      <div className="flex flex-col items-center justify-center md:max-w-7xl   p-4">
-        <h1 className="text-[#2f1254] text-md md:text-2xl  py-3 text-center font-semibold">
+    <section className="flex w-full flex-col items-center self-center sm:max-w-7xl">
+      <div className="flex flex-col items-center justify-center sm:max-w-7xl   p-4">
+        <h1 className="text-[#2f1254] text-md sm:text-2xl  py-3 text-center font-semibold">
           • Consult with our <strong>Top Premium Astrologers</strong> •
         </h1>
-        <div className="user-sign-up  relative grid w-full  items-start justify-center grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 z-10 mt-3 shadow-lg">
-          <div className="service-card-sign rounded-xl p-1 md:p-3 text-center flex flex-col items-center justify-center gap-2">
+        <div className="user-sign-up  relative grid w-full  items-start justify-center grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-6 z-10 mt-3 shadow-lg">
+          <div className="service-card-sign rounded-xl p-1 sm:p-3 text-center flex flex-col items-center justify-center gap-2">
             <FaUserPlus className="icreact bg-violet-400 "  />
-            <h3 className="text-[10px] text-[#2f1254] md:font-semibold">
+            <h3 className="text-[10px] sm:text-xs text-[#2f1254] sm:font-semibold">
               Sign Up with <br />
               <strong>Dhwani Astro</strong>
             </h3>
           </div>
 
-          <div className="service-card-sign rounded-xl p-1 md:p-3 text-center flex flex-col items-center justify-center gap-2">
+          <div className="service-card-sign rounded-xl p-1 sm:p-3 text-center flex flex-col items-center justify-center gap-2">
             <FaMoneyBillAlt className="icreact bg-purple-300 text-[#000" />
-            <h3 className="text-[10px] text-[#2f1254] md:font-semibold">
+            <h3 className="text-[10px] sm:text-xs text-[#2f1254] sm:font-semibold">
               Put Money in <br />
               <strong> Dhwani Astro Wallet</strong>
             </h3>
           </div>
 
-          <div className="service-card-sign rounded-xl p-1 md:p-3 text-center flex flex-col items-center justify-center gap-2">
+          <div className="service-card-sign rounded-xl p-1 sm:p-3 text-center flex flex-col items-center justify-center gap-2">
             <MdOutlineGroups className="icreact bg-fuchsia-300" />
-            <h3 className="text-[10px] text-[#2f1254] md:font-semibold">
+            <h3 className="text-[10px] sm:text-xs text-[#2f1254] sm:font-semibold">
               Click on <br />
               <strong>Call and Chat</strong>
             </h3>
           </div>
 
-          <div className="service-card-sign rounded-xl p-1 md:p-3 text-center flex flex-col items-center justify-center gap-2">
+          <div className="service-card-sign rounded-xl p-1 sm:p-3 text-center flex flex-col items-center justify-center gap-2">
             <FaGrinStars className="icreact bg-violet-400" />
-            <h3 className="text-[10px] text-[#2f1254] md:font-semibold">
+            <h3 className="text-[10px] sm:text-xs text-[#2f1254] sm:font-semibold">
               <strong>Rate & Review</strong> <br />
               after consultation
             </h3>
@@ -135,7 +135,7 @@ export default function Astrocard() {
         </div>
       </div>
 
-      <div className="astrocard-swipe md:max-w-7xl w-full p-4">
+      <div className="astrocard-swipe sm:max-w-7xl w-full p-4">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
@@ -146,7 +146,9 @@ export default function Astrocard() {
           loop={true}
           className="mySwiperhoro"
           style={{
-            "--swiper-navigation-color": "#8334e4",
+            "--swiper-navigation-color": "#fff",
+            "--swiper-navigation-size": "25px",
+         
           }}
           breakpoints={{
             320: {
@@ -175,17 +177,17 @@ export default function Astrocard() {
             <SwiperSlide key={index}>
               <Link href="#">
                 <div
-                  className="relative w-full p-1 md:p-3 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
+                  className="relative h-72 w-full p-1 sm:p-3 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
                   style={{ backgroundImage: "url('./ds-img/ba2.webp')" }}
                 >
                   <div className="absolute inset-0 bg-[#00000030] bg-opacity-0"></div>
 
-                  <div className="relative p-2 flex rounded-lg flex-col  items-center text-white bg-[#6a5781a1]">
+                  <div className="relative h-[100%] p-2 flex rounded-lg flex-col  items-center text-white bg-[#6a5781a1]">
                     <div className="astro-image-price-box flex flex-col items-start justify-start gap-2 ">
-                      <div className="astro-image-name flex  md:flex-row place-self-center items-center justify-between gap-1 md:gap-2">
+                      <div className="astro-image-name flex  sm:flex-row place-self-center items-center justify-between gap-1 sm:gap-2">
                         <Image
                           src={ascard.src}
-                          className="w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-yellow-400 shadow-md object-cover"
+                          className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-4 border-yellow-400 shadow-md object-cover"
                           width={50}
                           height={50}
                           loading="lazy"
@@ -193,7 +195,7 @@ export default function Astrocard() {
                         />
 
                         <div className="astro-name-exp flex flex-col items-center gap-1">
-                          <h2 className="mt-1 md:mt-3 text-sm md:text-xl font-bold">
+                          <h2 className="mt-1 sm:mt-3 text-sm sm:text-base font-bold">
                             {ascard.ulname}
                           </h2>
 
@@ -219,15 +221,15 @@ export default function Astrocard() {
                         </p>
 
                         <div className="astrologer-price-box flex items-center justify-between w-full">
-                          <p className="mt-2 text-[10px] md:text-xs font-semibold flex flex-col items-center justify-center">
+                          <p className="mt-2 text-[10px] sm:text-xs font-semibold flex flex-col items-center justify-center">
                             <span> Call : ₹ {ascard.prcl}</span>
-                            <span className="text-red-500 text-[10px]  md:text-xs line-through">
+                            <span className="text-red-500 text-[10px]  sm:text-xs line-through">
                               ₹ {ascard.prct}
                             </span>
                           </p>
-                          <p className="mt-2 text-[10px] md:text-xs font-semibold flex flex-col items-center justify-center">
+                          <p className="mt-2 text-[10px] sm:text-xs font-semibold flex flex-col items-center justify-center">
                             <span>Chat : ₹ {ascard.prclf}/min</span>
-                            <span className="text-red-500 text-[10px]  md:text-xs line-through">
+                            <span className="text-red-500 text-[10px]  sm:text-xs line-through">
                               ₹ {ascard.prctf}/min
                             </span>
                           </p>

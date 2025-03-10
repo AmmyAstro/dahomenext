@@ -40,7 +40,7 @@ export default function Footerlinks() {
       <section className="footer-new  footer-mb">
         <div className="container footer-cont">
           <div className="ds-imp-links flex flex-wrap items-start justify-around">
-            <div className="horo-links flex flex-col w-1/2 md:w-1/4 items-center">
+            <div className="horo-links flex flex-col w-1/2 sm:w-1/4 items-center">
               <h5 className="ab-po-h underline underline-offset-4">
                 Horoscope Links
               </h5>
@@ -60,7 +60,7 @@ export default function Footerlinks() {
               </ul>
             </div>
 
-            <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
+            <div className="imp-links w-1/2 sm:w-1/4 flex flex-col items-center">
               <h5 className="ab-po-h underline underline-offset-4">
                 Important Links
               </h5>
@@ -80,7 +80,7 @@ export default function Footerlinks() {
               </ul>
             </div>
 
-            <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
+            <div className="imp-links w-1/2 sm:w-1/4 flex flex-col items-center">
               <h5 className="ab-po-h underline underline-offset-4">
                 Other Links
               </h5>
@@ -100,7 +100,7 @@ export default function Footerlinks() {
               </ul>
             </div>
 
-            <div className="imp-links w-1/2 md:w-1/4 flex flex-col items-center">
+            <div className="imp-links w-1/2 sm:w-1/4 flex flex-col items-center">
               <h5 className="ab-po-h underline underline-offset-4">
                 Dhwani Astro Links
               </h5>
@@ -136,7 +136,7 @@ export default function Footerlinks() {
           </div>
 
           <div className="foot-con-trst flex flex-wrap content-around ">
-            <div className="contact_list w-1/2 md:w-1/4 items-center flex flex-col">
+            <div className="contact_list w-1/2 sm:w-1/4 items-center flex flex-col">
               <h5 className="ab-po-h underline underline-offset-4">
                 Contact Us
               </h5>
@@ -149,38 +149,38 @@ export default function Footerlinks() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:support@dhwaniastro.com" className="text-xs md:text-base">
+                  <a href="mailto:support@dhwaniastro.com" className="text-xs sm:text-base">
                     support@dhwaniastro.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:916366526901" className="text-xs md:text-base">+91 6366526901</a>
+                  <a href="tel:916366526901" className="text-xs sm:text-base">+91 6366526901</a>
                 </li>
               </ul>
             </div>
 
-            <div className="ab-pr-po w-1/2 md:w-1/4 flex  content-start flex-col items-center  text-end">
+            <div className="ab-pr-po w-1/2 sm:w-1/4 flex  content-start flex-col items-center  text-end">
               <h5 className="ab-po-h underline underline-offset-4">
                 Business Information
               </h5>
 
               <ul className="footer_head flex items-start flex-col">
                 <li className="flex items-center gap-0.5">
-                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
-                  <a href="{{ url('about-us') }}" className="text-xs md:text-base">About Us </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />
+                  <a href="{{ url('about-us') }}" className="text-xs sm:text-base">About Us </a>
                 </li>
                 <li className="flex items-center gap-0.5">
-                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
-                  <a href="{{ url('privacy-policy') }}" className="text-xs md:text-base">Privacy Policy </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />
+                  <a href="{{ url('privacy-policy') }}" className="text-xs sm:text-base">Privacy Policy </a>
                 </li>
                 <li className="flex items-center gap-0.5">
-                  <RiArrowRightSLine className="text-yellow-400 " />{" "}
-                  <a href="{{ url('refund-policy') }}" className="text-xs md:text-base">Refund Policy </a>
+                  <RiArrowRightSLine className="text-yellow-400 " />
+                  <a href="{{ url('refund-policy') }}" className="text-xs sm:text-base">Refund Policy </a>
                 </li>
               </ul>
             </div>
 
-            <div className="footer-trust w-1/2 md:w-1/4 flex items-center flex-col">
+            <div className="footer-trust w-1/2 sm:w-1/4 flex items-center flex-col">
               <h5 className="ab-po-h underline underline-offset-4">
                 Why We’re Trusted
               </h5>
@@ -188,46 +188,46 @@ export default function Footerlinks() {
               <ul className="fot_link flex  flex-col">
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 md:w-8 md:h-8"
+                    <img className="w-5 h-5 sm:w-8 sm:h-8"
                       src="/ds-img/Privacy.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs md:text-base">Private & <strong>Confidential</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-base">Private & <strong>Confidential</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 md:w-8 md:h-8"
+                    <img className="w-5 h-5 sm:w-8 sm:h-8"
                       src="/ds-img/verifide-icon.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs md:text-base">Verified Expert <strong>Astrologer</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-base">Verified Expert <strong>Astrologer</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 md:w-8 md:h-8"
+                    <img className="w-5 h-5 sm:w-8 sm:h-8"
                       src="/ds-img/foot-sure-img.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs md:text-base">100% Secure <strong>Payments</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-base">100% Secure <strong>Payments</strong></h5>
                     </span>
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="app-down w-1/2 md:w-1/4 flex items-center justify-center flex-col  gap-2">
+            <div className="app-down w-1/2 sm:w-1/4 flex items-center justify-center flex-col  gap-2">
               <h5 className="ab-po-h underline underline-offset-4">
                 Get It On Your Device{" "}
               </h5>

@@ -54,12 +54,12 @@ export default function Blogsection() {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center self-center md:max-w-7xl my-4 p-3">
+    <section className="flex flex-col w-full items-center self-center sm:max-w-7xl my-4 p-3">
         <div className="py-3">
-        <h1 className="relative text-[#2f1254] text-md md:text-2xl text-center font-semibold">
+        <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
           • Latest<strong> Blogs</strong> •
         </h1>
-        <span className="relative text-[#2f1254] text-xs md:text-sm text-center  ">Read and enlighten yourself with precise knowledge
+        <span className="relative text-[#2f1254] text-xs sm:text-sm text-center  ">Read and enlighten yourself with precise knowledge
           of Astrology and Vastu shaastra blogs written by our experts.</span>
 
         </div>
@@ -74,7 +74,9 @@ export default function Blogsection() {
           loop={true}
           className="mySiperblog"
           style={{
-            "--swiper-navigation-color": "#8334e4",
+            "--swiper-navigation-color": "#fff",
+            "--swiper-navigation-size": "25px",
+
           }}
           breakpoints={{
             320: {
@@ -118,7 +120,7 @@ export default function Blogsection() {
                       <h6 className="bl-h">{blgsec.ulname}</h6>
                     </div>
                     <div className="bldate  items-center justify-between ">
-                      <span className="bldat1 flex items-center justify-between flex-col">
+                      <span className="bldat1 flex items-center justify-between flex-col xl:flex-row">
                         <span className="bl-d-t flex items-center text-[#000]">
                         <FaCalendarAlt />&nbsp;
                           {blgsec.dat}

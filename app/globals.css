@@ -249,11 +249,8 @@ body {
     transform: translateX(10%);
   }
 }
-.puja-card-top {
-  /* width: 15rem; */
-  /* height: 8rem; */
+.puja-card-top {  
   gap: 10px;
-  justify-content: space-between;
   background: #00000095;
 }
 .puja-ser-img {
@@ -261,10 +258,7 @@ body {
   padding: .5rem;
   border-radius: 50%;
 }
-.remedies-card-top {
-  /* width: 13rem; */
-  padding: 1rem;
-}
+
 .calculator-card-top {
   gap: 1px;
   /* width: 13rem; */
@@ -364,8 +358,6 @@ body {
 }
 .mob-app-image {
   position: absolute;
-  height: 21rem;
-  max-width: 53%;
 }
 
 
@@ -580,7 +572,19 @@ body {
   transform: scale(1.04);
 }
 
-
+.swiper-button-prev, .swiper-button-next {
+  background-color: #704a99bb;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 0px) !important; 
+  left: auto;
+}
+.swiper-button-prev{
+  left: var(--swiper-navigation-sides-offset, 0px) !important;
+  right: auto;
+}
 
 @media ( 319px <= width <= 430px){
 .foot-h-sp {
@@ -622,5 +626,12 @@ body {
   color: #fff;
   width: fit-content;
 }
-
+.consul-box {
+  background-color: #fff;
+  border-radius: 91px;
+  width: 12rem;
+  height: 8rem;
+  top: 6rem;
+  left: -5px;
+}
 }

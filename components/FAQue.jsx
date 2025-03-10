@@ -42,8 +42,8 @@ export default function FAQue() {
 
   return (
 
-        <div className="max-w-7xl mx-auto bg-white p-1 md:p-6 px-4 py-3">
-          <h2 className="relative text-[#2f1254] text-md md:text-2xl py-5 text-center font-semibold">
+        <div className="max-w-7xl mx-auto bg-white p-1 sm:p-6 px-4 py-3">
+          <h2 className="relative text-[#2f1254] text-md sm:text-2xl py-5 text-center font-semibold">
             • Frequently Asked Questions •
           </h2>
           <div className="space-y-4">
@@ -51,17 +51,17 @@ export default function FAQue() {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="border-b-purple-100 border-b pb-0 md:pb-2 w-full"
+                  className="border-b-purple-100 border-b pb-0 sm:pb-2 w-full"
                 >
                   <button
-                    className={`rounded-lg p-3 flex justify-between w-full text-xs md:text-base font-medium focus:outline-none toggle-faq ${faq.bgColor}`}
+                    className={`rounded-lg p-3 flex justify-between w-full text-xs sm:text-base font-medium focus:outline-none toggle-faq ${faq.bgColor}`}
                     onClick={() => toggleFAQ(index)}
                   >
                     <span className="text-[#000]">{faq.question}</span>
                     <span className="icon text-[#000]">{openIndex === index ? "-" : "+"}</span>
                   </button>
                   {openIndex === index && (
-                    <p className="mt-2 text-gray-600 text-xs md:text-base">
+                    <p className="mt-2 text-gray-600 text-xs sm:text-base">
                       {faq.answer}
                     </p>
                   )}

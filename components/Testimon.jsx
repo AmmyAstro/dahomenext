@@ -50,9 +50,9 @@ export default function Testimon() {
   ];
 
   return (
-    <section className="flex w-full flex-col items-center self-center md:max-w-7xl my-4 p-3">
+    <section className="flex w-full flex-col items-center self-center sm:max-w-7xl my-4 p-3">
       <div className="py-3">
-      <h1 className="relative text-[#2f1254] text-md md:text-2xl text-center font-semibold">
+      <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
         • Client Testimonials <strong> & Success Stories</strong> •
       </h1>
       
@@ -68,7 +68,9 @@ export default function Testimon() {
           loop={true}
           className="mySiperblog"
           style={{
-            "--swiper-navigation-color": "#8334e4",
+            "--swiper-navigation-color": "#fff",
+            "--swiper-navigation-size": "25px",
+
             "padding": "5rem 0",
           }}
           breakpoints={{
@@ -97,7 +99,7 @@ export default function Testimon() {
           {testim.map((test) => (
             <SwiperSlide key={test.id}>
               <Link href="#">
-                <div className="relative w-48 md:w-100 bg-white shadow-lg rounded-lg p-6 text-center">
+                <div className="relative  bg-white shadow-lg rounded-lg p-6 text-center">
                   <div className="absolute left-1/2 -top-10 transform -translate-x-1/2">
                     <Image
                       src={test.src}
@@ -105,12 +107,12 @@ export default function Testimon() {
                       width={40}
                       height={40}
                       loading="lazy"
-                      className="w-20 h-20 md:w-30 md:h-30 rounded-full border-4 border-white shadow-md"
+                      className="w-20 h-20 sm:w-30 sm:h-30 rounded-full border-4 border-white shadow-md"
                     />
                   </div>
 
                   <div className="mt-5 md:mt-15">
-                    <h3 className="text-xs md:text-lg font-semibold text-gray-800">
+                    <h3 className="text-xs sm:text-lg font-semibold text-gray-800">
                       {test.ulname}
                     </h3>
 
@@ -118,11 +120,11 @@ export default function Testimon() {
                       ★★★★★
                     </div>
 
-                    <p className="text-xs md:text-sm text-gray-500 mt-1">
+                    <p className="text-xs sm:text-sm text-gray-500 mt-1">
                       {test.add}
                     </p>
 
-                    <p className="text-gray-600 mt-3 text-xs md:text-sm">
+                    <p className="text-gray-600 mt-3 text-xs sm:text-sm">
                    <span className="flex "> <SiComma  className="text-yellow-400 rotate-180"/>   <SiComma  className="text-yellow-400 rotate-180"/></span>
 
                       {test.para}

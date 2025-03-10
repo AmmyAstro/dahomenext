@@ -65,24 +65,24 @@ export default function Credent() {
     <section>
       <div className="discuss-expert ">
         <div className="astro-paid-consultation flex flex-col items-center justify-center">
-          <h1 className="relative text-[#2f1254] text-md md:text-2xl text-center font-semibold">
+          <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
             • Dhwani Astro <strong>Promises & Credentials At a glance</strong> •
           </h1>
-          <div className="relative py-3 flex md:max-w-7xl w-full flex-wrap items-center justify-center  gap-6 z-10">
+          <div className="relative py-3 flex sm:max-w-7xl w-full flex-wrap items-center justify-center  gap-6 z-10">
             {creden.map((cred) => (
               <div
                 key={cred.id} style={{ backgroundColor: cred.clr }}
-                className=" pro-card-top w-28 md:w-40 rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
+                className=" pro-card-top w-28 sm:w-40 rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
               >
                 <Image
                   src={cred.src}
-                  className="w-8 md:w-13"
+                  className="w-8 sm:w-13"
                   alt="da image"
                   width={20}
                   height={20}
                   loading="lazy"
                 />
-                <h3 className="text-xs md:text-base text-[#2f1254]  w-24">
+                <h3 className="text-xs sm:text-base text-[#2f1254]  w-24">
       
                   {cred.ulname}
                 </h3>
@@ -90,22 +90,22 @@ export default function Credent() {
             ))}
           </div>
 
-          <div className="relative bg-[#dfc7fd] rounded-lg p-5  py-6 md:py-10 flex md:max-w-7xl w-full flex-wrap items-center justify-center  gap-3 z-10">
+          <div className="relative bg-[#dfc7fd] rounded-lg p-5  py-6 sm:py-10 flex sm:max-w-7xl w-full flex-wrap items-center justify-center  gap-3 z-10">
             {glances.map((glan) => (
               <div
                 key={glan.id}
-                className=" pro-card-top bg-[#fff] w-28 md:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
+                className=" pro-card-top bg-[#fff] w-28 sm:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
               >
                 <Image
                   src={glan.src}
-                  className="w-8 md:w-13"
+                  className="w-8 sm:w-13"
                   width={20}
                   height={20}
                   loading="lazy"
                   alt="da image"
                 />
-                <h3 className=" text-xs md:text-base text-[#2f1254] ">
-                <span className="text-base md:text-xl text-[#2f1254] font-semibold">{glan.exp}</span> <br/> {glan.ulname}
+                <h3 className=" text-xs sm:text-base text-[#2f1254] ">
+                <span className="text-base sm:text-xl text-[#2f1254] font-semibold">{glan.exp}</span> <br/> {glan.ulname}
               </h3>
               </div>
             ))}

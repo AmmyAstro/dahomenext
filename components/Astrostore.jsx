@@ -15,15 +15,15 @@ export default function Astrostore() {
         { name: "Crystal Tree", img:"/ds-img/st8.webp"},       
       ];
   return (
-    <section className="products_service_new  mt-2 self-center md:max-w-7xl w-full  p-4 ">
+    <section className="products_service_new  mt-2 self-center sm:max-w-7xl w-full  p-4 ">
     <div className="container">
-      <h1 className="relative text-[#2f1254] text-md md:text-2xl py-1  md:py-5 text-center font-semibold">
+      <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1  sm:py-5 text-center font-semibold">
       • Get the Best Picks & Trending Products at <strong>Dhwani Store</strong> •
       </h1>
 
       <div className="main-product-store-home ">
       {astrostorepro.map((astrostr,index) => (
-        <Link href="#" key={index} className="free_store_pro-home w-40 md:w-75 md:h-70 min-w-40 md:min-w-75 h-40" >
+        <Link href="#" key={index} className="free_store_pro-home w-40 sm:w-75 xl:min-w-70 xl:h-70 sm:h-55 min-w-40 sm:min-w-55 h-40" >
           <Image className="store-img-home"
             src={astrostr.img}  unoptimized
             height={120} width={120} loading="lazy" alt="Horoscope Sign"/>

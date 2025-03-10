@@ -62,18 +62,18 @@ export default function Pujaupcom() {
     },
   ];
   return (
-    <div className="puja-book-section-home container py-3 px-1 md:px-3">
-      <h1 className="text-[#2f1254] text-md md:text-2xl py-1 md:py-5 text-center font-semibold">
+    <div className="puja-book-section-home container py-3 px-1 sm:px-3">
+      <h1 className="text-[#2f1254] text-md sm:text-2xl py-1 sm:py-5 text-center font-semibold">
         • Get Blessings from
         <strong> Upcoming Special Pujas with Dhwani Astro</strong>•
       </h1>
       <div className="puja-sec-main flex px-10 py-3 ">
         {pujaup.map((pujup, index) => (
-          <div key={index} className="puja-on-card-hom w-50 min-w-48 md:min-w-92">
+          <div key={index} className="puja-on-card-hom w-50 min-w-48 sm:min-w-92">
             <div className="puja-sec-left d-flex align-items-start flex-column">
               <div className="puja-sec-img">
                 <Image
-                  className="puja-on-image h-25 md:h-50"
+                  className="puja-on-image h-25 sm:h-50"
                   src={pujup.img}
                   alt="Puja Image"
                   height={35}
@@ -82,15 +82,15 @@ export default function Pujaupcom() {
                 />
                 <div className="puja-date"></div>
                 <div className="puj-line">
-                  <h6 className="text-[10px] md:text-xs">{pujup.ptnm}</h6>
+                  <h6 className="text-[10px] sm:text-xs">{pujup.ptnm}</h6>
                 </div>
               </div>
 
               <div className="puja-sec-detail d-flex flex-column py-2">
-                <h1 className="puja-card-h mb-0 text-[#000] text-xs md:text-md">
+                <h1 className="puja-card-h mb-0 text-[#000] text-xs sm:text-md">
                   {pujup.pujaname}
                 </h1>
-                <span className="puja-des-home text-xs md:text-md">
+                <span className="puja-des-home text-xs sm:text-md">
                   {pujup.pujadesc}
                 </span>
                 <div className="venue-book d-flex justify-content-around">
@@ -99,24 +99,24 @@ export default function Pujaupcom() {
                       <Image
                         src={pujup.src}
                         alt="temple-image"
-                        className="temp-image w-4 h-4 md:w-6 md:h-6"
+                        className="temp-image w-4 h-4 sm:w-6 sm:h-6"
                         height={6}
                         width={6} unoptimized
                       />
-                      <h6 className="pu-add-h text-[10px] text-[#000] md:text-md">
+                      <h6 className="pu-add-h text-[10px] text-[#000] sm:text-md">
                         {pujup.pujaadd}
                       </h6>
                     </div>
-                    <div className="gap-2 flex flex-col md:flex-row items-center justify-between">
+                    <div className="gap-2 flex flex-col sm:flex-row items-center justify-between">
                       <div className="puja-sec-add gap-1 flex items-center">
                         <Image
                           src={pujup.calim}
                           alt="temple-image"
-                          className="temp-image w-4 h-4 md:w-6 md:h-6"
+                          className="temp-image w-4 h-4 sm:w-6 sm:h-6"
                           height={6}
                           width={6} unoptimized
                         />
-                        <h6 className="pu-add-tm text-[10px] md:text-md">
+                        <h6 className="pu-add-tm text-[10px] sm:text-md">
                           {pujup.pujaocc}
                         </h6>
                       </div>

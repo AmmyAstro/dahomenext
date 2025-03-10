@@ -18,6 +18,7 @@ import Testimon from "./Testimon";
 import AboutUs from "./AboutUs";
 import Footerlinks from "./Footerlinks";
 import Astrocard from "./Astrocard";
+import Lovecalc from "./incomp/Lovecalc";
 
 
 
@@ -49,6 +50,7 @@ export default function Mainhomecom() {
    <Testimon/>
    <AboutUs />
    <Footerlinks/>
+   {/* <Lovecalc/> */}
    </div>
   </div>
      
