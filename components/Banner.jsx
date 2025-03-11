@@ -9,7 +9,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function Banner() {
   return (
-    <div className="slider-banner-home  w-[100%] pt-12 sm:pt-40">
+    <div className="slider-banner-home  w-[100%] pt-0 sm:pt-0">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]} 
         spaceBetween={20}

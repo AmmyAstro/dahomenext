@@ -72,7 +72,7 @@ export default function Chathoro() {
             {chathorobox.map((chatbox) => (
               <div
                 key={chatbox.id}
-                className="service-card-top w-18 sm:w-32 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
+                className="service-card-top w-18 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
               >
                 <Image
                   src={chatbox.src}
@@ -82,7 +82,7 @@ export default function Chathoro() {
                   alt="Image 1"
                   loading="lazy"
                 />
-                <h3 className="sm:text-xs text-[10px] text-[#000] ">
+                <h3 className="sm:text-xs xl:text-sm text-[13px] text-[#000] ">
                   {chatbox.ulname}
                 </h3>
               </div>
@@ -143,7 +143,7 @@ export default function Chathoro() {
                   <SwiperSlide key={index}>
                     <Link href="#">
                       <Image
-                        className="horo-img-home w-23 h-23 sm:w-28 sm:h-28 xl:w-32 xl:h-32 "
+                        className="horo-img-home w-23 h-23 sm:w-28 sm:h-28 xl:w-34 xl:h-36 "
                         src={sign.img}
                         height={100}
                         width={100}

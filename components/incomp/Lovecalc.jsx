@@ -19,7 +19,7 @@ export default function Lovecalc() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-white p-6">
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full">
         <h1 className="text-2xl font-bold text-center mb-4">❤️ Love Calculator 💕</h1>
 

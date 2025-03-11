@@ -15,6 +15,7 @@ import {
   FaUserPlus,
   FaMoneyBillAlt,
   FaGrinStars,
+  FaLanguage 
 } from "react-icons/fa";
 import { MdOutlineGroups } from "react-icons/md";
 
@@ -31,6 +32,7 @@ export default function Astrocard() {
       reve: 4.85,
       ordr: 6600,
       skill: "Vedic, Tarot, Neumrology",
+      lang:"Hindi, English",
       prcl: 20,
       prct: 10,
       prclf: 30,
@@ -45,6 +47,7 @@ export default function Astrocard() {
       reve: 4.5,
       ordr: 2000,
       skill: "Vedic,  Neumrology",
+      lang:"Hindi, Malyalam, Sindi",
       prcl: 12,
       prct: 18,
       prclf: 30,
@@ -59,6 +62,7 @@ export default function Astrocard() {
       reve: 3.85,
       ordr: 600,
       skill: "Vedic, Tarot ",
+      lang:"Kannada",
       prcl: 2,
       prct: 24,
       prclf: 30,
@@ -73,6 +77,7 @@ export default function Astrocard() {
       reve: 4.25,
       ordr: 5600,
       skill: "Vedic ",
+      lang:"Hindi, Marathi",
       prcl: 10,
       prct: 20,
       prclf: 30,
@@ -87,6 +92,7 @@ export default function Astrocard() {
       reve: 4.95,
       ordr: 6100,
       skill: "Palmistry, Tarot, Neumrology",
+      lang:"Punjabi, English",
       prcl: 15,
       prct: 55,
       prclf: 30,
@@ -178,7 +184,7 @@ export default function Astrocard() {
               <Link href="#">
                 <div
                   className="relative h-72 w-full p-1 sm:p-3 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
-                  style={{ backgroundImage: "url('./ds-img/ba2.webp')" }}
+                  style={{ backgroundImage: "url('/ds-img/ba2.webp')" }}
                 >
                   <div className="absolute inset-0 bg-[#00000030] bg-opacity-0"></div>
 
@@ -219,6 +225,11 @@ export default function Astrocard() {
                         <p className="text-xs text-yellow-300 whitespace-nowrap overflow-hidden text-ellipsis">
                           {ascard.skill}
                         </p>
+                     <div className="lang-bar flex items-center gap-2"><FaLanguage  className="text-[#fff] text-xl"/>
+                     <p className="text-xs text-yellow-300  whitespace-nowrap overflow-hidden text-ellipsis">
+                         {ascard.lang}
+                        </p>
+                     </div>
 
                         <div className="astrologer-price-box flex items-center justify-between w-full">
                           <p className="mt-2 text-[10px] sm:text-xs font-semibold flex flex-col items-center justify-center">

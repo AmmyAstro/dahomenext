@@ -7,15 +7,15 @@ import Link from "next/link";
 
 
 export default function NavBar() {
-    const navbaritems = [
-        { id: 1, src: "/ds-img/Home.webp", alt: "Home", ulname:"Home"},
-        { id: 2, src: "/ds-img/menu-chat-icon.webp", alt: "Home", ulname:"Chat With Astrologer"},
-        { id: 3, src: "/ds-img/phone.webp", alt: "Home", ulname:"Talk To Astrologer"},
-        { id: 4, src: "/ds-img/om.webp", alt: "Home", ulname:"Protective Kavach"},
-        { id: 5, src: "/ds-img/heal2.webp", alt: "Home", ulname:"Healing"},
-        { id: 6, src: "/ds-img/onpooja.webp", alt: "Home", ulname:"Online Puja"},
-        { id: 7, src: "/ds-img/dhwani.webp", alt: "Home", ulname:"Dhwani Services"},
-      ];
+  const navbaritems = [
+    { id: 1, src: "/ds-img/Home.webp", alt: "Home", ulname: "Home", href: "/homepage" },
+    { id: 2, src: "/ds-img/menu-chat-icon.webp", alt: "Chat", ulname: "Chat With Astrologer", href: "/homepage/navbarcomp"  },
+    { id: 3, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/talkto"},
+    { id: 4, src: "/ds-img/om.webp", alt: "Protect", ulname: "Protective Kavach", href: "/protective-kavach" },
+    { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/healing" },
+    { id: 6, src: "/ds-img/onpooja.webp", alt: "Puja", ulname: "Online Puja", href: "/online-puja" },
+    { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/dhwani-services" },
+  ];
   return (
     <nav
       id="navbar"
@@ -23,7 +23,7 @@ export default function NavBar() {
       <ul className="flex items-center justify-evenly navbar-ul-head">
       {navbaritems.map((navit) => (
         <li key={navit.id}>
-        <Link href="#" className="flex flex-col items-center">
+        <Link href={navit.href} className="flex flex-col items-center">
           <Image
             className="img-head-nav"
             src={navit.src}
