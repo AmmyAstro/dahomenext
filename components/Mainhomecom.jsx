@@ -34,8 +34,9 @@ export default function Mainhomecom() {
     </div>
    <div className="main_body-content flex flex-col  pt-0">
    <Banner />
-   <Chathoro />
    <Astrocard/>
+
+   <Chathoro />
    <Astroserv/>
    <Remecalc/>
    <Pujahome/>

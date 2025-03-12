@@ -571,6 +571,7 @@ body {
 }
 
 /* Dhwani Services page  */
+
 .uproline {
   background: linear-gradient(90.6deg, #6a4dbc 0.47%, #f2994a 137.94%);
   display: block;
@@ -621,6 +622,75 @@ body {
   background: #e0e5ec;
   border-radius: 20px;
   box-shadow: 5px 5px 16px #a3b1c6, -5px -5px 16px #ffffff;
+}
+
+/* Blog sectionn ************************* */
+.blogdanger-nw {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1.2rem;
+  justify-content: space-around;
+}
+.blog-bx-nw {
+  padding: .5rem;
+  flex-direction: column;
+  overflow: hidden;
+  height: fit-content;
+  background: linear-gradient(90.6deg, #62587d10 0.47%, #69544213 137.94%);
+  border-radius: 8px;
+  position: relative;
+}
+.bl-img-nw {
+  border-radius: 7px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.bldate-nw {
+  border-top: .5px solid #999999a2;
+  border-bottom: .5px solid #99999999;
+  padding: .35rem !important;
+  width: 100%;
+  gap: 1rem;
+}
+
+
+
+.bl-btn-nw {
+  padding: .4rem .7rem;
+  border-radius: 25px;
+  font-size: .8rem;
+  background: linear-gradient(90.6deg, #6a4dbc 0.47%, #f2994a 137.94%);
+  border: none;
+  outline: none;
+  color: #fff;
+  width: fit-content;
+}
+.review_upper_image-nw {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgb(255 255 255 / 90%);
+  background: #000;
+  padding: 3px 6px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.blog-cat-nw {
+  box-shadow: 0px 2px 15px rgb(223 199 252 / 59%);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.b-fest-con-nw {
+  padding: 1rem;
+  background: linear-gradient(90.6deg, #453e58b8 0.47%, #5a4b3eb0 137.94%);
+  cursor: pointer;
 }
 
 

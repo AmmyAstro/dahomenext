@@ -101,16 +101,16 @@ export default function Callastro() {
         </div>
 
         <div className="filter-sort-search flex items-center justify-between gap-5">
-        <div className="fixed z-22 bottom-0 left-0 md:relative filter-items bg-[#2f1254] p-2 py-3 w-full md:bg-transparent flex items-center justify-between gap-5">
+          <div className="fixed z-22 bottom-0 left-0 md:relative filter-items bg-[#2f1254] p-2 py-3 w-full xl:w-fit md:bg-transparent flex items-center justify-between gap-5 xl:gap-2">
             <div className="filter-btn">
-              <button className="text-xs sm:text-sm py-2 px-4 w-47 flex items-center bg-[#ffd70a]   justify-center gap-1 rounded-full border border-[#ffd70a] ">
-                <IoFilterOutline className="text-[#000]"/>
+              <button className="text-xs sm:text-sm py-2 px-4 w-47 xl:w-25  flex items-center bg-[#ffd70a]   justify-center gap-1 rounded-full border border-[#ffd70a] ">
+                <IoFilterOutline className="text-[#000]" />
                 <h5 className="text-[#000]">Filter</h5>
               </button>
             </div>
             <div className="sort-btn">
-              <button className="text-xs sm:text-sm py-2 px-4 w-47 bg-[#ffd70a]  flex items-center justify-center gap-1 rounded-full border border-[#ffd70a]  ">
-                <HiOutlineSortDescending className="text-[#000]"/>
+              <button className="text-xs sm:text-sm py-2 px-4 w-47 xl:w-25 bg-[#ffd70a]  flex items-center justify-center gap-1 rounded-full border border-[#ffd70a]  ">
+                <HiOutlineSortDescending className="text-[#000]" />
                 <h5 className="text-[#000]">Sort</h5>
               </button>
             </div>
