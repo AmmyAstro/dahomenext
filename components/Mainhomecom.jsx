@@ -28,11 +28,11 @@ export default function Mainhomecom() {
 
   return (
     <div className="dawebnew">
-    <div className="head_nav_top_all fixed top-0 left-0 z-999">
+    <div className="head_nav_top_all fixed top-0 left-0 z-333">
       <Header />
       <NavBar />
     </div>
-   <div className="main_body-content flex flex-col  ">
+   <div className="main_body-content flex flex-col  pt-0">
    <Banner />
    <Chathoro />
    <Astrocard/>

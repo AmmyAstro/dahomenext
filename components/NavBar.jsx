@@ -14,7 +14,7 @@ export default function NavBar() {
     { id: 4, src: "/ds-img/om.webp", alt: "Protect", ulname: "Protective Kavach", href: "/protective-kavach" },
     { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/healing" },
     { id: 6, src: "/ds-img/onpooja.webp", alt: "Puja", ulname: "Online Puja", href: "/online-puja" },
-    { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/dhwani-services" },
+    { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/homepage/Dhservice" },
   ];
   return (
     <nav

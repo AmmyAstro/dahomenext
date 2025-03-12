@@ -101,16 +101,16 @@ export default function Callastro() {
         </div>
 
         <div className="filter-sort-search flex items-center justify-between gap-5">
-          <div className="filter-items flex items-center justify-between gap-5">
+        <div className="fixed z-22 bottom-0 left-0 md:relative filter-items bg-[#2f1254] p-2 py-3 w-full md:bg-transparent flex items-center justify-between gap-5">
             <div className="filter-btn">
-              <button className="text-xs sm:text-sm py-2 px-4 flex items-center gap-1 rounded-full border border-b-green-600 text-green-600">
-                <IoFilterOutline />
+              <button className="text-xs sm:text-sm py-2 px-4 w-47 flex items-center bg-[#ffd70a]   justify-center gap-1 rounded-full border border-[#ffd70a] ">
+                <IoFilterOutline className="text-[#000]"/>
                 <h5 className="text-[#000]">Filter</h5>
               </button>
             </div>
             <div className="sort-btn">
-              <button className="text-xs sm:text-sm py-2 px-4 flex items-center gap-1 rounded-full border border-green-600 text-green-600">
-                <HiOutlineSortDescending />
+              <button className="text-xs sm:text-sm py-2 px-4 w-47 bg-[#ffd70a]  flex items-center justify-center gap-1 rounded-full border border-[#ffd70a]  ">
+                <HiOutlineSortDescending className="text-[#000]"/>
                 <h5 className="text-[#000]">Sort</h5>
               </button>
             </div>
@@ -135,7 +135,7 @@ export default function Callastro() {
               style={{ backgroundImage: "url('/ds-img/ba2.webp')" }}
             >
               <div className="absolute inset-0 bg-[#00000030] bg-opacity-0"></div>
-              <div className="celeb-tag absolute -rotate-45 top-2 left-[-30] z-99999">
+              <div className="celeb-tag absolute -rotate-45 top-2 left-[-30] z-111">
                 <span className="bg-[#ffd70a] p-1.5 text-[9px] text-[#000] w-30 inline-block  px-8">
                   {chatas.celeb}
                 </span>
