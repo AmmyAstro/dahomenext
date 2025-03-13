@@ -20,38 +20,31 @@ import Footerlinks from "./Footerlinks";
 import Astrocard from "./Astrocard";
 import Lovecalc from "./incomp/Lovecalc";
 
-
-
-
 export default function Mainhomecom() {
-   
-
   return (
     <div className="dawebnew">
-    <div className="head_nav_top_all fixed top-0 left-0 z-333">
-      <Header />
-      <NavBar />
-    </div>    
-   <div className="main_body-content flex flex-col  pt-0">
-   <Banner />
-   <Astrocard/>
-   <Chathoro />
-   <Astroserv/>
-   <Remecalc/>
-   {/* <Pujahome/> */}
-   {/* <Pujaupcom/> */}
-   <Downapp/>
-   <Astrostore/>
-   <Consulque/>  
-   <Aboutdirect/>
-   <Credent />
-   <Blogsection/>
-   <FAQue/>
-   <Testimon/>
-   <AboutUs />
-   <Footerlinks/>
-   </div>
-  </div>
-     
-      );
-    }  
+      <div className="head_nav_top_all fixed top-0 left-0 z-333">
+        <Header />
+        <NavBar />
+      </div>
+      <div className="main_body-content flex flex-col  pt-0">
+        <Banner />
+        <Astrocard />
+        <Chathoro />
+        <Astroserv />
+        <Remecalc />
+        {/* <Pujahome/> */}
+        {/* <Pujaupcom/> */}
+        <Downapp />
+        <Astrostore />
+        <Consulque />
+        <Aboutdirect />
+        <Credent />
+        <Blogsection />
+        <FAQue />
+        <Testimon />
+        <AboutUs />
+      </div>
+    </div>
+  );
+}

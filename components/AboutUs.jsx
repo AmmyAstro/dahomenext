@@ -6,11 +6,11 @@ export default function AboutUs() {
 
   return (
 
-    <section className="bg-[#6c5593] p-5">
+    <section className="bg-[#2f1254] p-5 mb-1">
     <div
       className="about-us-da max-w-6xl gap-3 sm:gap-10 flex flex-col sm:flex-row items-center justify-between justify-self-center ">
       <div className="image-da  justify-self-center">
-        <Image src="/ds-img/logo.webp" alt="about us image" className="w-43 h-15 sm:w-50 sm:h-22 justify-self-center" unoptimized
+        <Image src="/ds-img/logo.webp" alt="about us image" className="w-43 h-15 sm:w-85 sm:h-22 justify-self-center" unoptimized
           width={200} height={200} />
       </div>
       <div className="about-con flex flex-col w-full ">
