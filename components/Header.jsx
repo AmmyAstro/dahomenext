@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="head-top p-1 flex bg-[#2f1254] justify-between items-center w-full  z-50 shadow-lg px-5">
       <div className="dslogo">
-        <Link href="#">
+        <Link href="/homepage">
           <Image
             src="/ds-img/logo.webp"
             width={160}

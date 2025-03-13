@@ -14,33 +14,58 @@ export default function Chathoro() {
   const chathorobox = [
     {
       id: 1,
-      src: "/ds-img/talk-to-astrologer-home.webp",
+      src: "/ds-img/Couple.png",
       alt: "Talk",
-      ulname: "   Chat With Astrologer",
+      ulname: "Love",
+      href:"/homepage/Inlovecat",
     },
     {
       id: 2,
-      src: "/ds-img/chat-with-astrologer-home.webp",
+      src: "/ds-img/freelancer.png",
       alt: "Chat",
-      ulname: " Talk To Astrologer",
+      ulname: "Job",
+      href:"/homepage/Inlovecat",
+
     },
     {
       id: 3,
-      src: "/ds-img/match-making-home.webp",
+      src: "/ds-img/rupee.png",
       alt: "Match",
-      ulname: " Dhwani Service",
+      ulname: "Money",
+      href:"/homepage/Inlovecat",
+
     },
     {
       id: 4,
-      src: "/ds-img/live-astrologer-home.webp",
+      src: "/ds-img/jury.png",
       alt: "Live",
-      ulname: "Live Astrologer",
+      ulname: "Legal",
+      href:"/homepage/Inlovecat",
+
     },
     {
       id: 5,
-      src: "/ds-img/store.webp",
+      src: "/ds-img/prenatal-care.png",
       alt: "Store",
-      ulname: "    Dhwani Store",
+      ulname: "Pregnancy",
+      href:"/homepage/Inlovecat",
+
+    },
+    {
+      id: 6,
+      src: "/ds-img/education.png",
+      alt: "Store",
+      ulname: "Education",
+      href:"/homepage/Inlovecat",
+
+    },
+    {
+      id: 7,
+      src: "/ds-img/wedding-couple.png",
+      alt: "Store",
+      ulname: "Marriage",
+      href:"/homepage/Inlovecat",
+
     },
   ];
   const horoscopes = [
@@ -68,15 +93,19 @@ export default function Chathoro() {
         </div>
 
         <div className="service-horocope flex flex-col items-center justify-center">
-          <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-5 gap-2 sm:gap-6 z-10">
+    <div className="problem-icons-card flex flex-col items-center justify-center">
+    <h1 className="text-[#2f1254] text-md sm:text-2xl py-4 text-center font-semibold">
+                • Discover personalized astrological solutions <strong>from our Experts</strong> •
+              </h1>
+    <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-6 z-10">
             {chathorobox.map((chatbox) => (
-              <div
+              <Link href={chatbox.href}
                 key={chatbox.id}
                 className="service-card-top w-18 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
               >
                 <Image
                   src={chatbox.src}
-                  className="w-7 h-7  sm:w-14 sm:h-14 rounded-full mb-2"
+                  className="w-7 h-7  sm:w-14 sm:h-14 mb-2"
                   width={35}
                   height={35}
                   alt="Image 1"
@@ -85,9 +114,10 @@ export default function Chathoro() {
                 <h3 className="sm:text-xs xl:text-sm text-[13px] text-[#000] ">
                   {chatbox.ulname}
                 </h3>
-              </div>
+              </Link>
             ))}
           </div>
+    </div>
 
           <div className="horoscope-swipe sm:max-w-7xl w-full">
             <div className="horo-text p-2 py-1">

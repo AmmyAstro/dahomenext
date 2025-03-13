@@ -8,9 +8,9 @@ import Link from "next/link";
 
 export default function NavBar() {
   const navbaritems = [
-    { id: 1, src: "/ds-img/Home.webp", alt: "Home", ulname: "Home", href: "/homepage" },
-    { id: 2, src: "/ds-img/menu-chat-icon.webp", alt: "Chat", ulname: "Chat With Astrologer", href: "/homepage/navbarcomp"  },
-    { id: 3, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/talkto"},
+    { id: 1, src: "/ds-img/menu-chat-icon.webp", alt: "Chat", ulname: "Chat With Astrologer", href: "/homepage/navbarcomp"  },
+    { id: 2, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/talkto"},
+    { id: 3, src: "/ds-img/tarot-card.png", alt: "Tarot", ulname: "Tarot Reading", href: "/homepage/"},
     { id: 4, src: "/ds-img/om.webp", alt: "Protect", ulname: "Protective Kavach", href: "/protective-kavach" },
     { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/healing" },
     { id: 6, src: "/ds-img/onpooja.webp", alt: "Puja", ulname: "Online Puja", href: "/online-puja" },
@@ -27,7 +27,7 @@ export default function NavBar() {
           <Image
             className="img-head-nav"
             src={navit.src}
-            width={35}
+            width={40}
             height={35}
             loading="lazy"
             alt="navbar-image"

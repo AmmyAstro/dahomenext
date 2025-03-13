@@ -31,11 +31,10 @@ export default function Mainhomecom() {
     <div className="head_nav_top_all fixed top-0 left-0 z-333">
       <Header />
       <NavBar />
-    </div>
+    </div>    
    <div className="main_body-content flex flex-col  pt-0">
    <Banner />
    <Astrocard/>
-
    <Chathoro />
    <Astroserv/>
    <Remecalc/>
@@ -51,9 +50,8 @@ export default function Mainhomecom() {
    <Testimon/>
    <AboutUs />
    <Footerlinks/>
-   {/* <Lovecalc/> */}
    </div>
   </div>
      
       );
-    }
+    }  
