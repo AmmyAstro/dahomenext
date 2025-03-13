@@ -38,8 +38,8 @@ export default function Mainhomecom() {
    <Chathoro />
    <Astroserv/>
    <Remecalc/>
-   <Pujahome/>
-   <Pujaupcom/>
+   {/* <Pujahome/> */}
+   {/* <Pujaupcom/> */}
    <Downapp/>
    <Astrostore/>
    <Consulque/>  

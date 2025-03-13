@@ -119,7 +119,7 @@ export default function Chathoro() {
           </div>
     </div>
 
-          <div className="horoscope-swipe sm:max-w-7xl w-full">
+          {/* <div className="horoscope-swipe sm:max-w-7xl w-full">
             <div className="horo-text p-2 py-1">
               <h1 className="text-[#2f1254] text-md sm:text-2xl pt-4 text-center font-semibold">
                 • FREE <strong>HOROSCOPE</strong> •
@@ -187,7 +187,7 @@ export default function Chathoro() {
               </Swiper>
 
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </section>
