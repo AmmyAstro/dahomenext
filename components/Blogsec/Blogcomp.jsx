@@ -5,7 +5,14 @@ import Link from "next/link";
 
 import { IoFilterOutline, IoSearch } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaGrinHearts, FaRegCommentDots, FaEye, FaCalendarAlt, FaHeart } from "react-icons/fa";
+import {
+    FaGrinHearts,
+    FaRegCommentDots,
+    FaEye,
+    FaCalendarAlt,
+    FaHeart,
+} from "react-icons/fa";
+import Callchatsec from "../CallChatsec/Callchatsec";
 
 export default function Blogcomp() {
     const blogarray = [
@@ -15,7 +22,8 @@ export default function Blogcomp() {
             ulname: "Phalguna Purnima 2025 Muhurat Date, Time, Significance & More ",
             dat: "September 11, 2024",
             vw: "666",
-            textpa: "Purnima is one of the most auspicious days of the year. let' s explore Phalguna Purnima 2025 Muhurat Date, Time, Significance & More."
+            textpa:
+                "Purnima is one of the most auspicious days of the year. let' s explore Phalguna Purnima 2025 Muhurat Date, Time, Significance & More.",
         },
         {
             id: 2,
@@ -23,8 +31,8 @@ export default function Blogcomp() {
             ulname: "Ganesh Chaturthi 2024: Powerful Remedies to Remove Obstacles ",
             dat: "December 5, 2024",
             vw: "1232",
-            textpa: "Purnima is one of the most auspicious days of the year. let' s explore Phalguna Purnima 2025 Muhurat Date, Time, Significance & More."
-
+            textpa:
+                "Purnima is one of the most auspicious days of the year. let' s explore Phalguna Purnima 2025 Muhurat Date, Time, Significance & More.",
         },
         {
             id: 3,
@@ -32,8 +40,8 @@ export default function Blogcomp() {
             ulname: "Namkaran Muhurat 2025 Dates, Time, Significance and More ",
             dat: "January 5, 2025",
             vw: "8732",
-            textpa: " A complete lunar eclipse or Blood Moon is visible in March. In this blog, we mentioned Blood Moon 2025 Date, Time, Visibility, and Astrological Effects."
-
+            textpa:
+                " A complete lunar eclipse or Blood Moon is visible in March. In this blog, we mentioned Blood Moon 2025 Date, Time, Visibility, and Astrological Effects.",
         },
         {
             id: 4,
@@ -41,8 +49,8 @@ export default function Blogcomp() {
             ulname: "Top 5 Zodiac Signs Are Most Likely to Become Parents in 2025 ",
             dat: "September 5, 2024",
             vw: "12372",
-            textpa: "Do you want to know the zodiac signs that will have a baby in 2025? Let’s find out the top zodiac signs expecting a baby in 2025."
-
+            textpa:
+                "Do you want to know the zodiac signs that will have a baby in 2025? Let’s find out the top zodiac signs expecting a baby in 2025.",
         },
         {
             id: 5,
@@ -50,9 +58,31 @@ export default function Blogcomp() {
             ulname: "Blood Moon 2025 Date, Time, Visibility & Astrological Effects",
             dat: "July 5, 2024",
             vw: "2",
-            textpa: "As per Hinduism, the name you select for your kid has some special energy.  In this blog we explore Namkaran Muhurat 2025 Dates, Time, Significance and More."
-
+            textpa:
+                "As per Hinduism, the name you select for your kid has some special energy.  In this blog we explore Namkaran Muhurat 2025 Dates, Time, Significance and More.",
         },
+    ];
+    const categories = [
+        { name: "Horoscope", smanme: "H" },
+        { name: "Festivals", smanme: "F" },
+        { name: "Transits & Retrograde", smanme: "T" },
+        { name: "Celebrities", smanme: "C" },
+        { name: "Numerology", smanme: "N" },
+        { name: "Zodiacs & Planets", smanme: "Z" },
+        { name: "Vedic astrology", smanme: "V" },
+        { name: "Mythological Stories", smanme: "M" },
+        { name: "Kundli", smanme: "K" },
+        { name: "Remedies & Healing", smanme: "R" },
+        { name: "Puja Vidhi", smanme: "P" },
+        { name: "Mandir", smanme: "M" },
+        { name: "Sports", smanme: "S" },
+        { name: "Buisness", smanme: "B" },
+        { name: "Palmistry", smanme: "P" },
+        { name: "Tarot Reading", smanme: "T" },
+        { name: "Vastu & Feng-Shui", smanme: "V" },
+        { name: "Aarti, Chalisa & Mantra", smanme: "A" },
+        { name: "Gemstones", smanme: "G" },
+        { name: "Predictions", smanme: "P" },
     ];
 
     return (
@@ -78,22 +108,26 @@ export default function Blogcomp() {
 
             <section className="blog-category-main flex flex-row w-[90%] py-5 gap-5">
 
-                <div className="blog-main-box grid grid-cols-3 basis-3/4 gap-5">
+             <div className="blog-sec-callchat flex flex-col  basis-3/4 items-center justify-start">
+             <div className="blog-main-box grid grid-cols-3  gap-5 content-start">
                     {blogarray.map((blg, index) => (
                         <div key={index} className="blog-and-gem flex ">
                             <div className="blogdanger-nw">
                                 <div className="blog-bx-nw gap-2  flex   flex-col">
                                     <Link href="#">
-                                        <Image src={blg.src} alt="image here" width={100} height={100} className="bl-img-nw h-42" />
+                                        <Image
+                                            src={blg.src}
+                                            alt="image here"
+                                            width={100}
+                                            height={100}
+                                            className="bl-img-nw h-42"
+                                        />
                                     </Link>
 
                                     <div className="bl-con-nw  flex flex-col  justify-between">
                                         <h1>
-                                            <Link href="#"
-                                                className="decoration-none">
-                                                <h6 className="text-sm text-[#4c307a]">
-                                                    {blg.ulname}
-                                                </h6>
+                                            <Link href="#" className="decoration-none">
+                                                <h6 className="text-sm text-[#4c307a]">{blg.ulname}</h6>
                                             </Link>
                                         </h1>
 
@@ -129,14 +163,21 @@ export default function Blogcomp() {
                                             </span>
                                         </div>
 
-                                        <Link href="#" className="flex items-center justify-center py-2">
-                                            <button className="bl-btn-nw  text-[#000]">Read Blog</button>
+                                        <Link
+                                            href="/homepage/Inblog"
+                                            className="flex items-center justify-center py-2"
+                                        >
+                                            <button className="bl-btn-nw  text-[#000]">
+                                                Read Blog
+                                            </button>
                                         </Link>
                                         <div className="review_upper_image-nw">
                                             <FaEye className="text-[#fff] text-xs" />
                                             <span>
-                                                <p className="pvc_stats total_only text-xs text-[#fff]"
-                                                    data-element-id="187496">
+                                                <p
+                                                    className="pvc_stats total_only text-xs text-[#fff]"
+                                                    data-element-id="187496"
+                                                >
                                                     &nbsp;4185&nbsp;
                                                 </p>
                                             </span>
@@ -148,26 +189,57 @@ export default function Blogcomp() {
                     ))}
                 </div>
 
-                <div className="category-sec basis-1/4 flex items-start justify-center">
-                    <div className="da-store-card flex justify-center items-center">
-                    <div className="blog-cat-nw">
-                        <h6 className=" text-xl font-semibold text-center  text-[#000]">Dhwani Astro Store</h6>
-                        <div className=" flex flex-col">
-                            <Link href="#" className="decoration-none">
-                                <div className="category-nw rounded-lg overflow-hidden">
-                                    <div className="bl-cath-f"><Image src="/ds-img/onman.webp" width={100} height={50} className="bl-hin h-50 w-max" alt="store image " /></div>
-                                    <div className="b-fest-con-nw">                                      
-                                        <p className="b-fest-d">Dhwani Store: Premium Religious Gifts, Gemstones, & Decor</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        
+                <Callchatsec/>
+             </div>
 
+                <div className="category-sec basis-1/4 flex items-start justify-center">
+                    <div className="da-store-card-nw flex-col gap-5 flex items-">
+
+                        <div className="blog-cat-nw">
+                            <h6 className=" text-xl font-semibold text-center  text-[#000]">
+                                Dhwani Astro Store
+                            </h6>
+                            <div className="">
+                                <Link href="#" className="decoration-none">
+                                    <div className="category-nw flex flex-col rounded-lg overflow-hidden">
+                                        <div className="bl-cath-f">
+                                            <Image
+                                                src="/ds-img/onman.webp"
+                                                width={100}
+                                                height={50}
+                                                className="bl-hin h-50 w-max"
+                                                alt="store image "
+                                            />
+                                        </div>
+                                        <div className="b-fest-con-nw">
+                                            <p className="b-fest-d">
+                                                Dhwani Store: Premium Religious Gifts, Gemstones, &
+                                                Decor
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
+
+                        <div className="blog-cat-nw">
+                            <h6 className="text-xl font-semibold text-center  text-[#000]">Category</h6>
+                            <div className="bl-cat-main-nw grid grid-cols-2">
+                                {categories.map((categories,index) => (
+                                <Link href="#" key={index} className="text-decoration-none">
+                                    <div className="category-nw w-30 flex flex-col  items-center justify-center">
+                                        <div className="bl-cat-nw">{categories.smanme}</div>
+                                        <h6 className="text-xs font-semibold text-[#000] text-center">{categories.name}</h6>
+                                    </div>
+                                </Link>
+                                    ))}
+
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </section>
         </section>
     );

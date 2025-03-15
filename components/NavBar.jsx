@@ -12,7 +12,7 @@ export default function NavBar() {
     { id: 2, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/talkto"},
     { id: 3, src: "/ds-img/tarot-card.png", alt: "Tarot", ulname: "Tarot Reading", href: "/homepage/"},
     { id: 4, src: "/ds-img/om.webp", alt: "Protect", ulname: "Protective Kavach", href: "/protective-kavach" },
-    { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/healing" },
+    { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/homepage/Inhealing" },
     { id: 6, src: "/ds-img/onpooja.webp", alt: "Puja", ulname: "Online Puja", href: "/online-puja" },
     { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/homepage/Dhservice" },
   ];
@@ -137,7 +137,7 @@ export default function NavBar() {
           </Link>
           <ul className="free-service-drop-n">
             <li>
-              <Link href="#" className="free-drp-a flex items-center ">
+              <Link href={"/homepage/Inhoro"} className="free-drp-a flex items-center ">
                 <Image
                   className="free-drp-img"
                   src="/ds-img/horoscope.webp"

@@ -27,7 +27,7 @@ export default function Astroserv() {
         <Link href="#" key={index} className="free_store_pro-home sm:w-75 sm:h-55 xl:min-w-70 xl:h-50 min-w-40 sm:min-w-55 h-40" >
           <Image className="store-img-home"
             src={astroser.img}  unoptimized
-            height={120} width={120} loading="lazy" alt="Horoscope Sign"/>
+            height={120} width={120} loading="lazy" alt="Personalized services"/>
           <p className="name_free_str text-xs sm:text-base">{astroser.name} </p>
         </Link>
       ))};

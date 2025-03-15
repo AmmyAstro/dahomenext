@@ -23,16 +23,16 @@ export default function Banner() {
       >
         {/* Slides */}
         <SwiperSlide>
-        <img className="w-[100%]" src="./ds-img/banner1.webp" height="450" width="1550" alt="Slide 1" loading="lazy" />
+        <img className="w-[100%]" src="./ds-img/banner1.webp" height="450" width="1000" alt="Slide 1" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className="w-[100%]" src="./ds-img/banner2.webp" height="450" width="1550" alt="Slide 2" loading="lazy" />
+        <img className="w-[100%]" src="./ds-img/banner2.webp" height="450" width="1000" alt="Slide 2" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className="w-[100%]" src="./ds-img/banner3.webp" height="450" width="1550" alt="Slide 3" loading="lazy" />
+        <img className="w-[100%]" src="./ds-img/banner3.webp" height="450" width="1000" alt="Slide 3" loading="lazy" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className="w-[100%]" src="./ds-img/banner4.webp" height="450" width="1550" alt="Slide 4" loading="lazy" />
+        <img className="w-[100%]" src="./ds-img/banner4.webp" height="450" width="1000" alt="Slide 4" loading="lazy" />
         </SwiperSlide>
       </Swiper>
     </div>

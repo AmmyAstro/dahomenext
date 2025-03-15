@@ -28,7 +28,7 @@ export default function Mainhomecom() {
         <NavBar />
       </div>
       <div className="main_body-content flex flex-col  pt-0">
-        <Banner />
+        {/* <Banner /> */}
         <Astrocard />
         <Chathoro />
         <Astroserv />

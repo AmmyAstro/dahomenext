@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 export default function Header() {
   return (
     <header className="head-top p-1 flex bg-[#2f1254] justify-between items-center w-full  z-50 shadow-lg px-5">
-      <div className="dslogo">
+      <div className="dslogo w-1/3">
         <Link href="/homepage">
           <Image
             src="/ds-img/logo.webp"
@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className=" justify-center sm:flex hidden">
+      <div className=" justify-center sm:flex hidden w-1/3">
         <Image
           src="/ds-img/ganeshji.webp"
           width={50}
@@ -31,7 +31,7 @@ export default function Header() {
         />
       </div>
 
-      <div className="sm:flex justify-end gap-4 hidden items-center ">
+      <div className="sm:flex justify-end gap-4 hidden items-center w-1/3">
         <Link
           href="#"
           className="max-md:hidden p-1.5 text-[13.5px] sm:w-24 font-medium text-[#000] rounded-md bg-[#ffd70a]"
@@ -78,7 +78,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="sm:hidden flex justify-end gap-2 items-center  pr-2 sm:pr-5">
+      <div className="sm:hidden flex justify-end gap-2 items-center  pr-2 sm:pr-5 w-1/3">
         <Link href={"/homepage/Blog"} className="p-1 text-[10px] rounded-sm text-[#000] bg-[#ffd70a]">
           Blogs
         </Link>
