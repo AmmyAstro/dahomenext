@@ -7,13 +7,13 @@ import { IoFilterOutline, IoSearch } from "react-icons/io5";
 
 export default function Dhservices() {
   const dhservice = [
-    { name: "Healing", img: "/ds-img/healnew.png" },
-    { name: "Puja", img: "/ds-img/ser2.webp" },
-    { name: "Face Reading", img: "/ds-img/ser3.webp" },
-    { name: "Past Life Regression", img: "/ds-img/ser4.webp" },
-    { name: "Spells", img: "/ds-img/ser5.webp" },
-    { name: "Birth Time Rectification", img: "/ds-img/ser6.webp" },
-    { name: "Pendulum Dowsing", img: "/ds-img/ser7.webp" },
+    { name: "Healing", img: "/ds-img/healnew.png", href:"/homepage/Inhealing"},
+    { name: "Puja", img: "/ds-img/ser2.webp" , href:"/homepage/Inhealing"},
+    { name: "Face Reading", img: "/ds-img/ser3.webp", href:"/homepage/Inhealing" },
+    { name: "Past Life Regression", img: "/ds-img/ser4.webp", href:"/homepage/Inhealing" },
+    { name: "Spells", img: "/ds-img/ser5.webp", href:"/homepage/Inhealing" },
+    { name: "Birth Time Rectification", img: "/ds-img/ser6.webp", href:"/homepage/Inhealing" },
+    { name: "Pendulum Dowsing", img: "/ds-img/ser7.webp", href:"/homepage/Inhealing" },
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function Dhservices() {
             className="element-item cat-Service"
             data-category="cat-Service"
           >
-            <Link href="#" className="text-center">
+            <Link href={dhser.href} className="text-center">
               <div className="ser-main-card">
                 <div className="ser-main-img-card">
                   <Image

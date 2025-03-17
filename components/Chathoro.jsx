@@ -17,14 +17,14 @@ export default function Chathoro() {
       src: "/ds-img/Couple.png",
       alt: "Talk",
       ulname: "Love",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
     },
     {
       id: 2,
       src: "/ds-img/freelancer.png",
       alt: "Chat",
       ulname: "Job",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
     {
@@ -32,7 +32,7 @@ export default function Chathoro() {
       src: "/ds-img/rupee.png",
       alt: "Match",
       ulname: "Money",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
     {
@@ -40,7 +40,7 @@ export default function Chathoro() {
       src: "/ds-img/jury.png",
       alt: "Live",
       ulname: "Legal",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
     {
@@ -48,7 +48,7 @@ export default function Chathoro() {
       src: "/ds-img/prenatal-care.png",
       alt: "Store",
       ulname: "Pregnancy",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
     {
@@ -56,7 +56,7 @@ export default function Chathoro() {
       src: "/ds-img/education.png",
       alt: "Store",
       ulname: "Education",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
     {
@@ -64,7 +64,7 @@ export default function Chathoro() {
       src: "/ds-img/wedding-couple.png",
       alt: "Store",
       ulname: "Marriage",
-      href:"/homepage/Inlovecat",
+      href: "/homepage/Inlovecat",
 
     },
   ];
@@ -93,31 +93,31 @@ export default function Chathoro() {
         </div>
 
         <div className="service-horocope flex flex-col items-center justify-center">
-    <div className="problem-icons-card flex flex-col items-center justify-center">
-    <h1 className="text-[#2f1254] text-md sm:text-2xl py-4 text-center font-semibold">
-                • Discover personalized astrological solutions <strong>from our Experts</strong> •
-              </h1>
-    <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-6 z-10">
-            {chathorobox.map((chatbox) => (
-              <Link href={chatbox.href}
-                key={chatbox.id}
-                className="service-card-top w-18 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
-              >
-                <Image
-                  src={chatbox.src}
-                  className="w-7 h-7  sm:w-14 sm:h-14 mb-2"
-                  width={35}
-                  height={35}
-                  alt="Image 1"
-                  loading="lazy"
-                />
-                <h3 className="sm:text-xs xl:text-sm text-[13px] text-[#000] ">
-                  {chatbox.ulname}
-                </h3>
-              </Link>
-            ))}
+          <div className="problem-icons-card flex flex-col items-center justify-center">
+            <h1 className="text-[#2f1254] text-md sm:text-2xl py-4 text-center font-semibold">
+              • Discover personalized astrological solutions <strong>from our Experts</strong> •
+            </h1>
+            <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-6 z-10">
+              {chathorobox.map((chatbox) => (
+                <Link href={chatbox.href}
+                  key={chatbox.id}
+                  className="service-card-top w-18 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
+                >
+                  <Image
+                    src={chatbox.src}
+                    className="w-7 h-7  sm:w-14 sm:h-14 mb-2"
+                    width={35}
+                    height={35}
+                    alt="Image 1"
+                    loading="lazy"
+                  />
+                  <h3 className="sm:text-xs xl:text-sm text-[13px] text-[#000] ">
+                    {chatbox.ulname}
+                  </h3>
+                </Link>
+              ))}
+            </div>
           </div>
-    </div>
 
           {/* <div className="horoscope-swipe sm:max-w-7xl w-full">
             <div className="horo-text p-2 py-1">
