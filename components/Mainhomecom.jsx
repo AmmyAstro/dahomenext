@@ -1,12 +1,12 @@
 "use client";
 import Header from "./Header";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 import Banner from "./Banner";
 import Chathoro from "./Chathoro";
 import Astroserv from "./Astroserv";
 import Remecalc from "./Remecalc";
-import Pujahome from "./Pujahome";
-import Pujaupcom from "./Pujaupcom";
+// import Pujahome from "./Pujahome";
+// import Pujaupcom from "./Pujaupcom";
 import Downapp from "./Downapp";
 import Astrostore from "./Astrostore";
 import Consulque from "./Consulque";
@@ -16,9 +16,9 @@ import Blogsection from "./Blogsection";
 import FAQue from "./FAQue";
 import Testimon from "./Testimon";
 import AboutUs from "./AboutUs";
-import Footerlinks from "./Footerlinks";
+// import Footerlinks from "./Footerlinks";
 import Astrocard from "./Astrocard";
-import Lovecalc from "./incomp/Lovecalc";
+// import Lovecalc from "./incomp/Lovecalc";
 import Navbarmob from "./Navbarmob";
 
 export default function Mainhomecom() {
@@ -29,7 +29,7 @@ export default function Mainhomecom() {
     <Navbarmob/>
 </div>
       <div className="main_body-content flex flex-col  pt-0">
-        {/* <Banner /> */}
+        <Banner />
         <Astrocard />
         <Chathoro />
         <Astroserv />

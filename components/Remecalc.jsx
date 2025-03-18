@@ -44,7 +44,7 @@ export default function Remecalc() {
           </div>
         </div>
 
-        <div className="astro-free-calculator w-full flex flex-col items-center justify-center">
+        <div className="astro-free-calculator  flex flex-col items-center justify-center">
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1 sm:py-5 text-center font-semibold">
             • Free <strong>Calculators</strong> •
           </h1>
