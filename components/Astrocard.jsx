@@ -101,7 +101,7 @@ export default function Astrocard() {
   ];
 
   return (
-    <section className="flex w-full flex-col items-center self-center sm:max-w-7xl">
+    <section className=" w-full flex-col items-center self-center sm:max-w-7xl">
       <div className="flex flex-col items-center justify-center sm:max-w-7xl   p-4">
         <h1 className="text-[#2f1254] text-md sm:text-2xl  py-3 text-center font-semibold">
           • Consult with our <strong>Top Premium Astrologers</strong> •
@@ -141,7 +141,7 @@ export default function Astrocard() {
         </div>
       </div>
 
-      <div className="astrocard-swipe sm:max-w-7xl w-full p-4">
+      <div className="astrocard-swipe sm:max-w-7xl  p-4">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}

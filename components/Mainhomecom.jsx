@@ -22,7 +22,7 @@ import Lovecalc from "./incomp/Lovecalc";
 
 export default function Mainhomecom() {
   return (
-    <div className="dawebnew">
+    <div className="dawebnew w-full">
       <div className="head_nav_top_all fixed top-0 left-0 z-333">
         <Header />
         <NavBar />

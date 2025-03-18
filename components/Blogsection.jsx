@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import {
-    FaCalendarAlt,FaEye,
+  FaCalendarAlt, FaEye,
 } from "react-icons/fa";
 
 
@@ -54,15 +54,15 @@ export default function Blogsection() {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center self-center sm:max-w-7xl my-4 p-3">
-        <div className="py-3">
+    <section className="flex flex-col w-full items-center self-center sm:max-w-7xl my-4 p-3 overflow-hidden">
+      <div className="py-3">
         <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
           • Latest<strong> Blogs</strong> •
         </h1>
         <span className="relative text-[#2f1254] text-xs sm:text-sm text-center  ">Read and enlighten yourself with precise knowledge
           of Astrology and Vastu shaastra blogs written by our experts.</span>
 
-        </div>
+      </div>
       <div className="slider-astrocard-home  w-full ">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -80,31 +80,31 @@ export default function Blogsection() {
           }}
           breakpoints={{
             320: {
-              slidesPerView: 2, 
+              slidesPerView: 2,
               spaceBetween: 10,
             },
             480: {
-              slidesPerView: 2, 
+              slidesPerView: 2,
               spaceBetween: 15,
             },
             768: {
-              slidesPerView: 3, 
+              slidesPerView: 3,
               spaceBetween: 15,
             },
             1024: {
-              slidesPerView: 3, 
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             1280: {
-              slidesPerView: 3, 
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           }}
         >
           {blogcardarray.map((blgsec) => (
-            <SwiperSlide key={blgsec.id}>
+            <SwiperSlide key={blgsec.id} style={{ width: "100%" }}>
               <Link href="#">
-                <div className="blog-bx  flex flex-col ">
+                <div className="blog-bx flex flex-col w-[90%] mx-auto">
                   <Image
                     src={blgsec.src}
                     className="bl-im"
@@ -122,7 +122,7 @@ export default function Blogsection() {
                     <div className="bldate  items-center justify-between ">
                       <span className="bldat1 flex items-center justify-between flex-col xl:flex-row">
                         <span className="bl-d-t flex items-center text-[#000]">
-                        <FaCalendarAlt />&nbsp;
+                          <FaCalendarAlt />&nbsp;
                           {blgsec.dat}
                         </span>
                         <span className="bl-d-c text-[#000]">
@@ -132,9 +132,9 @@ export default function Blogsection() {
                     </div>
                     <button className="bl-btn self-center">Read Blog</button>
                     <div className="review_upper_image">
-                    <FaEye />
-                      <span>                      
-                          &nbsp;{blgsec.vw}&nbsp;                    
+                      <FaEye />
+                      <span>
+                        &nbsp;{blgsec.vw}&nbsp;
                       </span>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ export default function Blogsection() {
               </Link>
             </SwiperSlide>
           ))}
-          
+
         </Swiper>
       </div>
     </section>

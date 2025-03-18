@@ -405,15 +405,12 @@ body {
   top: 0.2rem;
 }
 
-.exp-card-top {
-  /* width: 8rem; */
-}
+
 
 .pro-card-top {
   gap: 10px;
   flex-wrap: wrap;
   flex-direction: column;
-  /* width: 10rem; */
 }
 
 /* Blog Section  */
