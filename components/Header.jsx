@@ -6,8 +6,8 @@ import { FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="head-top p-1 flex bg-[#2f1254] justify-between items-center w-full  z-50 shadow-lg px-5">
-      <div className="dslogo w-1/3">
+    <header className="head-top p-1 flex bg-[#2f1254] justify-between items-center w-full  z-50 shadow-lg md:px-5 px-2">
+      <div className="dslogo w-1/3 ml-10 sm:ml-0">
         <Link href="/homepage">
           <Image
             src="/ds-img/logo.webp"
@@ -78,18 +78,18 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="sm:hidden flex justify-end gap-2 items-center  pr-2 sm:pr-5 w-1/3">
+      <div className="sm:hidden flex justify-end gap-2 items-center   sm:pr-5 ">
         <Link href={"/homepage/Blog"} className="p-1 text-[10px] rounded-sm text-[#000] bg-[#ffd70a]">
           Blogs
         </Link>
         <Link
           href="#"
-          className="p-1 text-[10px] font-medium rounded-sm bg-[#dc3545] text-[#ffd70a]"
+          className="p-1 text-[10px] w-13 font-medium rounded-sm bg-[#dc3545] text-[#ffd70a]"
         >
           Sign In
         </Link>
         <Link href="#">
-          <i className="fa-solid fa-cart-shopping text-[#ffd70a] text-[20px]"></i>
+        <FaShoppingCart  className="text-[#ffd70a] text-[25px]"/>
         </Link>
         <div className="user-container relative inline-block">
           <Link href="#">

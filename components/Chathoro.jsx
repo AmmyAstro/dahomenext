@@ -97,11 +97,11 @@ export default function Chathoro() {
             <h1 className="text-[#2f1254] text-md sm:text-2xl py-4 text-center font-semibold">
               • Discover personalized astrological solutions <strong>from our Experts</strong> •
             </h1>
-            <div className="relative grid max-w-7xl items-center justify-center grid-cols-5 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-6 z-10">
+            <div className="relative grid max-w-7xl items-center justify-center grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-6 z-10">
               {chathorobox.map((chatbox) => (
                 <Link href={chatbox.href}
                   key={chatbox.id}
-                  className="service-card-top w-18 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
+                  className="service-card-top w-23 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
                 >
                   <Image
                     src={chatbox.src}

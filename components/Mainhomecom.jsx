@@ -19,14 +19,15 @@ import AboutUs from "./AboutUs";
 import Footerlinks from "./Footerlinks";
 import Astrocard from "./Astrocard";
 import Lovecalc from "./incomp/Lovecalc";
+import Navbarmob from "./Navbarmob";
 
 export default function Mainhomecom() {
   return (
     <div className="dawebnew w-full">
       <div className="head_nav_top_all fixed top-0 left-0 z-333">
         <Header />
-        <NavBar />
-      </div>
+    <Navbarmob/>
+</div>
       <div className="main_body-content flex flex-col  pt-0">
         {/* <Banner /> */}
         <Astrocard />

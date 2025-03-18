@@ -30,7 +30,10 @@ body {
 }
 
 /* nabar  */
-.navbar-ul-head li:hover {
+.desk-nav-li{
+  padding: .5rem;
+}
+.desk-nav-li:hover {
   background-color: #8334e4;
   color: #ffffff;
   cursor: pointer;
@@ -46,18 +49,18 @@ body {
   z-index: 49;
 }
 
-.navbar-ul-head li {
+.desk-nav-li {
   padding: 7px;
   width: 5rem;
   text-align: center;
 
 }
 
-.navbar-ul-head li:hover .img-head-nav {
+.desk-nav-li:hover .img-head-nav {
   filter: brightness(0) invert(1);
 }
 
-.navbar-ul-head li:hover .head-spn {
+.desk-nav-li:hover .head-spn {
   color: #fff;
 }
 

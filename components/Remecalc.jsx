@@ -34,7 +34,7 @@ export default function Remecalc() {
             {remedbox.map((rembx) => (
               <div
                 key={rembx.id}
-                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center"
+                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 h-18 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center"
               >
                 <h3 className="sm:text-sm text-xs text-[#000] ">
                   {rembx.ulname}
@@ -49,7 +49,7 @@ export default function Remecalc() {
             • Free <strong>Calculators</strong> •
           </h1>
           <div className="relative py-3 grid max-w-7xl items-center justify-center grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 z-10">
-            <div className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="md:text-sm text-xs   text-[#000] ">
                 Lagna Navamsa Calculator
               </h3>
@@ -62,7 +62,7 @@ export default function Remecalc() {
                 loading="lazy" unoptimized  />
             </div>
 
-            <div className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="sm:text-sm text-xs  text-[#000] ">
                 Lucky Date / Unlucky Date
               </h3>
@@ -75,7 +75,7 @@ export default function Remecalc() {
                 loading="lazy" unoptimized />
             </div>
 
-            <div className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-fuchsia-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-fuchsia-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="sm:text-sm text-xs text-[#000] ">
                 Lucky Vehicle Number
               </h3>
@@ -88,7 +88,7 @@ export default function Remecalc() {
                 loading="lazy"    unoptimized   />
             </div>
 
-            <div className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-violet-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-violet-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="sm:text-sm text-xs  text-[#000] ">
                 Moon Sign Calculator
               </h3>
@@ -101,7 +101,7 @@ export default function Remecalc() {
                 loading="lazy" unoptimized />
             </div>
 
-            <div className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-purple-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <div className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-purple-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="sm:text-sm text-xs text-[#000] ">
                 Nakshatra Calculator
               </h3>
@@ -114,7 +114,7 @@ export default function Remecalc() {
                 loading="lazy" unoptimized />
             </div>
 
-            <Link href={"/homepage/inhome"} className="calculator-card-top w-45 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+            <Link href={"/homepage/inhome"} className="calculator-card-top w-45 h-25 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="sm:text-sm text-xs text-[#000] ">
                 Love Calculator
               </h3>
