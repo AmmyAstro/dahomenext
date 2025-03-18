@@ -22,16 +22,16 @@ export default function Zodhoro() {
 
   return (
    <section className="zodiac-main-box">
-     <h5 className="text-center text-2xl text-[#000] font-semibold">Aries (Mesha)</h5>
+     <h5 className="text-center md:text-2xl text-base text-[#000] font-semibold">Aries (Mesha)</h5>
      <section className="zod-days w-[90%] m-5 
       justify-self-center">
       <div className="zodiac-days">
-        <ul className="zodiac-days-ul px-10 flex gap-4">
+        <ul className="zodiac-days-ul px-10 flex  flex-wrap gap-5">
           {tabs.map((tab) => (
             <li
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`cursor-pointer px-5 py-2 rounded-full ${
+              className={`cursor-pointer lg:px-5 text-xs px-2 py-2 md:text-xl lg:py-2 rounded-full ${
                 activeTab === tab.id ? "bg-purple-500 text-white" : " text-black"
               }`}
             >

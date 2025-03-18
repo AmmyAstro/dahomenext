@@ -36,8 +36,8 @@ const starzod = [
 export default function Horoscope() {
     return (
         <section className="horo-sec-main py-10">
-            <div className="horoscope-main w-[90%] justify-self-center flex flex-col gap-10">
-                <div className="text-[#000] p-5">
+            <div className="horoscope-main md:w-[90%] w-[95%] justify-self-center flex flex-col gap-10">
+                <div className="text-[#000] md:p-5 p-2">
                     <h5 className="text-[#2f1254] text-md sm:text-2xl text-center font-semibold">• About <strong>Horoscope</strong> •</h5>
                     <p className="horo-p-mob text-[#000] text-sm">
                         Horoscopes can assist you in overcoming obstacles, identifying
@@ -65,15 +65,15 @@ export default function Horoscope() {
                             <h1 className="text-[#fff] text-md sm:text-2xl py-4 text-center font-semibold">
                                 • Know Yourself Through Your Sign •
                             </h1>
-                            <div className="zodiac-cards-box grid grid-cols-6 gap-10">
+                            <div className="zodiac-cards-box grid grid-cols-3 xl:grid-cols-6 lg:gap-10 gap-5">
                                 {horoscopezod.map((horoim, index) => (
-                                    <Link href={"#"} key={index} className="zod-card-bx cursor-pointer d-flex flex-column items-center justify-center bg-[#2a2626c6] rounded-lg shadow-lg p-5 px-6">
+                                    <Link href={"#"} key={index} className="zod-card-bx cursor-pointer d-flex flex-column items-center justify-center bg-[#2a2626c6] rounded-lg shadow-lg p-2 px-2 lg:p-5 lg:px-6">
                                         <div className="zodiac-card-img flex items-center justify-center">
-                                            <Image className="img-ch-h" src={horoim.img} alt="Aries" height={100} width={100} />
+                                            <Image className="img-ch-h w-20 h-20" src={horoim.img} alt="Aries" height={100} width={100} />
                                         </div>
                                         <div className="zod-det mt-1 flex flex-col justify-center items-center">
-                                            <p className="zod-h-nm text-sm">{horoim.name}</p>
-                                            <p className="zod-h-dt text-xs">{horoim.indate}</p>
+                                            <p className="zod-h-nm text-xs md:text-sm">{horoim.name}</p>
+                                            <p className="zod-h-dt md:text-xs text-[10px]">{horoim.indate}</p>
                                         </div>
                                     </Link>
                                 ))}
@@ -90,17 +90,17 @@ export default function Horoscope() {
                 <div className="cho-more-zod justify-self-center  bg-[#2b1a52e1] p-3 rounded-xl">
                     <div className="cho-head">
                         <h4 className="text-center text-[#fff] text-xl">Choose Your Zodiac Sign</h4>
-                        <h5 className="text-center text-[#fff] text-base">
+                        <h5 className="text-center text-[#fff] text-sm md:text-base">
                             The starry vault of heaven is in truth the open book of cosmic
                             projection.
                         </h5>
                     </div>
-                    <div className="grid grid-cols-6 gap-20 justify-self-center p-10">
+                    <div className="grid lg:grid-cols-6 grid-cols-3 gap-20 justify-self-center p-10">
                         {starzod.map((strz, index) => (
 
                             <div key={index} className="dwn-sign">
-                                <Image className="sign-img-new" src={strz.img} alt="sign images" width={100} height={100} />
-                                <span>{strz.name}</span>
+                                <Image className="sign-img-new w-15 h-15" src={strz.img} alt="sign images" width={100} height={100} />
+                                <span className="text-xs md:text-sm">{strz.name}</span>
                             </div>
                         ))}
                     </div>

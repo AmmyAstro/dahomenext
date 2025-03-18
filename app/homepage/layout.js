@@ -9,7 +9,7 @@ export default function layout({ children }) {
          <Header />
          <NavBar />
        </div>
-  <div className="pt-40 flex justify-center"> 
+  <div className="lg:pt-40 pt-5 flex justify-center"> 
   {children}
   </div>
 
