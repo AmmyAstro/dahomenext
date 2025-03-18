@@ -106,12 +106,12 @@ export default function Blogcomp() {
                 </div>
             </div>
 
-            <section className="blog-category-main flex flex-row w-[90%] py-5 gap-5">
+            <section className="blog-category-main flex flex-col sm:flex-row w-[100%] md:w-[90%] py-5 gap-5">
 
-             <div className="blog-sec-callchat flex flex-col  basis-3/4 items-center justify-start">
-             <div className="blog-main-box grid grid-cols-3  gap-5 content-start">
+             <div className="blog-sec-callchat flex flex-col gap-5  basis-3/4 items-center justify-start">
+             <div className="blog-main-box grid grid-cols-2 md:grid-cols-3  gap-5 content-start">
                     {blogarray.map((blg, index) => (
-                        <div key={index} className="blog-and-gem flex ">
+                        <div key={index} className="blog-and-gem  ">
                             <div className="blogdanger-nw">
                                 <div className="blog-bx-nw gap-2  flex   flex-col">
                                     <Link href="#">
@@ -127,39 +127,40 @@ export default function Blogcomp() {
                                     <div className="bl-con-nw  flex flex-col  justify-between">
                                         <h1>
                                             <Link href="#" className="decoration-none">
-                                                <h6 className="text-sm text-[#4c307a]">{blg.ulname}</h6>
+                                                <h6 className="text-xs md:text-sm text-center text-[#4c307a]">{blg.ulname}</h6>
                                             </Link>
                                         </h1>
 
-                                        <div className="bldate-nw flex items-center justify-between ">
+                                        <div className="bldate-nw hidden md:block  items-center justify-between ">
                                             <span className="bldat1-nw  flex items-center justify-between flex-col">
-                                                <span className="texxx-nw text-[.8rem] text-[#000]">
+                                                <span className="texxx-nw text-xs md:text-[.8rem] text-[#000]">
                                                     {blg.textpa}
                                                 </span>
                                             </span>
                                         </div>
 
-                                        <div className="bldate-nw blog-date-card flex items-center justify-between ">
-                                            <span className="bldat1-nw flex items-start justify-between flex-col gap-2">
+                                        <div className="bldate-nw blog-date-card flex flex-col md:flex-row items-center justify-between ">
+                                            <span className="bldat1-nw flex items-center justify-center flex-col gap-2">
                                                 <span className="bl-d-t-nw flex items-center text-[#000] gap-3">
                                                     <FaCalendarAlt />
-                                                    <span className="text-xs">{blg.dat}</span>
+                                                    <span className="text-[10px] sm:text-xs">{blg.dat}</span>
                                                 </span>
-                                                <span className="bl-d-c-nw text-xs text-[#000]">
+                                                <span className="bl-d-c-nw text-[10px] sm:text-xs text-[#000]">
                                                     By: Suman Ghosh
                                                 </span>
                                             </span>
 
-                                            <span className="bldat1-nw bld-mob flex items-end justify-between gap-2 flex-col">
+                                            <span className="bldat1-nw bld-mob hidden md:flex  w-full items-end justify-between gap-2 md:flex-col">
+                                            <span className="bl-d-c-nw flex items-center text-[#000] gap-2">
+                                                    <FaRegCommentDots className="text-[10px] sm:text-xs" />
+                                                    <span className="text-[10px] sm:text-xs">Comments</span>
+                                                </span>
                                                 <span className="bl-d-t-nw flex items-center gap-3 text-[#000]">
-                                                    <FaXTwitter />
+                                                    <FaXTwitter className=" text-[10px] sm:text-xs" />
 
-                                                    <FaHeart className="text-red-500" />
+                                                    <FaHeart className="text-red-500 text-[10px] sm:text-xs" />
                                                 </span>
-                                                <span className="bl-d-c-nw flex items-center text-[#000] gap-2">
-                                                    <FaRegCommentDots />
-                                                    <span className="text-xs">Comments</span>
-                                                </span>
+                                              
                                             </span>
                                         </div>
 
@@ -167,7 +168,7 @@ export default function Blogcomp() {
                                             href="/homepage/Inblog"
                                             className="flex items-center justify-center py-2"
                                         >
-                                            <button className="bl-btn-nw  text-[#000]">
+                                            <button className="bl-btn-nw px-2 py-1 text-xs rounded-full text-[#000]">
                                                 Read Blog
                                             </button>
                                         </Link>
@@ -207,12 +208,12 @@ export default function Blogcomp() {
                                                 src="/ds-img/onman.webp"
                                                 width={100}
                                                 height={50}
-                                                className="bl-hin h-50 w-max"
+                                                className="bl-hin h-50 w-full"
                                                 alt="store image "
                                             />
                                         </div>
                                         <div className="b-fest-con-nw">
-                                            <p className="b-fest-d">
+                                            <p className="b-fest-d text-xs md:text-sm">
                                                 Dhwani Store: Premium Religious Gifts, Gemstones, &
                                                 Decor
                                             </p>
@@ -224,12 +225,12 @@ export default function Blogcomp() {
 
                         <div className="blog-cat-nw">
                             <h6 className="text-xl font-semibold text-center  text-[#000]">Category</h6>
-                            <div className="bl-cat-main-nw grid grid-cols-2">
+                            <div className="bl-cat-main-nw grid grid-cols-4 md:grid-cols-2">
                                 {categories.map((categories,index) => (
                                 <Link href="#" key={index} className="text-decoration-none">
-                                    <div className="category-nw w-30 flex flex-col  items-center justify-center">
+                                    <div className="category-nw w-25 md:w-30 flex flex-col  items-center justify-center">
                                         <div className="bl-cat-nw">{categories.smanme}</div>
-                                        <h6 className="text-xs font-semibold text-[#000] text-center">{categories.name}</h6>
+                                        <h6 className="text-xs md:font-semibold text-[#000] text-center">{categories.name}</h6>
                                     </div>
                                 </Link>
                                     ))}

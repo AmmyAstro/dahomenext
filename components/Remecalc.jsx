@@ -18,7 +18,7 @@ const remedbox = [
 export default function Remecalc() {
 
   return (
-    <div className="astrology-remedies-section flex flex-col items-center justify-center relative w-full mx-auto py-0 sm:py-10 px-6">
+    <div className="astrology-remedies-section flex flex-col items-center justify-center relative w-full mx-auto py-0 sm:py-10 px-3 md:px-6">
       <div className="absolute inset-0 flex items-center justify-center">
         <div
           className="w-full h-full bg-cover bg-center opacity-100"
@@ -44,7 +44,7 @@ export default function Remecalc() {
           </div>
         </div>
 
-        <div className="astro-free-calculator">
+        <div className="astro-free-calculator w-full flex flex-col items-center justify-center">
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1 sm:py-5 text-center font-semibold">
             • Free <strong>Calculators</strong> •
           </h1>

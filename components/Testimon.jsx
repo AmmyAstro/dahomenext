@@ -71,7 +71,7 @@ export default function Testimon() {
             "--swiper-navigation-color": "#fff",
             "--swiper-navigation-size": "25px",
 
-            "padding": "5rem 0",
+            "padding": "3rem 0",
           }}
           breakpoints={{
             320: {

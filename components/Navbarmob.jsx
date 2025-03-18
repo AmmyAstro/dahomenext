@@ -55,7 +55,7 @@ export default function Navbarmob() {
           </button>
 
           {/* Navigation List */}
-          <ul className="flex flex-col items-start p-6 space-y-3">
+          <ul className="flex flex-col items-start p-6 space-y-5">
             {navbaritems.map((navit) => (
               <li key={navit.id} className="w-full">
                 <Link href={navit.href} className="flex items-center space-x-3 text-lg text-[#2f1254] hover:text-[#8334e4]" onClick={() => setIsOpen(false)}>

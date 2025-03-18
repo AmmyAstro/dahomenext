@@ -19,7 +19,7 @@ export default function Aboutdirect() {
           referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
 
-      <div className="director-box flex flex-col px-3 shadow-lg rounded-lg">
+      <div className="director-box flex flex-col px-3 py-2 shadow-lg rounded-lg">
         <p className=" text-[#2f1254] text-md sm:text-2xl  font-semibold"> "Unlock Your Destiny With Dhwani Astro"</p>
 
         <p className="text-sm text-[#000]">At Dhwani Astro, we believe astrology is more than just a practice—it’s a guiding force
@@ -30,11 +30,11 @@ export default function Aboutdirect() {
           Together, we embrace the power of the stars. 🌟
 
           — <span className=" text-[#2f1254] text-base sm:text-xl  font-semibold">Niraj Jain</span></p>
-        <div className="img-text-legacy flex items-start gap-5">
+        <div className="img-text-legacy flex items-center gap-5">
           <Image src="/ds-img/legacy.webp" className="w-14 h-15" width={14} height={15} alt="leagcy image" unoptimized loading="lazy" />
           <span className="flex flex-col">
-            <h4 className=" text-[#2f1254] text-base md:text-xl  font-semibold">20+ Years Of Legacy</h4>
-            <span className=" text-[#2f1254] text-base sm:text-xl">With Horoscope, Kundali, And Predictions</span>
+            <h4 className=" text-[#2f1254] text-sm md:text-xl  font-semibold">20+ Years Of Legacy</h4>
+            <span className=" text-[#2f1254] text-sm sm:text-xl">With Horoscope, Kundali, And Predictions</span>
           </span>
         </div>
       </div>

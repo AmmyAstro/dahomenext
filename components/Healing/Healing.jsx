@@ -60,10 +60,10 @@ export default function Healing() {
                 </div>
                 <div className="flex flex-col justify-center gap-1">
                   <h5 className="text-xs bg-[#2f1254dd] rounded-lg p-1">{heal.name}</h5>
-                  <div className="price-heal flex items-center gap-2">
-                    <h5 className="text-sm text-[#000] font-semibold">Starting From</h5>
-                    <span className="text-[#b80c0c]">₹ {heal.pri} </span>
-                    <span className="text-sm text-[#888]">(Per Session)</span>
+                  <div className="price-heal flex items-center justify-center flex-wrap md:flex-nowrap gap-1">
+                    <h5 className="text-xs md:text-sm text-[#000] font-semibold">Starting From</h5>
+                    <span className="text-[#b80c0c] text-xs">₹ {heal.pri} </span>
+                    <span className="text-xs text-[#888]">(Per Session)</span>
                   </div>
                   <div className="heal-book-btn">
                     <button className="rounded-full cursor-pointer px-4 py-1 text-sm bg-[#f5c300] text-[#000]">Book Now</button>
