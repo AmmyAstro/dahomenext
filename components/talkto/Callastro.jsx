@@ -6,7 +6,7 @@ import Link from "next/link";
 import { IoFilterOutline, IoSearch } from "react-icons/io5";
 import { HiOutlineSortDescending } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
-import { FaStarHalfAlt, FaLanguage } from "react-icons/fa";
+import { FaStarHalfAlt, FaLanguage, FaWallet } from "react-icons/fa";
 
 export default function Callastro() {
   const callastro = [
@@ -205,7 +205,7 @@ export default function Callastro() {
 
                   <div className=" md:hidden flex space-x-4 justify-around w-[80%]">
                     <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white gap-2 w-full flex items-center justify-center px-3 py-1 rounded-full shadow-md transition">
-                      <IoIosChatbubbles className="text-xl" />{" "}
+                      {/* <IoIosChatbubbles className="text-xl" />{" "} */}
                       <h5 className="text-[#fff]">Call</h5>
                     </button>
                   </div>
