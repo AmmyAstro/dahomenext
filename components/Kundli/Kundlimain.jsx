@@ -1,0 +1,197 @@
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+import Bestsell from "../Smcompo/Bestsell";
+import FAQue from "../FAQue";
+import Kundlioth from "../Smcompo/Kundlioth";
+import Sidebanner from "../Smcompo/Sidebanner";
+
+
+
+
+export default function Kundlimain() {
+    const [formData, setFormData] = useState({
+        name: "",
+        gender: "",
+        dobDay: "",
+        dobMonth: "",
+        dobYear: "",
+        birthHour: "",
+        birthMinute: "",
+        birthSecond: "",
+        birthPlace: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Submitted Data:", formData);
+        alert("Form submitted successfully!");
+    };
+
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const days = Array.from({ length: 31 }, (_, i) => i + 1);
+    const years = Array.from({ length: 100 }, (_, i) => 1950 + i);
+    const hours = Array.from({ length: 24 }, (_, i) => i + 1);
+    const minutesAndSeconds = Array.from({ length: 60 }, (_, i) => i);
+
+    return (
+        <section className="kundli-main-page py-5">
+            <div className="kundli-page max-w-7xl justify-self-center flex flex-col gap-5 items-center justify-center p-2">
+                <div className="kundloi-top flex flex-col">
+                    <h4 className="py-5 text-2xl text-[#000] text-center font-semibold">KUNDLI FREE ONLINE</h4>
+                    <div className="kundli-img-txt flex items-start justify-between gap-10">
+                        <Image
+                            alt="ganesh ji image"
+                            className="kundli-imgs w-80 h-50 rounded-lg"
+                            loading="lazy"
+                            width={100}
+                            height={100}
+                            src="/ds-img/ganeshji-img.jpg"
+                        />
+                        <div className="kundli-para flex flex-col text-[#000] text-sm">
+                            <p>
+                                Kundli is an astrological chart that shows the exact positions
+                                of heavenly bodies and planets at a specific time, which is
+                                constructed by Vedic astrologers based on an individual's exact
+                                birthday, birthplace, and birth time. Kundli has the ability to
+                                disclose what you are genuinely meant to do. It's all about the
+                                positions of planets or celestial bodies at the very beginning
+                                of time in simple terms.</p>
+                            <p> One's 'Kundli,' according to Vedic
+                                Astrology, is a blueprint that contains information on major
+                                life milestones as well as the time range in which they will
+                                occur. Kundli also believes that everything happens for a reason
+                                and that everything in the cosmos operates according to cosmic
+                                rules.
+                                One's 'Kundli,' according to Vedic
+                                Astrology, is a blueprint that contains information on major
+                                life milestones as well as the time range in which they will
+                                occur. Kundli also believes that everything happens for a reason
+                                and that everything in the cosmos operates according to cosmic
+                                rules.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="kundli-sec-side-item w-full ">
+                    <div className="kundli-side grid grid-cols-4 gap-5">
+                        <div className="kundli-section col-span-3 flex flex-col gap-5">
+
+                            <div className=" w-full p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                                <h2 className="text-xl text-center text-[#000] font-semibold mb-4">Get Your free Janam Kundli</h2>
+                                <form onSubmit={handleSubmit} className="space-y-4">
+                                    <div className="flex items-center justify-between">
+                                        <div className="w-[45%]">
+                                            <label className="block text-sm text-[#666] font-medium">Name:</label>
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                                className="w-full mt-1 p-2 shadow-lg rounded-full text-sm text-[#666] bg-white outline-0 border-0"
+                                            />
+                                        </div>
+
+                                        <div className="w-[45%]">
+                                            <label className="block text-sm text-[#666] font-medium">Gender:</label>
+                                            <select
+                                                name="gender"
+                                                value={formData.gender}
+                                                onChange={handleChange}
+                                                required
+                                                className="w-full mt-1 p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
+                                            >
+                                                <option value="">Select Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div className="dob-dt flex w-full items-center justify-between">
+                                        <div className="w-[45%]">
+                                            <label className="block text-sm text-[#666] font-medium">Date of Birth:</label>
+                                            <div className="flex space-x-2">
+                                                <select name="dobDay" value={formData.dobDay} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                    <option value="">Day</option>
+                                                    {days.map(day => <option key={day} value={day}>{day}</option>)}
+                                                </select>
+                                                <select name="dobMonth" value={formData.dobMonth} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                    <option value="">Month</option>
+                                                    {months.map((month, index) => <option key={month} value={index + 1}>{month}</option>)}
+                                                </select>
+                                                <select name="dobYear" value={formData.dobYear} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                    <option value="">Year</option>
+                                                    {years.map(year => <option key={year} value={year}>{year}</option>)}
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div className="w-[45%]">
+                                            <label className="block text-sm text-[#666] font-medium">Birth Time:</label>
+                                            <div className="flex space-x-2">
+                                                <select name="birthHour" value={formData.birthHour} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full">
+                                                    <option value="">HH</option>
+                                                    {hours.map(hour => <option key={hour} value={hour}>{hour}</option>)}
+                                                </select>
+                                                <select name="birthMinute" value={formData.birthMinute} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full">
+                                                    <option value="">MM</option>
+                                                    {minutesAndSeconds.map(min => <option key={min} value={min}>{min}</option>)}
+                                                </select>
+                                                <select name="birthSecond" value={formData.birthSecond} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full">
+                                                    <option value="">SS</option>
+                                                    {minutesAndSeconds.map(sec => <option key={sec} value={sec}>{sec}</option>)}
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label className="block text-sm text-[#666] font-medium">Birth Place:</label>
+                                        <input
+                                            type="text"
+                                            name="birthPlace"
+                                            value={formData.birthPlace}
+                                            onChange={handleChange}
+                                            required
+                                            className="w-full mt-1 p-2 text-[#666]  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                        />
+                                    </div>
+
+                                    <div className="btn-kun flex w-full items-center justify-center">
+                                        <button type="submit" className="w-[50%] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]">
+                                            Get Your Kundli
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <Kundlioth/>
+                        </div>
+
+                        <div className="side-sec">
+                            <div className="k-side-top w-full border-0 rounded-lg flex flex-col gap-5">                            
+
+                                <Bestsell/>
+
+                                <Sidebanner/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <FAQue/>
+        </section>
+    );
+}

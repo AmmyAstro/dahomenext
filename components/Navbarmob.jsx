@@ -255,7 +255,7 @@ export default function Navbarmob() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="free-drp-a flex items-center ">
+              <Link href={"/homepage/Inkundli"} className="free-drp-a flex items-center ">
                 <Image
                   className="free-drp-img"
                   src="/ds-img/kundli.webp"

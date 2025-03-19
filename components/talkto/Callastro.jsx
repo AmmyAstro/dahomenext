@@ -86,7 +86,7 @@ export default function Callastro() {
     <section className=" relative p-2 sm:p-5 flex w-full flex-col items-center self-center ">
     <div className="flex  justify-between items-center sm:w-[90%] w-full flex-col sm:flex-row  gap-2 sm:flex-nowrap sm:gap-5   ">
       <h1 className="text-[#2f1254] text-md  sm:text-2xl  py-3 text-center font-semibold">
-        Chat With Astrologer
+        Talk to Astrologer
       </h1>
 
     <div className="ava-search gap-10 sm:gap-2 flex items-center justify-between w-full sm:w-auto pb-2 sm:py-0">
