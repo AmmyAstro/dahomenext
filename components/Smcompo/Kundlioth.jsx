@@ -49,9 +49,9 @@ export default function Kundlioth() {
                 <div className=" flex items-center flex-wrap justify-start gap-5">
                     {kundliother.map((kuoth, index) => (
                         <Link key={index} href="#" className="kundli-other-item  ">
-                            <div className=" rounded-lg flex flex-col items-center justify-center">
+                            <div className=" rounded-lg flex flex-col items-center justify-center gap-3">
                                 <Image src={kuoth.src} height={40} width={40} alt="kundli images" className="kunoth-img"/>
-                                <div className="w-full rounded-full p-2 text-center text-sm">
+                                <div className="w-full rounded-full py-1 text-[#000] bg-white text-center text-xs">
                                     {kuoth.name}
                                 </div>
                             </div>

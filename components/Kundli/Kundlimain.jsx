@@ -5,9 +5,10 @@ import Bestsell from "../Smcompo/Bestsell";
 import FAQue from "../FAQue";
 import Kundlioth from "../Smcompo/Kundlioth";
 import Sidebanner from "../Smcompo/Sidebanner";
-
-
-
+import Kunservice from "../Smcompo/Kunservice";
+import Callchatsec from "../CallChatsec/Callchatsec";
+import Recastro from "../Smcompo/Recastro";
+import Freereport from "../Smcompo/Freereport";
 
 export default function Kundlimain() {
     const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ export default function Kundlimain() {
         birthHour: "",
         birthMinute: "",
         birthSecond: "",
-        birthPlace: ""
+        birthPlace: "",
     });
 
     const handleChange = (e) => {
@@ -32,7 +33,20 @@ export default function Kundlimain() {
         alert("Form submitted successfully!");
     };
 
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
     const years = Array.from({ length: 100 }, (_, i) => 1950 + i);
     const hours = Array.from({ length: 24 }, (_, i) => i + 1);
@@ -42,7 +56,9 @@ export default function Kundlimain() {
         <section className="kundli-main-page py-5">
             <div className="kundli-page max-w-7xl justify-self-center flex flex-col gap-5 items-center justify-center p-2">
                 <div className="kundloi-top flex flex-col">
-                    <h4 className="py-5 text-2xl text-[#000] text-center font-semibold">KUNDLI FREE ONLINE</h4>
+                    <h4 className="py-5 text-2xl text-[#000] text-center font-semibold">
+                        KUNDLI FREE ONLINE
+                    </h4>
                     <div className="kundli-img-txt flex items-start justify-between gap-10">
                         <Image
                             alt="ganesh ji image"
@@ -60,19 +76,20 @@ export default function Kundlimain() {
                                 birthday, birthplace, and birth time. Kundli has the ability to
                                 disclose what you are genuinely meant to do. It's all about the
                                 positions of planets or celestial bodies at the very beginning
-                                of time in simple terms.</p>
-                            <p> One's 'Kundli,' according to Vedic
-                                Astrology, is a blueprint that contains information on major
-                                life milestones as well as the time range in which they will
-                                occur. Kundli also believes that everything happens for a reason
-                                and that everything in the cosmos operates according to cosmic
-                                rules.
-                                One's 'Kundli,' according to Vedic
-                                Astrology, is a blueprint that contains information on major
-                                life milestones as well as the time range in which they will
-                                occur. Kundli also believes that everything happens for a reason
-                                and that everything in the cosmos operates according to cosmic
-                                rules.
+                                of time in simple terms.
+                            </p>
+                            <p>
+                                {" "}
+                                One's 'Kundli,' according to Vedic Astrology, is a blueprint
+                                that contains information on major life milestones as well as
+                                the time range in which they will occur. Kundli also believes
+                                that everything happens for a reason and that everything in the
+                                cosmos operates according to cosmic rules. One's 'Kundli,'
+                                according to Vedic Astrology, is a blueprint that contains
+                                information on major life milestones as well as the time range
+                                in which they will occur. Kundli also believes that everything
+                                happens for a reason and that everything in the cosmos operates
+                                according to cosmic rules.
                             </p>
                         </div>
                     </div>
@@ -81,13 +98,16 @@ export default function Kundlimain() {
                 <div className="kundli-sec-side-item w-full ">
                     <div className="kundli-side grid grid-cols-4 gap-5">
                         <div className="kundli-section col-span-3 flex flex-col gap-5">
-
                             <div className=" w-full p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
-                                <h2 className="text-xl text-center text-[#000] font-semibold mb-4">Get Your free Janam Kundli</h2>
+                                <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
+                                    Get Your free Janam Kundli
+                                </h2>
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="flex items-center justify-between">
                                         <div className="w-[45%]">
-                                            <label className="block text-sm text-[#666] font-medium">Name:</label>
+                                            <label className="block text-sm text-[#666] font-medium">
+                                                Name:
+                                            </label>
                                             <input
                                                 type="text"
                                                 name="name"
@@ -99,7 +119,9 @@ export default function Kundlimain() {
                                         </div>
 
                                         <div className="w-[45%]">
-                                            <label className="block text-sm text-[#666] font-medium">Gender:</label>
+                                            <label className="block text-sm text-[#666] font-medium">
+                                                Gender:
+                                            </label>
                                             <select
                                                 name="gender"
                                                 value={formData.gender}
@@ -117,44 +139,110 @@ export default function Kundlimain() {
 
                                     <div className="dob-dt flex w-full items-center justify-between">
                                         <div className="w-[45%]">
-                                            <label className="block text-sm text-[#666] font-medium">Date of Birth:</label>
+                                            <label className="block text-sm text-[#666] font-medium">
+                                                Date of Birth:
+                                            </label>
                                             <div className="flex space-x-2">
-                                                <select name="dobDay" value={formData.dobDay} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                <select
+                                                    name="dobDay"
+                                                    value={formData.dobDay}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                >
                                                     <option value="">Day</option>
-                                                    {days.map(day => <option key={day} value={day}>{day}</option>)}
+                                                    {days.map((day) => (
+                                                        <option key={day} value={day}>
+                                                            {day}
+                                                        </option>
+                                                    ))}
                                                 </select>
-                                                <select name="dobMonth" value={formData.dobMonth} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                <select
+                                                    name="dobMonth"
+                                                    value={formData.dobMonth}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                >
                                                     <option value="">Month</option>
-                                                    {months.map((month, index) => <option key={month} value={index + 1}>{month}</option>)}
+                                                    {months.map((month, index) => (
+                                                        <option key={month} value={index + 1}>
+                                                            {month}
+                                                        </option>
+                                                    ))}
                                                 </select>
-                                                <select name="dobYear" value={formData.dobYear} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0">
+                                                <select
+                                                    name="dobYear"
+                                                    value={formData.dobYear}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                >
                                                     <option value="">Year</option>
-                                                    {years.map(year => <option key={year} value={year}>{year}</option>)}
+                                                    {years.map((year) => (
+                                                        <option key={year} value={year}>
+                                                            {year}
+                                                        </option>
+                                                    ))}
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div className="w-[45%]">
-                                            <label className="block text-sm text-[#666] font-medium">Birth Time:</label>
+                                            <label className="block text-sm text-[#666] font-medium">
+                                                Birth Time:
+                                            </label>
                                             <div className="flex space-x-2">
-                                                <select name="birthHour" value={formData.birthHour} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full">
+                                                <select
+                                                    name="birthHour"
+                                                    value={formData.birthHour}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full"
+                                                >
                                                     <option value="">HH</option>
-                                                    {hours.map(hour => <option key={hour} value={hour}>{hour}</option>)}
+                                                    {hours.map((hour) => (
+                                                        <option key={hour} value={hour}>
+                                                            {hour}
+                                                        </option>
+                                                    ))}
                                                 </select>
-                                                <select name="birthMinute" value={formData.birthMinute} onChange={handleChange} required className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full">
+                                                <select
+                                                    name="birthMinute"
+                                                    value={formData.birthMinute}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                >
                                                     <option value="">MM</option>
-                                                    {minutesAndSeconds.map(min => <option key={min} value={min}>{min}</option>)}
+                                                    {minutesAndSeconds.map((min) => (
+                                                        <option key={min} value={min}>
+                                                            {min}
+                                                        </option>
+                                                    ))}
                                                 </select>
-                                                <select name="birthSecond" value={formData.birthSecond} onChange={handleChange} required className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full">
+                                                <select
+                                                    name="birthSecond"
+                                                    value={formData.birthSecond}
+                                                    onChange={handleChange}
+                                                    required
+                                                    className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                >
                                                     <option value="">SS</option>
-                                                    {minutesAndSeconds.map(sec => <option key={sec} value={sec}>{sec}</option>)}
+                                                    {minutesAndSeconds.map((sec) => (
+                                                        <option key={sec} value={sec}>
+                                                            {sec}
+                                                        </option>
+                                                    ))}
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm text-[#666] font-medium">Birth Place:</label>
+                                        <label className="block text-sm text-[#666] font-medium">
+                                            Birth Place:
+                                        </label>
                                         <input
                                             type="text"
                                             name="birthPlace"
@@ -166,32 +254,87 @@ export default function Kundlimain() {
                                     </div>
 
                                     <div className="btn-kun flex w-full items-center justify-center">
-                                        <button type="submit" className="w-[50%] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]">
+                                        <button
+                                            type="submit"
+                                            className="w-[50%] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
+                                        >
                                             Get Your Kundli
                                         </button>
                                     </div>
                                 </form>
                             </div>
 
-                            <Kundlioth/>
+                            <div className="kundli-cont flex flex-col gap-2 text-[#000] p-5 shadow-lg rounded-lg">
+                                <h5 className="text-xl font-semibold text-center">Know more about : </h5>
+                                <div className="kun-con ">
+                                    <h5 className="text-base font-semibold">1. What is Janam Kundli?</h5>
+                                    <p className="text-sm">
+                                        Janam Kundli is called birth chart in English. It is a map
+                                        of the sky as seen at the time of birth. It is the basis of
+                                        predicting future in astrology.
+                                    </p>
+                                </div>
+                                <div className="kun-con">
+                                    <h5 className="text-base font-semibold">2. Can astrology predict future accurately?</h5>
+                                    <p className="text-sm">
+                                        Astrology is Vedanga and considered eye of the Vedas. Like
+                                        Ayurveda & Yoga, astrology and its branches like Hora,
+                                        Muhurat & Samhita, it is backbone of Vedas.
+                                    </p>
+                                </div>
+                                <div className="kun-con">
+                                    <h5 className="text-base font-semibold">3. Which is the most accurate Kundli software?</h5>
+                                    <p className="text-sm">
+                                        Most of the software use NASA algorithm for planetary
+                                        position calculations. For remaining calculations like
+                                        Namvamsa, Shodashvarga and Ashtakvarga, you can use free
+                                        Dhwani Astro software which is the most used Vedic astrology
+                                        software on Internet.
+                                    </p>
+                                </div>
+                                <div className="kun-con">
+                                    <h5 className="text-base font-semibold">4. What is Navamsa chart?</h5>
+                                    <p className="text-sm">
+                                        This is a division or varga. When a Rasi, i.e. zodiac sign,
+                                        is subdivided in nine parts in a particular order, it is
+                                        called Navamsa. It is sometimes considered as important as
+                                        Rasi itself.
+                                    </p>
+                                </div>
+                                <div className="kun-con">
+                                    <h5 className="text-base font-semibold">5. What is Lagna chart?</h5>
+                                    <p className="text-sm">
+                                        Lagna chart, also called Rasi chart, is the most important
+                                        chart in Vedic astrology. It shows Ascendant and planet's
+                                        position in various signs. This chart along with other
+                                        calculations like Vimshottari Dasa & Gochar are used to
+                                        predict future.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <Kundlioth />
                         </div>
 
                         <div className="side-sec">
-                            <div className="k-side-top w-full border-0 rounded-lg flex flex-col gap-5">                            
+                            <div className="k-side-top w-full border-0 rounded-lg flex flex-col gap-5">
+                                <Bestsell />
+                                <Kunservice />
 
-                                <Bestsell/>
-
-                                <Sidebanner/>
+                                <Sidebanner />
                             </div>
                         </div>
                     </div>
+
+                    <Freereport/>
+
+                    <Recastro />
                 </div>
-
-
-
             </div>
 
-            <FAQue/>
+            <FAQue />
+            <Callchatsec />
+
         </section>
     );
 }

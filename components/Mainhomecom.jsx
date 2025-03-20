@@ -20,6 +20,7 @@ import AboutUs from "./AboutUs";
 import Astrocard from "./Astrocard";
 // import Lovecalc from "./incomp/Lovecalc";
 import Navbarmob from "./Navbarmob";
+import Astronewcard from "./Astronewcard";
 
 export default function Mainhomecom() {
   return (
@@ -30,7 +31,8 @@ export default function Mainhomecom() {
 </div>
       <div className="main_body-content flex flex-col  pt-0">
         <Banner />
-        <Astrocard />
+        <Astronewcard/>
+        {/* <Astrocard /> */}
         <Chathoro />
         <Astroserv />
         <Remecalc />

@@ -4,15 +4,26 @@ import Image from "next/image";
 import Link from "next/link";
 // import styles from "./NavBar.module.css"
 const remedbox = [
-  { id: 1, ulname: "Gemstones" },
-  { id: 2, ulname: "Puja & Anusthan" },
-  { id: 3, ulname: "Rudraksha" },
-  { id: 4, ulname: "Sadhesati" },
-  { id: 5, ulname: "Mini Horoscope Report" },
-  { id: 6, ulname: "Basic Horoscope Report" },
-  { id: 7, ulname: "Pro Horoscope Report" },
-  { id: 8, ulname: "Match-Making Report" },
-  // { id: 9, ulname: "Share Market Astrology" },
+  { id: 1, ulname: "Gemstones", src: "/ds-img/diamond.png" },
+  { id: 2, ulname: "Puja & Anusthan", src: "/ds-img/onpooja.webp" },
+  { id: 3, ulname: "Rudraksha", src: "/ds-img/cultural-celebration.png" },
+  { id: 4, ulname: "Sadhesati", src: "/ds-img/saturn.png" },
+  { id: 5, ulname: "Kalsharp", src: "/ds-img/king.png" },
+  { id: 6, ulname: "Manglik Dosha", src: "/ds-img/heterosexual.png" },
+  { id: 7, ulname: "Lal Kitab", src: "/ds-img/booklal.png" },
+  { id: 8, ulname: "Krishnamurti Paddhati", src: "/ds-img/scroll.png" },
+  { id: 9, ulname: "Pitra Dosha", src: "/ds-img/pitradosha.png" },
+];
+const calbox = [
+  { id: 1, ulname: " Friendship Calculator", src: "/ds-img/ology.webp" },
+  { id: 2, ulname: "Personal DD/MM/YY", src: "/ds-img/calend.webp" },
+  { id: 3, ulname: " Numerology Calculator", src: "/ds-img/number-blocks.webp" },
+  { id: 4, ulname: "Moon Sign Calculator", src: "/ds-img/moonsign.webp" },
+  { id: 5, ulname: "Nakshatra Calculator", src: "/ds-img/astrology.webp" },
+  { id: 6, ulname: "Love Calculator", src: "/ds-img/wedding-cost.webp" },
+  { id: 7, ulname: " Kundali Milan", src: "/ds-img/not-compatible.png" },
+  { id: 8, ulname: "Zodiac Compatibility ", src: "/ds-img/astrologylove.png" },
+  { id: 9, ulname: "Moon Biorhythm ", src: "/ds-img/esoteric.png" },
 ];
 export default function Remecalc() {
 
@@ -27,17 +38,18 @@ export default function Remecalc() {
       <div className="remedies-and-query flex flex-col sm:flex-row items-start justify-between gap-5">
         <div className="heading-astro-remed relative">
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1 md:py-5 text-center font-semibold">
-            • Astrology Remedies & <strong>Premium Indian Astrology PDF</strong> •
+            • Astrology Remedies & <strong>Services</strong> •
           </h1>
           <div className="relative py-3 grid  items-center justify-center grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-6 z-10">
             {remedbox.map((rembx) => (
               <div
                 key={rembx.id}
-                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 h-18 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center"
+                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 h-22 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center gap-2"
               >
                 <h3 className="sm:text-sm text-xs text-[#000] ">
                   {rembx.ulname}
                 </h3>
+                <Image className="w-11 sm:w-10" src={rembx.src} width={50} height={50} alt="service image" />
               </div>
             ))}
           </div>
@@ -48,86 +60,27 @@ export default function Remecalc() {
             • Free <strong>Calculators & Compatibility</strong> •
           </h1>
           <div className="relative py-3 grid max-w-7xl items-center justify-center grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 z-10">
-            <div className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="md:text-sm text-xs   text-[#000] ">
-                Friendship Calculator
-              </h3>
-              <Image
-                className="w-11 sm:w-10"
-                src="/ds-img/ology.webp"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </div>
+            {calbox.map((calcu, index) => (
 
-            <div className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="sm:text-sm text-xs  text-[#000] ">
-                Personal DD/MM/YY
-              </h3>
-              <Image
-                className="w-11 sm:w-10"
-                src="/ds-img/calend.webp"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </div>
 
-            <div className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-fuchsia-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="sm:text-sm text-xs text-[#000] ">
-                Numerology Calculator
-              </h3>
-              <Image
-                className="w-11 sm:w-10"
-                src="/ds-img/number-blocks.webp"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </div>
+              <div key={index} className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+                <h3 className="md:text-sm text-xs   text-[#000] ">
+                  {calcu.ulname}
+                </h3>
+                <Image
+                  className="w-11 sm:w-10"
+                  src={calcu.src}
+                  alt="free calculator image"
+                  height={15}
+                  width={15}
+                  loading="lazy" unoptimized />
+              </div>
+            ))}
 
-            <div className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-violet-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="sm:text-sm text-xs  text-[#000] ">
-                Moon Sign Calculator
-              </h3>
-              <Image
-                className="w-11 sm:w-10"
-                src="/ds-img/moonsign.webp"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </div>
 
-            <div className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-purple-300 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="sm:text-sm text-xs text-[#000] ">
-                Nakshatra Calculator
-              </h3>
-              <Image
-                src="/ds-img/astrology.webp"
-                className="w-11 sm:w-10"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </div>
-
-            <Link href={"/homepage/inhome"} className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-purple-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
-              <h3 className="sm:text-sm text-xs text-[#000] ">
-                Love Calculator
-              </h3>
-              <Image
-                src="/ds-img/wedding-cost.webp"
-                className="w-11 sm:w-10"
-                alt="free calculator image"
-                height={15}
-                width={15}
-                loading="lazy" unoptimized />
-            </Link>
           </div>
 
-          <div className="realtive py-1 grid max-w-7xl items-center justify-center grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-5 z-10">
+          {/* <div className="realtive py-1 grid max-w-7xl items-center justify-center grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-5 z-10">
             <div className="compat-box w-45 h-16 sm:w-25 xl:w-55 bg-violet-200 rounded-lg shadow-lg p-3 text-center flex flex-col items-center justify-center">
               <h3 className="md:text-sm text-xs   text-[#000] ">
                 Destiny Report
@@ -154,7 +107,7 @@ export default function Remecalc() {
                 Sun Sign Compatibility
               </h3>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

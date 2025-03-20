@@ -141,13 +141,22 @@ export default function Astrocard() {
         </div>
       </div>
 
-      <div className="astrocard-swipe sm:max-w-7xl  p-4">
+      <div className="astrocard-swipe sm:max-w-7xl  p-4 relative">
+         {/* Custom Navigation Buttons */}
+         <div className="absolute top-1/2 left-[-30px] transform -translate-y-1/2 z-50">
+          <button className="swiper-button-prev-custom">‹</button>
+        </div>
+        <div className="absolute top-1/2 right-[-30px] transform -translate-y-1/2 z-50">
+          <button className="swiper-button-next-custom">›</button>
+        </div>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={2}
-          navigation={true}
-          // pagination={{ clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next-custom",
+            prevEl: ".swiper-button-prev-custom",
+          }}          // pagination={{ clickable: true }}
           autoplay={false}
           loop={true}
           className="mySwiperhoro"
@@ -184,7 +193,7 @@ export default function Astrocard() {
               <Link href="#">
                 <div
                   className="relative h-72 w-full p-1 sm:p-3 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
-                  style={{ backgroundImage: "url('/ds-img/ba2.webp')" }}
+                  style={{ backgroundImage: "url('/ds-img/mnew.jpg')" }}
                 >
                   <div className="absolute inset-0 bg-[#00000030] bg-opacity-0"></div>
 
@@ -205,40 +214,40 @@ export default function Astrocard() {
                             {ascard.ulname}
                           </h2>
 
-                          <p className="text-xs text-yellow-300 bg-[#00000880] rounded-lg py-1 px-2 w-fit">
+                          <p className="text-xs text-purple-700 bg-[#ffffffaf]  rounded-lg py-1 px-2 w-fit">
                             Exp: {ascard.expas} Yrs
                           </p>
 
-                          <span className="flex items-center gap-1">
-                            <p className="text-xs bg-[#00000880] rounded-lg py-1 px-2 w-fit flex items-center gap-2">
+                          <span className="flex items-center gap-1 ">
+                            <p className="text-xs  rounded-lg py-1 bg-[#ffffffaf] text-purple-700 px-2 w-fit flex items-center gap-2">
                               {ascard.reve}
-                              <FaStarHalfAlt className="text-yellow-300 text-xs" />
+                              <FaStarHalfAlt className="text-yellow-500 text-xs" />
                             </p>
-                            <span className="text-[11px] text-yellow-300 bg-[#00000880] p-1 rounded-lg">
+                            <span className="text-[11px] text-purple-700 bg-[#ffffffaf]  p-1 rounded-lg">
                               {ascard.ordr}
                             </span>
                           </span>
                         </div>
                       </div>
 
-                      <div className="astrologer-price-skill p-2 bg-[#00000880]  w-full rounded-lg flex flex-col items-center justify-center">
-                        <p className="text-xs text-yellow-300 whitespace-nowrap overflow-hidden text-ellipsis">
+                      <div className="astrologer-price-skill p-2 bg-[#ffffffaf]  w-full rounded-lg flex flex-col items-center justify-center">
+                        <p className="text-xs text-purple-700 whitespace-nowrap overflow-hidden text-ellipsis">
                           {ascard.skill}
                         </p>
-                     <div className="lang-bar flex items-center gap-2"><FaLanguage  className="text-[#fff] text-xl"/>
-                     <p className="text-xs text-yellow-300  whitespace-nowrap overflow-hidden text-ellipsis">
+                     <div className="lang-bar flex items-center gap-2"><FaLanguage  className="text-purple-700 text-xl"/>
+                     <p className="text-xs text-purple-700  whitespace-nowrap overflow-hidden text-ellipsis">
                          {ascard.lang}
                         </p>
                      </div>
 
                         <div className="astrologer-price-box flex items-center justify-between w-full">
-                          <p className="mt-2 text-[10px] sm:text-xs font-semibold flex flex-col items-center justify-center">
+                          <p className="mt-2 text-[10px] text-purple-700 sm:text-xs font-semibold flex flex-col items-center justify-center">
                             <span> Call : ₹ {ascard.prcl}</span>
                             <span className="text-red-500 text-[10px]  sm:text-xs line-through">
-                              ₹ {ascard.prct}
+                              ₹ {ascard.prct} /min
                             </span>
                           </p>
-                          <p className="mt-2 text-[10px] sm:text-xs font-semibold flex flex-col items-center justify-center">
+                          <p className="mt-2 text-[10px] sm:text-xs text-purple-700 font-semibold flex flex-col items-center justify-center">
                             <span>Chat : ₹ {ascard.prclf}/min</span>
                             <span className="text-red-500 text-[10px]  sm:text-xs line-through">
                               ₹ {ascard.prctf}/min
