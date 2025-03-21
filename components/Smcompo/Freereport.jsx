@@ -45,7 +45,7 @@ export default function Freereport() {
     ];
 
     return (
-        <section className="flex flex-col w-full items-center self-center sm:max-w-7xl my-4  ">
+        <section className=" flex-col w-full items-center self-center sm:max-w-7xl my-4  ">
             <div className="py-3">
                 <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
                     • Free Astrology <strong> Services & Reports</strong> •
@@ -53,26 +53,26 @@ export default function Freereport() {
 
 
             </div>
-            <div className="slider-astrocard-home  w-full relative">
-                   {/* Custom Navigation Buttons */}
-                   <div className="absolute top-1/2 left-[-50px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-prev-custom">‹</button>
+            <div className="slider-freereport  w-full relative">
+
+                <div className="absolute top-1/2 left-[-20px] md:left-[-50px] transform -translate-y-1/2 z-50">
+                    <button className="swiper-button-prev-free">‹</button>
                 </div>
-                <div className="absolute top-1/2 right-[-50px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-next-custom">›</button>
+                <div className="absolute top-1/2 right-[-20px] md:right-[-50px] transform -translate-y-1/2 z-50">
+                    <button className="swiper-button-next-free">›</button>
                 </div>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={20}
                     slidesPerView={2}
                     navigation={{
-                        nextEl: ".swiper-button-next-custom",
-                        prevEl: ".swiper-button-prev-custom",
-                    }} 
+                        nextEl: ".swiper-button-next-free",
+                        prevEl: ".swiper-button-prev-free",
+                    }}
                     // pagination={{ clickable: true }}
                     autoplay={false}
                     loop={true}
-                    className="mySiperblog"
+                    className="mySiperfree"
                     style={{
                         "--swiper-navigation-color": "#fff",
                         "--swiper-navigation-size": "25px",
@@ -104,7 +104,7 @@ export default function Freereport() {
                     {freereport.map((freere) => (
                         <SwiperSlide key={freere.id} style={{ width: "100%" }}>
                             <Link href={"#"} className="p-3 border-2 border-stone-500 rounded-lg flex items-center justify-between">
-                                <Image className=" w-20 h-20" width={50} height={50} src={freere.src} alt="report images" />
+                                <Image className=" w-20 h-20" width={50} height={50} src={freere.src} alt="report images" unoptimized />
 
                                 <div className="">
                                     <h5 className="text-center text-[#000]">{freere.name}</h5>

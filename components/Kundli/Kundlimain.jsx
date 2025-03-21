@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Bestsell from "../Smcompo/Bestsell";
 import FAQue from "../FAQue";
@@ -54,7 +55,7 @@ export default function Kundlimain() {
 
     return (
         <section className="kundli-main-page py-5">
-            <div className="kundli-page max-w-7xl justify-self-center flex flex-col gap-5 items-center justify-center p-2">
+            <div className="kundli-page md:max-w-7xl  justify-self-center flex flex-col gap-5 items-center justify-center p-2">
                 <div className="kundloi-top flex flex-col">
                     <h4 className="py-5 text-2xl text-[#000] text-center font-semibold">
                         KUNDLI FREE ONLINE
@@ -62,7 +63,7 @@ export default function Kundlimain() {
                     <div className="kundli-img-txt flex items-start justify-between gap-10">
                         <Image
                             alt="ganesh ji image"
-                            className="kundli-imgs w-80 h-50 rounded-lg"
+                            className="kundli-imgs hidden md:block w-80 h-50 rounded-lg"
                             loading="lazy"
                             width={100}
                             height={100}
@@ -79,7 +80,7 @@ export default function Kundlimain() {
                                 of time in simple terms.
                             </p>
                             <p>
-                                {" "}
+                             
                                 One's 'Kundli,' according to Vedic Astrology, is a blueprint
                                 that contains information on major life milestones as well as
                                 the time range in which they will occur. Kundli also believes
@@ -96,15 +97,16 @@ export default function Kundlimain() {
                 </div>
 
                 <div className="kundli-sec-side-item w-full ">
-                    <div className="kundli-side grid grid-cols-4 gap-5">
+                    <div className="kundli-side flex flex-col md:grid grid-cols-4 gap-5">
+
                         <div className="kundli-section col-span-3 flex flex-col gap-5">
-                            <div className=" w-full p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                            <div className=" w-[30rem] p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
                                 <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
                                     Get Your free Janam Kundli
                                 </h2>
                                 <form onSubmit={handleSubmit} className="space-y-4">
-                                    <div className="flex items-center justify-between">
-                                        <div className="w-[45%]">
+                                    <div className="flex flex-col md:flex-row items-center justify-between">
+                                        <div className="md:w-[45%] w-[25%]">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Name:
                                             </label>
@@ -114,11 +116,11 @@ export default function Kundlimain() {
                                                 value={formData.name}
                                                 onChange={handleChange}
                                                 required
-                                                className="w-full mt-1 p-2 shadow-lg rounded-full text-sm text-[#666] bg-white outline-0 border-0"
+                                                className=" mt-1 p-2 shadow-lg rounded-full text-sm text-[#666] bg-white outline-0 border-0"
                                             />
                                         </div>
 
-                                        <div className="w-[45%]">
+                                        <div className="md:w-[45%] w-[25%]">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Gender:
                                             </label>
@@ -127,7 +129,7 @@ export default function Kundlimain() {
                                                 value={formData.gender}
                                                 onChange={handleChange}
                                                 required
-                                                className="w-full mt-1 p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
+                                                className=" mt-1 p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
                                             >
                                                 <option value="">Select Gender</option>
                                                 <option value="Male">Male</option>
@@ -138,7 +140,7 @@ export default function Kundlimain() {
                                     </div>
 
                                     <div className="dob-dt flex w-full items-center justify-between">
-                                        <div className="w-[45%]">
+                                        <div className="md:w-[45%] w-[25%]">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Date of Birth:
                                             </label>
@@ -188,7 +190,7 @@ export default function Kundlimain() {
                                             </div>
                                         </div>
 
-                                        <div className="w-[45%]">
+                                        <div className="md:w-[45%] w-[25%]">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Birth Time:
                                             </label>
@@ -249,17 +251,18 @@ export default function Kundlimain() {
                                             value={formData.birthPlace}
                                             onChange={handleChange}
                                             required
-                                            className="w-full mt-1 p-2 text-[#666]  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                            className="md:w-full w-50% mt-1 p-2 text-[#666]  rounded-full bg-white outline-0 border-0 shadow-lg"
                                         />
                                     </div>
 
                                     <div className="btn-kun flex w-full items-center justify-center">
-                                        <button
+                                     <Link href={"/homepage/Inkuinter"}>
+                                     <button
                                             type="submit"
-                                            className="w-[50%] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
+                                            className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
                                         >
                                             Get Your Kundli
-                                        </button>
+                                        </button></Link>
                                     </div>
                                 </form>
                             </div>
@@ -320,10 +323,10 @@ export default function Kundlimain() {
                             <div className="k-side-top w-full border-0 rounded-lg flex flex-col gap-5">
                                 <Bestsell />
                                 <Kunservice />
-
                                 <Sidebanner />
                             </div>
                         </div>
+
                     </div>
 
                     <Freereport/>

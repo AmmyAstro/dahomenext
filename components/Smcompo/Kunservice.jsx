@@ -40,7 +40,7 @@ export default function Kunservice() {
         <section>
             <div className=" p-3 flex flex-col gap-3 border-2 rounded-lg">
                 <span className="text-[#000] text-center font-semibold text-xl"> Astrology Remedies & Services</span>
-                <div className="  flex items-center flex-wrap justify-between gap-3">
+                <div className="  flex items-center flex-wrap flex-col justify-between gap-3">
                     {kunser.map((kuns, index) => (
                         <div key={index} className=" flex flex-col items-center justify-items-center gap-1">
                             <h5 className="text-[#000] text-sm bg-purple-200 flex items-center justify-around py-1 w-full rounded-lg text-center">{kuns.name} <Link href={"#"} className="  text-xs justify-end items-end self-end bg-green-600 text-white px-3 py-1 rounded-lg"> {kuns.buy}</Link></h5>

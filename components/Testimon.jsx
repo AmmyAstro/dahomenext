@@ -60,18 +60,18 @@ export default function Testimon() {
       <div className="slider-astrocard-home  w-full relative">
            {/* Custom Navigation Buttons */}
            <div className="absolute top-1/2 md:left-[-50px] left-[-10px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-prev-custom">‹</button>
+                    <button className="swiper-button-prev-tst">‹</button>
                 </div>
                 <div className="absolute top-1/2 md:right-[-50px] right-[-10px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-next-custom">›</button>
+                    <button className="swiper-button-next-tst">›</button>
                 </div>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={2}
           navigation={{
-            nextEl: ".swiper-button-next-custom",
-            prevEl: ".swiper-button-prev-custom",
+            nextEl: ".swiper-button-next-tst",
+            prevEl: ".swiper-button-prev-tst",
         }} 
           // pagination={{ clickable: true }}
           autoplay={false}

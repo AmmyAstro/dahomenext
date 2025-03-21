@@ -144,18 +144,18 @@ export default function Astronewcard() {
             <div className="astrocard-swipe sm:max-w-7xl  p-4 relative">
                 {/* Custom Navigation Buttons */}
                 <div className="absolute top-1/2 left-[-10px] md:left-[-30px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-prev-custom">‹</button>
+                    <button className="swiper-button-prev-astro">‹</button>
                 </div>
                 <div className="absolute top-1/2 right-[-10px] md:right-[-30px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-next-custom">›</button>
+                    <button className="swiper-button-next-astro">›</button>
                 </div>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={20}
                     slidesPerView={2}
                     navigation={{
-                        nextEl: ".swiper-button-next-custom",
-                        prevEl: ".swiper-button-prev-custom",
+                        nextEl: ".swiper-button-next-astro",
+                        prevEl: ".swiper-button-prev-astro",
                     }}       
                        // pagination={{ clickable: true }}
                     autoplay={false}

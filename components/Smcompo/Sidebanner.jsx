@@ -9,7 +9,7 @@ export default function Sidebanner() {
         <section>
             <div className="">
                 <Link className="flex items-center justify-center" href="#"> 
-                <Image src="/ds-img/d.jpg" className="w-[100%] h-[100%] rounded-lg" width={100} unoptimized height={100} alt="banner free chat" />
+                <Image src="/ds-img/d.jpg" className="md:w-[100%] md:h-[100%] w-80 h-60 rounded-lg" width={100} unoptimized height={100} alt="banner free chat" />
                 </Link>
             </div>
         </section>

@@ -30,9 +30,10 @@ body {
 }
 
 /* nabar  */
-.desk-nav-li{
+.desk-nav-li {
   padding: .5rem;
 }
+
 .desk-nav-li:hover {
   background-color: #8334e4;
   color: #ffffff;
@@ -628,8 +629,52 @@ body {
   border-radius: 50%;
   box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.8);
 } */
-.swiper-button-prev-custom,
-.swiper-button-next-custom {
+.swiper-button-prev-free,
+.swiper-button-next-free {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .8rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-rec,
+.swiper-button-next-rec {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .8rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-blg,
+.swiper-button-next-blg {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .8rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-tst,
+.swiper-button-next-tst {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .8rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-astro,
+.swiper-button-next-astro {
   background-color: #6a5781;
   color: white;
   border: none;
@@ -792,13 +837,16 @@ body {
   background: linear-gradient(90.6deg, #6b4dbcc1 0.47%, #f2984ad3 137.94%);
   color: white;
 }
-.bl-cat-nw:hover{
+
+.bl-cat-nw:hover {
   transform: scale(1.03);
   background: linear-gradient(90.6deg, #6b4dbce3 0.47%, #f2984aef 137.94%);
 }
-.call-chat-nw{ 
+
+.call-chat-nw {
   background: linear-gradient(90.6deg, #62587d10 0.47%, #69544213 137.94%) !important;
 }
+
 .neumorphism {
   background: #ffffff;
   font-size: 13px;
@@ -806,6 +854,7 @@ body {
   box-shadow: 6px 6px 10px #a3b1c6, -6px -6px 10px #ffffff;
   transition: all 0.3s ease;
 }
+
 .img-blog-nw {
   height: 50vh;
   display: flex;
@@ -816,6 +865,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .heal-main-card {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -831,6 +881,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 16px #a3b1c6, -5px -5px 16px #ffffff;
 }
+
 .heal-main-img-card {
   height: 70%;
   width: 100%;
@@ -838,31 +889,35 @@ body {
 }
 
 /* Horoscope page **************************** */
-.bg-before::before{
+.bg-before::before {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.594);
-    border-radius: 10px;
-    --background-overlay: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.594);
+  border-radius: 10px;
+  --background-overlay: '';
 }
-.zod-card-bx{
-border: 2px solid #ffffff4b;
+
+.zod-card-bx {
+  border: 2px solid #ffffff4b;
 }
+
 .zod-card-bx:hover {
   background-color: #2a26263e;
   transform: scale(1.02);
 }
+
 .unc-zod-sign {
   padding: 1rem;
   border-radius: 30px 30px 0 0;
   border: 5px solid #8334e413;
   background: linear-gradient(90deg, rgba(141, 92, 156, 0.544) 5%, rgba(90, 53, 177, 0.669) 71%);
 }
-.zodiac-days-ul{
+
+.zodiac-days-ul {
   width: 100%;
   display: flex;
   align-items: center;
@@ -870,7 +925,8 @@ border: 2px solid #ffffff4b;
   border-radius: 10px;
   padding: 1rem;
 }
-.zodiac-main-box{
+
+.zodiac-main-box {
   background: #3f404212;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #a3b1c6, -2px -2px 10px #ffffff;
@@ -880,24 +936,32 @@ border: 2px solid #ffffff4b;
 
 
 /* Kundli page main  */
-.kundli-para p{
-margin: 0;
-    line-height: 22px;
-    font-size: 14px;
-    color: #222;
+.kundli-para p {
+  margin: 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: #222;
 }
-.kundli-other-item
-{
+
+.kundli-other-item {
   background-image: linear-gradient(to right, #c54e5a6b, #7042ac98) !important;
   /* text-align: center; */
   border-radius: 5px;
   padding: 15px 10px 15px;
   border: 0px solid #2f1254;
-  width: 23%;
+  /* width: 23%; */
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 .kunoth-img {
   filter: brightness(0) invert(1);
+}
+
+
+
+/* get kundli page with items */
+.kundli-cards {
+  background-image: linear-gradient(#f2c705e3, #e2751679) !important;
 }
 
 
@@ -911,6 +975,7 @@ margin: 0;
 /* media queries ************************************** */
 
 @media (319px <=width <=430px) {
+
   /* blog page  */
   .bl-cat-nw {
     clip-path: circle(1.7rem);
@@ -918,25 +983,29 @@ margin: 0;
     font-size: 1.5rem;
     background: linear-gradient(90.6deg, #6b4dbcc1 .47%, #f2984ad3 137.94%);
     color: #fff;
-}
-/* healing page  */
-.heal-main-img-card {
-  height: 56%;
-  width: 100%;
-  object-fit: cover;
-}
-.heal-main-card {
-  height: 17rem !important;
-}
-/* d services  */
-.ser-main-img-card {
-  height: 80%;
-  width: 100%;
-}
-.ser-main-card {
-  min-height: 200px;   
-   height: 13rem !important;
-}
+  }
+
+  /* healing page  */
+  .heal-main-img-card {
+    height: 56%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .heal-main-card {
+    height: 17rem !important;
+  }
+
+  /* d services  */
+  .ser-main-img-card {
+    height: 80%;
+    width: 100%;
+  }
+
+  .ser-main-card {
+    min-height: 200px;
+    height: 13rem !important;
+  }
 
 
 
@@ -999,14 +1068,38 @@ margin: 0;
 
 
 
-/* swiper buttons  */
+  /* swiper buttons  */
 
   .swiper-button-prev-custom,
-.swiper-button-next-custom {
+  .swiper-button-next-custom {
+    background-color: #6a5781;
+    color: white;
+    border: none;
+    padding: .2rem .3rem;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  /* swiper navigate buttons   */
+  .swiper-button-prev-free,
+.swiper-button-next-free {
   background-color: #6a5781;
   color: white;
   border: none;
-  padding: .2rem .3rem;
+  padding: .2rem .4rem;
+  font-size: 20px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-rec,
+.swiper-button-next-rec {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .4rem;
   font-size: 20px;
   border-radius: 10%;
   cursor: pointer;

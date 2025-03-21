@@ -64,26 +64,26 @@ export default function Recastro() {
               
 
             </div>
-            <div className="slider-astrocard-home  w-full relative">
+            <div className="slider-recastro  w-full relative">
                    {/* Custom Navigation Buttons */}
-                   <div className="absolute top-1/2 left-[-50px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-prev-custom">‹</button>
+                   <div className="absolute top-1/2 left-[-20px] md:left-[-50px] transform -translate-y-1/2 z-50">
+                    <button className="swiper-button-prev-rec">‹</button>
                 </div>
-                <div className="absolute top-1/2 right-[-50px] transform -translate-y-1/2 z-50">
-                    <button className="swiper-button-next-custom">›</button>
+                <div className="absolute top-1/2 right-[-20px] md:right-[-50px] transform -translate-y-1/2 z-50">
+                    <button className="swiper-button-next-rec">›</button>
                 </div>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={20}
                     slidesPerView={2}
                     navigation={{
-                        nextEl: ".swiper-button-next-custom",
-                        prevEl: ".swiper-button-prev-custom",
+                        nextEl: ".swiper-button-next-rec",
+                        prevEl: ".swiper-button-prev-rec",
                     }} 
                     // pagination={{ clickable: true }}
                     autoplay={false}
                     loop={true}
-                    className="mySiperblog"
+                    className="mySiperrecastro"
                     style={{
                         "--swiper-navigation-color": "#fff",
                         "--swiper-navigation-size": "25px",

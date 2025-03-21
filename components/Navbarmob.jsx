@@ -33,7 +33,7 @@ export default function Navbarmob() {
   const freeServicesItems = [
     { id: 1, name: "Horoscope", src: "/ds-img/horoscope.webp", href: "/homepage/Inhoro" },
     { id: 2, name: "Numerology", src: "/ds-img/numerology.webp", href: "#" },
-    { id: 3, name: "Kundli", src: "/ds-img/kundli.webp", href: "#" },
+    { id: 3, name: "Kundli", src: "/ds-img/kundli.webp", href: "/homepage/Inkundli" },
     { id: 4, name: "Match Making", src: "/ds-img/menu-match.webp", href: "#" },
     { id: 5, name: "Panchang", src: "/ds-img/panchang.webp", href: "#" },
 
