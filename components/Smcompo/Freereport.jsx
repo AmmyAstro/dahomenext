@@ -25,17 +25,17 @@ export default function Freereport() {
         {
             id: 3,
             src: "/ds-img/solar-system.gif",
-            name: "Gochar Phal (Transit Report)",
+            name: "Gochar Phal (Transit)",
         },
         {
             id: 4,
             src: "/ds-img/uranus.gif",
-            name: "Sade Sati Life Report",
+            name: "Sade Sati  Report",
         },
         {
             id: 5,
             src: "/ds-img/horoscope.gif",
-            name: "Year Analysis (Varshaphal) ",
+            name: "Year Analysis ",
         },
         {
             id: 6,
@@ -55,10 +55,10 @@ export default function Freereport() {
             </div>
             <div className="slider-freereport  w-full relative">
 
-                <div className="absolute top-1/2 left-[-20px] md:left-[-50px] transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 left-[-5px] md:left-[-50px] transform -translate-y-1/2 z-50">
                     <button className="swiper-button-prev-free">‹</button>
                 </div>
-                <div className="absolute top-1/2 right-[-20px] md:right-[-50px] transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 right-[-5px] md:right-[-50px] transform -translate-y-1/2 z-50">
                     <button className="swiper-button-next-free">›</button>
                 </div>
                 <Swiper
@@ -72,7 +72,7 @@ export default function Freereport() {
                     // pagination={{ clickable: true }}
                     autoplay={false}
                     loop={true}
-                    className="mySiperfree"
+                    className="mySiperfree w-[23rem] md:w-full"
                     style={{
                         "--swiper-navigation-color": "#fff",
                         "--swiper-navigation-size": "25px",
@@ -103,11 +103,11 @@ export default function Freereport() {
                 >
                     {freereport.map((freere) => (
                         <SwiperSlide key={freere.id} style={{ width: "100%" }}>
-                            <Link href={"#"} className="p-3 border-2 border-stone-500 rounded-lg flex items-center justify-between">
-                                <Image className=" w-20 h-20" width={50} height={50} src={freere.src} alt="report images" unoptimized />
+                            <Link href={"#"} className="p-3 border-2 border-stone-500 rounded-lg flex flex-col md:flex-row  items-center justify-between w-40 md:w-full mt-5">
+                                <Image className=" w-15 h-13 md:w-20 md:h-20" width={50} height={50} src={freere.src} alt="report images" unoptimized />
 
                                 <div className="">
-                                    <h5 className="text-center text-[#000]">{freere.name}</h5>
+                                    <h5 className="text-center text-[#000] text-sm md:text-base">{freere.name}</h5>
                                 </div>
                             </Link>
                         </SwiperSlide>
