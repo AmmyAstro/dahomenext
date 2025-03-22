@@ -83,7 +83,7 @@ export default function Recastro() {
                     // pagination={{ clickable: true }}
                     autoplay={false}
                     loop={true}
-                    className="mySiperrecastro w-[23rem] md:w-full"
+                    className="mySiperrecastro w-[22rem] md:w-full"
                     style={{
                         "--swiper-navigation-color": "#fff",
                         "--swiper-navigation-size": "25px",

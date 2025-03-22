@@ -40,7 +40,7 @@ export default function Remecalc() {
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1 md:py-5 text-center font-semibold">
             • Astrology Remedies & <strong>Services</strong> •
           </h1>
-          <div className="relative py-3 grid  items-center justify-center grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-6 z-10">
+          <div className="relative py-3 grid  items-center justify-center grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6 z-10">
             {remedbox.map((rembx) => (
               <div
                 key={rembx.id}

@@ -100,7 +100,7 @@ export default function Kundlimain() {
                     <div className="kundli-side flex flex-col md:grid grid-cols-4 gap-5">
 
                         <div className="kundli-section col-span-3 flex flex-col gap-5">
-                            <div className=" w-[30rem] p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                            <div className="  p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
                                 <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
                                     Get Your free Janam Kundli
                                 </h2>

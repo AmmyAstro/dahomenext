@@ -72,7 +72,7 @@ export default function Freereport() {
                     // pagination={{ clickable: true }}
                     autoplay={false}
                     loop={true}
-                    className="mySiperfree w-[23rem] md:w-full"
+                    className="mySiperfree w-[22rem] md:w-full"
                     style={{
                         "--swiper-navigation-color": "#fff",
                         "--swiper-navigation-size": "25px",

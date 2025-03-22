@@ -125,14 +125,14 @@ export default function Navbarmob() {
         <ul className="flex items-center justify-evenly">
           {navbaritems.map((navit) => (
             <li key={navit.id} className="desk-nav-li">
-              <Link href={navit.href} className="flex flex-col items-center gap-2">
-                <Image className="img-head-nav" src={navit.src} width={40} height={40} alt={navit.alt} />
+              <Link href={navit.href} className="flex flex-col items-center gap-1">
+                <Image className="img-head-nav" src={navit.src} width={35} height={35} alt={navit.alt} />
                 <span className="head-spn text-[#000] text-xs">{navit.ulname}</span>
               </Link>
             </li>
           ))}
            <li className="drop-free-new">
-          <Link href="#" className="flex flex-col items-center gap-2 desk-nav-li">
+          <Link href="#" className="flex flex-col items-center gap-1 ">
             <Image
               className="img-head-nav"
               src="/ds-img/menu-online.webp"
@@ -218,7 +218,7 @@ export default function Navbarmob() {
           </ul>
         </li>
         <li className="drop-free-new">
-          <Link href="#" className="flex flex-col items-center gap-2 desk-nav-li">
+          <Link href="#" className="flex flex-col items-center gap-1 ">
             <Image
               className="img-head-nav"
               src="/ds-img/dhwani.webp"
