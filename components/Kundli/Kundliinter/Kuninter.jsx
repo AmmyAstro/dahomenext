@@ -6,7 +6,7 @@ import Kuninterimg from "./Kunfreeimg";
 import Sidebanner from "@/components/Smcompo/Sidebanner";
 import Bestsell from "@/components/Smcompo/Bestsell";
 import Ytvideo from "@/components/Smcompo/Ytvideo";
-import Kundlioth from "@/components/Smcompo/Kundlioth";
+// import Kundlioth from "@/components/Smcompo/Kundlioth";
 import Freereport from "@/components/Smcompo/Freereport";
 import Recastro from "@/components/Smcompo/Recastro";
 import FAQue from "@/components/FAQue";
@@ -25,14 +25,14 @@ const kundlicards = [
         name: "General Life Prediction",
         img: "/ds-img/fnn.jpg",
         named: "Get to know about your nature",
-        href:"/homepage/Inkundli/Inbasicchart",
+        href:"/homepage/Inkundli/Ingeneral",
 
     },
     {
         name: "Western Horoscope",
         img: "/ds-img/ology.webp",
         named: "Positions of celestial bodies ",
-        href:"/homepage/Inkundli/Inbasicchart",
+        href:"/homepage/Inkundli/Inwestern",
     },
     {
         name: "Dosha in Kundli",

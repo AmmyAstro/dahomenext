@@ -6,103 +6,15 @@ import Kuninterimg from "./Kunfreeimg";
 import Sidebanner from "@/components/Smcompo/Sidebanner";
 import Bestsell from "@/components/Smcompo/Bestsell";
 import Ytvideo from "@/components/Smcompo/Ytvideo";
-import Kundlioth from "@/components/Smcompo/Kundlioth";
 import Freereport from "@/components/Smcompo/Freereport";
 import Recastro from "@/components/Smcompo/Recastro";
 import FAQue from "@/components/FAQue";
 import Callchatsec from "@/components/CallChatsec/Callchatsec";
-import Zodhoro from "@/components/Zodhoro/Zodhoro";
 import Basicdetail from "./Basicdetail";
 
 
 
-const kundlicards = [
-  {
-    name: "Birth Chart/ Kundli",
-    img: "/ds-img/k1.png",
-    named: "Planet positions & various charts",
-  },
-  {
-    name: "General Life Prediction",
-    img: "/ds-img/fnn.jpg",
-    named: "Get to know about your nature",
-  },
-  {
-    name: "Western Horoscope",
-    img: "/ds-img/ology.webp",
-    named: "Positions of celestial bodies ",
-  },
-  {
-    name: "Dosha in Kundli",
-    img: "/ds-img/k3.png",
-    named: "Do you have any Kundli Dosh?",
-  },
-  {
-    name: "Match Horoscope",
-    img: "/ds-img/mh.webp",
-    named: "Match Horoscope (Guna Milan)",
-  },
-  {
-    name: "Numerology",
-    img: "/ds-img/num.webp",
-    named: "Your Lucky number is...",
-  },
-  {
-    name: "My Day Today",
-    img: "/ds-img/k5.webp",
-    named: "Get predictions about the day",
-  },
-  {
-    name: "Year Analysis(Varshphal)",
-    img: "/ds-img/k6.png",
-    named: "How will this year for you?",
-  },
-  {
-    name: "Kalsharp Dosh",
-    img: "/ds-img/k7.png",
-    named: "How Kalsharp dosh effect you?",
-  },
-  {
-    name: "Career",
-    img: "/ds-img/k8.png",
-    named: "Get predictions about your Career",
-  },
-  {
-    name: "Nakshatra",
-    img: "/ds-img/nak.jpg",
-    named: "Get to know about your Nakshatra",
-  },
-  {
-    name: "Love",
-    img: "/ds-img/klii.png",
-    named: "How is your Love Life?",
-  },
-  {
-    name: "Sade Sati",
-    img: "/ds-img/k11a.png",
-    named: "How Sade Sati effect you?",
-  },
-  {
-    name: "Lal Kitab Horoscope",
-    img: "/ds-img/klf.png",
-    named: "Get your Life Report as pdf",
-  },
-  {
-    name: "Ascendant Report",
-    img: "/ds-img/k5.png",
-    named: "Get your Life Report as pdf",
-  },
-  {
-    name: "GocharPhal (Transit)",
-    img: "/ds-img/transit.png",
-    named: "Position of Planets",
-  },
-  {
-    name: "Char Dasha",
-    img: "/ds-img/k11.png",
-    named: "Timing events based on planets",
-  },
-]
+
 
 
 export default function Basichart() {

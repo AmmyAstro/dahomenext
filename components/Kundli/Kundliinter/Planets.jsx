@@ -164,51 +164,169 @@ const planetarr = [
 	}
 ]
 
+const vim_dasha = [
+	{
+		"planet": "Ketu",
+		"planet_id": 8,
+		"start": "2-5-1994  ",
+		"end": "2-5-2001 "
+	},
+	{
+		"planet": "Venus",
+		"planet_id": 5,
+		"start": "2-5-2001 ",
+		"end": "2-5-2021 "
+	},
+	{
+		"planet": "Sun",
+		"planet_id": 0,
+		"start": "2-5-2021 ",
+		"end": "2-5-2027  "
+	},
+	{
+		"planet": "Moon",
+		"planet_id": 1,
+		"start": "2-5-2027  ",
+		"end": "2-5-2037 "
+	},
+	{
+		"planet": "Mars",
+		"planet_id": 2,
+		"start": "2-5-2037 ",
+		"end": "2-5-2044 "
+	},
+	{
+		"planet": "Rahu",
+		"planet_id": 7,
+		"start": "2-5-2044 ",
+		"end": "2-5-2062  "
+	},
+	{
+		"planet": "Jupiter",
+		"planet_id": 4,
+		"start": "2-5-2062  ",
+		"end": "2-5-2078  "
+	},
+	{
+		"planet": "Saturn",
+		"planet_id": 6,
+		"start": "2-5-2078  ",
+		"end": "2-5-2097 "
+	},
+	{
+		"planet": "Mercury",
+		"planet_id": 3,
+		"start": "2-5-2097 ",
+		"end": "3-5-2114  "
+	}
+]
+const planets =[
+	{
+		"nm": "GOOD",
+		"pla":"Mars, Venus",		
+	},
+	{
+		"nm": "BAD",
+		"pla":"Venus, Venus, Moon"	,	
+	},
+	{
+		"nm": "KILLER",
+		"pla":"Venus, Jupiter"	,	
+	},
+	{
+		"nm": "YOGAKARAKA",
+		"pla":"Saturn"	,	
+	}
+]
+
 function roundUp(num, decimalPlaces) {
-    const factor = Math.pow(10, decimalPlaces);
-    return Math.ceil(num * factor) / factor;
-  }
+	const factor = Math.pow(10, decimalPlaces);
+	return Math.ceil(num * factor) / factor;
+}
 export default function Planets() {
-    //   const [activeCategory, setActiveCategory] = useState(0);
+	//   const [activeCategory, setActiveCategory] = useState(0);
 
-    return (
-        <section className="basic-details-main">
-            <div className="flex  gap-5">
+	return (
+		<section className="basic-details-main">
+			<div className="flex  gap-5 flex-col">
 
-                <div className="basic-det w-full">
-                    <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Planets Details</h5>
-                    <div className="basic-box flex flex-col gap-3 text-[#000]">
-                        <div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2">
-                            <h5 className="text-sm font-semibold">Planet</h5>
-                            <h5 className="text-sm font-semibold">Sign</h5>
-                            <h5 className="text-sm font-semibold">Sign Lord</h5>
-                            <h5 className="text-sm font-semibold">Nakshatra</h5>
-                            <h5 className="text-sm font-semibold">Naksh Lord	</h5>
-                            <h5 className="text-sm font-semibold">Degree</h5>
-                            <h5 className="text-sm font-semibold">Retro(R)</h5>
-                            <h5 className="text-sm font-semibold">Awastha</h5>
-                            <h5 className="text-sm font-semibold">House</h5>
-                        </div>
+				<div className="basic-det w-full">
+					<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Planets Details</h5>
+					<div className="basic-box flex flex-col gap-3 text-[#000]">
+						<div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2">
+							<h5 className="text-sm font-semibold">Planet</h5>
+							<h5 className="text-sm font-semibold">Sign</h5>
+							<h5 className="text-sm font-semibold">Sign Lord</h5>
+							<h5 className="text-sm font-semibold">Nakshatra</h5>
+							<h5 className="text-sm font-semibold">Naksh Lord	</h5>
+							<h5 className="text-sm font-semibold">Degree</h5>
+							<h5 className="text-sm font-semibold">Retro(R)</h5>
+							<h5 className="text-sm font-semibold">Awastha</h5>
+							<h5 className="text-sm font-semibold">House</h5>
+						</div>
 
-                        {planetarr.map((plan, index) => (
-                            <div key={index} className="basic-card grid grid-cols-9 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                              <span className="text-sm">{plan.name}</span>
-                              <span className="text-sm">{plan.sign}</span>
-                              <span className="text-sm">{plan.signLord}</span>
-                              <span className="text-sm">{plan.nakshatra}</span>
-                              <span className="text-sm">{plan.nakshatraLord}</span>
-                              <span className="text-sm">{roundUp(plan.normDegree,3)}</span>
-                              <span className="text-sm">{plan.isRetro}</span>
-                              <span className="text-sm">{plan.planet_awastha}</span>
-                              <span className="text-sm">{plan.house}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+						{planetarr.map((plan, index) => (
+							<div key={index} className="basic-card grid grid-cols-9 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+								<span className="text-sm">{plan.name}</span>
+								<span className="text-sm">{plan.sign}</span>
+								<span className="text-sm">{plan.signLord}</span>
+								<span className="text-sm">{plan.nakshatra}</span>
+								<span className="text-sm">{plan.nakshatraLord}</span>
+								<span className="text-sm">{roundUp(plan.normDegree, 3)}</span>
+								<span className="text-sm">{plan.isRetro}</span>
+								<span className="text-sm">{plan.planet_awastha}</span>
+								<span className="text-sm">{plan.house}</span>
+							</div>
+						))}
+					</div>
+				</div>
 
 
-            </div>
-        </section>
+				<div className="vim-planet grid grid-cols-2 gap-3">
 
-    );
+					<div className="vimh-det ">
+						<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Vimshotri Dasha</h5>
+						<div className="basic-box flex flex-col gap-3 text-[#000]">
+							<div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-5 py-2">
+								<h5 className="text-sm font-semibold">Planet</h5>
+								<h5 className="text-sm font-semibold">Start Date </h5>
+								<h5 className="text-sm font-semibold">End Date</h5>
+								<h5 className="text-sm font-semibold">Next</h5>
+							</div>
+
+							{vim_dasha.map((vim, index) => (
+								<div key={index} className="basic-card grid grid-cols-4 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+									<span className="text-sm">{vim.planet}</span>
+									<span className="text-sm">{vim.start}</span>
+									<span className="text-sm">{vim.end}</span>
+									<span className="text-sm">{vim.nxt}</span>
+
+								</div>
+							))}
+						</div>
+					</div>
+
+					<div className="planets-det">
+						<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Planet Nature</h5>
+						<div className="pla-det-bx gap-5 flex flex-col justify-center justify-self-center">
+							{planets.map((pln,index) =>(
+
+							
+							<div key={index} className="flex gap-5 text-[#000] text-sm">
+								<h5 className="bg-purple-400 rounded-lg px-5 py-2">{pln.nm} : </h5>
+								<span className="bg-purple-200 rounded-lg px-5 py-2"> {pln.pla}</span>
+							</div>
+							))}
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</section>
+
+	);
 }
