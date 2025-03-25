@@ -23,25 +23,20 @@ export default function Western() {
         {
             name: "Numerology",
             img: "/ds-img/num.webp",
-            href: "/homepage/Inlovecat",
+            href: "/homepage/Inkundli/Innumero",
             clr: "#ddd6ff",
         },
-        {
-            name: "Synastry",
-            img: "/ds-img/love-and-romance.png",
-            href: "/homepage/Inlovecat",
-            clr: "#f6cfff",
-        },
+     
         {
             name: "Compatibility",
             img: "/ds-img/not-compatible.png",
-            href: "/homepage/Inlovecat",
+            href: "/homepage/Inkundli/Incompat",
             clr: "#e9d4ff",
         },
         {
             name: "Solar Return",
             img: "/ds-img/astrologylove.png",
-            href: "/homepage/Inlovecat",
+            href: "/homepage/Inkundli/Insolar",
             clr: "#e9d4ff",
         },
         {
@@ -82,7 +77,7 @@ export default function Western() {
                                     href={west.href}
                                     key={index}
                                     style={{ backgroundColor: west.clr }}
-                                    className={`service-card-top w-18 sm:w-32 xl:w-40  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
+                                    className={`service-card-top w-18 sm:w-32 xl:w-46  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
                                 >
                                     <Image
                                         src={west.img}
@@ -111,7 +106,7 @@ export default function Western() {
                 <div className="kundli-side flex flex-col items-center justify-start gap-3">
                     <Ytvideo />
                     <Bestsell />
-                    <Sidebanner />
+                    {/* <Sidebanner /> */}
                 </div>
             </div>
 

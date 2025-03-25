@@ -73,14 +73,14 @@ export default function General() {
                         </div>
                     </div>
 
-                    
+
                     <div className="general-life">
-                        <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Personal Day Prediction</h5>
+                        <h5 className="p-5 text-center justify-self-center text-xl text-[#000]  ">Personal Day Prediction</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-300 px-5 py-1.5"><span>Personal Day Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-200 px-5 py-1.5"><span>Considered Date </span> : <span>{perm.consim}</span></span>
+                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Day Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Date </span> : <span>{perm.consim}</span></span>
                                     <p className="text-[#000] text-sm " >{perm.rep} </p>
                                 </div>
                             ))}
@@ -92,22 +92,22 @@ export default function General() {
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-300 px-5 py-1.5"><span>Personal Month Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-200 px-5 py-1.5"><span>Considered Month </span> : <span>{perm.consim}</span></span>
+                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Month Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Month </span> : <span>{perm.consim}</span></span>
                                     <p className="text-[#000] text-sm " >{perm.rep} </p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    
+
                     <div className="general-life">
                         <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Personal Year Prediction</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-300 px-5 py-1.5"><span>Personal Year Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-200 px-5 py-1.5"><span>Considered Year </span> : <span>{perm.consim}</span></span>
+                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Year Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Year </span> : <span>{perm.consim}</span></span>
                                     <p className="text-[#000] text-sm " >{perm.rep} </p>
                                 </div>
                             ))}
@@ -127,7 +127,7 @@ export default function General() {
                     <Kundliother />
                     <Bestsell />
                     <Sidebanner />
-                    <Ytvideo/>
+                    <Ytvideo />
                 </div>
             </div>
 
