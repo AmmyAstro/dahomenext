@@ -64,12 +64,12 @@ const kundlicards = [
         named: "How will this year for you?",
         href:"/homepage/Inkundli/Inbasicchart",
     },
-    {
-        name: "Kalsharp Dosh",
-        img: "/ds-img/k7.png",
-        named: "How Kalsharp dosh effect you?",
-        href:"/homepage/Inkundli/Inbasicchart",
-    },
+    // {
+    //     name: "Kalsharp Dosh",
+    //     img: "/ds-img/k7.png",
+    //     named: "How Kalsharp dosh effect you?",
+    //     href:"/homepage/Inkundli/Inbasicchart",
+    // },
     {
         name: "Career",
         img: "/ds-img/k8.png",

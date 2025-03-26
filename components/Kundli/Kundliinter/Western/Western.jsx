@@ -42,13 +42,13 @@ export default function Western() {
         {
             name: "Transit",
             img: "/ds-img/galaxy.png",
-            href: "/homepage/Inlovecat",
+            href: "/homepage/Inkundli/Intransit",
             clr: "#ddd6ff",
         },
         {
             name: "Moon Phases",
             img: "/ds-img/esoteric.png",
-            href: "/homepage/Inlovecat",
+            href: "/homepage/Inkundli/Inlunar",
             clr: "#f6cfff",
         },
 
