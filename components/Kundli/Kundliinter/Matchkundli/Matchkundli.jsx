@@ -11,54 +11,13 @@ import Freereport from "@/components/Smcompo/Freereport";
 import Recastro from "@/components/Smcompo/Recastro";
 import FAQue from "@/components/FAQue";
 import Callchatsec from "@/components/CallChatsec/Callchatsec";
+import Personal from "@/components/Smcompo/Personal";
+import Kundlioth from "@/components/Smcompo/Kundlioth";
+import Kundliother from "@/components/Smcompo/Kunother";
 
-const comparr = [
-    {
-        id: 0,
-        name: "Friendship Report",
-        src: "/ds-img/handshake.png",
-        cont: "friendship paragraph",
-    },
-    {
-        id: 1,
-        name: "Destiny Report",
-        src: "/ds-img/handshake.png",
-        cont: "destiny paragraph",
-    },
-    {
-        id: 2,
-        name: "Love Compatibility ",
-        src: "/ds-img/handshake.png",
-        cont: "love compat paragraph",
-    },
-    {
-        id: 3,
-        name: "Couple Forecast",
-        src: "/ds-img/handshake.png",
-        cont: "couple forecast paragraph",
-    },
-    {
-        id: 4,
-        name: "Romantic Personality",
-        src: "/ds-img/handshake.png",
-        cont: "romantic personality paragraph",
-    },
-    {
-        id: 5,
-        name: "Zodiac Compatibility",
-        src: "/ds-img/handshake.png",
-        cont: "zodiac compatibility paragraph",
-        signt: "Your Zodiac Sign",
-        sign: "Aries",
-        signp: "Your Partner's Zodiac Sign",
-        signpt: "Venus",
-        zcomp: "Zodiac Compatibility",
-        zcompper: "80%",
-    },
 
-]
 
-export default function Compatwest() {
+export default function Matchkundli() {
     const [formData, setFormData] = useState({
         name: "",
         dobDay: "",
@@ -99,7 +58,6 @@ export default function Compatwest() {
     const hours = Array.from({ length: 24 }, (_, i) => i + 1);
     const minutesAndSeconds = Array.from({ length: 60 }, (_, i) => i);
 
-    const [activeCompat, setCompat] = useState(0);
 
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
@@ -109,6 +67,8 @@ export default function Compatwest() {
 
             <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 py-5">
                 <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
+                    <h5 className="text-xl text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> - Find your right one, through matchmaking
+                    </h5>
                     <section className="basic-details-main w-full">
 
                         <div className="get-compat flex flex-col gap-5 ">
@@ -409,55 +369,60 @@ export default function Compatwest() {
                                 <Link href={"/homepage/Inkuinter"}>
                                     <button
                                         type="submit"
-                                        className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
-                                    >
-                                        Submit
+                                        className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]">
+                                        Match Your Kundli
                                     </button></Link>
                             </div>
                         </div>
 
 
-                        <div className="result-compat text-[#000] flex flex-col gap-5 mt-5">
+                        <div className="result-compat border border-gray-400 rounded-lg p-5  text-[#000] flex flex-col gap-5 mt-5">
 
-                            <h5 className="text-xl text-center">Compatiblity Reports</h5>
-
-                            <div className="comp-repo flex items-center justify-center flex-wrap gap-5">
-
-                                {comparr.map((comp, index) => (
-                                    <div key={index} onClick={() => setCompat(comp.id)}
-                                        className={`bg-purple-300 flex items-center text-[#000] border rounded-lg w-60 justify-center gap-2 px-4 p-1 cursor-pointer ${activeCompat === comp.id
-                                            ? "border border-violet-200 shadow-lg" : "border border-purple-300"}`}   >
-
-                                        <Image
-                                            src={comp.src}
-                                            width={30}
-                                            height={30}
-                                            alt="compatibility report"
-                                            className=""
-                                        />
-                                        <span className="text-sm">{comp.name}</span>
-
-                                    </div>
-
-                                ))}
-
+                            <div className="flex flex-col gap-2">
+                                <h5 className="text-[#000] text-base text-center"><span className="text-red-400 font-semibold">Kundli Milan & Gun Milan</span> to Check Possibilities of Marriage</h5>
+                                <span className="text-sm text-[#000]">
+                                    <p>Kundli milan or kundali matching is an important consideration to make when you decide to get married. Kundli matching, also called Gun matching or Horoscope matching is the first step towards marriage when the parents decide to match the kundlis of the girl and the boy to ensure the couple is compatible. The gun milan exercise has been a part of India's culture for 1000s of years now and continues to be so.</p>
+                                    <p>So, if you too are the lucky one who is planning to get married, and hence looking for a horoscope matching with someone you have started liking, then Astrotalk can help you. The Kundali milan online software on Astrotalk has been prepared by the top astrologers of Astrotalk. The software caters to the free Kundli milan needs of the individuals and gives you insights; such as the number of guns matching for the girl and the boy, what they are compatible in, what their future would be like if they get married, and so much more. The online gun milan software can save you time and the hassle of going out to look for an astrologer to get the gun milan exercise done. Also, in case you have any doubts about the free kundali milan offered by Astrotalk, you can always connect with the astrologers on board and get those doubts sorted for yourself.</p>
+                                </span>
                             </div>
 
-                            <div className="comp-rep-det">
-                                <div className="compat-det border border-purple-300 rounded-lg p-3 flex flex-col gap-4">
-                                    {comparr[activeCompat].id === 5 && (
-                                        <div className="text-sm flex flex-col gap-2">
-                                            <span className="flex"><span>{comparr[activeCompat].signt} : </span> <span>{comparr[activeCompat].sign}</span></span>
-                                            <span className="flex"><span>{comparr[activeCompat].signp} : </span> <span>{comparr[activeCompat].signpt}</span></span>
-                                            <span className="flex"><span>{comparr[activeCompat].zcomp} : </span> <span>{comparr[activeCompat].zcompper}</span></span>
+                            <div className="flex flex-col gap-2">
+                                <h5 className="text-[#000] text-base text-center">What happens during <span className="text-red-400 font-semibold">Kundli Milan & Gun Milan</span> </h5>
+                                <span className="text-sm text-[#000]">
+                                    <p>The whole process of horoscope matching is called AshtaKoot Milan in Vedic astrology. Here, Ashta means 8 and Kootas are categories. These eight categories of parameters depict different aspects of life. These 8 parameters are considered for measuring one’s compatibility with the other person. Each of these parameters carry some points, which in total make 36 gunas. The more the gunas match, the more compatible you are with the other person in your life.</p>
+                                    <div className="flex flex-col gap-1 py-2">
+                                        <span>The eight parameters or categories among which the points have been divided are:-</span>
+                                        <ul>
+                                            <li><b>Varna</b> - it is the classification of people in four categories namely Brahmin, Kshatriya, Vaishya and Shudra.</li>
+                                            <li><b>Vashya</b> - the Vashya denotes the power or dominance in Vedic astrology. Vahsya classifies a person into five types – Human, Wild Animals, Small animals, Waterborne animals and Insect.</li>
+                                            <li><b>Tara</b> - it is used to denote the birth star compatibility of the person.</li>
+                                            <li><b>Yoni</b> - is the sexual compatibility the two people would share with each other.</li>
+                                            <li><b>Rasyadhipati</b> - This defines who is the Lord of the zodiac.</li>
+                                            <li><b>Gana</b> - The three Ganas in Astrology are; Dev, Manav and Rakshasa.</li>
+                                            <li><b>Rashi</b> - This category denotes love that the two people would share. The category takes into account the exact position of the Moon in the bride’s and groom’s horoscope.</li>
+                                            <li><b>Nadi</b> - Nadi Koot is related to the health of the bride and the groom. The three Nadis in astrology are Vata (air), Pitta (bile) and Kappa (phlegm).</li>
+                                        </ul>
+
+                                        <div className="bg-purple-100 rounded-lg shadow-lg flex flex-col gap-1 px-15 py-5">
+                                            <span className="bg-purple-400 rounded-lg px-10 py-1 flex items-center justify-between "><h5 className="font-semibold">Koota</h5><span>Maximum Points</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Varna</h5><span>1</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Vasya/Vashya</h5><span>2</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Tara/Dina </h5><span>3</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Yoni</h5><span>4</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Grah Maitri/Rasyadipati </h5><span>5</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Gana</h5><span>6</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Rashi or Bhakoota </h5><span>7</span></span>
+                                            <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Nadi</h5><span>8</span></span>
+                                            <span className="bg-purple-400 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Total</h5><span>36</span></span>
+
+
+
                                         </div>
-                                    )}
-                                    <p className="text-sm" >{comparr[activeCompat].cont}</p>
-
-
-                                </div>
+                                    </div>
+                                </span>
                             </div>
 
+                            <Personal/>
 
                         </div>
 
@@ -466,6 +431,7 @@ export default function Compatwest() {
 
                 <div className="kundli-side flex flex-col items-center justify-start gap-3">
                     <Ytvideo />
+                    <Kundliother/>
                     <Bestsell />
                     <Sidebanner />
                 </div>

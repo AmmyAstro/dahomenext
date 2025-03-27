@@ -38,13 +38,13 @@ const kundlicards = [
         name: "Dosha in Kundli",
         img: "/ds-img/k3.png",
         named: "Do you have any Kundli Dosh?",
-        href:"/homepage/Inkundli/Inbasicchart",
+        href:"/homepage/Inkundli/Indosha",
     },
     {
         name: "Match Horoscope",
         img: "/ds-img/mh.webp",
-        named: "Match Horoscope (Guna Milan)",
-        href:"/homepage/Inkundli/Inbasicchart",
+        named: "Kundli Milan (Guna Milan)",
+        href:"/homepage/Inkundli/Inmatch",
     },
     {
         name: "Numerology",
