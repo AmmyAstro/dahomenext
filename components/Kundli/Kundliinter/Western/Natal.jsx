@@ -306,7 +306,8 @@ export default function Natal() {
 
                             <div className="basic-det w-full">
                                 <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Western Horoscope</h5>
-                                <div className="basic-box flex flex-col gap-3 text-[#000]">
+                                <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
                                     <div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2">
                                         <h5 className="text-sm font-semibold">Planet</h5>
                                         <h5 className="text-sm font-semibold">Sign</h5>
@@ -335,6 +336,7 @@ export default function Natal() {
                                         </div>
                                     ))}
                                 </div>
+                                </div>
                             </div>
 
 
@@ -345,7 +347,7 @@ export default function Natal() {
                                         <div key={index} className="zod-det-mob-card">
                                             <p
                                                 onClick={() => setActiveNatal(natal.id)}
-                                                className={`bg-gradient-to-r from-[#ffffff] to-[#fffffff4] flex items-center border text-[#000] rounded-lg shadow-lg justify-center md:w-48 w-38  py-2  gap-2 cursor-pointer transition-all ${activeNatal === natal.id
+                                                className={`bg-gradient-to-r from-[#ffffff] to-[#fffffff4] flex items-center border text-[#000] rounded-lg shadow-lg justify-center md:w-48 w-34  py-2  gap-2 cursor-pointer transition-all ${activeNatal === natal.id
                                                     ? "border border-white shadow-lg"
                                                     : ""
                                                     }`}

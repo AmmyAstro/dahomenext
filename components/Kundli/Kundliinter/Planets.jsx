@@ -256,8 +256,8 @@ export default function Planets() {
 					</h5>
 
 					{/* Add overflow-x-auto wrapper for scrolling on small screens */}
-					<div className="basic-box flex flex-col gap-3 text-[#000] overflow-x-scroll">
-						<div className="">
+					<div className="basic-box  gap-3 text-[#000] overflow-x-auto w-[22rem] md:w-full">
+						<div className="w-[50rem] md:w-full flex flex-col gap-1">
 							<div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2 text-nowrap">
 								<h5 className="text-sm font-semibold">Planet</h5>
 								<h5 className="text-sm font-semibold">Sign</h5>

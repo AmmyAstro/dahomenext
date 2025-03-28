@@ -46,7 +46,7 @@ export default function Kundlioth() {
     return (
         <section>
             <div className=" md:p-3 p-2 flex flex-col gap-3">
-                <div className="  items-center grid grid-cols-3 md:grid-col-4  justify-start gap-3 md:gap-5">
+                <div className="  items-center grid grid-cols-3 md:grid-cols-4  justify-start gap-3 md:gap-5">
                     {kundliother.map((kuoth, index) => (
                         <Link key={index} href="#" className="kundli-other-item  ">
                             <div className=" rounded-lg flex flex-col items-center justify-center gap-3">

@@ -212,7 +212,7 @@ export default function Astronewcard() {
 
                                             </div>
 
-                                            <div className="astrologer-price-skill p-2 bg-[#2f125475]   rounded-lg flex flex-col items-center justify-center">
+                                            <div className="astrologer-price-skill md:p-2 p-1 bg-[#2f125475]   rounded-lg flex flex-col items-center justify-center">
                                                 <div className="astro-name-exp flex flex-col items-center gap-1">
                                                     <h2 className=" sm:mt-1 text-sm sm:text-base font-bold">
                                                         {ascard.ulname}
@@ -245,7 +245,7 @@ export default function Astronewcard() {
                                                 <div className="astrologer-price-box flex items-center justify-center w-full pb-2">
                                                     <p className="mt-2 text-[10px] sm:text-xs font-semibold flex gap-1 items-center justify-center">
                                                         <span>Price : ₹ {ascard.prct}/min</span>
-                                                        <span className="text-red-500 text-[10px]  sm:text-xs line-through">
+                                                        <span className="text-red-400 text-[10px]  sm:text-xs line-through">
                                                             ₹ {ascard.prctf}/min
                                                         </span>
                                                     </p>

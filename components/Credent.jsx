@@ -89,7 +89,7 @@ export default function Credent() {
             {glances.map((glan) => (
               <div
                 key={glan.id}
-                className=" pro-card-top bg-[#fff] w-25 sm:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
+                className=" pro-card-top bg-[#fff] w-23 sm:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
               >
                 <Image
                   src={glan.src}

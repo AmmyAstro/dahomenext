@@ -39,7 +39,7 @@ export default function Bestsell() {
                         <div key={index} className="pop-img-txt flex-col items-center justify-items-center">
                             <Image
                                 alt="best seller image "
-                                className="kundli-imgs md:w-32 md:h-25 w-40 h-30 rounded-lg shadow-lg object-cover"
+                                className="kundli-imgs md:w-32 md:h-25 w-35 h-30 rounded-lg shadow-lg object-cover"
                                 loading="lazy"
                                 width={50}
                                 height={50}

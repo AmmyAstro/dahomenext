@@ -67,7 +67,7 @@ export default function Matchkundli() {
 
             <div className="kundli-items-box-side w-full flex flex-col  md:px-20 gap-5 py-5">
                 <div className="basic-kundli-charts  flex flex-col gap-2 items-center">
-                    <h5 className="text-sm text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> - Find your right one, through matchmaking
+                    <h5 className="text-sm md:text-xl text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> - Find your right one, through matchmaking
                     </h5>
                     <section className="basic-details-main w-full">
 

@@ -129,7 +129,7 @@ export default function Kundlimain() {
                                                 value={formData.gender}
                                                 onChange={handleChange}
                                                 required
-                                                className=" mt-1 w-[50%] p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
+                                                className=" mt-1 w-[50%] md:w-full p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
                                             >
                                                 <option value="">Select Gender</option>
                                                 <option value="Male">Male</option>

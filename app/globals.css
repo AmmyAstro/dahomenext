@@ -413,6 +413,7 @@ body {
 
 .pro-card-top {
   gap: 10px;
+  /* height: 6rem; */
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -970,6 +971,12 @@ body {
 /* media queries ************************************** */
 
 @media (319px <=width <=430px) {
+
+  /* credentials */
+  .pro-card-top {
+ height: 6rem;
+    gap: 2px;
+}
 
   .swiper-button-prev-astro,
 .swiper-button-next-astro {
