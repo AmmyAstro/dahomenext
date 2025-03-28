@@ -220,22 +220,22 @@ const vim_dasha = [
 		"end": "3-5-2114  "
 	}
 ]
-const planets =[
+const planets = [
 	{
 		"nm": "GOOD",
-		"pla":"Mars, Venus",		
+		"pla": "Mars, Venus",
 	},
 	{
 		"nm": "BAD",
-		"pla":"Venus, Venus, Moon"	,	
+		"pla": "Venus, Venus, Moon",
 	},
 	{
 		"nm": "KILLER",
-		"pla":"Venus, Jupiter"	,	
+		"pla": "Venus, Jupiter",
 	},
 	{
 		"nm": "YOGAKARAKA",
-		"pla":"Saturn"	,	
+		"pla": "Saturn",
 	}
 ]
 
@@ -251,55 +251,62 @@ export default function Planets() {
 			<div className="flex  gap-5 flex-col">
 
 				<div className="basic-det w-full">
-					<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Planets Details</h5>
-					<div className="basic-box flex flex-col gap-3 text-[#000]">
-						<div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2">
-							<h5 className="text-sm font-semibold">Planet</h5>
-							<h5 className="text-sm font-semibold">Sign</h5>
-							<h5 className="text-sm font-semibold">Sign Lord</h5>
-							<h5 className="text-sm font-semibold">Nakshatra</h5>
-							<h5 className="text-sm font-semibold">Naksh Lord	</h5>
-							<h5 className="text-sm font-semibold">Degree</h5>
-							<h5 className="text-sm font-semibold">Retro(R)</h5>
-							<h5 className="text-sm font-semibold">Awastha</h5>
-							<h5 className="text-sm font-semibold">House</h5>
-						</div>
+					<h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">
+						Planets Details
+					</h5>
 
-						{planetarr.map((plan, index) => (
-							<div key={index} className="basic-card grid grid-cols-9 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-								<span className="text-sm">{plan.name}</span>
-								<span className="text-sm">{plan.sign}</span>
-								<span className="text-sm">{plan.signLord}</span>
-								<span className="text-sm">{plan.nakshatra}</span>
-								<span className="text-sm">{plan.nakshatraLord}</span>
-								<span className="text-sm">{roundUp(plan.normDegree, 3)}</span>
-								<span className="text-sm">{plan.isRetro}</span>
-								<span className="text-sm">{plan.planet_awastha}</span>
-								<span className="text-sm">{plan.house}</span>
+					{/* Add overflow-x-auto wrapper for scrolling on small screens */}
+					<div className="basic-box flex flex-col gap-3 text-[#000] overflow-x-scroll">
+						<div className="">
+							<div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2 text-nowrap">
+								<h5 className="text-sm font-semibold">Planet</h5>
+								<h5 className="text-sm font-semibold">Sign</h5>
+								<h5 className="text-sm font-semibold">Sign Lord</h5>
+								<h5 className="text-sm font-semibold">Nakshatra</h5>
+								<h5 className="text-sm font-semibold">Naksh Lord</h5>
+								<h5 className="text-sm font-semibold">Degree</h5>
+								<h5 className="text-sm font-semibold">Retro(R)</h5>
+								<h5 className="text-sm font-semibold">Awastha</h5>
+								<h5 className="text-sm font-semibold">House</h5>
 							</div>
-						))}
+
+							{planetarr.map((plan, index) => (
+								<div key={index} className="basic-card grid grid-cols-9 gap-4 bg-purple-200 rounded-lg px-5 py-2 text-nowrap">
+									<span className="text-sm">{plan.name}</span>
+									<span className="text-sm">{plan.sign}</span>
+									<span className="text-sm">{plan.signLord}</span>
+									<span className="text-sm">{plan.nakshatra}</span>
+									<span className="text-sm">{plan.nakshatraLord}</span>
+									<span className="text-sm">{roundUp(plan.normDegree, 3)}</span>
+									<span className="text-sm">{plan.isRetro}</span>
+									<span className="text-sm">{plan.planet_awastha}</span>
+									<span className="text-sm">{plan.house}</span>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 
 
-				<div className="vim-planet grid grid-cols-2 gap-3">
+
+				<div className="vim-planet grid md:grid-cols-2 grid-cols-1 gap-3">
 
 					<div className="vimh-det ">
 						<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Vimshotri Dasha</h5>
 						<div className="basic-box flex flex-col gap-3 text-[#000]">
 							<div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-5 py-2">
-								<h5 className="text-sm font-semibold">Planet</h5>
-								<h5 className="text-sm font-semibold">Start Date </h5>
-								<h5 className="text-sm font-semibold">End Date</h5>
-								<h5 className="text-sm font-semibold">Next</h5>
+								<h5 className="md:text-sm text-xs font-semibold">Planet</h5>
+								<h5 className="md:text-sm text-xs font-semibold">Start Date </h5>
+								<h5 className="md:text-sm text-xs font-semibold">End Date</h5>
+								<h5 className="md:text-sm text-xs font-semibold">Next</h5>
 							</div>
 
 							{vim_dasha.map((vim, index) => (
 								<div key={index} className="basic-card grid grid-cols-4 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-									<span className="text-sm">{vim.planet}</span>
-									<span className="text-sm">{vim.start}</span>
-									<span className="text-sm">{vim.end}</span>
-									<span className="text-sm">{vim.nxt}</span>
+									<span className="md:text-sm text-xs">{vim.planet}</span>
+									<span className="md:text-sm text-xs">{vim.start}</span>
+									<span className="md:text-sm text-xs">{vim.end}</span>
+									<span className="md:text-sm text-xs">{vim.nxt}</span>
 
 								</div>
 							))}
@@ -307,15 +314,15 @@ export default function Planets() {
 					</div>
 
 					<div className="planets-det">
-						<h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Planet Nature</h5>
-						<div className="pla-det-bx gap-5 flex flex-col justify-center justify-self-center">
-							{planets.map((pln,index) =>(
+						<h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Planet Nature</h5>
+						<div className="pla-det-bx gap-5 bg-purple-200 p-5 rounded-lg flex flex-col justify-center justify-self-center">
+							{planets.map((pln, index) => (
 
-							
-							<div key={index} className="flex gap-5 text-[#000] text-sm">
-								<h5 className="bg-purple-400 rounded-lg px-5 py-2">{pln.nm} : </h5>
-								<span className="bg-purple-200 rounded-lg px-5 py-2"> {pln.pla}</span>
-							</div>
+
+								<div key={index} className="flex gap-5 text-[#000] text-sm">
+									<h5 className="bg-purple-400 rounded-lg px-5 py-2 md:text-sm text-xs">{pln.nm} : </h5>
+									<span className="bg-purple-200 rounded-lg px-5 py-2 md:text-sm text-xs"> {pln.pla}</span>
+								</div>
 							))}
 						</div>
 					</div>

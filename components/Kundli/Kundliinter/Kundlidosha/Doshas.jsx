@@ -94,33 +94,33 @@ export default function Doshas() {
                             • <strong>Dosha In Kundli</strong> •
                         </h1>
 
-                        <div className="love-product-new flex flex-wrap gap-4">
+                        <div className="love-product-new flex flex-wrap justify-center gap-4">
                             {doshaarr.map((dosh, index) => (
                                 <Link
                                     href={dosh.href}
                                     key={index}
                                     style={{ backgroundColor: dosh.clr }}
-                                    className={`bg-gradient-to-r from-[#c54e5a6b] to-[#7042ac98] w-18 sm:w-32 xl:w-58  rounded-xl gap-1 shadow-lg p-3 py-3  text-center flex flex-col items-center justify-center`}
+                                    className={`bg-gradient-to-r from-[#c54e5a6b] to-[#7042ac98] w-40 justify-self-center sm:w-32 xl:w-58  rounded-xl gap-1 shadow-lg p-3 py-3  text-center flex flex-col items-center justify-center`}
                                 >
                                     <Image
                                         src={dosh.img}
-                                        className="w-7 h-7  sm:w-14 sm:h-14 mb-2 rounded-full"
+                                        className="w-10 h-10  sm:w-14 sm:h-14 mb-0 rounded-full"
                                         width={35}
                                         height={35}
                                         alt="Image 1"
                                         loading="lazy"
                                     />
-                                    <h3 className="sm:text-xs xl:text-base text-[13px] text-[#fff] font-semibold w-full rounded-full px-3 py-1">
+                                    <h3 className="sm:text-xs xl:text-base text-[12px] text-[#fff] font-semibold w-full rounded-full px-3 py-1">
                                         {dosh.name}
                                     </h3>
-                                    <div className="sm:text-xs xl:text-sm text-[13px] w-full  justify-center text-[#000] gap-3 flex items-center bg-[#fff] rounded-full px-3 py-1">
+                                    <div className="sm:text-xs xl:text-sm text-[11px] w-full  justify-center text-[#000] gap-3 flex items-center bg-[#fff] rounded-full px-3 py-1">
                                         <span>Present</span> : <span>{dosh.pre}</span>
                                     </div>
-                                    <button onClick={() => setActiveDosh(dosh.id)} className={`bg-[#9563c0db] rounded-full px-4 py-1 text-xs  mt-1 ${activeDosh === dosh.id ? "bg-[#fff] text-[#000]" : ""}`}>Know More</button>
+                                    <button onClick={() => setActiveDosh(dosh.id)} className={`bg-[#9563c0db] rounded-full px-4 py-1 text-xs  md:mt-1 ${activeDosh === dosh.id ? "bg-[#fff] text-[#000]" : ""}`}>Know More</button>
 
                                 </Link>
                             ))}
-                            ;
+                            
 
                             <div className=" position-relative mt-4">
                                 <div className="horoscope_single_box rounded-lg border-2 border-violet-300 p-3">
@@ -134,10 +134,10 @@ export default function Doshas() {
                                                 src={doshaarr[activeDosh].img}
                                                 className="w-10 h-10"
                                             />
-                                            <span className="text-[#000] text-xl font-semibold">{doshaarr[activeDosh].name}</span>
+                                            <span className="text-[#000] text-sm md:text-sm font-semibold">{doshaarr[activeDosh].name}</span>
                                         </div>
-                                        <div className=" text-[#000]">
-                                            <span className="text-[#000]">Present</span> : <span className="bg-purple-300 text-[#fff] text-sm px-2 py-1 rounded-lg">{doshaarr[activeDosh].pre}</span>
+                                        <div className=" text-[#000] text-xs md:text-sm">
+                                            <span className="text-[#000]">Present</span> : <span className="bg-purple-300 text-[#fff]  px-2 py-1 rounded-lg">{doshaarr[activeDosh].pre}</span>
                                         </div>
                                     </div>
 
@@ -145,16 +145,16 @@ export default function Doshas() {
                                         <div className="flex flex-col items-start gap-1">
 
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold">Effectiveness of Manglik Dosha</span> : <span>{doshaarr[activeDosh].manglik_status}</span>
+                                                <span className=" font-semibold">Effectiveness of Manglik Dosha</span> : <span>{doshaarr[activeDosh].manglik_status}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold"> Percentage of Manglik Dosha</span> : <span>{doshaarr[activeDosh].percentage_manglik_present}%</span>
+                                                <span className=" font-semibold"> Percentage of Manglik Dosha</span> : <span>{doshaarr[activeDosh].percentage_manglik_present}%</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold"> Percentage Manglik after cancellation</span> : <span>{doshaarr[activeDosh].percentage_manglik_present}%</span>
+                                                <span className=" font-semibold"> Percentage Manglik after cancellation</span> : <span>{doshaarr[activeDosh].percentage_manglik_present}%</span>
                                             </div>
-                                            <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-3">
-                                                <span className="text-sm font-semibold">Manglik Report :</span>  <span> {doshaarr[activeDosh].manglik_report}</span>
+                                            <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
+                                                <span className=" font-semibold">Manglik Report :</span>  <span> {doshaarr[activeDosh].manglik_report}</span>
                                             </div>
                                         </div>
                                     )}
@@ -164,19 +164,19 @@ export default function Doshas() {
                                         <div className="flex flex-col items-start gap-1">
 
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold">Type of Kalsharp Dosha</span> : <span>{doshaarr[activeDosh].type}</span>
+                                                <span className=" font-semibold">Type of Kalsharp Dosha</span> : <span>{doshaarr[activeDosh].type}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold"> Particular name of Kalsharp Dosha</span> : <span>{doshaarr[activeDosh].namek}</span>
+                                                <span className=" font-semibold"> Particular name of Kalsharp Dosha</span> : <span>{doshaarr[activeDosh].namek}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-center gap-3">
-                                                <span className="text-sm font-semibold"> House Effected</span> : <span>{doshaarr[activeDosh].house_id}</span>
+                                                <span className=" font-semibold"> House Effected</span> : <span>{doshaarr[activeDosh].house_id}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
-                                                <span className="text-sm font-semibold">Kaalsharp Report :</span>  <span> {doshaarr[activeDosh].one_line}</span>
+                                                <span className=" font-semibold">Kaalsharp Report :</span>  <span> {doshaarr[activeDosh].one_line}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
-                                                <span className="text-sm font-semibold">Kaalsharp Main Report :</span>  <span> {doshaarr[activeDosh].report}</span>
+                                                <span className="font-semibold">Kaalsharp Main Report :</span>  <span> {doshaarr[activeDosh].report}</span>
                                             </div>
                                         </div>
                                     )}
@@ -185,13 +185,13 @@ export default function Doshas() {
                                         <div className="flex flex-col items-start gap-1">
 
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
-                                                <span className="text-sm font-semibold">What is Pitra Dosh :</span>  <span>{doshaarr[activeDosh].what_is_pitri_dosha}</span>
+                                                <span className=" font-semibold">What is Pitra Dosh :</span>  <span>{doshaarr[activeDosh].what_is_pitri_dosha}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
-                                                <span className="text-sm font-semibold"> Pitra Dosha Causes :</span>  <span>{doshaarr[activeDosh].rules_matched}</span>
+                                                <span className=" font-semibold"> Pitra Dosha Causes :</span>  <span>{doshaarr[activeDosh].rules_matched}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex flex-col items-start gap-1">
-                                                <span className="text-sm font-semibold"> Conclusion :</span> <span>{doshaarr[activeDosh].conclusion}</span>
+                                                <span className=" font-semibold"> Conclusion :</span> <span>{doshaarr[activeDosh].conclusion}</span>
                                             </div>
 
                                         </div>
@@ -201,13 +201,13 @@ export default function Doshas() {
                                         <div className="flex flex-col items-start gap-1">
 
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex  items-start gap-1">
-                                                <span className="text-sm font-semibold">Are you under the influence of SadeSati :</span>  <span>{doshaarr[activeDosh].is_undergoing_sadhesati}</span>
+                                                <span className=" font-semibold">Are you under the influence of SadeSati :</span>  <span>{doshaarr[activeDosh].is_undergoing_sadhesati}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex items-start gap-1">
-                                                <span className="text-sm font-semibold"> Saturn Sign :</span>  <span>{doshaarr[activeDosh].saturn_sign}</span>
+                                                <span className=" font-semibold"> Saturn Sign :</span>  <span>{doshaarr[activeDosh].saturn_sign}</span>
                                             </div>
                                             <div className="text-[#000] md:text-sm text-xs mt-2 flex  items-start gap-1">
-                                                <span className="text-sm font-semibold"> Moon Sign :</span> <span>{doshaarr[activeDosh].moon_sign}</span>
+                                                <span className=" font-semibold"> Moon Sign :</span> <span>{doshaarr[activeDosh].moon_sign}</span>
                                             </div>
 
                                         </div>

@@ -61,28 +61,28 @@ export default function Matchkundli() {
 
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            <div className="kundli-top-sec w-full">
+            <div className="kundli-top-sec ">
                 <Kuninterimg />
             </div>
 
-            <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 py-5">
-                <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
-                    <h5 className="text-xl text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> - Find your right one, through matchmaking
+            <div className="kundli-items-box-side w-full flex flex-col  md:px-20 gap-5 py-5">
+                <div className="basic-kundli-charts  flex flex-col gap-2 items-center">
+                    <h5 className="text-sm text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> - Find your right one, through matchmaking
                     </h5>
                     <section className="basic-details-main w-full">
 
                         <div className="get-compat flex flex-col gap-5 ">
-                            <div className="compat-patner grid grid-cols-2  gap-5">
+                            <div className="compat-patner grid md:grid-cols-2  gap-5">
 
-                                <div className="  p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
-                                    <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
+                                <div className="  md:p-6 p-2 py-3 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                                    <h2 className="md:text-xl text-center text-[#000] font-semibold md:mb-4 mb-2">
                                         Your Details
                                     </h2>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
-                                        <div className="flex flex-col md:flex-row items-center justify-between">
-                                            <div className="md:w-[100%] w-[25%]">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                        <div className="flex flex-col md:flex-row items-start justify-between">
+                                            <div className="w-full">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Name:
                                                 </label>
                                                 <input
@@ -92,7 +92,7 @@ export default function Matchkundli() {
                                                     onChange={handleChange}
                                                     required
                                                     placeholder="Enter your name..."
-                                                    className=" mt-1 p-2 shadow-lg rounded-full placeholder:text-xs text-sm text-[#666] bg-white outline-0 border-0 w-[100%]"
+                                                    className=" mt-1 p-1.5 md:p-2 shadow-lg rounded-full placeholder:text-xs text-sm text-[#666] bg-white outline-0 border-0 w-[100%]"
                                                 />
                                             </div>
 
@@ -100,7 +100,7 @@ export default function Matchkundli() {
 
                                         <div className="dob-dt flex flex-col gap-2 w-full  justify-between">
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Date of Birth:
                                                 </label>
                                                 <div className="flex space-x-2 ">
@@ -109,7 +109,7 @@ export default function Matchkundli() {
                                                         value={formData.dobDay}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Day</option>
                                                         {days.map((day) => (
@@ -123,7 +123,7 @@ export default function Matchkundli() {
                                                         value={formData.dobMonth}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Month</option>
                                                         {months.map((month, index) => (
@@ -137,7 +137,7 @@ export default function Matchkundli() {
                                                         value={formData.dobYear}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Year</option>
                                                         {years.map((year) => (
@@ -150,7 +150,7 @@ export default function Matchkundli() {
                                             </div>
 
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Birth Time:
                                                 </label>
                                                 <div className="flex space-x-2">
@@ -159,7 +159,7 @@ export default function Matchkundli() {
                                                         value={formData.birthHour}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 bg-white outline-0 border-0 text-[#555] rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">HH</option>
                                                         {hours.map((hour) => (
@@ -173,7 +173,7 @@ export default function Matchkundli() {
                                                         value={formData.birthMinute}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">MM</option>
                                                         {minutesAndSeconds.map((min) => (
@@ -187,7 +187,7 @@ export default function Matchkundli() {
                                                         value={formData.birthSecond}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" >SS</option>
                                                         {minutesAndSeconds.map((sec) => (
@@ -200,8 +200,8 @@ export default function Matchkundli() {
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <label className="block text-sm text-[#666] font-medium">
+                                        <div className="w-full">
+                                            <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                 Birth Place:
                                             </label>
                                             <input
@@ -211,7 +211,7 @@ export default function Matchkundli() {
                                                 onChange={handleChange}
                                                 required
                                                 placeholder="Enter Birth place..."
-                                                className="md:w-full w-50% mt-1 p-2 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                                className="md:w-full w-full mt-1 md:p-2 p-1.5 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
                                             />
                                         </div>
 
@@ -219,15 +219,15 @@ export default function Matchkundli() {
                                     </form>
                                 </div>
 
-                                <div className="  p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
-                                    <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
+                                <div className="  md:p-6 p-2 py-3 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                                    <h2 className="md:text-xl  text-center text-[#000] font-semibold mb-4">
                                         Your Partner's Details
                                     </h2>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
-                                        <div className="flex flex-col md:flex-row items-center justify-between">
-                                            <div className="md:w-[100%] w-[25%]">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                        <div className="flex flex-col md:flex-row items-start justify-between">
+                                            <div className="w-full">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Name:
                                                 </label>
                                                 <input
@@ -245,7 +245,7 @@ export default function Matchkundli() {
 
                                         <div className="dob-dt flex flex-col gap-2 w-full  justify-between">
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Date of Birth:
                                                 </label>
                                                 <div className="flex space-x-2 ">
@@ -254,7 +254,7 @@ export default function Matchkundli() {
                                                         value={formData.dobDay}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Day</option>
                                                         {days.map((day) => (
@@ -268,7 +268,7 @@ export default function Matchkundli() {
                                                         value={formData.dobMonth}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Month</option>
                                                         {months.map((month, index) => (
@@ -282,7 +282,7 @@ export default function Matchkundli() {
                                                         value={formData.dobYear}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Year</option>
                                                         {years.map((year) => (
@@ -295,7 +295,7 @@ export default function Matchkundli() {
                                             </div>
 
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Birth Time:
                                                 </label>
                                                 <div className="flex space-x-2">
@@ -304,7 +304,7 @@ export default function Matchkundli() {
                                                         value={formData.birthHour}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 bg-white outline-0 border-0 text-[#555] rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">HH</option>
                                                         {hours.map((hour) => (
@@ -318,7 +318,7 @@ export default function Matchkundli() {
                                                         value={formData.birthMinute}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">MM</option>
                                                         {minutesAndSeconds.map((min) => (
@@ -332,7 +332,7 @@ export default function Matchkundli() {
                                                         value={formData.birthSecond}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" >SS</option>
                                                         {minutesAndSeconds.map((sec) => (
@@ -346,7 +346,7 @@ export default function Matchkundli() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm text-[#666] font-medium">
+                                            <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                 Birth Place:
                                             </label>
                                             <input
@@ -356,7 +356,7 @@ export default function Matchkundli() {
                                                 onChange={handleChange}
                                                 required
                                                 placeholder="Enter Birth place..."
-                                                className="md:w-full w-50% mt-1 p-2 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                                className="w-full mt-1 md:p-2 p-1.5 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
                                             />
                                         </div>
 
@@ -369,7 +369,7 @@ export default function Matchkundli() {
                                 <Link href={"/homepage/Inkuinter"}>
                                     <button
                                         type="submit"
-                                        className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]">
+                                        className="md:w-[20rem] text-sm w-[10rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]">
                                         Match Your Kundli
                                     </button></Link>
                             </div>
@@ -380,7 +380,7 @@ export default function Matchkundli() {
 
                             <div className="flex flex-col gap-2">
                                 <h5 className="text-[#000] text-base text-center"><span className="text-red-400 font-semibold">Kundli Milan & Gun Milan</span> to Check Possibilities of Marriage</h5>
-                                <span className="text-sm text-[#000]">
+                                <span className="text-xs md:text-sm text-[#000]">
                                     <p>Kundli milan or kundali matching is an important consideration to make when you decide to get married. Kundli matching, also called Gun matching or Horoscope matching is the first step towards marriage when the parents decide to match the kundlis of the girl and the boy to ensure the couple is compatible. The gun milan exercise has been a part of India's culture for 1000s of years now and continues to be so.</p>
                                     <p>So, if you too are the lucky one who is planning to get married, and hence looking for a horoscope matching with someone you have started liking, then Astrotalk can help you. The Kundali milan online software on Astrotalk has been prepared by the top astrologers of Astrotalk. The software caters to the free Kundli milan needs of the individuals and gives you insights; such as the number of guns matching for the girl and the boy, what they are compatible in, what their future would be like if they get married, and so much more. The online gun milan software can save you time and the hassle of going out to look for an astrologer to get the gun milan exercise done. Also, in case you have any doubts about the free kundali milan offered by Astrotalk, you can always connect with the astrologers on board and get those doubts sorted for yourself.</p>
                                 </span>
@@ -388,7 +388,7 @@ export default function Matchkundli() {
 
                             <div className="flex flex-col gap-2">
                                 <h5 className="text-[#000] text-base text-center">What happens during <span className="text-red-400 font-semibold">Kundli Milan & Gun Milan</span> </h5>
-                                <span className="text-sm text-[#000]">
+                                <span className="text-xs md:text-sm text-[#000]">
                                     <p>The whole process of horoscope matching is called AshtaKoot Milan in Vedic astrology. Here, Ashta means 8 and Kootas are categories. These eight categories of parameters depict different aspects of life. These 8 parameters are considered for measuring one’s compatibility with the other person. Each of these parameters carry some points, which in total make 36 gunas. The more the gunas match, the more compatible you are with the other person in your life.</p>
                                     <div className="flex flex-col gap-1 py-2">
                                         <span>The eight parameters or categories among which the points have been divided are:-</span>
@@ -403,7 +403,7 @@ export default function Matchkundli() {
                                             <li><b>Nadi</b> - Nadi Koot is related to the health of the bride and the groom. The three Nadis in astrology are Vata (air), Pitta (bile) and Kappa (phlegm).</li>
                                         </ul>
 
-                                        <div className="bg-purple-100 rounded-lg shadow-lg flex flex-col gap-1 px-15 py-5">
+                                        <div className="bg-purple-100 rounded-lg shadow-lg flex flex-col gap-1 md:px-15 px-5 py-5">
                                             <span className="bg-purple-400 rounded-lg px-10 py-1 flex items-center justify-between "><h5 className="font-semibold">Koota</h5><span>Maximum Points</span></span>
                                             <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Varna</h5><span>1</span></span>
                                             <span className="bg-purple-300 rounded-lg px-10 py-1 flex items-center justify-between"><h5 className="font-semibold">Vasya/Vashya</h5><span>2</span></span>
@@ -422,7 +422,7 @@ export default function Matchkundli() {
                                 </span>
                             </div>
 
-                            <Personal/>
+                            <Personal />
 
                         </div>
 
@@ -431,7 +431,7 @@ export default function Matchkundli() {
 
                 <div className="kundli-side flex flex-col items-center justify-start gap-3">
                     <Ytvideo />
-                    <Kundliother/>
+                    <Kundliother />
                     <Bestsell />
                     <Sidebanner />
                 </div>

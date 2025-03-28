@@ -53,21 +53,21 @@ export default function Numero() {
         <Kuninterimg />
       </div>
 
-      <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 py-5">
+      <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 md:py-5">
         <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
           <section className="basic-details-main">
             <div className="flex  gap-5 flex-col">
               <div className="basic-det w-full">
-                <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">
+                <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">
                   Numerological Numbers
                 </h5>
-              <div className="img-det flex items-center justify-center bg-purple-300 rounded-lg p-5 w-full gap-5">
+              <div className="img-det flex items-center justify-center bg-purple-300 rounded-lg md:p-5 p-2 w-full gap-5">
                 <Image src={"/ds-img/user2.png"} width={50} height={50} alt="usre image"/>
               <div className="name-dob text-[#000] flex flex-col items-center justify-center ">
-                  <div>
+                  <div className="text-sm">
                     <span>Name : </span> <span>Ajeet kanojia</span>
                   </div>
-                  <div>
+                  <div className="text-sm">
                     <span>Birth Date : </span> <span>2011-5-15</span>
                   </div>
                 </div>
@@ -77,10 +77,10 @@ export default function Numero() {
               <div className="flex flex-col gap-5">
                 {numarr.map((num, index) => (
                   <div key={index} className="text-[#000] flex flex-col gap-2 border-violet-300 border rounded-lg p-3">
-                    <span className="flex items-center justify-center gap-5">
+                    <span className="flex items-center md:justify-center gap-5">
                       <h5 className="text-sm font-semibold">{num.name}</h5>: <span>{num.numb}</span>
                     </span>
-                    <p className="text-sm">{num.para}</p>
+                    <p className="text-xs md:text-sm">{num.para}</p>
                   </div>
                 ))}
               </div>

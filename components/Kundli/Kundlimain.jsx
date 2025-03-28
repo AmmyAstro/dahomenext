@@ -57,7 +57,7 @@ export default function Kundlimain() {
         <section className="kundli-main-page py-5">
             <div className="kundli-page md:max-w-7xl  justify-self-center flex flex-col gap-5 items-center justify-center p-2">
                 <div className="kundloi-top flex flex-col">
-                    <h4 className="py-5 text-2xl text-[#000] text-center font-semibold">
+                    <h4 className="py-2 md:py-5 text-xl md:text-2xl  text-[#000] text-center font-semibold">
                         KUNDLI FREE ONLINE
                     </h4>
                     <div className="kundli-img-txt flex items-start justify-between gap-10">
@@ -69,8 +69,8 @@ export default function Kundlimain() {
                             height={100}
                             src="/ds-img/ganeshji-img.jpg"
                         />
-                        <div className="kundli-para flex flex-col text-[#000] text-sm">
-                            <p>
+                        <div className="kundli-para flex flex-col text-[#000] text-sm md:text-sm">
+                            <p className="">
                                 Kundli is an astrological chart that shows the exact positions
                                 of heavenly bodies and planets at a specific time, which is
                                 constructed by Vedic astrologers based on an individual's exact
@@ -79,7 +79,7 @@ export default function Kundlimain() {
                                 positions of planets or celestial bodies at the very beginning
                                 of time in simple terms.
                             </p>
-                            <p>
+                            <p className="hidden md:block">
                              
                                 One's 'Kundli,' according to Vedic Astrology, is a blueprint
                                 that contains information on major life milestones as well as
@@ -105,8 +105,8 @@ export default function Kundlimain() {
                                     Get Your free Janam Kundli
                                 </h2>
                                 <form onSubmit={handleSubmit} className="space-y-4">
-                                    <div className="flex flex-col md:flex-row items-center justify-between">
-                                        <div className="md:w-[45%] w-[25%]">
+                                    <div className="flex flex-col md:flex-row gap-2 items-start justify-between">
+                                        <div className="w-full">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Name:
                                             </label>
@@ -116,11 +116,11 @@ export default function Kundlimain() {
                                                 value={formData.name}
                                                 onChange={handleChange}
                                                 required
-                                                className=" mt-1 p-2 shadow-lg rounded-full text-sm text-[#666] bg-white outline-0 border-0"
+                                                className=" mt-1 w-full p-2 shadow-lg rounded-full text-sm text-[#666] bg-white outline-0 border-0"
                                             />
                                         </div>
 
-                                        <div className="md:w-[45%] w-[25%]">
+                                        <div className="w-full">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Gender:
                                             </label>
@@ -129,7 +129,7 @@ export default function Kundlimain() {
                                                 value={formData.gender}
                                                 onChange={handleChange}
                                                 required
-                                                className=" mt-1 p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
+                                                className=" mt-1 w-[50%] p-2 shadow-lg rounded-full text-sm text-[#555] bg-white outline-0 border-0"
                                             >
                                                 <option value="">Select Gender</option>
                                                 <option value="Male">Male</option>
@@ -139,8 +139,8 @@ export default function Kundlimain() {
                                         </div>
                                     </div>
 
-                                    <div className="dob-dt flex w-full items-center justify-between">
-                                        <div className="md:w-[45%] w-[25%]">
+                                    <div className="dob-dt flex flex-col md:flex-row gap-2 w-full items-start justify-between">
+                                        <div className="w-full">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Date of Birth:
                                             </label>
@@ -190,7 +190,7 @@ export default function Kundlimain() {
                                             </div>
                                         </div>
 
-                                        <div className="md:w-[45%] w-[25%]">
+                                        <div className="w-full">
                                             <label className="block text-sm text-[#666] font-medium">
                                                 Birth Time:
                                             </label>
@@ -268,26 +268,26 @@ export default function Kundlimain() {
                             </div>
 
                             <div className="kundli-cont flex flex-col gap-2 text-[#000] p-5 shadow-lg rounded-lg">
-                                <h5 className="text-xl font-semibold text-center">Know more about : </h5>
+                                <h5 className="md:text-xl text-base font-semibold text-center">Know more about : </h5>
                                 <div className="kun-con ">
-                                    <h5 className="text-base font-semibold">1. What is Janam Kundli?</h5>
-                                    <p className="text-sm">
+                                    <h5 className="md:text-base text-[14px] font-semibold">1. What is Janam Kundli?</h5>
+                                    <p className="md:text-sm text-[12px]">
                                         Janam Kundli is called birth chart in English. It is a map
                                         of the sky as seen at the time of birth. It is the basis of
                                         predicting future in astrology.
                                     </p>
                                 </div>
                                 <div className="kun-con">
-                                    <h5 className="text-base font-semibold">2. Can astrology predict future accurately?</h5>
-                                    <p className="text-sm">
+                                    <h5 className="md:text-base text-[14px] font-semibold">2. Can astrology predict future accurately?</h5>
+                                    <p className="md:text-sm text-[12px]">
                                         Astrology is Vedanga and considered eye of the Vedas. Like
                                         Ayurveda & Yoga, astrology and its branches like Hora,
                                         Muhurat & Samhita, it is backbone of Vedas.
                                     </p>
                                 </div>
                                 <div className="kun-con">
-                                    <h5 className="text-base font-semibold">3. Which is the most accurate Kundli software?</h5>
-                                    <p className="text-sm">
+                                    <h5 className="md:text-base text-[14px] font-semibold">3. Which is the most accurate Kundli software?</h5>
+                                    <p className="md:text-sm text-[12px]">
                                         Most of the software use NASA algorithm for planetary
                                         position calculations. For remaining calculations like
                                         Namvamsa, Shodashvarga and Ashtakvarga, you can use free
@@ -296,8 +296,8 @@ export default function Kundlimain() {
                                     </p>
                                 </div>
                                 <div className="kun-con">
-                                    <h5 className="text-base font-semibold">4. What is Navamsa chart?</h5>
-                                    <p className="text-sm">
+                                    <h5 className="md:text-base text-[14px] font-semibold">4. What is Navamsa chart?</h5>
+                                    <p className="md:text-sm text-[12px]">
                                         This is a division or varga. When a Rasi, i.e. zodiac sign,
                                         is subdivided in nine parts in a particular order, it is
                                         called Navamsa. It is sometimes considered as important as
@@ -305,8 +305,8 @@ export default function Kundlimain() {
                                     </p>
                                 </div>
                                 <div className="kun-con">
-                                    <h5 className="text-base font-semibold">5. What is Lagna chart?</h5>
-                                    <p className="text-sm">
+                                    <h5 className="md:text-base text-[14px] font-semibold">5. What is Lagna chart?</h5>
+                                    <p className="md:text-sm text-[12px]">
                                         Lagna chart, also called Rasi chart, is the most important
                                         chart in Vedic astrology. It shows Ascendant and planet's
                                         position in various signs. This chart along with other

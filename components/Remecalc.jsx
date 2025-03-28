@@ -44,7 +44,7 @@ export default function Remecalc() {
             {remedbox.map((rembx) => (
               <div
                 key={rembx.id}
-                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-30 h-22 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center gap-2"
+                className="remedies-card-top bg-[#dccef3e3] rounded-xl w-25 h-26 sm:w-25 xl:w-50 shadow-lg p-3 text-center flex flex-col items-center justify-center gap-2"
               >
                 <h3 className="sm:text-sm text-xs text-[#000] ">
                   {rembx.ulname}
@@ -55,7 +55,7 @@ export default function Remecalc() {
           </div>
         </div>
 
-        <div className="astro-free-calculator  flex flex-col items-center justify-center">
+        <div className="astro-free-calculator  flex flex-col items-center justify-self-center">
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl py-1 sm:py-5 text-center font-semibold">
             • Free <strong>Calculators & Compatibility</strong> •
           </h1>
@@ -63,7 +63,7 @@ export default function Remecalc() {
             {calbox.map((calcu, index) => (
 
 
-              <div key={index} className="calculator-card-top w-45 h-22 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+              <div key={index} className="calculator-card-top w-40 h-22 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
                 <h3 className="md:text-sm text-xs   text-[#000] ">
                   {calcu.ulname}
                 </h3>

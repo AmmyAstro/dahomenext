@@ -112,17 +112,17 @@ export default function Compatwest() {
                     <section className="basic-details-main w-full">
 
                         <div className="get-compat flex flex-col gap-5 ">
-                            <div className="compat-patner grid grid-cols-2  gap-5">
+                            <div className="compat-patner grid md:grid-cols-2  gap-5">
 
-                                <div className="  p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
-                                    <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
+                                <div className="  md:p-6 p-2 py-3 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                                    <h2 className="md:text-xl text-center text-[#000] font-semibold md:mb-4 mb-2">
                                         Your Details
                                     </h2>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
-                                        <div className="flex flex-col md:flex-row items-center justify-between">
-                                            <div className="md:w-[100%] w-[25%]">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                        <div className="flex flex-col md:flex-row items-start justify-between">
+                                            <div className="w-full">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Name:
                                                 </label>
                                                 <input
@@ -132,7 +132,7 @@ export default function Compatwest() {
                                                     onChange={handleChange}
                                                     required
                                                     placeholder="Enter your name..."
-                                                    className=" mt-1 p-2 shadow-lg rounded-full placeholder:text-xs text-sm text-[#666] bg-white outline-0 border-0 w-[100%]"
+                                                    className=" mt-1 p-1.5 md:p-2 shadow-lg rounded-full placeholder:text-xs text-sm text-[#666] bg-white outline-0 border-0 w-[100%]"
                                                 />
                                             </div>
 
@@ -140,7 +140,7 @@ export default function Compatwest() {
 
                                         <div className="dob-dt flex flex-col gap-2 w-full  justify-between">
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Date of Birth:
                                                 </label>
                                                 <div className="flex space-x-2 ">
@@ -149,7 +149,7 @@ export default function Compatwest() {
                                                         value={formData.dobDay}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Day</option>
                                                         {days.map((day) => (
@@ -163,7 +163,7 @@ export default function Compatwest() {
                                                         value={formData.dobMonth}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Month</option>
                                                         {months.map((month, index) => (
@@ -177,7 +177,7 @@ export default function Compatwest() {
                                                         value={formData.dobYear}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Year</option>
                                                         {years.map((year) => (
@@ -190,7 +190,7 @@ export default function Compatwest() {
                                             </div>
 
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Birth Time:
                                                 </label>
                                                 <div className="flex space-x-2">
@@ -199,7 +199,7 @@ export default function Compatwest() {
                                                         value={formData.birthHour}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 bg-white outline-0 border-0 text-[#555] rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">HH</option>
                                                         {hours.map((hour) => (
@@ -213,7 +213,7 @@ export default function Compatwest() {
                                                         value={formData.birthMinute}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">MM</option>
                                                         {minutesAndSeconds.map((min) => (
@@ -227,7 +227,7 @@ export default function Compatwest() {
                                                         value={formData.birthSecond}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" >SS</option>
                                                         {minutesAndSeconds.map((sec) => (
@@ -240,8 +240,8 @@ export default function Compatwest() {
                                             </div>
                                         </div>
 
-                                        <div>
-                                            <label className="block text-sm text-[#666] font-medium">
+                                        <div className="w-full">
+                                            <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                 Birth Place:
                                             </label>
                                             <input
@@ -251,7 +251,7 @@ export default function Compatwest() {
                                                 onChange={handleChange}
                                                 required
                                                 placeholder="Enter Birth place..."
-                                                className="md:w-full w-50% mt-1 p-2 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                                className="md:w-full w-full mt-1 md:p-2 p-1.5 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
                                             />
                                         </div>
 
@@ -259,15 +259,15 @@ export default function Compatwest() {
                                     </form>
                                 </div>
 
-                                <div className="  p-6 bg-[#dfc7fd6e] shadow-lg rounded-lg">
-                                    <h2 className="text-xl text-center text-[#000] font-semibold mb-4">
+                                <div className="  md:p-6 p-2 py-3 bg-[#dfc7fd6e] shadow-lg rounded-lg">
+                                    <h2 className="md:text-xl  text-center text-[#000] font-semibold mb-4">
                                         Your Partner's Details
                                     </h2>
 
                                     <form onSubmit={handleSubmit} className="space-y-4">
-                                        <div className="flex flex-col md:flex-row items-center justify-between">
-                                            <div className="md:w-[100%] w-[25%]">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                        <div className="flex flex-col md:flex-row items-start justify-between">
+                                            <div className="w-full">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Name:
                                                 </label>
                                                 <input
@@ -285,7 +285,7 @@ export default function Compatwest() {
 
                                         <div className="dob-dt flex flex-col gap-2 w-full  justify-between">
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Date of Birth:
                                                 </label>
                                                 <div className="flex space-x-2 ">
@@ -294,7 +294,7 @@ export default function Compatwest() {
                                                         value={formData.dobDay}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Day</option>
                                                         {days.map((day) => (
@@ -308,7 +308,7 @@ export default function Compatwest() {
                                                         value={formData.dobMonth}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Month</option>
                                                         {months.map((month, index) => (
@@ -322,7 +322,7 @@ export default function Compatwest() {
                                                         value={formData.dobYear}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2  text-[#555] rounded-full bg-white outline-0 border-0"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5  text-[#555] rounded-full bg-white outline-0 border-0"
                                                     >
                                                         <option value="">Year</option>
                                                         {years.map((year) => (
@@ -335,7 +335,7 @@ export default function Compatwest() {
                                             </div>
 
                                             <div className="">
-                                                <label className="block text-sm text-[#666] font-medium">
+                                                <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                     Birth Time:
                                                 </label>
                                                 <div className="flex space-x-2">
@@ -344,7 +344,7 @@ export default function Compatwest() {
                                                         value={formData.birthHour}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 bg-white outline-0 border-0 text-[#555] rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 bg-white outline-0 border-0 text-[#555] rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">HH</option>
                                                         {hours.map((hour) => (
@@ -358,7 +358,7 @@ export default function Compatwest() {
                                                         value={formData.birthMinute}
                                                         onChange={handleChange}
                                                         required
-                                                        className=" shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className=" shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" className="text-[#555]">MM</option>
                                                         {minutesAndSeconds.map((min) => (
@@ -372,7 +372,7 @@ export default function Compatwest() {
                                                         value={formData.birthSecond}
                                                         onChange={handleChange}
                                                         required
-                                                        className="shadow-lg w-1/3 text-sm p-2 text-[#555] bg-white outline-0 border-0 rounded-full"
+                                                        className="shadow-lg w-1/3 md:text-sm text-xs md:p-2 p-1.5 text-[#555] bg-white outline-0 border-0 rounded-full"
                                                     >
                                                         <option value="" >SS</option>
                                                         {minutesAndSeconds.map((sec) => (
@@ -386,7 +386,7 @@ export default function Compatwest() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm text-[#666] font-medium">
+                                            <label className="block text-xs md:text-sm text-[#666] font-medium">
                                                 Birth Place:
                                             </label>
                                             <input
@@ -396,7 +396,7 @@ export default function Compatwest() {
                                                 onChange={handleChange}
                                                 required
                                                 placeholder="Enter Birth place..."
-                                                className="md:w-full w-50% mt-1 p-2 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
+                                                className="w-full mt-1 md:p-2 p-1.5 text-[#666] placeholder:text-xs  rounded-full bg-white outline-0 border-0 shadow-lg"
                                             />
                                         </div>
 
@@ -409,7 +409,7 @@ export default function Compatwest() {
                                 <Link href={"/homepage/Inkuinter"}>
                                     <button
                                         type="submit"
-                                        className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
+                                        className="md:w-[20rem] w-[10rem] text-sm md:text-base  justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"
                                     >
                                         Submit
                                     </button></Link>
@@ -425,7 +425,7 @@ export default function Compatwest() {
 
                                 {comparr.map((comp, index) => (
                                     <div key={index} onClick={() => setCompat(comp.id)}
-                                        className={`bg-purple-300 flex items-center text-[#000] border rounded-lg w-60 justify-center gap-2 px-4 p-1 cursor-pointer ${activeCompat === comp.id
+                                        className={`bg-purple-300 flex items-center text-[#000] border rounded-lg md:w-60 w-40 justify-center gap-2 px-5 p-1 cursor-pointer ${activeCompat === comp.id
                                             ? "border border-violet-200 shadow-lg" : "border border-purple-300"}`}   >
 
                                         <Image
@@ -433,9 +433,9 @@ export default function Compatwest() {
                                             width={30}
                                             height={30}
                                             alt="compatibility report"
-                                            className=""
+                                            className="w-6 h-6 md:w-8 md:h-8"
                                         />
-                                        <span className="text-sm">{comp.name}</span>
+                                        <span className="text-xs md:text-sm">{comp.name}</span>
 
                                     </div>
 
@@ -447,12 +447,12 @@ export default function Compatwest() {
                                 <div className="compat-det border border-purple-300 rounded-lg p-3 flex flex-col gap-4">
                                     {comparr[activeCompat].id === 5 && (
                                         <div className="text-sm flex flex-col gap-2">
-                                            <span className="flex"><span>{comparr[activeCompat].signt} : </span> <span>{comparr[activeCompat].sign}</span></span>
-                                            <span className="flex"><span>{comparr[activeCompat].signp} : </span> <span>{comparr[activeCompat].signpt}</span></span>
-                                            <span className="flex"><span>{comparr[activeCompat].zcomp} : </span> <span>{comparr[activeCompat].zcompper}</span></span>
+                                            <span className="flex text-xs md:text-sm" ><span>{comparr[activeCompat].signt} : </span> <span>{comparr[activeCompat].sign}</span></span>
+                                            <span className="flex text-xs md:text-sm"><span>{comparr[activeCompat].signp} : </span> <span>{comparr[activeCompat].signpt}</span></span>
+                                            <span className="flex text-xs md:text-sm"><span>{comparr[activeCompat].zcomp} : </span> <span>{comparr[activeCompat].zcompper}</span></span>
                                         </div>
                                     )}
-                                    <p className="text-sm" >{comparr[activeCompat].cont}</p>
+                                    <p className="text-xs md:text-sm" >{comparr[activeCompat].cont}</p>
 
 
                                 </div>

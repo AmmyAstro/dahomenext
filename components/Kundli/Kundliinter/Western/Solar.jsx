@@ -265,36 +265,36 @@ export default function Solar() {
                         <div className="flex  gap-5 flex-col">
 
                             <div className="basic-det w-full">
-                                <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Solar Return Planet Aspects</h5>
+                                <h5 className="md:p-5 p-2 text-center justify-self-center font-semibold md:text-2xl text-xl  text-[#000]">Solar Return Planet Aspects</h5>
                                 <div className="basic-box flex flex-col gap-3 text-[#000]">
-                                    <div className="pl-ul grid grid-cols-3 bg-purple-400 rounded-lg px-5 py-2">
-                                        <h5 className="text-sm font-semibold">Solar Return Planet</h5>
-                                        <h5 className="text-sm font-semibold">Aspecting Planet</h5>
-                                        <h5 className="text-sm font-semibold">Type</h5>
+                                    <div className="pl-ul grid grid-cols-3 bg-purple-400 rounded-lg px-5 gap-4 py-2">
+                                        <h5 className="text-xs md:text-sm font-semibold">Solar Return Planet</h5>
+                                        <h5 className="text-xs md:text-sm font-semibold">Aspecting Planet</h5>
+                                        <h5 className="text-xs md:text-sm font-semibold">Type</h5>
 
                                     </div>
 
                                     {solararr.map((solar, index) => (
                                         <div key={index} className="basic-card grid grid-cols-3 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                            <span className="text-sm">{solar.solar_return_planet}</span>
-                                            <span className="text-sm">{solar.aspecting_planet}</span>
-                                            <span className="text-sm">{solar.type}</span>
+                                            <span className="text-xs md:text-sm">{solar.solar_return_planet}</span>
+                                            <span className="text-xs md:text-sm">{solar.aspecting_planet}</span>
+                                            <span className="text-xs md:text-sm">{solar.type}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
 
-                            <div className="natal-cusps-rep flex flex-col p-5 shadow-lg rounded-lg">
+                            <div className="natal-cusps-rep flex flex-col md:p-5 p-2 shadow-lg rounded-lg">
                                 <h5 className="text-xl font-semibold text-[#000] text-center">Solar Return Planet Report</h5>
                                 <div className="mob-dsp-none py-3 flex flex-col gap-3  justify-between">
                                     {returnarr.map((rearr, index) => (
-                                        <div key={index} className="zod-det-mob-card text-[#000] border border-purple-300 rounded-lg p-5">
-                                            <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Planet : </h5> <span>{rearr.plnt}</span></span>
-                                            <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Is Retro : </h5> <span>{rearr.retro}</span></span>
-                                            <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Sign : </h5> <span>{rearr.sign}</span></span>
+                                        <div key={index} className="zod-det-mob-card flex flex-col gap-1 text-[#000] border border-purple-300 rounded-lg p-5">
+                                            <span className="flex items-center text-xs md:text-sm gap-3"><h5 className="text-xs md:text-sm font-semibold">Planet : </h5> <span>{rearr.plnt}</span></span>
+                                            <span className="flex items-center text-xs md:text-sm gap-3"><h5 className="text-xs md:text-sm font-semibold">Is Retro : </h5> <span>{rearr.retro}</span></span>
+                                            <span className="flex items-center text-xs md:text-sm gap-3"><h5 className="text-xs md:text-sm font-semibold">Sign : </h5> <span>{rearr.sign}</span></span>
 
-                                            <p className="text-sm ">{rearr.content}</p>
+                                            <p className="text-xs md:text-sm ">{rearr.content}</p>
 
                                         </div>
                                     ))}

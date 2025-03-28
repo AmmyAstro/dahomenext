@@ -50,13 +50,13 @@ export default function Consulque() {
           {consult.map((conque) => (
             <div
               key={conque.id}
-              className="relative consul-card-top bg-violet-200 w-45 sm:w-85 rounded-lg sm:rounded-full shadow-lg p-3 text-center flex  items-center justify-center"
+              className="relative consul-card-top bg-violet-200 w-38 sm:w-85 rounded-lg sm:rounded-full shadow-lg p-3 text-center flex  items-center justify-center"
             >
               <h3 className=" absolute text-sm sm:text-xl text-[#2f1254] font-semibold">
                 {conque.ulname}
               </h3>
               <div className="consul-box absolute z-40 ">
-                <span className="font-semibold text-xl text-[#000]"> {conque.pri}</span>
+                <span className="font-semibold text-base text-[#000]"> {conque.pri}</span>
               </div>
               <img
                 className=" w-15 sm:w-25 opacity-40"
@@ -72,7 +72,7 @@ export default function Consulque() {
         </div>
       </div>
 
-      <div className="discuss-expert ">
+      <div className="discuss-expert hidden">
         <div className="astro-paid-consultation flex flex-col items-center justify-center">
           <h1 className="relative text-[#2f1254] text-md sm:text-2xl  py-1 sm:py-5 text-center font-semibold">
             • Ask your queries with our

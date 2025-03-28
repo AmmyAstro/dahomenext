@@ -66,15 +66,15 @@ export default function Transit() {
                     <section className="basic-details-main">
                         <div className="flex  gap-5 flex-col">                
 
-                            <div className="natal-cusps-rep flex flex-col p-5 shadow-lg rounded-lg">
+                            <div className="natal-cusps-rep flex flex-col md:p-5 shadow-lg rounded-lg">
                                 <h5 className="text-xl font-semibold text-[#000] text-center">Transit Life Forecast Report</h5>
                                 <div className="mob-dsp-none py-3 flex flex-col gap-3  justify-between">
                                     {transarr.map((trans, index) => (
                                         <div key={index} className="zod-det-mob-card text-[#000] border border-purple-300 bg-purple-100 rounded-lg p-5">
-                                            <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Planet Positions: </h5> <span>{trans.planet_position}</span></span>
-                                            <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Date : </h5> <span>{trans.date}</span></span>
+                                            <span className="flex flex-col md:flex-row items-start text-xs md:text-sm md:gap-3"><h5 className=" font-semibold">Planet Positions: </h5> <span>{trans.planet_position}</span></span>
+                                            <span className="flex items-center text-xs md:text-sm gap-3"><h5 className=" font-semibold">Date : </h5> <span>{trans.date}</span></span>
 
-                                            <p className="text-sm ">{trans.forecast}</p>
+                                            <p className="text-xs md:text-sm">{trans.forecast}</p>
 
                                         </div>
                                     ))}

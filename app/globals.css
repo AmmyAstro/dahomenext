@@ -936,18 +936,13 @@ body {
 
 
 /* Kundli page main  */
-.kundli-para p {
-  margin: 0;
-  line-height: 22px;
-  font-size: 14px;
-  color: #222;
-}
+
 
 .kundli-other-item {
   background-image: linear-gradient(to right, #c54e5a6b, #7042ac98) !important;
   /* text-align: center; */
   border-radius: 5px;
-  padding: 15px 10px 15px;
+  padding: 15px 10px ;
   border: 0px solid #2f1254;
   /* width: 23%; */
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -976,6 +971,39 @@ body {
 
 @media (319px <=width <=430px) {
 
+  .swiper-button-prev-astro,
+.swiper-button-next-astro {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .4rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-blg,
+.swiper-button-next-blg {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .4rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.swiper-button-prev-tst,
+.swiper-button-next-tst {
+  background-color: #6a5781;
+  color: white;
+  border: none;
+  padding: .2rem .4rem;
+  font-size: 25px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
   /* blog page  */
   .bl-cat-nw {
     clip-path: circle(1.7rem);
@@ -1060,10 +1088,10 @@ body {
   .consul-box {
     background-color: #fff;
     border-radius: 91px;
-    width: 12rem;
+    width: 11rem;
     height: 8rem;
     top: 6rem;
-    left: -5px;
+    left: -11px;
   }
 
 
@@ -1104,5 +1132,13 @@ body {
   border-radius: 10%;
   cursor: pointer;
   transition: background 0.3s;
+}
+
+
+
+/* kundli other items  */
+.kundli-other-item {
+  padding: 15px 7px ;
+
 }
 }

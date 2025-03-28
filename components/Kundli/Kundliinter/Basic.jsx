@@ -163,7 +163,7 @@ export default function Basic() {
 
     return (
         <section className="basic-details-main flex flex-col gap-10">
-            <div className="grid grid-cols-2 gap-5 items-start w-full">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-5 items-start w-full">
 
                 <div className="bas-panch flex flex-col gap-3">
                     <div className="basic-det flex flex-col gap-2 p-2 shadow-lg  rounded-lg pb-3  justify-center text-[#000]">
@@ -171,7 +171,7 @@ export default function Basic() {
                         <div className="basic-box grid grid-cols-2 gap-4">
 
                             {basicarr.map((barr, index) => (
-                                <div key={index} className="basic-card bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
+                                <div key={index} className="basic-card flex-col md:flex-row bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
                                     <span className="text-xs font-semibold">{barr.name} :  </span>
                                     <span className="text-xs">{barr.det}</span>
                                 </div>
@@ -184,7 +184,7 @@ export default function Basic() {
                         <div className="basic-box grid grid-cols-2 gap-4">
 
                             {panarr.map((pan, index) => (
-                                <div key={index} className="basic-card bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
+                                <div key={index} className="basic-card flex-col md:flex-row bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
                                     <span className="text-xs font-semibold">{pan.name} :  </span>
                                     <span className="text-xs">{pan.det}</span>
                                 </div>
@@ -198,7 +198,7 @@ export default function Basic() {
                     <div className="basic-box grid grid-cols-2 gap-4">
 
                         {akaarr.map((akr, index) => (
-                            <div key={index} className="basic-card bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
+                            <div key={index} className="basic-card flex-col md:flex-row bg-purple-200 px-2 py-2 shadow-lg rounded-lg gap-1  flex items-center justify-center">
                                 <span className="text-xs font-semibold">{akr.name} :  </span>
                                 <span className="text-xs">{akr.det}</span>
                             </div>
@@ -209,12 +209,12 @@ export default function Basic() {
             </div>
 
             <div className="personal-rep flex flex-col text-[#000] gap-2">
-                <h5 className="text-xl font-semibold">Personality Report: </h5>
-                <span className="text-base">"You may have had trouble communicating in early life. Perhaps you suffer from feelings of inadequacy. You overcome these feelings through sheer necessity, for you have determination in achieving your goals and purposes in life. ",
+                <h5 className="md:text-xl text-sm font-semibold">Personality Report: </h5>
+                <span className="md:text-base text-sm">"You may have had trouble communicating in early life. Perhaps you suffer from feelings of inadequacy. You overcome these feelings through sheer necessity, for you have determination in achieving your goals and purposes in life. ",
                     "You will have strong likes and dislikes, and can be very reserved and dignified, though when vexed you are apt to be sharp and sarcastic if not actually cruel. Avoid pride, cultivate sympathy and endeavour to see things from others’ standpoints as well as your own. ",
                     "The position of the Moon in your horoscope will much increase the emotional nature, making you extremely sensitive. You like to be appreciated, and feel things that are said of you very keenly. You need to associate only with pure-minded and cheerful persons, or you may find yourself liable to moods often undesirable ones. ",
                     "In your heart of hearts you want a close intimate relationship with an equal. You make friends easily and give unwaveringly to them. You are capable of extreme self-sacrifice for those they love. Your greatest strengths is the ability to recover and recoup from loss. ",</span>
-                <div><span className="text-md font-semibold">Spiritual Lesson : </span> <span className="text-sm">"Spiritual lesson to learn: Sociability (lighten up)"</span></div>
+                <div><span className="text-sm font-semibold">Spiritual Lesson : </span> <span className="text-sm">"Spiritual lesson to learn: Sociability (lighten up)"</span></div>
             </div>
 
         </section>

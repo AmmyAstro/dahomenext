@@ -56,16 +56,16 @@ export default function Lunar() {
                     <section className="basic-details-main w-full">
                         <div className="flex  gap-5 flex-col w-full">
 
-                            <div className="natal-cusps-rep flex flex-col p-5 shadow-lg rounded-lg w-full">
+                            <div className="natal-cusps-rep flex flex-col md:p-5 shadow-lg rounded-lg w-full">
                                 <h5 className="text-xl font-semibold text-[#000] text-center">Lunar Metrics</h5>
                                 <div className="mob-dsp-none py-3 flex flex-col gap-3  justify-between">
                                     {lunararr.map((lunar, index) => (
-                                        <div key={index} className="zod-det-mob-card text-[#000] border grid grid-cols-2 gap-3 border-purple-300 bg-purple-100 rounded-lg p-5">
-                                            <div className="flex gap-2"><span className="text-sm font-semibold">Moon Sign :</span> <span className="text-sm ">{lunar.moon_sign}</span></div>
-                                            <div className="flex gap-2"><span className="text-sm font-semibold">Moon Phase :</span> <span className="text-sm ">{lunar.moon_phase}</span></div>
-                                            <div className="flex gap-2"><span className="text-sm font-semibold">Month :</span> <span className="text-sm ">{lunar.month}</span></div>
-                                            <div className="flex gap-2"><span className="text-sm font-semibold">Moon Day :</span> <span className="text-sm ">{lunar.moon_day}</span></div>
-                                            <div className="flex gap-2"><span className="text-sm font-semibold">Moon Illumination :</span> <span className="text-sm ">{lunar.moon_illumination}</span></div>
+                                        <div key={index} className="zod-det-mob-card text-[#000] border grid md:grid-cols-2 gap-3 border-purple-300 bg-purple-100 rounded-lg p-5">
+                                            <div className="flex gap-2"><span className="text-xs md:text-sm font-semibold">Moon Sign :</span> <span className="text-xs md:text-sm ">{lunar.moon_sign}</span></div>
+                                            <div className="flex gap-2"><span className="text-xs md:text-sm font-semibold">Moon Phase :</span> <span className="text-xs md:text-sm ">{lunar.moon_phase}</span></div>
+                                            <div className="flex gap-2"><span className="text-xs md:text-sm font-semibold">Month :</span> <span className="text-xs md:text-sm ">{lunar.month}</span></div>
+                                            <div className="flex gap-2"><span className="text-xs md:text-sm font-semibold">Moon Day :</span> <span className="text-xs md:text-sm ">{lunar.moon_day}</span></div>
+                                            <div className="flex gap-2"><span className="text-xs md:text-sm font-semibold">Moon Illumination :</span> <span className="text-xs md:text-sm ">{lunar.moon_illumination}</span></div>
 
                                         </div>
                                     ))}
@@ -74,16 +74,16 @@ export default function Lunar() {
 
                             </div>
 
-                            <div className="natal-cusps-rep flex flex-col p-5 shadow-lg rounded-lg w-full">
+                            <div className="natal-cusps-rep flex flex-col md:p-5 shadow-lg rounded-lg w-full">
                                 <h5 className="text-xl font-semibold text-[#000] text-center">Moon Phase Report</h5>
                                 <div className="mob-dsp-none py-3 flex flex-col gap-3  justify-between">
                                     {moonarr.map((moon, index) => (
                                        <div key={index} className="zod-det-mob-card text-[#000] border flex flex-col gap-3 border-purple-300 bg-purple-100 rounded-lg p-5">
-                                       <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Moon Phase : </h5> <span>{moon.moon_phase}</span></span>
-                                       <span className="flex items-center gap-3"><h5 className="text-sm font-semibold">Moon Pahse Date : </h5> <span>{moon.considered_date}</span></span>
+                                       <span className="flex items-center text-xs md:text-sm gap-3"><h5 className=" font-semibold">Moon Phase : </h5> <span>{moon.moon_phase}</span></span>
+                                       <span className="flex items-center text-xs md:text-sm gap-3"><h5 className=" font-semibold">Moon Pahse Date : </h5> <span>{moon.considered_date}</span></span>
 
-                                       <span className="flex flex-col "><h5 className="text-sm font-semibold">Significance : </h5> <p className="text-sm">{moon.significance}</p></span>
-                                       <span className="flex flex-col "><h5 className="text-sm font-semibold">Report : </h5> <p className="text-sm"> {moon.report}</p></span>
+                                       <span className="flex flex-col text-xs md:text-sm "><h5 className=" font-semibold">Significance : </h5> <p className="">{moon.significance}</p></span>
+                                       <span className="flex flex-col text-xs md:text-sm "><h5 className=" font-semibold">Report : </h5> <p className=""> {moon.report}</p></span>
 
                                    </div>
                                     ))}

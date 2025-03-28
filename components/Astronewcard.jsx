@@ -143,10 +143,10 @@ export default function Astronewcard() {
 
             <div className="astrocard-swipe sm:max-w-7xl  p-4 relative">
                 {/* Custom Navigation Buttons */}
-                <div className="absolute top-1/2 left-[-10px] md:left-[-30px] transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 left-[-0px] md:left-[-30px] transform -translate-y-1/2 z-50">
                     <button className="swiper-button-prev-astro">‹</button>
                 </div>
-                <div className="absolute top-1/2 right-[-10px] md:right-[-30px] transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 right-[-0px] md:right-[-30px] transform -translate-y-1/2 z-50">
                     <button className="swiper-button-next-astro">›</button>
                 </div>
                 <Swiper
@@ -193,7 +193,7 @@ export default function Astronewcard() {
                         <SwiperSlide key={index}>
                             <Link href="#">
                                 <div
-                                    className="relative h-80 w-full p-1 sm:p-1 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
+                                    className="relative h-77 md:h-80 w-full p-1 sm:p-1 rounded-lg overflow-hidden shadow-lg bg-cover bg-center back-astro-image"
                                     style={{ backgroundImage: "url('/ds-img/mnew.jpg')" }}
                                 >
                                     <div className="absolute inset-0 bg-[#00000030] bg-opacity-0"></div>
@@ -218,32 +218,32 @@ export default function Astronewcard() {
                                                         {ascard.ulname}
                                                     </h2>
 
-                                                    <p className="text-xs text-yellow-300 whitespace-nowrap overflow-hidden text-ellipsis">
+                                                    <p className="text-[10px] md:text-xs text-yellow-300 whitespace-nowrap overflow-hidden text-ellipsis">
                                                         {ascard.skill}
                                                     </p>
                                                     <div className="lang-bar flex items-center gap-2">
                                                         <FaLanguage className="text-[#fff] text-xl" />
-                                                        <p className="text-xs text-yellow-300  whitespace-nowrap overflow-hidden text-ellipsis">
+                                                        <p className="text-[10px] md:text-xs text-yellow-300  whitespace-nowrap overflow-hidden text-ellipsis">
                                                             {ascard.lang}
                                                         </p>
                                                     </div>
 
                                                     <span className="flex flex-wrap justify-center items-center gap-1">
-                                                        <p className="text-xs text-yellow-300 bg-[#00000880] rounded-lg py-1 px-2 w-fit">
+                                                        <p className="text-[10px] md:text-xs text-yellow-300 bg-[#00000880] rounded-lg py-1 px-2 w-fit">
                                                             Exp: {ascard.expas} Yrs
                                                         </p>
-                                                        <p className="text-xs bg-[#00000880] rounded-lg py-1 px-2 w-fit flex items-center gap-2">
+                                                        <p className="text-[10px] md:text-xs bg-[#00000880] rounded-lg py-1 px-2 w-fit flex items-center gap-2">
                                                             {ascard.reve}
                                                             <FaStarHalfAlt className="text-yellow-300 text-xs" />
                                                         </p>
-                                                        <span className="text-[11px] text-yellow-300 flex gap-1 bg-[#00000880] p-1 rounded-lg">
+                                                        <span className="text-[10px] md:text-xs text-yellow-300 flex gap-1 bg-[#00000880] p-1 rounded-lg">
                                                             {ascard.ordr} <h6>Orders</h6>
                                                         </span>
                                                     </span>
                                                 </div>
 
                                                 <div className="astrologer-price-box flex items-center justify-center w-full pb-2">
-                                                    <p className="mt-2 text-[10px] sm:text-xs font-semibold flex gap-3 items-center justify-center">
+                                                    <p className="mt-2 text-[10px] sm:text-xs font-semibold flex gap-1 items-center justify-center">
                                                         <span>Price : ₹ {ascard.prct}/min</span>
                                                         <span className="text-red-500 text-[10px]  sm:text-xs line-through">
                                                             ₹ {ascard.prctf}/min
@@ -254,7 +254,7 @@ export default function Astronewcard() {
                                               
                                             </div>
                                         </div>
-                                        <div className="mt-3 flex space-x-4 justify-around w-full">
+                                        <div className="mt-1 md:mt-3 flex space-x-4 justify-around w-full">
                                             <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white px-3 py-3 rounded-full shadow-md transition">
                                                 <IoCall className="text-xl" />
                                             </button>

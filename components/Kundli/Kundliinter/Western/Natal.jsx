@@ -305,7 +305,7 @@ export default function Natal() {
                         <div className="flex  gap-5 flex-col">
 
                             <div className="basic-det w-full">
-                                <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Western Horoscope</h5>
+                                <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Western Horoscope</h5>
                                 <div className="basic-box flex flex-col gap-3 text-[#000]">
                                     <div className="pl-ul grid grid-cols-9 bg-purple-400 rounded-lg px-5 py-2">
                                         <h5 className="text-sm font-semibold">Planet</h5>

@@ -7,12 +7,12 @@ export default function Aboutdirect() {
   return (
  
     <div
-    className="m-2 about-director-section py-8 max-w-7xl flex flex-col items-center justify-center self-center">
+    className=" about-director-section py-8 max-w-7xl flex flex-col items-center justify-center self-center">
     <h1 className="relative text-[#2f1254] text-md sm:text-2xl text-center font-semibold">
       • Know More About Dhwani Astro & Astrology <strong>Direct from the Director & Founder</strong> •
     </h1>
     <div className="relative py-5 px-0 items-center justify-center flex flex-col sm:flex-row  gap-6 z-10 ">
-      <div className="founder-video-frame"><iframe width="400" height="280" className="rounded-lg"
+      <div className="founder-video-frame"><iframe width="350" height="280" className="rounded-lg"
           src="https://www.youtube.com/embed/Z1xtQkosANM?si=NFC7Ayx8lCwE0eBy" title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

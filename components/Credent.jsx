@@ -30,27 +30,22 @@ export default function Credent() {
       src: "/ds-img/contract.webp",
         clr:"#e9d4ff"
     },
-    ,
+    
     {
       id: 5,
       ulname: " Abhimantarit Items",
       src: "/ds-img/chdwa-rem.webp",
         clr:"#ddd6ff"
     },
-    ,
+    
     {
       id: 6,
       ulname: "Handcrafted  With care",
       src: "/ds-img/hand-made.png",
         clr:"#f6cfff"
     },
-    ,
-    {
-      id: 7,
-      ulname: "No Compromise  on Quality",
-      src: "/ds-img/high-quality.webp",
-        clr:"#ddd6ff"
-    },
+    
+
   ];
 
   const glances = [
@@ -72,7 +67,7 @@ export default function Credent() {
             {creden.map((cred) => (
               <div
                 key={cred.id} style={{ backgroundColor: cred.clr }}
-                className=" pro-card-top w-28 sm:w-40 rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
+                className=" pro-card-top w-25 sm:w-40 rounded-lg shadow-lg p-3 text-center flex  items-center justify-center"
               >
                 <Image
                   src={cred.src}
@@ -82,7 +77,7 @@ export default function Credent() {
                   height={20}
                   loading="lazy"
                 />
-                <h3 className="text-xs sm:text-base text-[#2f1254]  w-24">
+                <h3 className="text-xs sm:text-base text-[#2f1254]  ">
       
                   {cred.ulname}
                 </h3>
@@ -94,7 +89,7 @@ export default function Credent() {
             {glances.map((glan) => (
               <div
                 key={glan.id}
-                className=" pro-card-top bg-[#fff] w-28 sm:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
+                className=" pro-card-top bg-[#fff] w-25 sm:w-40 rounded-lg shadow-lg p-1 text-center flex  items-center justify-center"
               >
                 <Image
                   src={glan.src}

@@ -257,7 +257,7 @@ export default function Astrocard() {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-3 flex space-x-4 justify-around w-full">
+                    <div className="mt-1 md:mt-3 flex space-x-4 justify-around w-full">
                       <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white px-3 py-3 rounded-full shadow-md transition">
                         <IoCall className="text-xl" />
                       </button>

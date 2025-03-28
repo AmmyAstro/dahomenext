@@ -59,7 +59,7 @@ const kundlicards = [
         href:"/homepage/Inkundli/Inbasicchart",
     },
     {
-        name: "Year Analysis(Varshphal)",
+        name: "Year Analysis",
         img: "/ds-img/k6.png",
         named: "How will this year for you?",
         href:"/homepage/Inkundli/Inbasicchart",
@@ -138,8 +138,8 @@ export default function Kuninter() {
                         {kundlicards.map((kunca, index) => (
 
 
-                            <Link key={index} href={kunca.href} className="kundli-cards text-[#000] shadow-lg rounded-lg gap-2 p-3 flex flex-col items-center justify-center">
-                                <h5 className="text-xs md:text-xs text-center">{kunca.name}</h5>
+                            <Link key={index} href={kunca.href} className="kundli-cards text-[#000] shadow-lg rounded-lg gap-2 md:p-3 p-2 flex flex-col items-center justify-center">
+                                <h5 className="text-xs md:text-xs text-center font-normal">{kunca.name}</h5>
                                 <Image src={kunca.img} alt="kundli images" width={50} height={50} className="w-10 h-10 md:w-15 md:h-15 rounded-full" />
                                 <span className="text-center md:text-xs  text-[10px]">{kunca.named}</span>
                             </Link>

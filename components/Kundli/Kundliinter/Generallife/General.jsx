@@ -59,15 +59,15 @@ export default function General() {
 
                 <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
 
-                    <span className="text-xl text-[#fff] text-center font- bg-[#2f1254] rounded-full px-10 py-2 w-full shadow-lg">Dhwani Astro Kundli Birth Chart & Planetry Positions </span>
+                    <span className="text-sm md:text-xl text-[#fff] text-center font- bg-[#2f1254] rounded-full px-10 py-2 w-full shadow-lg">Dhwani Astro Kundli Birth Chart & Planetry Positions </span>
 
                     <div className="general-life">
-                        <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">General Life Reports</h5>
+                        <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-base text-[#000]">General Life Reports</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {general.map((gen, index) => (
                                 <div key={index} className="basic-card flex flex-col items-center justify-center gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-300 px-15 py-1.5">{gen.name}</h5>
-                                    <p className="text-[#000] text-sm " >{gen.para} </p>
+                                    <h5 className="text-[#000] text-xs md:text-sm font-semibold rounded-full bg-purple-300 px-15 py-1.5">{gen.name}</h5>
+                                    <p className="text-[#000] md:text-sm text-xs " >{gen.para} </p>
                                 </div>
                             ))}
                         </div>
@@ -75,26 +75,26 @@ export default function General() {
 
 
                     <div className="general-life">
-                        <h5 className="p-5 text-center justify-self-center text-xl text-[#000]  ">Personal Day Prediction</h5>
+                        <h5 className=" md:p-5 p-2 text-center justify-self-center md:text-xl text-[#000]  ">Personal Day Prediction</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Day Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Date </span> : <span>{perm.consim}</span></span>
-                                    <p className="text-[#000] text-sm " >{perm.rep} </p>
+                                    <h5 className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Day Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Date </span> : <span>{perm.consim}</span></span>
+                                    <p className="text-[#000] md:text-sm text-xs " >{perm.rep} </p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     <div className="general-life">
-                        <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Personal Month Prediction</h5>
+                        <h5 className="p-5 text-center justify-self-center md:text-2xl text-[#000]">Personal Month Prediction</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Month Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Month </span> : <span>{perm.consim}</span></span>
-                                    <p className="text-[#000] text-sm " >{perm.rep} </p>
+                                    <h5 className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Month Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Month </span> : <span>{perm.consim}</span></span>
+                                    <p className="text-[#000] md:text-sm text-xs " >{perm.rep} </p>
                                 </div>
                             ))}
                         </div>
@@ -102,13 +102,13 @@ export default function General() {
 
 
                     <div className="general-life">
-                        <h5 className="p-5 text-center justify-self-center text-2xl text-[#000]">Personal Year Prediction</h5>
+                        <h5 className="p-5 text-center justify-self-center md: text-2xl text-[#000]">Personal Year Prediction</h5>
                         <div className="basic-box flex flex-col gap-5">
                             {personalm.map((perm, index) => (
                                 <div key={index} className="basic-card flex flex-col items-start justify-start gap-2 border shadow-lg px-2 py-2 rounded-lg">
-                                    <h5 className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Year Number</span> : <span>{perm.pmn}</span></h5>
-                                    <span className="text-[#000] text-sm font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Year </span> : <span>{perm.consim}</span></span>
-                                    <p className="text-[#000] text-sm " >{perm.rep} </p>
+                                    <h5 className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Personal Year Number</span> : <span>{perm.pmn}</span></h5>
+                                    <span className="text-[#000] md:text-sm text-xs font-semibold rounded-full bg-purple-100 px-5 py-1.5"><span>Considered Year </span> : <span>{perm.consim}</span></span>
+                                    <p className="text-[#000] md:text-sm text-xs " >{perm.rep} </p>
                                 </div>
                             ))}
                         </div>
