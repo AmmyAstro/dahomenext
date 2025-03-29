@@ -256,7 +256,7 @@ export default function Kundlimain() {
                                     </div>
 
                                     <div className="btn-kun flex w-full items-center justify-center">
-                                     <Link href={"/homepage/Inkuinter"}>
+                                     <Link href={"/homepage/inKundli/getKundlipage"}>
                                      <button
                                             type="submit"
                                             className="w-[20rem] justify-self-center bg-[#2f1254] text-white p-2 rounded-full hover:bg-[#2f1254a1]"

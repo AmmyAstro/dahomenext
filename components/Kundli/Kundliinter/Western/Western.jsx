@@ -17,38 +17,38 @@ export default function Western() {
         {
             name: "Natal Astrology",
             img: "/ds-img/horoscope.gif",
-            href: "/homepage/Inkundli/Innatal",
+            href: "/homepage/inKundli/getKundlipage/westernPage/natalpage",
             clr: "#e9d4ff",
         },
         {
             name: "Numerology",
             img: "/ds-img/num.webp",
-            href: "/homepage/Inkundli/Innumero",
+            href: "/homepage/inKundli/getKundlipage/westernPage/numberpage",
             clr: "#ddd6ff",
         },
      
         {
             name: "Compatibility",
             img: "/ds-img/not-compatible.png",
-            href: "/homepage/Inkundli/Incompat",
+            href: "/homepage/inKundli/getKundlipage/westernPage/compatwest",
             clr: "#e9d4ff",
         },
         {
             name: "Solar Return",
             img: "/ds-img/astrologylove.png",
-            href: "/homepage/Inkundli/Insolar",
+            href: "/homepage/inKundli/getKundlipage/westernPage/solarwest",
             clr: "#e9d4ff",
         },
         {
             name: "Transit",
             img: "/ds-img/galaxy.png",
-            href: "/homepage/Inkundli/Intransit",
+            href: "/homepage/inKundli/getKundlipage/westernPage/transitwest",
             clr: "#ddd6ff",
         },
         {
             name: "Moon Phases",
             img: "/ds-img/esoteric.png",
-            href: "/homepage/Inkundli/Inlunar",
+            href: "/homepage/inKundli/getKundlipage/westernPage/lunarwest",
             clr: "#f6cfff",
         },
 

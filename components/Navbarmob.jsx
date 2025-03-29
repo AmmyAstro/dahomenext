@@ -12,13 +12,13 @@ export default function Navbarmob() {
   const [isFreeOpen, setIsFreeOpen] = useState(false);
 
   const navbaritems = [
-    { id: 1, src: "/ds-img/menu-chat-icon.webp", alt: "Chat", ulname: "Chat With Astrologer", href: "/homepage/navbarcomp" },
-    { id: 2, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/talkto" },
+    { id: 1, src: "/ds-img/menu-chat-icon.webp", alt: "Chat", ulname: "Chat With Astrologer", href: "/homepage/chatAstro" },
+    { id: 2, src: "/ds-img/phone.webp", alt: "Talk", ulname: "Talk To Astrologer", href: "/homepage/callAstro" },
     { id: 3, src: "/ds-img/tarot-card.png", alt: "Tarot", ulname: "Tarot Reading", href: "/homepage/" },
     { id: 4, src: "/ds-img/om.webp", alt: "Protect", ulname: "Protective Kavach", href: "/protective-kavach" },
-    { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/homepage/Inhealing" },
+    { id: 5, src: "/ds-img/heal2.webp", alt: "Heal", ulname: "Healing", href: "/homepage/inHealing" },
     { id: 6, src: "/ds-img/onpooja.webp", alt: "Puja", ulname: "Online Puja", href: "/online-puja" },
-    { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/homepage/Dhservice" },
+    { id: 7, src: "/ds-img/dhwani.webp", alt: "Dhwani", ulname: "Dhwani Services", href: "/homepage/dhServices" },
   ];
 
   const dhwaniStoreItems = [
@@ -31,9 +31,9 @@ export default function Navbarmob() {
   ];
 
   const freeServicesItems = [
-    { id: 1, name: "Horoscope", src: "/ds-img/horoscope.webp", href: "/homepage/Inhoro" },
+    { id: 1, name: "Horoscope", src: "/ds-img/horoscope.webp", href: "/homepage/inHoroscope" },
     { id: 2, name: "Numerology", src: "/ds-img/numerology.webp", href: "#" },
-    { id: 3, name: "Kundli", src: "/ds-img/kundli.webp", href: "/homepage/Inkundli" },
+    { id: 3, name: "Kundli", src: "/ds-img/kundli.webp", href: "/homepage/inKundli" },
     { id: 4, name: "Match Making", src: "/ds-img/menu-match.webp", href: "#" },
     { id: 5, name: "Panchang", src: "/ds-img/panchang.webp", href: "#" },
 
@@ -231,7 +231,7 @@ export default function Navbarmob() {
           </Link>
           <ul className="free-service-drop-n">
             <li>
-              <Link href={"/homepage/Inhoro"} className="free-drp-a flex items-center ">
+              <Link href={"/homepage/inHoroscope"} className="free-drp-a flex items-center ">
                 <Image
                   className="free-drp-img"
                   src="/ds-img/horoscope.webp"
@@ -255,7 +255,7 @@ export default function Navbarmob() {
               </Link>
             </li>
             <li>
-              <Link href={"/homepage/Inkundli"} className="free-drp-a flex items-center ">
+              <Link href={"/homepage/inKundli"} className="free-drp-a flex items-center ">
                 <Image
                   className="free-drp-img"
                   src="/ds-img/kundli.webp"

@@ -39,7 +39,7 @@ export default function Header() {
           Live Session
         </Link>
         <Link
-          href={"/homepage/Blog"}
+          href={"/homepage/blogComp"}
           className="max-md:hidden p-1.5 text-[13.5px] sm:w-15 font-medium text-[#000] rounded-md bg-[#ffd70a]"
         >
           Blogs
@@ -79,7 +79,7 @@ export default function Header() {
       </div>
 
       <div className="sm:hidden flex justify-end gap-2 items-center   sm:pr-5 ">
-        <Link href={"/homepage/Blog"} className="p-1 text-[10px] rounded-sm text-[#000] bg-[#ffd70a]">
+        <Link href={"/homepage/blogComp"} className="p-1 text-[10px] rounded-sm text-[#000] bg-[#ffd70a]">
           Blogs
         </Link>
         <Link
