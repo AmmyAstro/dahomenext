@@ -63,12 +63,12 @@ export default function Remecalc() {
             {calbox.map((calcu, index) => (
 
 
-              <div key={index} className="calculator-card-top w-40 h-22 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
+              <div key={index} className="calculator-card-top w-40 h-26 sm:w-25 xl:w-55 bg-violet-200 rounded-xl shadow-lg p-3 text-center flex flex-col items-center justify-center">
                 <h3 className="md:text-sm text-xs   text-[#000] ">
                   {calcu.ulname}
                 </h3>
                 <Image
-                  className="w-11 sm:w-10"
+                  className="w-11 sm:w-12"
                   src={calcu.src}
                   alt="free calculator image"
                   height={15}

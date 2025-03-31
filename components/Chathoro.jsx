@@ -17,7 +17,7 @@ export default function Chathoro() {
       src: "/ds-img/Couple.png",
       alt: "Talk",
       ulname: "Love",
-      href: "/homepage/Inlovecat",
+      href: "/homepage/problemBaseLove",
     },
     {
       id: 2,

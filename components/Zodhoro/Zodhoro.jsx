@@ -31,7 +31,7 @@ export default function Zodhoro() {
             <li
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`cursor-pointer lg:px-5 text-xs px-2 py-2 md:text-xl lg:py-2 rounded-full ${
+              className={`cursor-pointer lg:px-5 text-xs px-2 py-2 md:text-base lg:py-2 rounded-full ${
                 activeTab === tab.id ? "bg-purple-500 text-white" : " text-black"
               }`}
             >

@@ -21,6 +21,7 @@ import Lunar from "@/components/Kundli/Kundliinter/Western/Lunar";
 import Transit from "@/components/Kundli/Kundliinter/Western/Transit";
 import Doshas from "@/components/Kundli/Kundliinter/Kundlidosha/Doshas";
 import Matchkundli from "@/components/Kundli/Kundliinter/Matchkundli/Matchkundli";
+import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuinter";
 
 
 
@@ -38,7 +39,8 @@ export default function ServicePage() {
        inBlog: <Inblog/>,
        inHoroscope : <Inhoro/>,
        inKundli : <Kundlimain/>,
-       blogComp : <Blogcomp/>
+       blogComp : <Blogcomp/>,
+       problemBaseLove : <Lovecat/>
 
     }
 
@@ -51,6 +53,10 @@ export default function ServicePage() {
         westernPage : <Western/>,
         doshakundli : <Doshas/>,
         matchHoro : <Matchkundli/>,
+     }
+
+     const matchkundliinter = {
+        matchKundli : <Matchkuinter/>
      }
 
      const westerninter = {
@@ -75,6 +81,9 @@ export default function ServicePage() {
     }
     else if (path.length === 4 && path[2] === "westernPage" && path[1] === "getKundlipage" ) {
         Componentrender = westerninter[path[3]];
+    }
+    else if (path.length === 4 &&  path[2] === "matchHoro" && path[1] === "getKundlipage" && path[0] === "inKundli"  ) {
+        Componentrender = matchkundliinter[path[3]];
     }
 
     return (

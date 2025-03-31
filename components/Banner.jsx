@@ -18,7 +18,7 @@ export default function Banner() {
   };
 
   return (
-    <div className="slider-banner-home w-full pt-0 sm:pt-5">
+    <div className="slider-banner-home w-full pt-0 sm:pt-0">
       <Swiper
         onSwiper={setSwiperInstance} // Store Swiper instance
         modules={[Navigation, Pagination, Autoplay]}   
