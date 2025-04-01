@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className=" justify-center sm:flex hidden w-1/3">
+      <div className="justify-center items-center sm:flex hidden w-1/3">
         <Image
           src="/ds-img/ganeshji.webp"
           width={50}

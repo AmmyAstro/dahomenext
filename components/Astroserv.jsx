@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Astroserv() {
     const astroservices = [
-        { name: "Muhurata Consultation", img: "/ds-img/muhurat.jpg"},
+        { name: "Muhurata Consultation", img: "/public/ds-img/love1.jpeg"},
         { name: "Yearly Chart Prediction", img: "/ds-img/fn.jpg"},
         { name: "Child Related Consultation", img:"/ds-img/childbirth.jpg" },
         { name: "Health Consultation", img: "/ds-img/Medical.jpg"},

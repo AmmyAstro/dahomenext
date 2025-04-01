@@ -14,59 +14,59 @@ export default function Chathoro() {
   const chathorobox = [
     {
       id: 1,
-      src: "/ds-img/Couple.png",
+      src: "/prblm/love1.jpeg",
       alt: "Talk",
       ulname: "Love",
       href: "/homepage/problemBaseLove",
     },
     {
       id: 2,
-      src: "/ds-img/freelancer.png",
+      src: "/prblm/jobb.jpeg",
       alt: "Chat",
       ulname: "Job",
       href: "/homepage/Inlovecat",
 
     },
-    {
-      id: 3,
-      src: "/ds-img/rupee.png",
-      alt: "Match",
-      ulname: "Money",
-      href: "/homepage/Inlovecat",
+    // {
+    //   id: 3,
+    //   src: "/prblm/rupee.png",
+    //   alt: "Match",
+    //   ulname: "Money",
+    //   href: "/homepage/Inlovecat",
 
-    },
-    {
-      id: 4,
-      src: "/ds-img/jury.png",
-      alt: "Live",
-      ulname: "Legal",
-      href: "/homepage/Inlovecat",
+    // },
+    // {
+    //   id: 4,
+    //   src: "/prblm/jury.png",
+    //   alt: "Live",
+    //   ulname: "Legal",
+    //   href: "/homepage/Inlovecat",
 
-    },
-    {
-      id: 5,
-      src: "/ds-img/prenatal-care.png",
-      alt: "Store",
-      ulname: "Pregnancy",
-      href: "/homepage/Inlovecat",
+    // },
+    // {
+    //   id: 5,
+    //   src: "/prblm/prenatal-care.png",
+    //   alt: "Store",
+    //   ulname: "Pregnancy",
+    //   href: "/homepage/Inlovecat",
 
-    },
-    {
-      id: 6,
-      src: "/ds-img/education.png",
-      alt: "Store",
-      ulname: "Education",
-      href: "/homepage/Inlovecat",
+    // },
+    // {
+    //   id: 6,
+    //   src: "/prblm/education.png",
+    //   alt: "Store",
+    //   ulname: "Education",
+    //   href: "/homepage/Inlovecat",
 
-    },
-    {
-      id: 7,
-      src: "/ds-img/wedding-couple.png",
-      alt: "Store",
-      ulname: "Marriage",
-      href: "/homepage/Inlovecat",
+    // },
+    // {
+    //   id: 7,
+    //   src: "/prblm/wedding-couple.png",
+    //   alt: "Store",
+    //   ulname: "Marriage",
+    //   href: "/homepage/Inlovecat",
 
-    },
+    // },
   ];
   const horoscopes = [
     { name: "Aries", img: "/ds-img/ARIESn.webp" },

@@ -106,7 +106,7 @@ export default function Astrocard() {
         <h1 className="text-[#2f1254] text-md sm:text-2xl  py-3 text-center font-semibold">
           • Consult with our <strong>Top Premium Astrologers</strong> •
         </h1>
-        <div className="user-sign-up  relative grid w-full  items-start justify-center grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-6 z-10 mt-3 shadow-lg">
+        <div className="user-sign-up  relative grid w-full py-3  items-start justify-center grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-6 z-10 mt-3 shadow-lg">
           <div className="service-card-sign rounded-xl p-1 sm:p-3 text-center flex flex-col items-center justify-center gap-2">
             <FaUserPlus className="icreact bg-violet-400 "  />
             <h3 className="text-[10px] sm:text-xs text-[#2f1254] sm:font-semibold">

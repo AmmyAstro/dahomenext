@@ -150,7 +150,7 @@ export default function Blogcomp() {
                                                 </span>
                                             </span>
 
-                                            <span className="bldat1-nw bld-mob hidden md:flex  w-full items-end justify-between gap-2 md:flex-col">
+                                            <span className="bldat1-nw bld-mob hidden md:flex   items-end justify-between gap-2 md:flex-col">
                                             <span className="bl-d-c-nw flex items-center text-[#000] gap-2">
                                                     <FaRegCommentDots className="text-[10px] sm:text-xs" />
                                                     <span className="text-[10px] sm:text-xs">Comments</span>

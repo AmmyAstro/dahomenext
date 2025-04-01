@@ -22,6 +22,7 @@ import Transit from "@/components/Kundli/Kundliinter/Western/Transit";
 import Doshas from "@/components/Kundli/Kundliinter/Kundlidosha/Doshas";
 import Matchkundli from "@/components/Kundli/Kundliinter/Matchkundli/Matchkundli";
 import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuinter";
+import Numerokundli from "@/components/Kundli/Kundliinter/Numerokundli/Numerokundli";
 
 
 
@@ -53,6 +54,7 @@ export default function ServicePage() {
         westernPage : <Western/>,
         doshakundli : <Doshas/>,
         matchHoro : <Matchkundli/>,
+        numerokundli : <Numerokundli/>
      }
 
      const matchkundliinter = {

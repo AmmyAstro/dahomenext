@@ -50,7 +50,7 @@ const kundlicards = [
         name: "Numerology",
         img: "/ds-img/num.webp",
         named: "Your Lucky number is...",
-        href:"/homepage/inKundli/getKundlipage/Inbasicchart",
+        href:"/homepage/inKundli/getKundlipage/numerokundli",
     },
     {
         name: "My Day Today",

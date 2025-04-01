@@ -270,26 +270,89 @@ const femang = [
     }
 ]
 
-const data = {
-    ashtakoota: {
-        varna: {
-            description: "Natural Refinement  / Work",
-            male_koot_attribute: "Kshatriya",
-            female_koot_attribute: "Kshatriya",
-            total_points: 1,
-            received_points: 1,
-            male_point: 1,
-            female_point: 1,
-        },
-        vashya: {
-            description: "Innate Giving / Attraction  towards each other",
-            male_koot_attribute: "Chatuspad",
-            female_koot_attribute: "Chatuspad",
-            total_points: 2,
-            received_points: 2,
-            male_point: 1,
-            female_point: 1,
-        },
+const percentage = [
+    {
+        "ashtakoota_percentage": 58,
+        "manglik_match_percentage": 85,
+        "rajju_match_percentage": 100,
+        "vedha_match_percentage": 100,
+        "match_percentage": 79,
+        "is_match_good": true
+    }
+]
+
+const mfdetails = [
+    {
+        gender: "Male",
+        "ascendant": "Libra",
+        "Varna": "Kshatriya",
+        "Vashya": "Chatuspad",
+        "Yoni": "Ashwa",
+        "Gan": "Dev",
+        "Nadi": "Adi",
+        "SignLord": "Mars",
+        "sign": "Aries",
+        "Naksahtra": "Ashwini",
+        "NaksahtraLord": "Ketu",
+        "Charan": 4,
+        "Yog": "Sukarma",
+        "Karan": "Vishti",
+        "Tithi": "Krishna Dashami",
+        "yunja": "Poorva",
+        "tatva": "Fire",
+        "name_alphabet": "La",
+        "paya": "Gold"
+    },
+    {
+        gender: "Female",
+        "ascendant": "Libra",
+        "Varna": "Kshatriya",
+        "Vashya": "Chatuspad",
+        "Yoni": "Ashwa",
+        "Gan": "Dev",
+        "Nadi": "Adi",
+        "SignLord": "Mars",
+        "sign": "Aries",
+        "Naksahtra": "Ashwini",
+        "NaksahtraLord": "Ketu",
+        "Charan": 4,
+        "Yog": "Sukarma",
+        "Karan": "Vishti",
+        "Tithi": "Krishna Dashami",
+        "yunja": "Poorva",
+        "tatva": "Fire",
+        "name_alphabet": "La",
+        "paya": "Gold"
+    }
+]
+
+const arraydata = {
+    "varna": {
+        "description": "Natural Refinement  / Work",
+        "male_koot_attribute": "Kshatriya",
+        "female_koot_attribute": "Kshatriya",
+        "total_points": 1,
+        "received_points": 1,
+        "male_point": 1,
+        "female_point": 1
+    },
+    "tara": {
+        "description": "Comfort - Prosperity - Health",
+        "male_koot_attribute": "Ashwini",
+        "female_koot_attribute": "Ashwini",
+        "total_points": 3,
+        "received_points": 3,
+        "male_point": 1,
+        "female_point": 1
+    },
+    "yoni": {
+        "description": "Intimate Physical",
+        "male_koot_attribute": "Ashwa",
+        "female_koot_attribute": "Ashwa",
+        "total_points": 4,
+        "received_points": 4,
+        "male_point": 1,
+        "female_point": 1
     },
 };
 
@@ -339,13 +402,43 @@ export default function Matchkuinter() {
                                         <h5 className="p-1 w-full rounded-full bg-white text-center text-sm font-semibold ">{point.name}</h5>
                                         <div className="p-1 w-full rounded-full bg-white text-center text-xs  "><span>Status : </span>  <span>{point.nmdet.status}</span></div>
 
-                                        {point.id === 1 && (
+                                        {/* {point.id === 1 && (
                                             <div className="p-1 w-full rounded-full bg-white text-center text-xs  "><span>Points : </span>  <span>{point.nmdet.received_points}</span></div>
                                         )
-                                        }
+                                        } */}
 
                                     </div>
                                 ))}
+                            </div>
+
+
+                            <div className="w-full">
+                                <div className="w-full">
+                                    {percentage.map((percent, index) => (
+                                        <div key={index} className="w-full grid grid-cols-5 gap-4 p-5 shadow-xl rounded-lg bg-gradient-to-r from-[#c54e5a44] to-[#7042ac57]">
+                                            <div className="flex flex-col items-center justify-center gap-2">
+                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.ashtakoota_percentage}%</span>
+                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Ashtakoota Percentage</span>
+                                            </div>
+                                            <div className="flex flex-col items-center justify-center gap-2">
+                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.manglik_match_percentage}%</span>
+                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Manglik Match Percentage</span>
+                                            </div>
+                                            <div className="flex flex-col items-center justify-center gap-2">
+                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.rajju_match_percentage}%</span>
+                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Rajju Match Percentage</span>
+                                            </div>
+                                            <div className="flex flex-col items-center justify-center gap-2">
+                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.vedha_match_percentage}%</span>
+                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Vedha Match Percentage</span>
+                                            </div>
+                                            <div className="flex flex-col items-center justify-center gap-2">
+                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.match_percentage}%</span>
+                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Match Percentage</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
 
@@ -355,7 +448,7 @@ export default function Matchkuinter() {
                                         <h5 className="text-2xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Amrender</h5>
                                         {malemang.map((malemang, index) => (
                                             < >
-                                                <div key={index} className="bg-gray-200 flex flex-col gap-1 rounded-lg px-4 py-2">
+                                                <div key={index} className="bg-gray-100 flex flex-col gap-1 rounded-lg px-4 py-4">
                                                     <div className="flex items-center justify-between ">
                                                         <span className="font-semibold">Male Manglik percentage </span> <span>{malemang.percentage_manglik_present}</span>
                                                     </div>
@@ -370,12 +463,12 @@ export default function Matchkuinter() {
                                                     </div>
                                                 </div>
 
-                                                <div className="bg-gray-200 flex flex-col gap-1 rounded-lg p-2">
+                                                <div className="bg-gray-100 flex flex-col gap-1 rounded-lg p-4">
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Manglik Report : </span> <span>{malemang.manglik_report}</span></div>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Manglik Cancel Rule : </span> <span>{malemang.manglik_cancel_rule}</span></div>
                                                 </div>
 
-                                                <div className="bg-gray-200 flex flex-col gap-1 rounded-lg p-2">
+                                                <div className="bg-gray-100 flex flex-col gap-1 rounded-lg p-4">
                                                     <span className="text-xl font-semibold">Male Manglik Present Rule :</span>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Based On Aspects : </span> <span>{malemang.based_on_aspect}</span></div>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Based On House : </span> <span>{malemang.based_on_house}</span></div>
@@ -388,7 +481,7 @@ export default function Matchkuinter() {
                                         <h5 className="text-2xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Girl</h5>
                                         {femang.map((femang, index) => (
                                             < >
-                                                <div key={index} className="bg-gray-200 flex flex-col gap-1 rounded-lg px-4 py-2">
+                                                <div key={index} className="bg-gray-100 flex flex-col gap-1 rounded-lg px-4 py-4">
                                                     <div className="flex items-center justify-between ">
                                                         <span className="font-semibold">Female Manglik percentage </span> <span>{femang.percentage_manglik_present}</span>
                                                     </div>
@@ -403,12 +496,12 @@ export default function Matchkuinter() {
                                                     </div>
                                                 </div>
 
-                                                <div className="bg-gray-200 flex flex-col gap-1 rounded-lg p-2">
+                                                <div className="bg-gray-100 flex flex-col gap-1 rounded-lg p-4">
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Manglik Report : </span> <span>{femang.manglik_report}</span></div>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Manglik Cancel Rule : </span> <span>{femang.manglik_cancel_rule}</span></div>
                                                 </div>
 
-                                                <div className="bg-gray-200 flex flex-col gap-1 rounded-lg p-2">
+                                                <div className="bg-gray-100 flex flex-col gap-1 rounded-lg p-4">
                                                     <span className="text-xl font-semibold">Female Manglik Present Rule :</span>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Based On Aspects : </span> <span>{femang.based_on_aspect}</span></div>
                                                     <div className="flex flex-col items-start text-sm"><span className="font-semibold">Based On House : </span> <span>{femang.based_on_house}</span></div>
@@ -420,22 +513,78 @@ export default function Matchkuinter() {
                             </div>
 
 
-                            <div>
-                                {Object.entries(data.ashtakoota).map(([key, value]) => (
-                                    <div key={key} className="border p-4 mb-2 flex rounded-lg shadow">
-                                        <h2 className="font-bold text-lg capitalize">{key}</h2>
-                                        <p className="text-gray-600">{value.description}</p>
-                                        <ul className=" flex pl-5 list-none">
-                                            <li>Male Attribute: {value.male_koot_attribute}</li>
-                                            <li>Female Attribute: {value.female_koot_attribute}</li>
-                                            <li>Total Points: {value.total_points}</li>
-                                            <li>Received Points: {value.received_points}</li>
-                                            <li>Male Points: {value.male_point}</li>
-                                            <li>Female Points: {value.female_point}</li>
-                                        </ul>
+                            <div className="mf-details w-full">
+                                <h5 className="text-xl font-semibold text-center py-3 text-[#000]">Matching Astro Details</h5>
+                                <div className="grid grid-cols-3 gap-5 w-full">
+                                    <div className="flex-flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-center p-1">
+                                        <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg ">GUNAS</h5>
+
+                                        <h5 className=" font-semibold">Ascendant</h5>
+                                        <h5 className=" font-semibold">Varna</h5>
+                                        <h5 className=" font-semibold">Vashya</h5>
+                                        <h5 className=" font-semibold">Yoni</h5>
+                                        <h5 className=" font-semibold">Gan </h5>
+                                        <h5 className=" font-semibold">Nadi</h5>
+                                        <h5 className=" font-semibold">SignLord</h5>
+                                        <h5 className=" font-semibold">Sign</h5>
+                                        <h5 className=" font-semibold">Nakshatra </h5>
+                                        <h5 className=" font-semibold">NaksahtraLord</h5>
+                                        <h5 className=" font-semibold">Charan </h5>
+                                        <h5 className=" font-semibold">Yog</h5>
+                                        <h5 className=" font-semibold">Karan</h5>
+                                        <h5 className=" font-semibold">Tithi</h5>
+                                        <h5 className=" font-semibold">Yunja </h5>
+                                        <h5 className=" font-semibold">Tatva</h5>
+                                        <h5 className=" font-semibold">Name Alphabet </h5>
+                                        <h5 className=" font-semibold">Paya</h5>
+                                    </div>
+
+                                    {mfdetails.map((male, index) => (
+
+
+                                        <div key={index} className="flex-flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-center p-1">
+                                            <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg ">{male.gender}</h5>
+                                            <h5 className=" font-">{male.ascendant}</h5>
+                                            <h5 className=" font-">{male.Varna}</h5>
+                                            <h5 className=" font-">{male.Vashya}</h5>
+                                            <h5 className=" font-">{male.Yoni}</h5>
+                                            <h5 className=" font-">{male.Gan} </h5>
+                                            <h5 className=" font-">{male.Nadi}</h5>
+                                            <h5 className=" font-">{male.SignLord}</h5>
+                                            <h5 className=" font-">{male.sign}</h5>
+                                            <h5 className=" font-">{male.Naksahtra} </h5>
+                                            <h5 className=" font-">{male.NaksahtraLord}</h5>
+                                            <h5 className=" font-">{male.Charan} </h5>
+                                            <h5 className=" font-">{male.Yog}</h5>
+                                            <h5 className=" font-">{male.Karan}</h5>
+                                            <h5 className=" font-">{male.Tithi}</h5>
+                                            <h5 className=" font-">{male.yunja} </h5>
+                                            <h5 className=" font-">{male.tatva}</h5>
+                                            <h5 className=" font-">{male.name_alphabet} </h5>
+                                            <h5 className=" font-">{male.paya}</h5>
+                                        </div>
+                                    ))}
+
+
+                                </div>
+                            </div>
+
+                        <div className="askdoot w-full">
+                            <h5 className="text-xl font-semibold text-center text-[#000]">Matching Ashtakoot Points</h5>
+                        <div className="dakshakoot grid grid-cols-3 gap-4  py-2 w-full">
+                                {Object.entries(arraydata).map(([key, value]) => (
+                                    <div key={key} className=" border-b bg-purple-100 border-purple-200 p-4 text-sm rounded-lg shadow-lg text-[#000] flex flex-col gap-1">
+                                        <span className="font-extrabold text-base"> {key} </span>
+                                        <div className="flex items-center justify-between">  <div className="flex  gap-3 items-center"><span className="font-semibold text-purple-400">Male : </span> <span>{value.male_koot_attribute}</span></div>
+                                            <div className="flex items-center gap-3">  <span className="font-semibold text-pink-400"> Female : </span><span> {value.female_koot_attribute} </span></div></div>
+                                        <div className="flex items-center justify-between">  <div className="flex  items-center gap-3"><span className="font-semibold text-purple-400">Male Points : </span> <span>{value.male_point}</span></div>
+                                            <div className="flex  items-center gap-3">  <span className="font-semibold text-pink-400"> Female Points : </span> <span>{value.female_point} </span></div></div>
+                                        <div className="flex items-center gap-3">  <span className="font-semibold">Received Points: </span> <span>{value.received_points}/{value.total_points} </span></div>
                                     </div>
                                 ))}
                             </div>
+                        </div>
+
 
 
 
@@ -444,33 +593,33 @@ export default function Matchkuinter() {
 
                                     <div className="grid grid-cols-1 gap-2 text-[#000] ">
                                         <div className="flex flex-col gap-1">
-                                            <div className="pl-ul grid grid-cols-10 bg-purple-400 rounded-lg px-5 py-2 text-nowrap">
-                                                <h5 className="text-xs font-semibold">Id</h5>
-                                                <h5 className="text-xs font-semibold">Name</h5>
-                                                <h5 className="text-xs font-semibold">isRetro</h5>
-                                                <h5 className="text-xs font-semibold">House</h5>
-                                                <h5 className="text-xs font-semibold">Sign </h5>
-                                                <h5 className="text-xs font-semibold">Sign Lord</h5>
-                                                <h5 className="text-xs font-semibold">Nakshatra</h5>
-                                                <h5 className="text-xs font-semibold">Naksh Lord</h5>
-                                                <h5 className="text-xs font-semibold">Nakshatra Pad</h5>
+                                            <div className="pl-ul grid grid-cols-10 bg-purple-400 text-sm rounded-lg px-5 py-2 text-nowrap">
+                                                <h5 className=" font-semibold">Id</h5>
+                                                <h5 className=" font-semibold">Name</h5>
+                                                <h5 className=" font-semibold">isRetro</h5>
+                                                <h5 className=" font-semibold">House</h5>
+                                                <h5 className=" font-semibold">Sign </h5>
+                                                <h5 className=" font-semibold">Sign Lord</h5>
+                                                <h5 className=" font-semibold">Nakshatra</h5>
+                                                <h5 className=" font-semibold">Naksh Lord</h5>
+                                                <h5 className=" font-semibold">Nakshatra Pad</h5>
 
-                                                <h5 className="text-xs font-semibold">Planet Awastha</h5>
+                                                <h5 className=" font-semibold">Planet Awastha</h5>
                                             </div>
 
                                             {maleplanet.map((male, index) => (
-                                                <div key={index} className="text-xs basic-card grid grid-cols-10 gap-1 bg-purple-200 rounded-lg px-5 py-2 text-nowrap">
-                                                    <span className="text-xs">{male.id}</span>
-                                                    <span className="text-xs">{male.name}</span>
-                                                    <span className="text-xs">{male.isRetro}</span>
-                                                    <span className="text-xs">{male.house}</span>
-                                                    <span className="text-xs">{male.sign}</span>
-                                                    <span className="text-xs">{male.signLord}</span>
-                                                    <span className="text-xs">{male.nakshatra}</span>
-                                                    <span className="text-xs">{male.nakshatraLord}</span>
-                                                    <span className="text-xs">{male.nakshatra_pad}</span>
+                                                <div key={index} className="text-sm basic-card grid grid-cols-10 gap-1 bg-purple-200 rounded-lg px-5 py-2 text-nowrap">
+                                                    <span className="">{male.id}</span>
+                                                    <span className="">{male.name}</span>
+                                                    <span className="">{male.isRetro}</span>
+                                                    <span className="">{male.house}</span>
+                                                    <span className="">{male.sign}</span>
+                                                    <span className="">{male.signLord}</span>
+                                                    <span className="">{male.nakshatra}</span>
+                                                    <span className="">{male.nakshatraLord}</span>
+                                                    <span className="">{male.nakshatra_pad}</span>
 
-                                                    <span className="text-xs">{male.planet_awastha}</span>
+                                                    <span className="">{male.planet_awastha}</span>
 
                                                 </div>
                                             ))}

@@ -188,39 +188,39 @@ export default function Footerlinks() {
               <ul className="fot_link flex  flex-col">
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 sm:w-8 sm:h-8"
+                    <img className="w-5 h-5 sm:w-6 sm:h-6"
                       src="/ds-img/Privacy.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs sm:text-base">Private & <strong>Confidential</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-sm">Private & <strong>Confidential</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 sm:w-8 sm:h-8"
+                    <img className="w-5 h-5 sm:w-6 sm:h-6"
                       src="/ds-img/verifide-icon.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs sm:text-base">Verified Expert <strong>Astrologer</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-sm">Verified Expert <strong>Astrologer</strong></h5>
                     </span>
                   </a>
                 </li>
 
                 <li className="foot-li">
                   <a href="#" className="flex items-center">
-                    <img className="w-5 h-5 sm:w-8 sm:h-8"
+                    <img className="w-5 h-5 sm:w-6 sm:h-6"
                       src="/ds-img/foot-sure-img.webp"
                       alt="logo image"
                       loading="lazy"
                     />
                     <span className="foot-trst-spn flex  items-center">
-                      <h5 className="foot-h-sp text-xs sm:text-base">100% Secure <strong>Payments</strong></h5>
+                      <h5 className="foot-h-sp text-xs sm:text-sm">100% Secure <strong>Payments</strong></h5>
                     </span>
                   </a>
                 </li>
