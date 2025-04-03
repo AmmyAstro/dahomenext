@@ -1,19 +1,7 @@
 "use client"; // Required for interactive UI in Next.js 13+
-import Image from "next/image";
-import Link from "next/link";
+
 import { useState } from "react";
-import Kuninterimg from "../Kunfreeimg";
-import Sidebanner from "@/components/Smcompo/Sidebanner";
-import Bestsell from "@/components/Smcompo/Bestsell";
-import Ytvideo from "@/components/Smcompo/Ytvideo";
-// import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Freereport from "@/components/Smcompo/Freereport";
-import Recastro from "@/components/Smcompo/Recastro";
-import FAQue from "@/components/FAQue";
-import Callchatsec from "@/components/CallChatsec/Callchatsec";
-import Personal from "@/components/Smcompo/Personal";
-import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Kundliother from "@/components/Smcompo/Kunother";
+
 
 const numeroarr = [
     {
@@ -77,12 +65,10 @@ export default function Numerokundli() {
     const [actFav, setActfav] = useState(0);
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            <div className="kundli-top-sec ">
-                <Kuninterimg />
-            </div>
+      
 
-            <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-20 gap-5 py-5">
-                <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-3 items-center">
+            <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-1">
+                <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
                     <h5 className="text-sm md:text-xl text-[#000] font-semibold">
                         <span className="text-red-500">"Numerology & Favorability: </span>{" "}
                         Everything You Should Know"
@@ -172,7 +158,7 @@ export default function Numerokundli() {
 
                                     <div key={index} className=" gap-3">
                                         <h5 onClick={() => setActfav(nrep.id)}
-                                         className={`text-sm cursor-pointer text-center bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c] rounded-lg shadow-lg px-3 py-2 ${actFav === nrep.id ? "bg-[#00000050]" : ""}`}>{nrep.title}</h5>
+                                         className={`text-sm cursor-pointer text-center bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c] rounded-lg shadow-lg px-3 py-2 ${actFav === nrep.id ? "bg-[#00000050] text-white" : ""}`}>{nrep.title}</h5>
                                     </div>
                                 ))}
 
@@ -189,18 +175,8 @@ export default function Numerokundli() {
                     </section>
                 </div>
 
-                <div className="kundli-side flex flex-col items-center justify-start gap-3">
-                    <Ytvideo />
-                    <Kundliother />
-                    <Bestsell />
-                    <Sidebanner />
-                </div>
             </div>
 
-            <Freereport />
-            <Recastro />
-            <FAQue />
-            <Callchatsec />
         </section>
     );
 }

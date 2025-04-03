@@ -13,16 +13,13 @@ import Blogcomp from "@/components/Blogsec/Blogcomp";
 import Basichart from "@/components/Kundli/Kundliinter/Basichart";
 import General from "@/components/Kundli/Kundliinter/Generallife/General";
 import Western from "@/components/Kundli/Kundliinter/Western/Western";
-import Natal from "@/components/Kundli/Kundliinter/Western/Natal";
-import Numero from "@/components/Kundli/Kundliinter/Western/Numero";
-import Compatwest from "@/components/Kundli/Kundliinter/Western/Compatwest";
-import Solar from "@/components/Kundli/Kundliinter/Western/Solar";
-import Lunar from "@/components/Kundli/Kundliinter/Western/Lunar";
-import Transit from "@/components/Kundli/Kundliinter/Western/Transit";
+
 import Doshas from "@/components/Kundli/Kundliinter/Kundlidosha/Doshas";
 import Matchkundli from "@/components/Kundli/Kundliinter/Matchkundli/Matchkundli";
 import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuinter";
 import Numerokundli from "@/components/Kundli/Kundliinter/Numerokundli/Numerokundli";
+import Myday from "@/components/Kundli/Kundliinter/Myday/Myday";
+import Varshaphal from "@/components/Kundli/Kundliinter/Varshaphal/Varshaphal";
 
 
 
@@ -54,21 +51,23 @@ export default function ServicePage() {
         westernPage : <Western/>,
         doshakundli : <Doshas/>,
         matchHoro : <Matchkundli/>,
-        numerokundli : <Numerokundli/>
+        numerokundli : <Numerokundli/>,
+        mydaytoday : <Myday/>,
+        varshaphal : <Varshaphal/>,
      }
 
      const matchkundliinter = {
         matchKundli : <Matchkuinter/>
      }
 
-     const westerninter = {
-        natalpage : <Natal/>,
-        numberpage : <Numero/>,
-        compatwest : <Compatwest/>,
-        solarwest : <Solar/>,
-        transitwest : <Transit/>,
-        lunarwest : <Lunar/>,
-     }
+    //  const westerninter = {
+    //     natalpage : <Natal/>,
+    //     numberpage : <Numero/>,
+    //     compatwest : <Compatwest/>,
+    //     solarwest : <Solar/>,
+    //     transitwest : <Transit/>,
+    //     lunarwest : <Lunar/>,
+    //  }
 
     let Componentrender = null;
 

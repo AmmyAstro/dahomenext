@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Kuninterimg from "../Kunfreeimg";
-import Sidebanner from "@/components/Smcompo/Sidebanner";
-import Bestsell from "@/components/Smcompo/Bestsell";
-import Ytvideo from "@/components/Smcompo/Ytvideo";
-// import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Freereport from "@/components/Smcompo/Freereport";
-import Recastro from "@/components/Smcompo/Recastro";
-import FAQue from "@/components/FAQue";
-import Callchatsec from "@/components/CallChatsec/Callchatsec";
+
 
 export default function Western() {
     const western = [
@@ -57,13 +49,11 @@ export default function Western() {
 
 
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            <div className="kundli-top-sec w-full">
-                <Kuninterimg />
-            </div>
+        
 
-            <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 py-5">
+            <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-0 gap-5 py-1">
 
-                <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
+                <div className="basic-kundli-charts col-span-4 flex flex-col gap-2 items-center">
 
 
                     <div className="container">
@@ -77,7 +67,7 @@ export default function Western() {
                                     href={west.href}
                                     key={index}
                                     style={{ backgroundColor: west.clr }}
-                                    className={`service-card-top w-26 sm:w-32 xl:w-46  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
+                                    className={`service-card-top w-26 sm:w-32 xl:w-45  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
                                 >
                                     <Image
                                         src={west.img}
@@ -103,17 +93,10 @@ export default function Western() {
 
 
 
-                <div className="kundli-side flex flex-col items-center justify-start gap-3">
-                    <Ytvideo />
-                    <Bestsell />
-                    {/* <Sidebanner /> */}
-                </div>
+           
             </div>
 
-            <Freereport />
-            <Recastro />
-            <FAQue />
-            <Callchatsec />
+        
 
         </section>
 

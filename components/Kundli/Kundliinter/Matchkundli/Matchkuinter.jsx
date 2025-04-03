@@ -360,9 +360,9 @@ export default function Matchkuinter() {
 
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            <div className="kundli-top-sec ">
+            {/* <div className="kundli-top-sec ">
                 <Kuninterimg />
-            </div>
+            </div> */}
 
             <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-20 gap-5 py-5">
                 <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-3 items-center">
@@ -639,18 +639,18 @@ export default function Matchkuinter() {
                     </section>
                 </div>
 
-                <div className="kundli-side flex flex-col items-center justify-start gap-3">
+                {/* <div className="kundli-side flex flex-col items-center justify-start gap-3">
                     <Ytvideo />
                     <Kundliother />
                     <Bestsell />
                     <Sidebanner />
-                </div>
+                </div> */}
             </div>
 
-            <Freereport />
+            {/* <Freereport />
             <Recastro />
             <FAQue />
-            <Callchatsec />
+            <Callchatsec /> */}
         </section>
     );
 }

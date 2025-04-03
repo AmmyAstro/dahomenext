@@ -210,6 +210,38 @@ body {
   background-color: #000000ad;
 }
 
+/* Problem base section  */
+.prblm-txt{
+  
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  z-index: 9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 10px;
+  background-color: #000000ad;
+}
+.problem-base-card::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+.prblm-card-top{
+  position: relative;
+  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+.prblm-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 /* Puja Home  */
 .puja-images-marquee-sec {
@@ -355,7 +387,7 @@ body {
 
 /* QR COde Download App  */
 .app-img-content {
-  width: 90%;
+  width: 70%;
   justify-self: center;
 }
 

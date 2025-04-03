@@ -14,59 +14,59 @@ export default function Chathoro() {
   const chathorobox = [
     {
       id: 1,
-      src: "/prblm/love1.jpeg",
+      src: "/ds-img/love1.png",
       alt: "Talk",
       ulname: "Love",
       href: "/homepage/problemBaseLove",
     },
     {
       id: 2,
-      src: "/prblm/jobb.jpeg",
+      src: "/ds-img/jobb.png",
       alt: "Chat",
       ulname: "Job",
       href: "/homepage/Inlovecat",
 
     },
-    // {
-    //   id: 3,
-    //   src: "/prblm/rupee.png",
-    //   alt: "Match",
-    //   ulname: "Money",
-    //   href: "/homepage/Inlovecat",
+    {
+      id: 3,
+      src: "/prblm/moneyy.jpeg",
+      alt: "Match",
+      ulname: "Money",
+      href: "/homepage/Inlovecat",
 
-    // },
-    // {
-    //   id: 4,
-    //   src: "/prblm/jury.png",
-    //   alt: "Live",
-    //   ulname: "Legal",
-    //   href: "/homepage/Inlovecat",
+    },
+    {
+      id: 4,
+      src: "/prblm/hclegal.jpeg",
+      alt: "Live",
+      ulname: "Legal",
+      href: "/homepage/Inlovecat",
 
-    // },
-    // {
-    //   id: 5,
-    //   src: "/prblm/prenatal-care.png",
-    //   alt: "Store",
-    //   ulname: "Pregnancy",
-    //   href: "/homepage/Inlovecat",
+    },
+    {
+      id: 5,
+      src: "/prblm/pregg.jpeg",
+      alt: "Store",
+      ulname: "Pregnancy",
+      href: "/homepage/Inlovecat",
 
-    // },
-    // {
-    //   id: 6,
-    //   src: "/prblm/education.png",
-    //   alt: "Store",
-    //   ulname: "Education",
-    //   href: "/homepage/Inlovecat",
+    },
+    {
+      id: 6,
+      src: "/prblm/educat.jpeg",
+      alt: "Store",
+      ulname: "Education",
+      href: "/homepage/Inlovecat",
 
-    // },
-    // {
-    //   id: 7,
-    //   src: "/prblm/wedding-couple.png",
-    //   alt: "Store",
-    //   ulname: "Marriage",
-    //   href: "/homepage/Inlovecat",
+    },
+    {
+      id: 7,
+      src: "/prblm/marriage.jpeg",
+      alt: "Store",
+      ulname: "Marriage",
+      href: "/homepage/Inlovecat",
 
-    // },
+    },
   ];
   const horoscopes = [
     { name: "Aries", img: "/ds-img/ARIESn.webp" },
@@ -93,27 +93,30 @@ export default function Chathoro() {
         </div>
 
         <div className="service-horocope flex flex-col items-center justify-center">
-          <div className="problem-icons-card flex flex-col items-center justify-center">
+          <div className="healing_service_new mt-2 self-center sm:max-w-7xl w-full  p-4 ">
             <h1 className="text-[#2f1254] text-md sm:text-2xl py-4 text-center font-semibold">
               • Discover personalized astrological solutions <strong>from our Experts</strong> •
             </h1>
-            <div className="relative grid max-w-7xl items-center justify-center grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 gap-4 sm:gap-6 z-10">
+            <div className="problem-base-card flex overflow-x-auto overflow-y-hidden py-[10px]">
               {chathorobox.map((chatbox) => (
                 <Link href={chatbox.href}
                   key={chatbox.id}
-                  className="service-card-top w-21 sm:w-32 xl:w-40 bg-[#dccef3e3] rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center"
+                  className="prblm-card-top flex items-center justify-center sm:w-75 sm:h-55 xl:min-w-70 xl:h-60 min-w-40 sm:min-w-55 h-40"
                 >
                   <Image
                     src={chatbox.src}
-                    className="w-7 h-7  sm:w-14 sm:h-14 mb-2"
+                    className="prblm-image "
                     width={35}
                     height={35}
                     alt="Image 1"
+                    unoptimized
                     loading="lazy"
                   />
-                  <h3 className="sm:text-xs xl:text-sm text-[13px] text-[#000] ">
+                <div className="flex items-center justify-center absolute bottom-2 w-[100%] left-0">
+                <h3 className="prblm-txt w-[90%] rounded-full border justify-self-center self-center place-self-center text-xs sm:text-base ">
                     {chatbox.ulname}
                   </h3>
+                </div>
                 </Link>
               ))}
             </div>

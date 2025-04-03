@@ -34,8 +34,9 @@ export default function Mainhomecom() {
         <Astronewcard/>
         {/* <Astrocard /> */}
         <Chathoro />
-        <Astroserv />
         <Remecalc />
+        <Astroserv />
+
         {/* <Pujahome/> */}
         {/* <Pujaupcom/> */}
         <Downapp />

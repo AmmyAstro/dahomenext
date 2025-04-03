@@ -1,6 +1,5 @@
 import Footerlinks from "@/components/Footerlinks";
 import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
 import Navbarmob from "@/components/Navbarmob";
 
 export default function layout({ children }) {

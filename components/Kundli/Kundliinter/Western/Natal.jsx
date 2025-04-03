@@ -1,15 +1,7 @@
 "use client"; // Required for interactive UI in Next.js 13+
 import Image from "next/image";
 import { useState } from "react";
-import Kuninterimg from "../Kunfreeimg";
-import Sidebanner from "@/components/Smcompo/Sidebanner";
-import Bestsell from "@/components/Smcompo/Bestsell";
-import Ytvideo from "@/components/Smcompo/Ytvideo";
-// import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Freereport from "@/components/Smcompo/Freereport";
-import Recastro from "@/components/Smcompo/Recastro";
-import FAQue from "@/components/FAQue";
-import Callchatsec from "@/components/CallChatsec/Callchatsec";
+
 
 const westernarr = [
     {
@@ -293,13 +285,11 @@ export default function Natal() {
 
 
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            <div className="kundli-top-sec w-full">
-                <Kuninterimg />
-            </div>
+ 
 
-            <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-20 gap-5 py-5">
+            <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-0 gap-5 py-1">
 
-                <div className="basic-kundli-charts col-span-3 flex flex-col gap-2 items-center">
+                <div className="basic-kundli-charts col-span-4 flex flex-col gap-2 items-center">
 
                     <section className="basic-details-main">
                         <div className="flex  gap-5 flex-col">
@@ -403,17 +393,9 @@ export default function Natal() {
 
 
 
-                <div className="kundli-side flex flex-col items-center justify-start gap-3">
-                    <Ytvideo />
-                    <Bestsell />
-                    <Sidebanner />
-                </div>
             </div>
 
-            <Freereport />
-            <Recastro />
-            <FAQue />
-            <Callchatsec />
+     
 
         </section>
 
