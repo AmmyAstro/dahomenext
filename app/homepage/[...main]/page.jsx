@@ -29,73 +29,49 @@ export default function ServicePage() {
 
 
     const navmainComponent = {
-       chatAstro : <Chatastro/>,
-       callAstro : <Callastro/>,
-       dhServices : <Dhservices/>,
-       inHealing : <Healing/>,
-       inLovecat : <Lovecat/>,
-       inBlog: <Inblog/>,
-       inHoroscope : <Inhoro/>,
-       inKundli : <Kundlimain/>,
-       blogComp : <Blogcomp/>,
-       problemBaseLove : <Lovecat/>
-
+        chatAstro: <Chatastro />,
+        callAstro: <Callastro />,
+        dhServices: <Dhservices />,
+        inHealing: <Healing />,
+        inLovecat: <Lovecat />,
+        inBlog: <Inblog />,
+        inHoroscope: <Inhoro />,
+        inKundli: <Kundlimain />,
+        blogComp: <Blogcomp />,
+        problemBaseLove: <Lovecat />
     }
 
     const getKundlibtn = {
-        getKundlipage : <Kuninter/>, 
+        getKundlipage: <Kuninter />,
     }
-     const kundliinteral ={
-        kundliBasic1 : <Basichart/>,
-        generalPred : <General/>,
-        westernPage : <Western/>,
-        doshakundli : <Doshas/>,
-        matchHoro : <Matchkundli/>,
-        numerokundli : <Numerokundli/>,
-        mydaytoday : <Myday/>,
-        varshaphal : <Varshaphal/>,
-     }
 
-     const matchkundliinter = {
-        matchKundli : <Matchkuinter/>
-     }
 
-    //  const westerninter = {
-    //     natalpage : <Natal/>,
-    //     numberpage : <Numero/>,
-    //     compatwest : <Compatwest/>,
-    //     solarwest : <Solar/>,
-    //     transitwest : <Transit/>,
-    //     lunarwest : <Lunar/>,
-    //  }
+    const matchkundliinter = {
+        matchKundli: <Matchkuinter />
+    }
 
     let Componentrender = null;
 
     if (path.length === 1) {
         Componentrender = navmainComponent[path[0]];
     }
-    else if (path.length === 2 && path[0] === "inKundli") { 
+    else if (path.length === 2 && path[0] === "inKundli") {
         Componentrender = getKundlibtn[path[1]];
     }
-    else if (path.length === 3 && path[1] === "getKundlipage" && path[0] === "inKundli") {
-        Componentrender = kundliinteral[path[2]];
-    }
-    else if (path.length === 4 && path[2] === "westernPage" && path[1] === "getKundlipage" ) {
-        Componentrender = westerninter[path[3]];
-    }
-    else if (path.length === 4 &&  path[2] === "matchHoro" && path[1] === "getKundlipage" && path[0] === "inKundli"  ) {
-        Componentrender = matchkundliinter[path[3]];
-    }
+    // else if (path.length === 3 && path[1] === "getKundlipage" && path[0] === "inKundli") {
+    //     Componentrender = kundliinteral[path[2]];
+    // }
+
 
     return (
-       <>
-        {Componentrender ? (
-            Componentrender) : (
+        <>
+            {Componentrender ? (
+                Componentrender) : (
                 <div>
                     Page not found
                 </div>
             )}
-       </>
+        </>
     );
 }
 

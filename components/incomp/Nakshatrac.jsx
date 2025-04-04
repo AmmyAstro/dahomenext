@@ -2,7 +2,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Nakshatra() {
+export default function Nakshatrac() {
   const [yourName, setYourName] = useState("");
   const [partnerName, setPartnerName] = useState("");
   const [yourGender, setYourGender] = useState("male");

@@ -23,7 +23,7 @@ export default function Basicdetail() {
                     {btabs.map((btab) => (
                         <li
                             key={btab.id}
-                            onClick={() => setBasicTab(btab.id)}
+                            onClick={() => setBasicTab(btab.id) }
                             className={`cursor-pointer lg:px-5 text-xs px-2 py-1 md:text-base lg:py-1 rounded-full ${basicTab === btab.id ? "bg-purple-500 text-white" : " text-white"
                                 }`}     >
                             {btab.label}

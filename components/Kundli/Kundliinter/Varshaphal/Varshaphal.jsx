@@ -317,6 +317,246 @@ const varshplanet = [
     
 ]
 
+const yogarr = [
+    
+        {
+            "yog_name": "Iquabal Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Induvara Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Ithasala Yoga",
+            "yog_description": "",
+            "powerfullness_percentage": "",
+            "is_yog_happening": "true",
+            "yog_prediction": "",
+            "yog_type": [
+                {
+                    "yog_name": "Vartamana Ithasala",
+                    "planets": [
+                        "Sun",
+                        "Mars"
+                    ],
+                    "planets_id": [
+                        0,
+                        2
+                    ]
+                }
+            ]
+        },
+        {
+            "yog_name": "Easarpha Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": [
+                
+                    "Venus",
+                    "Sun",
+                
+                
+                    "Venus",
+                    "Mars",
+                
+                
+                    "Jupiter",
+                    "Saturn",
+                
+            ],
+            "planets_id": [
+                [
+                    5,
+                    0
+                ],
+                [
+                    5,
+                    2
+                ],
+                [
+                    4,
+                    6
+                ]
+            ]
+        },
+        {
+            "yog_name": "Nakta Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Yamaya Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Manahoo Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Kamboola Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Garikamboola Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Khallasara Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Radda Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Dupparikutha Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Duttota Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Thambira Yoga",
+            "yog_description": "",
+            "is_yog_happening": "false",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": []
+        },
+        {
+            "yog_name": "Kuttha Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": [
+                [
+                    null,
+                    "Venus"
+                ]
+            ]
+        },
+        {
+            "yog_name": "Durupha Yoga",
+            "yog_description": "",
+            "is_yog_happening": "true",
+            "powerfullness_percentage": "",
+            "yog_prediction": "",
+            "planets": [
+                [
+                    "Sun",
+                    "Mars"
+                ]
+            ]
+        }
+    
+]
+
+const muddaarr = [    
+        {
+            "planet": "SUN",
+            "duration": 18,
+            "dasha_start": "3-2-2017,12:37:41",
+            "dasha_end": "21-2-2017,18:55:41"
+        },
+        {
+            "planet": "MOON",
+            "duration": 30,
+            "dasha_start": "21-2-2017,18:55:41",
+            "dasha_end": "24-3-2017,5:25:41"
+        },
+        {
+            "planet": "MARS",
+            "duration": 21,
+            "dasha_start": "24-3-2017,5:25:41",
+            "dasha_end": "14-4-2017,12:46:41"
+        },
+        {
+            "planet": "RAHU",
+            "duration": 54,
+            "dasha_start": "14-4-2017,12:46:41",
+            "dasha_end": "8-6-2017,7:40:41"
+        },
+        {
+            "planet": "JUPITER",
+            "duration": 48,
+            "dasha_start": "8-6-2017,7:40:41",
+            "dasha_end": "27-7-2017,0:28:41"
+        },
+        {
+            "planet": "SATURN",
+            "duration": 57,
+            "dasha_start": "27-7-2017,0:28:41",
+            "dasha_end": "22-9-2017,20:25:41"
+        },
+        {
+            "planet": "MERCURY",
+            "duration": 51,
+            "dasha_start": "22-9-2017,20:25:41",
+            "dasha_end": "13-11-2017,14:16:41"
+        },
+        {
+            "planet": "KETU",
+            "duration": 21,
+            "dasha_start": "13-11-2017,14:16:41",
+            "dasha_end": "4-12-2017,21:37:41"
+        },
+        {
+            "planet": "VENUS",
+            "duration": 60,
+            "dasha_start": "4-12-2017,21:37:41",
+            "dasha_end": "3-2-2018,18:37:41"
+        }
+    
+]
+
 
 function roundUp(num, decimalPlaces) {
     const factor = Math.pow(10, decimalPlaces);
@@ -531,8 +771,8 @@ export default function Varshaphal() {
 
                 <h5 className="text-xl text-center text-red-500  font-semibold">Varshaphal Details</h5>
 
-                <div className="grid grid-cols-2 gap-5">
-                    <div className="yaerly-chart items-center gap-2 justify-start flex flex-col">
+                <div className="grid grid-cols-2 gap-5 border rounded-lg shadow-lg p-2 border-purple-100">
+                    <div className="yaerly-chart items-center gap-2 justify-start flex flex-col ">
                         <h5 className="bg-purple-400 rounded-lg px-2 py-1 w-fit">Yearly Chart</h5>
                         <div>
                             {varsharr.map((item, index) => (
@@ -600,7 +840,7 @@ export default function Varshaphal() {
                 </div>
 
                 
-                <div className="basic-det w-full">
+                <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                                 <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Vashaphal Planets</h5>
                                 <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
                                 <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
@@ -636,6 +876,62 @@ export default function Varshaphal() {
                                 </div>
                                 </div>
                             </div>
+
+                            <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
+                                <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Varshaphal Yoga</h5>
+                                <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                    <div className="pl-ul grid grid-cols-5 bg-purple-400 rounded-lg px-4 py-2">
+                                        <h5 className="text-sm font-semibold">Yog Name</h5>
+                                        <h5 className="text-sm font-semibold">Is Yog Happening</h5>
+                                        <h5 className="text-sm font-semibold">Powerfullness Percentage</h5>
+                                        <h5 className="text-sm font-semibold">Yog Prediction</h5>
+                                        <h5 className="text-sm font-semibold">Yog Description</h5>
+
+
+                                    </div>
+
+                                    {yogarr.map((yog, index) => (
+                                        <div key={index} className="basic-card grid grid-cols-5  bg-purple-200 rounded-lg px-5 py-2">
+                                            <span className="text-sm">{yog.yog_name}</span>
+                                            <span className="text-sm">{yog.is_yog_happening}</span>
+                                            <span className="text-sm">{yog.powerfullness_percentage}</span>
+                                            <span className="text-sm">{yog.yog_prediction}</span>
+                                            <span className="text-sm">{yog.yog_description}</span>
+
+                                        </div>
+                                    ))}
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
+                                <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Varshaphal Mudda Dasha</h5>
+                                <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                    <div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-4 py-2">
+                                        <h5 className="text-sm font-semibold">Planet</h5>
+                                        <h5 className="text-sm font-semibold">Duration</h5>
+                                        <h5 className="text-sm font-semibold">Dasha Start </h5>
+                                        <h5 className="text-sm font-semibold">Dasha End</h5>
+
+
+                                    </div>
+
+                                    {muddaarr.map((mudda, index) => (
+                                        <div key={index} className="basic-card grid grid-cols-4  bg-purple-200 rounded-lg px-5 py-2">
+                                            <span className="text-sm">{mudda.planet}</span>
+                                            <span className="text-sm">{mudda.duration}</span>
+                                            <span className="text-sm">{mudda.dasha_start}</span>
+                                            <span className="text-sm">{mudda.dasha_end}</span>
+                                           
+
+                                        </div>
+                                    ))}
+                                </div>
+                                </div>
+                            </div>
+
 
 
 
