@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from "react";
-import Naktoday from "./Naktoday";
 import Nakprev from "./Nakprev";
+import Naktoday from "./Naktoday";
 import Naktomm from "./Naktomm";
 
-const naktab = [
-    { id: "nakprev", label: "Yesterday Nakshatra ", component: <Nakprev /> },
+const nakarr = [
+    { id: "nakprev", label: "Yesterday Nakshatra ", component: < Nakprev/> },
     { id: "naktoday", label: "Today Nakshatra ", component: <Naktoday /> },
     { id: "naktomm", label: "Tomorrow Nakshatra", component: <Naktomm /> }
 ]
@@ -28,7 +28,7 @@ export default function Nakshatra() {
             <div className="flex flex-col gap-1">
                 <div className="basic-list bg-[#2f1254] px-10 py-2 rounded-lg">
                     <ul className="basic-li flex items-center gap-5 justify-self-center self-center">
-                        {naktab.map((ntab) => (
+                        {nakarr.map((ntab) => (
                             <li
                                 key={ntab.id}
                                 onClick={() => setNakTab(ntab.id)}
@@ -41,31 +41,31 @@ export default function Nakshatra() {
                 </div>
 
                 <div className="basic-down py-5">
-                    {naktab.find((ntab) => ntab.id === nakkTab)?.component}
+                    {nakarr.find((ntab) => ntab.id === nakkTab)?.component}
                 </div>
             </div>
 
-<div className="flex flex-col gap-2">
-    <div>
-                        {consolarr.map((carr, index) => (
-                            <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
-                                <div className="flex flex-col gap-2">
-                                    <span className="text-center text-xl">Consolidated Nakshatra Prediction </span>
-                                    <div className="grid grid-cols-2 px-20 gap-10">
-                                        <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Birth Moon Sign : </span> <span>{carr.birth_moon_sign}</span></div>
-                                        <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Birth Moon Nakshatra : </span> <span>{carr.birth_moon_nakshatra}</span></div>
+            <div className="flex flex-col gap-2">
+                <div>
+                    {consolarr.map((carr, index) => (
+                        <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
+                            <div className="flex flex-col gap-2">
+                                <span className="text-center text-xl">Consolidated Nakshatra Prediction </span>
+                                <div className="grid grid-cols-2 px-20 gap-10">
+                                    <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Birth Moon Sign : </span> <span>{carr.birth_moon_sign}</span></div>
+                                    <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Birth Moon Nakshatra : </span> <span>{carr.birth_moon_nakshatra}</span></div>
 
-                                    </div>
-                                    <div className="pred-day flex flex-col gap-2 text-[#000]">
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Prediction : </span><span>{carr.prediction}</span></div>
-                                       
-                                    </div>
                                 </div>
+                                <div className="pred-day flex flex-col gap-2 text-[#000]">
+                                    <div className="flex flex-col gap-0"><span className="font-semibold">Prediction : </span><span>{carr.prediction}</span></div>
 
+                                </div>
                             </div>
-                        ))}
-                    </div>
-</div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
 
         </section>
     );

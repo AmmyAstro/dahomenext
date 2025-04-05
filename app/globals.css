@@ -211,8 +211,7 @@ body {
 }
 
 /* Problem base section  */
-.prblm-txt{
-  
+.prblm-txt{  
   text-align: center;
   color: #fff;
   opacity: 1;
@@ -221,7 +220,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 5px 10px;
-  background-color: #000000ad;
+  background-color: #00000072;
+}
+.prblm-txt:hover{
+  background-color: #000000f2;
+
 }
 .problem-base-card::-webkit-scrollbar {
   display: none;

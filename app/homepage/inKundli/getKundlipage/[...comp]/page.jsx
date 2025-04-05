@@ -16,9 +16,10 @@ import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuint
 import Numerokundli from "@/components/Kundli/Kundliinter/Numerokundli/Numerokundli";
 import Myday from "@/components/Kundli/Kundliinter/Myday/Myday";
 import Varshaphal from "@/components/Kundli/Kundliinter/Varshaphal/Varshaphal";
-import Nakshtra from "@/components/Kundli/Kundliinter/Nakshatra/Nakshatra";
 import Nakshatra from "@/components/Kundli/Kundliinter/Nakshatra/Nakshatra";
 import Lalkitab from "@/components/Kundli/Kundliinter/Lalkitab/Lalkitab";
+import Sadhesati from "@/components/Kundli/Kundliinter/Sadesati/Sadesati";
+import Suggestion from "@/components/Kundli/Kundliinter/Suggestion/Suggestion";
 
 export default function Kundlipage() {
     const params = useParams();
@@ -40,6 +41,8 @@ export default function Kundlipage() {
         varshaphal : <Varshaphal/>,
         nakshatra : <Nakshatra/>,
         lalkitab : <Lalkitab/>,
+        sadhesati : <Sadhesati/>,
+        suggestion : <Suggestion/>,
         
     };
 

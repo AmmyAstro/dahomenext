@@ -29,7 +29,7 @@ export default function Astroserv() {
                 src={astroser.img} unoptimized
                 height={120} width={120} loading="lazy" alt="Personalized services" />
                <div className="flex items-center justify-center absolute bottom-2 w-[100%] left-0">
-                <h3 className="prblm-txt w-[90%] rounded-full border justify-self-center self-center place-self-center text-xs sm:text-base ">
+                <h3 className="prblm-txt w-[90%] rounded-full border justify-self-center self-center  place-self-center text-xs sm:text-base ">
                     {astroser.name}
                   </h3>
                 </div>

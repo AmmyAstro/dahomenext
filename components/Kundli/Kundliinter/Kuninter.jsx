@@ -52,12 +52,7 @@ const kundlicards = [
         named: "How will this year for you?",
         href: "/homepage/inKundli/getKundlipage/varshaphal",
     },
-    // {
-    //     name: "Kalsharp Dosh",
-    //     img: "/ds-img/k7.png",
-    //     named: "How Kalsharp dosh effect you?",
-    //     href:"/homepage/Inkundli/Inbasicchart",
-    // },
+ 
     // {
     //     name: "Career",
     //     img: "/ds-img/k8.png",
@@ -82,11 +77,18 @@ const kundlicards = [
         named: "How is your Love Life?",
         href: "/homepage/inKundli/getKundlipage/Inbasicchart",
     },
+
     {
         name: "Sade Sati",
         img: "/ds-img/k11a.png",
         named: "How Sade Sati effect you?",
-        href: "/homepage/inKundli/getKundlipage/Inbasicchart",
+        href: "/homepage/inKundli/getKundlipage/sadhesati",
+    },
+    {
+        name: "Suggestions And Remedies",
+        img: "/ds-img/Remedy.webp",
+        named: "Free Remedies Suggestion Report",
+        href:"/homepage/inKundli/getKundlipage/suggestion",
     },
 
     {

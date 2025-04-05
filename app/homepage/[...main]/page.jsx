@@ -10,16 +10,7 @@ import Dhservices from "@/components/Dhservice/Dhservices";
 import Healing from "@/components/Healing/Healing";
 import Kuninter from "@/components/Kundli/Kundliinter/Kuninter";
 import Blogcomp from "@/components/Blogsec/Blogcomp";
-import Basichart from "@/components/Kundli/Kundliinter/Basichart";
-import General from "@/components/Kundli/Kundliinter/Generallife/General";
-import Western from "@/components/Kundli/Kundliinter/Western/Western";
-
-import Doshas from "@/components/Kundli/Kundliinter/Kundlidosha/Doshas";
-import Matchkundli from "@/components/Kundli/Kundliinter/Matchkundli/Matchkundli";
 import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuinter";
-import Numerokundli from "@/components/Kundli/Kundliinter/Numerokundli/Numerokundli";
-import Myday from "@/components/Kundli/Kundliinter/Myday/Myday";
-import Varshaphal from "@/components/Kundli/Kundliinter/Varshaphal/Varshaphal";
 
 
 
@@ -58,9 +49,7 @@ export default function ServicePage() {
     else if (path.length === 2 && path[0] === "inKundli") {
         Componentrender = getKundlibtn[path[1]];
     }
-    // else if (path.length === 3 && path[1] === "getKundlipage" && path[0] === "inKundli") {
-    //     Componentrender = kundliinteral[path[2]];
-    // }
+ 
 
 
     return (

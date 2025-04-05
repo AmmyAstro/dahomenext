@@ -251,24 +251,24 @@ export default function Lalkitab() {
 
                         <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Lal Kitab Planet Remedies</h5>
-                            <div className=" md:w-full text-[#000]  flex flex-col gap-2">
+                            <div className=" md:w-full text-[#000]  flex flex-col gap-2 px-3">
                                 {lalremarr.map((item, index) => (
-                                    <div key={index} className="flex flex-col gap-2 ps-6">
+                                    <div key={index} className="flex flex-col gap-2 ">
                                         <div className="flex items-center text-xl font-semifold gap-5"><h3>Planet: {item.planet}</h3>
                                             <h4>House: {item.house}</h4></div>
 
                                         <div className="flex flex-col p">
                                             <h5 className="font-semibold">Lal Kitab Description:</h5>
-                                            <ul className="list-decimal">
+                                            <ul className="list-disc list-inside text-gray-700 space-y-1">
                                                 {item.lal_kitab_desc.map((desc, i) => (
-                                                    <li key={i}>{desc}</li>
+                                                    <li key={i}>{desc}</li> 
                                                 ))}
                                             </ul>
                                         </div>
 
                                         <div className="flex flex-col">
                                             <h5 className="font-semibold">Remedies:</h5>
-                                            <ul>
+                                            <ul className="list-disc list-inside text-gray-700 space-y-1">
                                                 {item.lal_kitab_remedies.map((remedy, j) => (
                                                     <li key={j}>{remedy}</li>
                                                 ))}
