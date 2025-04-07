@@ -37,9 +37,7 @@ export default function ServicePage() {
     }
 
 
-    const matchkundliinter = {
-        matchKundli: <Matchkuinter />
-    }
+  
 
     let Componentrender = null;
 

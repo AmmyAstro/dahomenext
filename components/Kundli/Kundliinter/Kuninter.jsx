@@ -1,5 +1,6 @@
 "use client";
 
+import Personal from "@/components/Smcompo/Personal";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -95,26 +96,26 @@ const kundlicards = [
         name: "Ascendant Report",
         img: "/ds-img/k5.png",
         named: "Get your Life Report as pdf",
-        href: "/homepage/inKundli/getKundlipage/Inbasicchart",
+        href: "/homepage/inKundli/getKundlipage/ascendant",
     },
     {
         name: "GocharPhal (Transit)",
         img: "/ds-img/transit.png",
         named: "Position of Planets",
-        href: "/homepage/inKundli/getKundlipage/Inbasicchart",
+        href: "/homepage/inKundli/getKundlipage/gocharphal",
     },
     {
         name: "Char Dasha",
         img: "/ds-img/k11.png",
         named: "Timing events based on planets",
-        href: "/homepage/inKundli/getKundlipage/Inbasicchart",
+        href: "/homepage/inKundli/getKundlipage/chardasha",
     },
 ]
 
 
 export default function Kuninter() {
     return (
-        <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-5 p-1">
+        <section className="kundli-inter-page w-full gap-10 flex flex-col items-center justify-center md:p-5 p-1">
             <div className="kundli-items-box-side flex flex-col md:grid grid-cols-4 md:px-1 gap-5 py-0">
                 <div className="kundli-items-main col-span-4 flex flex-col gap-10">
                     <div className="kundli-items-main grid md:grid-cols-4 grid-cols-3 md:gap-5 gap-3  ">
@@ -126,8 +127,10 @@ export default function Kuninter() {
                             </Link>
                         ))}
                     </div>
+                    
                 </div>
             </div>
+            <Personal/>
         </section>
     );
 }

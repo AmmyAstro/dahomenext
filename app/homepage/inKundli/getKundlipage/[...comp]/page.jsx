@@ -20,6 +20,9 @@ import Nakshatra from "@/components/Kundli/Kundliinter/Nakshatra/Nakshatra";
 import Lalkitab from "@/components/Kundli/Kundliinter/Lalkitab/Lalkitab";
 import Sadhesati from "@/components/Kundli/Kundliinter/Sadesati/Sadesati";
 import Suggestion from "@/components/Kundli/Kundliinter/Suggestion/Suggestion";
+import Ascendant from "@/components/Kundli/Kundliinter/Ascendant/Ascendant";
+import Gochartransit from "@/components/Kundli/Kundliinter/Gochartransit/Gochartransit";
+import Chardasha from "@/components/Kundli/Kundliinter/Chardasha/Chardasha";
 
 export default function Kundlipage() {
     const params = useParams();
@@ -43,6 +46,9 @@ export default function Kundlipage() {
         lalkitab : <Lalkitab/>,
         sadhesati : <Sadhesati/>,
         suggestion : <Suggestion/>,
+        ascendant : <Ascendant/>,
+        gocharphal : <Gochartransit/>,
+        chardasha : <Chardasha/>,
         
     };
 
@@ -53,6 +59,7 @@ export default function Kundlipage() {
         solarwest: <Solar />,
         transitwest: <Transit />,
         lunarwest: <Lunar />,
+
         
     };
 
@@ -70,16 +77,20 @@ export default function Kundlipage() {
     else if (path.length === 2 && path[0] === "westernPage") {
         Componentrender = westerninter[path[1]];
     }
-
-    else if (path.length === 2 && path[0] === "matchKundli") {
+    
+    else if (path.length === 2 && path[0] === "matchHoro") {
         Componentrender = matchkundliinter[path[1]];
     }
+
+    // else if (path.length === 2 && path[0] === "matchKundli") {
+    //     Componentrender = matchkundliinter[path[1]];
+    // }
 
 
 
     return (
         <>
-            {Componentrender ? Componentrender : <div>Page not found</div>}
+            {Componentrender ? Componentrender : <div>Page help found</div>}
         </>
     );
 }

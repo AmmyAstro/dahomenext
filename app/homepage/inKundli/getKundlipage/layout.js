@@ -3,6 +3,7 @@ import FAQue from "@/components/FAQue";
 import Kuninterimg from "@/components/Kundli/Kundliinter/Kunfreeimg";
 import Bestsell from "@/components/Smcompo/Bestsell";
 import Freereport from "@/components/Smcompo/Freereport";
+import Kundliother from "@/components/Smcompo/Kunother";
 import Recastro from "@/components/Smcompo/Recastro";
 import Sidebanner from "@/components/Smcompo/Sidebanner";
 import Ytvideo from "@/components/Smcompo/Ytvideo";
@@ -20,6 +21,8 @@ export default function layout({ children }) {
             {children}
           </div>
           <div className="kundli-side flex flex-col items-center justify-start gap-3">
+            <Kundliother/>
+            {/* <Kunservice/> */}
             <Ytvideo />
             <Bestsell />
             <Sidebanner />

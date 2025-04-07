@@ -1,19 +1,6 @@
 "use client"; // Required for interactive UI in Next.js 13+
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import Kuninterimg from "../Kunfreeimg";
-import Sidebanner from "@/components/Smcompo/Sidebanner";
-import Bestsell from "@/components/Smcompo/Bestsell";
-import Ytvideo from "@/components/Smcompo/Ytvideo";
-// import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Freereport from "@/components/Smcompo/Freereport";
-import Recastro from "@/components/Smcompo/Recastro";
-import FAQue from "@/components/FAQue";
-import Callchatsec from "@/components/CallChatsec/Callchatsec";
-import Personal from "@/components/Smcompo/Personal";
-import Kundlioth from "@/components/Smcompo/Kundlioth";
-import Kundliother from "@/components/Smcompo/Kunother";
+
 
 const pointarr = [
     {
@@ -360,21 +347,19 @@ export default function Matchkuinter() {
 
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-            {/* <div className="kundli-top-sec ">
-                <Kuninterimg />
-            </div> */}
+  
 
-            <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-20 gap-5 py-5">
-                <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-3 items-center">
+            <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-5">
+                <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
                     <h5 className="text-sm md:text-xl text-[#000] font-semibold"><span className="text-red-500">Free Match Making - Kundli Milan</span> Report
                     </h5>
                     <section className="basic-details-main w-full">
 
                         <div className="match-details-all flex flex-col gap-5 items-center justify-center ">
-                            <div className="flex items-center gap-5 text-[#000]">
-                                <h5>Boy Name</h5>
-                                <Image src="/ds-img/Couple.png" alt="weds image" width={50} height={50} />
-                                <h5>Girl Name</h5>
+                            <div className="flex items-center gap-20 text-[#000]">
+                            <Image src="/ds-img/newmatchboy.png" alt="weds image" width={50} height={50} className="w-20 h-auto"/>
+                            <Image src="/ds-img/Couple.png" alt="weds image" width={50} height={50} />
+                            <Image src="/ds-img/newmatchgrl.png" alt="weds image" width={50} height={50} className="w-20 h-auto"/>
                             </div>
 
                             <div className="grid grid-cols-2 gap-10 text-[#000] text-[15px] w-full">
@@ -625,32 +610,14 @@ export default function Matchkuinter() {
                                             ))}
 
                                         </div>
-
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </section>
                 </div>
 
-                {/* <div className="kundli-side flex flex-col items-center justify-start gap-3">
-                    <Ytvideo />
-                    <Kundliother />
-                    <Bestsell />
-                    <Sidebanner />
-                </div> */}
             </div>
-
-            {/* <Freereport />
-            <Recastro />
-            <FAQue />
-            <Callchatsec /> */}
         </section>
     );
 }
