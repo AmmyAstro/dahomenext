@@ -22,7 +22,7 @@ import Sadhesati from "@/components/Kundli/Kundliinter/Sadesati/Sadesati";
 import Suggestion from "@/components/Kundli/Kundliinter/Suggestion/Suggestion";
 import Ascendant from "@/components/Kundli/Kundliinter/Ascendant/Ascendant";
 import Gochartransit from "@/components/Kundli/Kundliinter/Gochartransit/Gochartransit";
-import Chardasha from "@/components/Kundli/Kundliinter/Chardasha/Chardasha";
+import Charyogd from "@/components/Kundli/Kundliinter/Charyogdasha/Charyogd";
 
 export default function Kundlipage() {
     const params = useParams();
@@ -48,8 +48,7 @@ export default function Kundlipage() {
         suggestion : <Suggestion/>,
         ascendant : <Ascendant/>,
         gocharphal : <Gochartransit/>,
-        chardasha : <Chardasha/>,
-        
+        charyogini : <Charyogd/>        
     };
 
     const westerninter = {

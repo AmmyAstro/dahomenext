@@ -314,7 +314,7 @@ const mfdetails = [
 ]
 
 const arraydata = {
-    "varna": {
+    "Varna": {
         "description": "Natural Refinement  / Work",
         "male_koot_attribute": "Kshatriya",
         "female_koot_attribute": "Kshatriya",
@@ -323,7 +323,7 @@ const arraydata = {
         "male_point": 1,
         "female_point": 1
     },
-    "tara": {
+    "Tara": {
         "description": "Comfort - Prosperity - Health",
         "male_koot_attribute": "Ashwini",
         "female_koot_attribute": "Ashwini",
@@ -332,7 +332,7 @@ const arraydata = {
         "male_point": 1,
         "female_point": 1
     },
-    "yoni": {
+    "Yoni": {
         "description": "Intimate Physical",
         "male_koot_attribute": "Ashwa",
         "female_koot_attribute": "Ashwa",
@@ -379,7 +379,7 @@ export default function Matchkuinter() {
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-4 w-full text-[#000] gap-5">
+                            <div className="grid grid-cols-2 md:grid-cols-4 w-full text-[#000] gap-5">
                                 {pointarr.map((point, index) => (
 
                                     <div className="px-2 py-2 rounded-lg shadow-lg point-bx flex gap-2 flex-col  items-center justify-center bg-gradient-to-r from-[#c54e5a6b] to-[#7042ac98]" key={index}>
@@ -400,26 +400,26 @@ export default function Matchkuinter() {
                             <div className="w-full">
                                 <div className="w-full">
                                     {percentage.map((percent, index) => (
-                                        <div key={index} className="w-full grid grid-cols-5 gap-4 p-5 shadow-xl rounded-lg bg-gradient-to-r from-[#c54e5a44] to-[#7042ac57]">
+                                        <div key={index} className="w-full grid-cols-3 grid md:grid-cols-5 md:gap-4 gap-2 md:p-5 p-3 shadow-xl rounded-lg bg-gradient-to-r from-[#c54e5a44] to-[#7042ac57]">
                                             <div className="flex flex-col items-center justify-center gap-2">
-                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.ashtakoota_percentage}%</span>
-                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Ashtakoota Percentage</span>
+                                                <span className="md:text-2xl text-xl text-[#2f1254] font-extrabold">{percent.ashtakoota_percentage}%</span>
+                                                <span className="text-xs md:font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Ashtakoota Percentage</span>
                                             </div>
                                             <div className="flex flex-col items-center justify-center gap-2">
-                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.manglik_match_percentage}%</span>
-                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Manglik Match Percentage</span>
+                                                <span className="md:text-2xl text-xl text-[#2f1254] font-extrabold">{percent.manglik_match_percentage}%</span>
+                                                <span className="text-xs md:font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Manglik Match Percentage</span>
                                             </div>
                                             <div className="flex flex-col items-center justify-center gap-2">
-                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.rajju_match_percentage}%</span>
-                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Rajju Match Percentage</span>
+                                                <span className="md:text-2xl text-xl text-[#2f1254] font-extrabold">{percent.rajju_match_percentage}%</span>
+                                                <span className="text-xs md:font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Rajju Match Percentage</span>
                                             </div>
                                             <div className="flex flex-col items-center justify-center gap-2">
-                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.vedha_match_percentage}%</span>
-                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Vedha Match Percentage</span>
+                                                <span className="md:text-2xl text-xl text-[#2f1254] font-extrabold">{percent.vedha_match_percentage}%</span>
+                                                <span className="text-xs md:font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Vedha Match Percentage</span>
                                             </div>
                                             <div className="flex flex-col items-center justify-center gap-2">
-                                                <span className="text-2xl text-[#2f1254] font-extrabold">{percent.match_percentage}%</span>
-                                                <span className="text-xs font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Match Percentage</span>
+                                                <span className="md:text-2xl text-xl text-[#2f1254] font-extrabold">{percent.match_percentage}%</span>
+                                                <span className="text-xs md:font-semibold text-[#000] bg-purple-100 px-2 py-1 rounded-lg">Match Percentage</span>
                                             </div>
                                         </div>
                                     ))}
@@ -428,9 +428,9 @@ export default function Matchkuinter() {
 
 
                             <div className="manglik-table w-full">
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                                     <div className="flex flex-col text-[#000] text-sm gap-2">
-                                        <h5 className="text-2xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Amrender</h5>
+                                        <h5 className="md:text-2xl text-xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Amrender</h5>
                                         {malemang.map((malemang, index) => (
                                             < >
                                                 <div key={index} className="bg-gray-100 flex flex-col gap-1 rounded-lg px-4 py-4">
@@ -463,7 +463,7 @@ export default function Matchkuinter() {
                                     </div>
 
                                     <div className="flex flex-col text-[#000] text-sm gap-2">
-                                        <h5 className="text-2xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Girl</h5>
+                                        <h5 className="md:text-2xl text-xl font-semibold text-center bg-purple-300 rounded-lg px-3 py-1 shadow-lg">Girl</h5>
                                         {femang.map((femang, index) => (
                                             < >
                                                 <div key={index} className="bg-gray-100 flex flex-col gap-1 rounded-lg px-4 py-4">
@@ -500,9 +500,9 @@ export default function Matchkuinter() {
 
                             <div className="mf-details w-full">
                                 <h5 className="text-xl font-semibold text-center py-3 text-[#000]">Matching Astro Details</h5>
-                                <div className="grid grid-cols-3 gap-5 w-full">
-                                    <div className="flex-flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-center p-1">
-                                        <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg ">GUNAS</h5>
+                                <div className="grid grid-cols-3 gap-1 md:gap-5 w-full">
+                                    <div className="text-xs md:text-base flex flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-start px-2 p-1">
+                                        <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg text-center">GUNAS</h5>
 
                                         <h5 className=" font-semibold">Ascendant</h5>
                                         <h5 className=" font-semibold">Varna</h5>
@@ -527,8 +527,8 @@ export default function Matchkuinter() {
                                     {mfdetails.map((male, index) => (
 
 
-                                        <div key={index} className="flex-flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-center p-1">
-                                            <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg ">{male.gender}</h5>
+                                        <div key={index} className="text-xs md:text-base flex flex-col text-[#000] gap-1 bg-purple-100 rounded-lg text-start px-2 p-1">
+                                            <h5 className=" font-extrabold py-1 bg-purple-300 rounded-lg text-center">{male.gender}</h5>
                                             <h5 className=" font-">{male.ascendant}</h5>
                                             <h5 className=" font-">{male.Varna}</h5>
                                             <h5 className=" font-">{male.Vashya}</h5>
@@ -556,7 +556,7 @@ export default function Matchkuinter() {
 
                         <div className="askdoot w-full">
                             <h5 className="text-xl font-semibold text-center text-[#000]">Matching Ashtakoot Points</h5>
-                        <div className="dakshakoot grid grid-cols-3 gap-4  py-2 w-full">
+                        <div className="dakshakoot grid grid-cols-1 md:grid-cols-3 gap-4  py-2 w-full">
                                 {Object.entries(arraydata).map(([key, value]) => (
                                     <div key={key} className=" border-b bg-purple-100 border-purple-200 p-4 text-sm rounded-lg shadow-lg text-[#000] flex flex-col gap-1">
                                         <span className="font-extrabold text-base"> {key} </span>
@@ -576,8 +576,8 @@ export default function Matchkuinter() {
                             <div>
                                 <div className="flex items-center gap-1">
 
-                                    <div className="grid grid-cols-1 gap-2 text-[#000] ">
-                                        <div className="flex flex-col gap-1">
+                                    <div className="grid grid-cols-1 gap-2 text-[#000] overflow-x-auto w-[22rem] md:w-full  text-xs md:text-sm">
+                                        <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
                                             <div className="pl-ul grid grid-cols-10 bg-purple-400 text-sm rounded-lg px-5 py-2 text-nowrap">
                                                 <h5 className=" font-semibold">Id</h5>
                                                 <h5 className=" font-semibold">Name</h5>
@@ -603,12 +603,9 @@ export default function Matchkuinter() {
                                                     <span className="">{male.nakshatra}</span>
                                                     <span className="">{male.nakshatraLord}</span>
                                                     <span className="">{male.nakshatra_pad}</span>
-
                                                     <span className="">{male.planet_awastha}</span>
-
                                                 </div>
                                             ))}
-
                                         </div>
                                     </div>
                                 </div>

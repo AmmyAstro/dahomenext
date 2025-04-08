@@ -67,7 +67,7 @@ export default function Western() {
                                     href={west.href}
                                     key={index}
                                     style={{ backgroundColor: west.clr }}
-                                    className={`service-card-top w-26 sm:w-32 xl:w-45  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
+                                    className={`service-card-top w-40 sm:w-32 xl:w-45  rounded-xl shadow-lg p-3 py-3 sm:py-5 text-center flex flex-col items-center justify-center`}
                                 >
                                     <Image
                                         src={west.img}

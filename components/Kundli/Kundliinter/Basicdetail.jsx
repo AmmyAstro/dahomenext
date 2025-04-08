@@ -18,7 +18,7 @@ export default function Basicdetail() {
 
     return (
         <section className="basic-ul-main w-full">
-            <div className="basic-list bg-[#2f1254] px-10 py-2 rounded-lg">
+            <div className="basic-list bg-[#2f1254] px-9 py-2 rounded-lg">
                 <ul className="basic-li flex items-center gap-5 justify-self-center self-center">
                     {btabs.map((btab) => (
                         <li

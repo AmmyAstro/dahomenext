@@ -72,12 +72,12 @@ const kundlicards = [
         named: "Get your Life Report as pdf",
         href: "/homepage/inKundli/getKundlipage/lalkitab",
     },
-    {
-        name: "Love",
-        img: "/ds-img/klii.png",
-        named: "How is your Love Life?",
-        href: "/homepage/inKundli/getKundlipage/Inbasicchart",
-    },
+    // {
+    //     name: "Love",
+    //     img: "/ds-img/klii.png",
+    //     named: "How is your Love Life?",
+    //     href: "/homepage/inKundli/getKundlipage/Inbasicchart",
+    // },
 
     {
         name: "Sade Sati",
@@ -105,10 +105,10 @@ const kundlicards = [
         href: "/homepage/inKundli/getKundlipage/gocharphal",
     },
     {
-        name: "Char Dasha",
+        name: "Char / Yogini Dasha",
         img: "/ds-img/k11.png",
         named: "Timing events based on planets",
-        href: "/homepage/inKundli/getKundlipage/chardasha",
+        href: "/homepage/inKundli/getKundlipage/charyogini",
     },
 ]
 
