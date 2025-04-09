@@ -26,7 +26,10 @@ export default function Nakshatra() {
         <section className="basic-ul-main w-full">
 
             <div className="flex flex-col gap-1">
-                <div className="basic-list bg-[#2f1254] px-10 py-2 rounded-lg">
+            <h5 className="text-xl md:text-xl text-[#000] font-semibold text-center">
+                        <span className="text-red-500">"Nakshatra : </span>
+                        Report"
+                    </h5>                <div className="basic-list bg-[#2f1254] px-10 py-2 rounded-lg">
                     <ul className="basic-li flex items-center gap-5 justify-self-center self-center">
                         {nakarr.map((ntab) => (
                             <li
@@ -51,12 +54,12 @@ export default function Nakshatra() {
                         <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
                             <div className="flex flex-col gap-2">
                                 <span className="text-center text-xl">Consolidated Nakshatra Prediction </span>
-                                <div className="grid grid-cols-2 px-20 gap-10">
+                                <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-20 gap-5 md:gap-10 text-sm">
                                     <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Birth Moon Sign : </span> <span>{carr.birth_moon_sign}</span></div>
                                     <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Birth Moon Nakshatra : </span> <span>{carr.birth_moon_nakshatra}</span></div>
 
                                 </div>
-                                <div className="pred-day flex flex-col gap-2 text-[#000]">
+                                <div className="pred-day flex flex-col gap-2 text-[#000] text-sm">
                                     <div className="flex flex-col gap-0"><span className="font-semibold">Prediction : </span><span>{carr.prediction}</span></div>
 
                                 </div>

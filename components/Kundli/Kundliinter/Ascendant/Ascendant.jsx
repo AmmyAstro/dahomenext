@@ -53,7 +53,7 @@ export default function Ascendant() {
                 </h5>
 
 
-                <div className="border border-purple-100 rounded-lg  px-5 py-3 shadow-lg">
+                <div className="border border-purple-100 rounded-lg text-sm  px-5 py-3 shadow-lg">
                     {ascarr.map((item, index) => (
                         <div key={index} className="flex flex-col gap-1">
                             <span className="flex items-center gap-2">        <h2 className="font-semibold">Ascendant: </h2><span>{item.asc_report.ascendant}</span></span>
@@ -69,7 +69,7 @@ export default function Ascendant() {
                     Report"
                 </h5>
                     {genearr.map((item, index) => (
-                        <div key={index} className="flex flex-col gap-1">
+                        <div key={index} className="flex flex-col gap-1 text-sm">
                             <div className="flex flex-col ">   <h2 className="font-semibold">Physical :</h2>
                                 {item.physical.map((p, i) => (
                                     <p key={i}>{p}</p>

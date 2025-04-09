@@ -35,7 +35,7 @@ export default function Charyogd() {
                             <div
                                 key={chyo.id}
                                 onClick={() => setDashaTab(chyo.id)}
-                                className={`cursor-pointer flex flex-col items-center font-semibold justify-center lg:px-5 text-xs px-2 py-1 md:text-base lg:py-1 rounded-lg ${dashaTab === chyo.id ? "bg-purple-300 text-black" : "text-black"
+                                className={`cursor-pointer flex flex-col items-center font-semibold justify-center lg:px-5 text-sm px-2 py-1 md:text-base lg:py-1 rounded-lg ${dashaTab === chyo.id ? "bg-purple-300 text-black" : "text-black"
                                     }`}
                             >
                                 {chyo.label}

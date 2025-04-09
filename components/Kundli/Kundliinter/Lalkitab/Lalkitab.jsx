@@ -206,7 +206,7 @@ export default function Lalkitab() {
                         <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-xl text-xl text-[#000]">Lal Kitab Horoscope</h5>
                             <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
-                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                <div className="basic-box flex flex-col gap-1 w-[40rem] md:w-full">
                                     <div className="pl-ul grid grid-cols-5 bg-purple-400 rounded-lg px-4 py-2">
                                         <h5 className="text-sm font-semibold">Sign</h5>
                                         <h5 className="text-sm font-semibold">Sign Name</h5>
@@ -234,7 +234,7 @@ export default function Lalkitab() {
 
                         <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Lal Kitab Debt</h5>
-                            <div className=" md:w-full text-[#000] text-xs md:text-sm flex flex-col gap-2">
+                            <div className=" md:w-full text-[#000] text-sm md:text-sm flex flex-col gap-2">
                                 {debtarr.map((kitab, index) => (
                                     <div key={index} className="basic-box flex flex-col gap-1  md:w-full">
                                         <h5 className="text-base font-semibold text-center bg-purple-200 rounded-lg py-1">{kitab.debt_name}</h5>
@@ -251,7 +251,7 @@ export default function Lalkitab() {
 
                         <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Lal Kitab Planet Remedies</h5>
-                            <div className=" md:w-full text-[#000]  flex flex-col gap-2 px-3">
+                            <div className=" md:w-full text-[#000] text-sm flex flex-col gap-2 px-3">
                                 {lalremarr.map((item, index) => (
                                     <div key={index} className="flex flex-col gap-2 ">
                                         <div className="flex items-center text-xl font-semifold gap-5"><h3>Planet: {item.planet}</h3>
@@ -282,11 +282,11 @@ export default function Lalkitab() {
 
                         <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100 flex flex-col justify-center items-center">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Lal Kitab Houses</h5>
-                            <div className="grid grid-cols-4 grid-rows-3 gap-1 w-[80%] rounded-lg border-2 border-black p-2 bg-white">
+                            <div className="grid md:grid-cols-4 grid-cols-3 md:grid-rows-3 grid-rows-4 gap-1 md:w-[80%] w-[100%] rounded-lg border-2 border-black p-2 bg-white">
                                 {Array.from({ length: 12 }, (_, i) => {
                                     const house = houses.find(h => h.khana_number === i + 1);
                                     return (
-                                        <div key={i} className="border rounded-lg border-black p-2 h-30 relative flex flex-col justify-between">
+                                        <div key={i} className="border rounded-lg border-black md:p-2 p-1 h-30 relative flex flex-col justify-between">
                                             <span className="absolute top-1 right-2 text-sm font-semibold text-gray-600">
                                                 {i + 1}
                                             </span>
@@ -310,14 +310,14 @@ export default function Lalkitab() {
 
                         <div className="basic-det w-full text-[#000] border rounded-lg shadow-lg p-2 border-purple-100 flex flex-col justify-center items-center">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Lal Kitab Planets</h5>
-                            <div className="grid grid-cols-5 gap-4">
+                            <div className="grid md:grid-cols-5 grid-cols-3 gap-2 md:gap-4">
                                 {planetsData.map((planet, idx) => (
                                     <div key={idx} className="border p-2 rounded-md shadow-sm flex flex-col gap-1">
                                         <h2 className="font-bold text-purple-700">{planet.planet}</h2>
-                                        <p className="text-sm">Rashi: {planet.rashi}</p>
-                                        <p className="text-sm">Soya: {planet.soya ? "Yes" : "No"}</p>
-                                        <p className="text-sm">Position: {planet.position}</p>
-                                        <p className="text-sm">Nature: {planet.nature}</p>
+                                        <p className="text-xs">Rashi: {planet.rashi}</p>
+                                        <p className="text-xs">Soya: {planet.soya ? "Yes" : "No"}</p>
+                                        <p className="text-xs">Position: {planet.position}</p>
+                                        <p className="text-xs">Nature: {planet.nature}</p>
                                     </div>
                                 ))}
                             </div>

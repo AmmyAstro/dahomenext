@@ -45,16 +45,11 @@ export default function Gemsugg() {
 
             <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-1">
                 <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
-
                     <section className="basic-details-main w-full flex flex-col gap-5">
-
                         {Object.entries(gems).map(([type, details], index) => (
-                            <div
-                                key={index}
-                                className="border border-purple-200 rounded-xl shadow-md p-4 bg-white text-gray-800"
-                            >
+                            <div key={index} className="border border-purple-200 rounded-xl shadow-md p-4 bg-white text-gray-800">
                                 <h3 className="text-xl font-semibold text-purple-600 mb-2">{type} Gem: {details.name}</h3>
-                                <ul className="grid grid-cols-2 gap-y-1 text-sm">
+                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-1 gap-5 text-sm">
                                     <li className="flex items-center gap-5"><strong>Semi-precious:</strong> {details.semi_gem}</li>
                                     <li className="flex items-center gap-5"><strong>Finger:</strong> {details.wear_finger}</li>
                                     <li className="flex items-center gap-5"><strong>Weight (carats):</strong> {details.weight_caret}</li>
@@ -64,9 +59,6 @@ export default function Gemsugg() {
                                 </ul>
                             </div>
                         ))}
-
-
-
                     </section>
                 </div>
 

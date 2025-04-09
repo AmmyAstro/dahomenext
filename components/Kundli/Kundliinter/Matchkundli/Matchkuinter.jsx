@@ -356,26 +356,26 @@ export default function Matchkuinter() {
                     <section className="basic-details-main w-full">
 
                         <div className="match-details-all flex flex-col gap-5 items-center justify-center ">
-                            <div className="flex items-center gap-20 text-[#000]">
+                            <div className="flex items-center gap-5 md:gap-20 text-[#000]">
                             <Image src="/ds-img/newmatchboy.png" alt="weds image" width={50} height={50} className="w-20 h-auto"/>
                             <Image src="/ds-img/Couple.png" alt="weds image" width={50} height={50} />
                             <Image src="/ds-img/newmatchgrl.png" alt="weds image" width={50} height={50} className="w-20 h-auto"/>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-10 text-[#000] text-[15px] w-full">
-                                <div className="basicboy bg-purple-200 rounded-lg shadow-lg flex flex-col gap-1 px-8 py-4">
-                                    <div><span className="font-semibold">Name : </span> <span></span></div>
-                                    <div><span className="font-semibold">Birth Date & Time : </span> <span></span></div>
-                                    <div><span className="font-semibold">Birth Place : </span> <span></span></div>
-                                    <div><span className="font-semibold">Janam Rashi : </span> <span></span></div>
-                                    <div><span className="font-semibold">Rashi Lord : </span> <span></span></div>
+                            <div className="grid grid-cols-2 gap-5 md:gap-10 text-[#000]  w-full">
+                                <div className="basicboy bg-purple-200 rounded-lg text-xs shadow-lg flex flex-col gap-1 px-8 py-4">
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Name : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Birth Date & Time : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Birth Place : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Janam Rashi : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Rashi Lord : </span> <span></span></div>
                                 </div>
-                                <div className="basicgrl bg-purple-200 rounded-lg shadow-lg flex flex-col gap-1 px-8 py-4">
-                                    <div><span className="font-semibold">Name : </span> <span></span></div>
-                                    <div><span className="font-semibold">Birth Date & Time : </span> <span></span></div>
-                                    <div><span className="font-semibold">Birth Place : </span> <span></span></div>
-                                    <div><span className="font-semibold">Janam Rashi : </span> <span></span></div>
-                                    <div><span className="font-semibold">Rashi Lord : </span> <span></span></div>
+                                <div className="basicgrl bg-purple-200 text-xs rounded-lg shadow-lg flex flex-col gap-1 px-8 py-4">
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Name : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Birth Date & Time : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Birth Place : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Janam Rashi : </span> <span></span></div>
+                                    <div className="flex items-center gap-1"><span className="font-semibold">Rashi Lord : </span> <span></span></div>
                                 </div>
                             </div>
 
@@ -578,7 +578,7 @@ export default function Matchkuinter() {
 
                                     <div className="grid grid-cols-1 gap-2 text-[#000] overflow-x-auto w-[22rem] md:w-full  text-xs md:text-sm">
                                         <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
-                                            <div className="pl-ul grid grid-cols-10 bg-purple-400 text-sm rounded-lg px-5 py-2 text-nowrap">
+                                            <div className="pl-ul grid grid-cols-10 bg-purple-400 text-sm rounded-lg px-5 py-2 gap-2">
                                                 <h5 className=" font-semibold">Id</h5>
                                                 <h5 className=" font-semibold">Name</h5>
                                                 <h5 className=" font-semibold">isRetro</h5>
@@ -588,12 +588,11 @@ export default function Matchkuinter() {
                                                 <h5 className=" font-semibold">Nakshatra</h5>
                                                 <h5 className=" font-semibold">Naksh Lord</h5>
                                                 <h5 className=" font-semibold">Nakshatra Pad</h5>
-
                                                 <h5 className=" font-semibold">Planet Awastha</h5>
                                             </div>
 
                                             {maleplanet.map((male, index) => (
-                                                <div key={index} className="text-sm basic-card grid grid-cols-10 gap-1 bg-purple-200 rounded-lg px-5 py-2 text-nowrap">
+                                                <div key={index} className="text-sm basic-card grid grid-cols-10 gap-1 bg-purple-200 rounded-lg px-5 py-2 ">
                                                     <span className="">{male.id}</span>
                                                     <span className="">{male.name}</span>
                                                     <span className="">{male.isRetro}</span>

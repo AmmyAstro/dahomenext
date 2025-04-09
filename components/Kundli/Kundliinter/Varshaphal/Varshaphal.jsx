@@ -609,7 +609,7 @@ export default function Varshaphal() {
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
 
             <div className="get-compat flex flex-col gap-5 w-full">
-                <div className="compat-patner grid md:grid-cols-1  gap-5 w-[80%] place-self-center">
+                <div className="compat-patner grid md:grid-cols-1  gap-5 md:w-[80%] w-[90%] place-self-center">
 
                     <div className="  md:p-6 p-2 py-3 bg-[#dfc7fd6e] shadow-lg rounded-lg">
                         <h2 className="md:text-xl text-center text-[#000] font-semibold md:mb-4 mb-2">
@@ -771,12 +771,12 @@ export default function Varshaphal() {
 
                 <h5 className="text-xl text-center text-red-500  font-semibold">Varshaphal Details</h5>
 
-                <div className="grid grid-cols-2 gap-5 border rounded-lg shadow-lg p-2 border-purple-100">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-5 border rounded-lg shadow-lg p-2 border-purple-100">
                     <div className="yaerly-chart items-center gap-2 justify-start flex flex-col ">
                         <h5 className="bg-purple-400 rounded-lg px-2 py-1 w-fit">Yearly Chart</h5>
                         <div>
                             {varsharr.map((item, index) => (
-                                <div key={index} className="flex flex-col gap-2">
+                                <div key={index} className="flex flex-col gap-2 text-sm">
                                     <div className="flex flex-col gap- items-center justify-center">
                                         <h2>Year Lord: {item.year_lord}</h2>
                                         <p>Varshaphal Date: {item.varshaphal_date}</p>
@@ -800,7 +800,7 @@ export default function Varshaphal() {
                             ))}
                         </div>
                     </div>
-                    <div className="yaerly-chart items-center gap-2 justify-center flex flex-col">
+                    <div className="yaerly-chart items-center gap-2 justify-center flex flex-col text-sm">
                         <h5 className="bg-purple-400 rounded-lg px-2 py-1 w-fit">Yearly Details</h5>
                         <div>
                             {varshdet.map((item, index) => (
@@ -908,7 +908,7 @@ export default function Varshaphal() {
                             <div className="basic-det w-full border rounded-lg shadow-lg p-2 border-purple-100">
                                 <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Varshaphal Mudda Dasha</h5>
                                 <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
-                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                <div className="basic-box flex flex-col gap-1 w-[30rem] md:w-full">
                                     <div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-4 py-2">
                                         <h5 className="text-sm font-semibold">Planet</h5>
                                         <h5 className="text-sm font-semibold">Duration</h5>

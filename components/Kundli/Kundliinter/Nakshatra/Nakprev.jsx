@@ -22,48 +22,41 @@ export default function Nakprev() {
     // const [actFav, setActfav] = useState(0);
     return (
         <section className="kundli-inter-page w-full flex flex-col items-center justify-center md:p-2 p-2">
-         
 
-        <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-1">
-            <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
-           
-                <section className="basic-details-main w-full flex flex-col gap-5">
 
-             
+            <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-1">
+                <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
 
-                    <div>
-                        {myday.map((mday, index) => (
-                            <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
-                                <div className="flex flex-col gap-2">
-                                    <span className="text-center text-xl">Yesterday Nakshatra Prediction </span>
-                                    <div className="grid grid-cols-2 px-20 gap-10">
-                                        <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Birth Moon Sign : </span> <span>{mday.birth_moon_sign}</span></div>
-                                        <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Birth Moon Nakshatra : </span> <span>{mday.birth_moon_nakshatra}</span></div>
-
+                    <section className="basic-details-main w-full flex flex-col gap-5">
+                        <div>
+                            {myday.map((mday, index) => (
+                                <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
+                                    <div className="flex flex-col gap-2">
+                                        <span className="text-center text-xl">Yesterday Nakshatra Prediction </span>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-20 gap-5 md:gap-10 text-sm">
+                                            <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Birth Moon Sign : </span> <span>{mday.birth_moon_sign}</span></div>
+                                            <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Birth Moon Nakshatra : </span> <span>{mday.birth_moon_nakshatra}</span></div>
+                                        </div>
+                                        <div className="pred-day flex flex-col gap-2 text-[#000] text-sm">
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Health : </span><span>{mday.prediction.health}</span></div>
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Emotions : </span><span>{mday.prediction.emotions}</span></div>
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Profession : </span><span>{mday.prediction.profession}</span></div>
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Luck : </span><span>{mday.prediction.luck}</span></div>
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Personal Life : </span><span>{mday.prediction.personal_life}</span></div>
+                                            <div className="flex flex-col gap-0"><span className="font-semibold">Travel : </span><span>{mday.prediction.travel}</span></div>
+                                        </div>
                                     </div>
-                                    <div className="pred-day flex flex-col gap-2 text-[#000]">
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Health : </span><span>{mday.prediction.health}</span></div>
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Emotions : </span><span>{mday.prediction.emotions}</span></div>
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Profession : </span><span>{mday.prediction.profession}</span></div>
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Luck : </span><span>{mday.prediction.luck}</span></div>
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Personal Life : </span><span>{mday.prediction.personal_life}</span></div>
-                                        <div className="flex flex-col gap-0"><span className="font-semibold">Travel : </span><span>{mday.prediction.travel}</span></div>
-                                    </div>
+
                                 </div>
+                            ))}
+                        </div>
+                    </section>
+                </div>
 
-                            </div>
-                        ))}
-                    </div>
 
-
-
-                </section>
             </div>
 
-      
-        </div>
 
-     
-    </section>
+        </section>
     );
 }

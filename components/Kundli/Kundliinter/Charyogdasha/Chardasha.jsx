@@ -207,11 +207,11 @@ export default function Chardasha() {
                                 </div>
                                 {majorchararr.map((item, i) => (
                                     <div key={i} className="basic-card grid grid-cols-5 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                        <span className="text-sm">{item.sign_id}</span>
-                                        <span className="text-sm">{item.sign_name}</span>
-                                        <span className="text-sm">{item.duration}</span>
-                                        <span className="text-sm">{item.start_date}</span>
-                                        <span className="text-sm">{item.end_time}</span>
+                                        <span className="text-xs md:text-sm">{item.sign_id}</span>
+                                        <span className="text-xs md:text-sm">{item.sign_name}</span>
+                                        <span className="text-xs md:text-sm">{item.duration}</span>
+                                        <span className="text-xs md:text-sm">{item.start_date}</span>
+                                        <span className="text-xs md:text-sm">{item.end_time}</span>
                                     </div>
                                 ))}
                             </div>
@@ -223,13 +223,13 @@ export default function Chardasha() {
 
 
 
-            <div className="p-4 space-y-4 w-full">
+            <div className="p-1 md:p-4 space-y-4 w-full">
                 {dashaArray.map((item, idx) => (
-                    <div key={idx} className="border flex flex-col  rounded-xl p-4 shadow-md text-[#000]">
-                        <h5 className="text-sm md:text-xl text-[#000] font-semibold text-center">
+                    <div key={idx} className="border flex flex-col  rounded-xl p-1 md:p-1 shadow-md text-[#000]">
+                        <h5 className="text-xl md:text-xl text-[#000] font-semibold text-center">
                             <span className="text-red-500">"Current Char Dasha  </span> Report"
                         </h5>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col md:flex-row text-sm items-center justify-between">
                             <div >   <h2 className="text-lg font-semibold">Major Dasha: {item.major_dasha.sign_name}</h2>
                                 <p>Duration: {item.major_dasha.duration}</p>
                                 <p>From: {item.major_dasha.start_date} To: {item.major_dasha.end_date}</p></div>

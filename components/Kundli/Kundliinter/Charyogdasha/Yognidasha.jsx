@@ -197,11 +197,11 @@ export default function Yoginidasha() {
                                 </div>
                                 {majoryogarr.map((item, i) => (
                                     <div key={i} className="basic-card grid grid-cols-5 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                        <span className="text-sm">{item.dasha_id}</span>
-                                        <span className="text-sm">{item.dasha_name}</span>
-                                        <span className="text-sm">{item.start_date}</span>
-                                        <span className="text-sm">{item.end_date}</span>
-                                        <span className="text-sm">{item.duration}</span>
+                                        <span className="text-xs md:text-sm">{item.dasha_id}</span>
+                                        <span className="text-xs md:text-sm">{item.dasha_name}</span>
+                                        <span className="text-xs md:text-sm">{item.start_date}</span>
+                                        <span className="text-xs md:text-sm">{item.end_date}</span>
+                                        <span className="text-xs md:text-sm">{item.duration}</span>
                                     </div>
                                 ))}
                             </div>
@@ -218,7 +218,7 @@ export default function Yoginidasha() {
                         <h5 className="text-sm md:text-xl text-[#000] font-semibold text-center">
                             <span className="text-red-500">"Current Yogini Dasha</span> Report"
                         </h5>
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col text-sm md:text-base md:flex-row items-center justify-between">
                             <div className="flex flex-col ">   <h2 className="text-lg font-semibold">Major Dasha: </h2>
                                 <span className="flex items-center gap-1"><h3>Dasha Id :</h3> <span>{item.major_dasha.dasha_id}</span></span>
                                 <span className="flex items-center gap-1"><h3>Dasha Name :</h3> <span>{item.major_dasha.dasha_name}</span></span>

@@ -285,34 +285,36 @@ export default function Gochartransit() {
                     <div className="text-[#000]">
                         {tranarr.map((item, index) => (
                             <div key={index} className="flex flex-col gap-5">
-                                <div className="flex justify-between px-10 gap-1 items-center shadow-lg rounded-lg border border-purple-100  py-3">
+                                <div className="flex flex-col md:flex-row justify-between px-10 gap-1 items-center shadow-lg rounded-lg border border-purple-100  py-3">
                                     <p className="flex items-center gap-2"><strong>Start Date:</strong> <span>{item.start_date}</span></p>
                                     <p className="flex items-center gap-2"><strong>End Date:</strong> <span>{item.end_date}</span></p>
                                     <p className="flex items-center gap-2"><strong>Natal Ascendant:</strong> <span>{item.natal_ascendant}</span></p>
                                 </div>
 
                                 <h3 className="text-center font-semibold">Transit Relations</h3>
-                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
-                                    <div className="pl-ul grid grid-cols-6 bg-purple-400 rounded-lg px-5 py-2">
-                                        <h5 className="text-sm font-semibold">Transit Planet</h5>
-                                        <h5 className="text-sm font-semibold">Natal Planet</h5>
-                                        <h5 className="text-sm font-semibold">Aspect Type</h5>
-                                        <h5 className="text-sm font-semibold">Start Time</h5>
-                                        <h5 className="text-sm font-semibold">Exact Time</h5>
-                                        <h5 className="text-sm font-semibold">End Time</h5>
-                                    </div>
-
-
-                                    {item.transit_relation.map((relation, i) => (
-                                        <div key={i} className="basic-card grid grid-cols-6 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                            <span className="text-sm">{relation.transit_planet}</span>
-                                            <span className="text-sm">{relation.natal_planet}</span>
-                                            <span className="text-sm">{relation.aspect_type}</span>
-                                            <span className="text-sm">{relation.start_time}</span>
-                                            <span className="text-sm">{relation.exact_time}</span>
-                                            <span className="text-sm">{relation.end_time}</span>
+                                <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                    <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                        <div className="pl-ul grid grid-cols-6 bg-purple-400 rounded-lg px-5 py-2">
+                                            <h5 className="text-sm font-semibold">Transit Planet</h5>
+                                            <h5 className="text-sm font-semibold">Natal Planet</h5>
+                                            <h5 className="text-sm font-semibold">Aspect Type</h5>
+                                            <h5 className="text-sm font-semibold">Start Time</h5>
+                                            <h5 className="text-sm font-semibold">Exact Time</h5>
+                                            <h5 className="text-sm font-semibold">End Time</h5>
                                         </div>
-                                    ))}
+
+
+                                        {item.transit_relation.map((relation, i) => (
+                                            <div key={i} className="basic-card grid grid-cols-6 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+                                                <span className="text-sm">{relation.transit_planet}</span>
+                                                <span className="text-sm">{relation.natal_planet}</span>
+                                                <span className="text-sm">{relation.aspect_type}</span>
+                                                <span className="text-sm">{relation.start_time}</span>
+                                                <span className="text-sm">{relation.exact_time}</span>
+                                                <span className="text-sm">{relation.end_time}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -325,35 +327,37 @@ export default function Gochartransit() {
                     </h5>
                     <div className="text-[#000] w-full">
                         {tropicalarr.map((item, index) => (
-                            <div key={index} className="flex flex-col gap-5">
-                                <div className="grid grid-cols-2 px-10 gap-1 items-center shadow-lg rounded-lg border border-purple-100  py-3">
-                                    <p className="flex items-center gap-2"><strong>Week Start Date:</strong> <span>{item.week_start_date}</span></p>
-                                    <p className="flex items-center gap-2"><strong>Week End Date:</strong> <span>{item.week_end_date}</span></p>
-                                    <p className="flex items-center gap-2"><strong>Ascendant:</strong> <span>{item.ascendant}</span></p>
-                                    <p className="flex items-center gap-2"><strong>Moon Phase:</strong> <span>{item.moon_phase}</span></p>
-
-                                </div>
-
-                                <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
-                                    <div className="pl-ul grid grid-cols-5 bg-purple-400 rounded-lg px-5 py-2">
-                                        <h5 className="text-sm font-semibold">Transit Planet</h5>
-                                        <h5 className="text-sm font-semibold">Natal Planet</h5>
-                                        <h5 className="text-sm font-semibold"> Type</h5>
-                                        <h5 className="text-sm font-semibold">Orb</h5>
-                                        <h5 className="text-sm font-semibold">Date</h5>
+                            <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                <div key={index} className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                    <div className="grid grid-cols-2 px-10 gap-1 items-center shadow-lg rounded-lg border border-purple-100  py-3">
+                                        <p className="flex items-center gap-2"><strong>Week Start Date:</strong> <span>{item.week_start_date}</span></p>
+                                        <p className="flex items-center gap-2"><strong>Week End Date:</strong> <span>{item.week_end_date}</span></p>
+                                        <p className="flex items-center gap-2"><strong>Ascendant:</strong> <span>{item.ascendant}</span></p>
+                                        <p className="flex items-center gap-2"><strong>Moon Phase:</strong> <span>{item.moon_phase}</span></p>
 
                                     </div>
 
+                                    <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
+                                        <div className="pl-ul grid grid-cols-5 bg-purple-400 rounded-lg px-5 py-2">
+                                            <h5 className="text-sm font-semibold">Transit Planet</h5>
+                                            <h5 className="text-sm font-semibold">Natal Planet</h5>
+                                            <h5 className="text-sm font-semibold"> Type</h5>
+                                            <h5 className="text-sm font-semibold">Orb</h5>
+                                            <h5 className="text-sm font-semibold">Date</h5>
 
-                                    {item.transit_relation.map((relation, i) => (
-                                        <div key={i} className="basic-card grid grid-cols-5 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                            <span className="text-sm">{relation.transit_planet}</span>
-                                            <span className="text-sm">{relation.natal_planet}</span>
-                                            <span className="text-sm">{relation.type}</span>
-                                            <span className="text-sm">{relation.orb}</span>
-                                            <span className="text-sm">{relation.date}</span>
                                         </div>
-                                    ))}
+
+
+                                        {item.transit_relation.map((relation, i) => (
+                                            <div key={i} className="basic-card grid grid-cols-5 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+                                                <span className="text-sm">{relation.transit_planet}</span>
+                                                <span className="text-sm">{relation.natal_planet}</span>
+                                                <span className="text-sm">{relation.type}</span>
+                                                <span className="text-sm">{relation.orb}</span>
+                                                <span className="text-sm">{relation.date}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -375,43 +379,44 @@ export default function Gochartransit() {
 
                                 <div className="flex flex-col gap-2">
                                     <span className="text-center font-semibold">Transit House</span>
-                                    <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
-                                        <div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-5 py-2">
-                                            <h5 className="text-sm font-semibold"> Planet</h5>
-                                            <h5 className="text-sm font-semibold">Natal natal_sign</h5>
-                                            <h5 className="text-sm font-semibold"> Transit House</h5>
-                                            <h5 className="text-sm font-semibold">Is Retrograde</h5>
-
-                                        </div>
-
-
-                                        {item.transit_house.map((relation, i) => (
-                                            <div key={i} className="basic-card grid grid-cols-4 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                                <span className="text-sm">{relation.planet}</span>
-                                                <span className="text-sm">{relation.natal_sign}</span>
-                                                <span className="text-sm">{relation.transit_house}</span>
-                                                <span className="text-sm">{relation.is_retrograde}</span>
+                                    <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                        <div className="basic-box flex flex-col gap-1 w-[22rem] md:w-full">
+                                            <div className="pl-ul grid grid-cols-4 bg-purple-400 rounded-lg px-5 py-2">
+                                                <h5 className="text-sm font-semibold"> Planet</h5>
+                                                <h5 className="text-sm font-semibold">Natal natal_sign</h5>
+                                                <h5 className="text-sm font-semibold"> Transit House</h5>
+                                                <h5 className="text-sm font-semibold">Is Retrograde</h5>
                                             </div>
-                                        ))}
+                                            {item.transit_house.map((relation, i) => (
+                                                <div key={i} className="basic-card grid grid-cols-4 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+                                                    <span className="text-sm">{relation.planet}</span>
+                                                    <span className="text-sm">{relation.natal_sign}</span>
+                                                    <span className="text-sm">{relation.transit_house}</span>
+                                                    <span className="text-sm">{relation.is_retrograde}</span>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col gap-2">
                                     <span className="text-center font-semibold">Transit Relation</span>
-                                    <div className="basic-box flex flex-col gap-1 w-[50rem] md:w-full">
-                                        <div className="pl-ul grid grid-cols-3 bg-purple-400 rounded-lg px-5 py-2">
-                                            <h5 className="text-sm font-semibold">Transit Planet</h5>
-                                            <h5 className="text-sm font-semibold">Natal Planet</h5>
-                                            <h5 className="text-sm font-semibold"> Type</h5>
-                                        </div>
-                                        {item.transit_relation.map((relation, i) => (
-                                            <div key={i} className="basic-card grid grid-cols-3 gap-4 bg-purple-200 rounded-lg px-5 py-2">
-                                                <span className="text-sm">{relation.transit_planet}</span>
-                                                <span className="text-sm">{relation.natal_planet}</span>
-                                                <span className="text-sm">{relation.type}</span>
-
+                                    <div className="overflow-x-auto w-[22rem] md:w-full text-[#000] text-xs md:text-sm">
+                                        <div className="basic-box flex flex-col gap-1 w-[22rem] md:w-full">
+                                            <div className="pl-ul grid grid-cols-3 bg-purple-400 rounded-lg px-5 py-2">
+                                                <h5 className="text-sm font-semibold">Transit Planet</h5>
+                                                <h5 className="text-sm font-semibold">Natal Planet</h5>
+                                                <h5 className="text-sm font-semibold"> Type</h5>
                                             </div>
-                                        ))}
+                                            {item.transit_relation.map((relation, i) => (
+                                                <div key={i} className="basic-card grid grid-cols-3 gap-4 bg-purple-200 rounded-lg px-5 py-2">
+                                                    <span className="text-sm">{relation.transit_planet}</span>
+                                                    <span className="text-sm">{relation.natal_planet}</span>
+                                                    <span className="text-sm">{relation.type}</span>
+
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

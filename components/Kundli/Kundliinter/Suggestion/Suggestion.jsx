@@ -52,8 +52,9 @@ export default function Suggestion() {
                                     alt="suggestions images"
                                     height={40}
                                     width={40}
+                                    className="w-8 md:w-12 h-auto"
                                 />
-                                {sugg.label}
+                              <span className="text-center">  {sugg.label}</span>
                             </div>
                         ))}
                     </div>

@@ -150,24 +150,24 @@ export default function Sadhesati() {
 
             <div className="kundli-items-box-side w-full flex md:flex-row flex-col md:grid md:grid-cols-4  md:px-0 gap-5 py-1">
                 <div className="basic-kundli-charts  flex flex-col gap-2 md:col-span-4 items-center">
-                    <h5 className="text-sm md:text-xl text-[#000] font-semibold">
+                    <h5 className="text-xl md:text-xl text-[#000] font-semibold">
                         <span className="text-red-500">"Sadhesati  </span> Report"
                     </h5>
                     <section className="basic-details-main w-full flex flex-col gap-5">
 
                         <div className="flex flex-col gap-2 text-[#000] border border-purple-100 rounded-lg px-4 py-2 shadow-lg">
-                            <h5 className="text-xl">Sadhesati Current Status</h5>
+                            <h5 className="text-base">Sadhesati Current Status</h5>
 
                             {sadearr.map((sade, index) => (
                                 <div key={index} className="flex flex-col gap-2">
-                                    <div className="grid grid-cols-2 gap-5">
+                                    <div className="grid grid-cols-2 text-sm gap-5">
                                         <div className="flex items-center justify-between bg-purple-200 rounded-full px-5 py-2"><span>Moon Sign :</span> <span>{sade.moon_sign}</span></div>
                                         <div className="flex items-center justify-between bg-purple-200 rounded-full px-5 py-2"><span>Saturn Sign :</span> <span>{sade.saturn_sign}</span></div>
                                         <div className="flex items-center justify-between bg-purple-200 rounded-full px-5 py-2"><span>Is Saturn Retrograde :</span> <span>{sade.is_saturn_retrograde}</span></div>
                                         <div className="flex items-center justify-between bg-purple-200 rounded-full px-5 py-2"><span>Sadhesati Status :</span> <span>{sade.sadhesati_status}</span></div>
 
                                     </div>
-                                    <div className="flex items-center gap-2   px-5 py-2"><span>Is Undergoing Sadhesati :</span> <span>{sade.is_undergoing_sadhesati}</span></div>
+                                    <div className="text-sm flex items-center gap-2 flex-col md:flex-row   px-5 py-2"><span>Is Undergoing Sadhesati :</span> <span>{sade.is_undergoing_sadhesati}</span></div>
                                 </div>
                             ))}
                         </div>
@@ -205,7 +205,7 @@ export default function Sadhesati() {
 
                         <div className="flex flex-col w-full border border-purple-100 rounded-lg px-4 py-2 shadow-lg bg-purple-100">
                             <h5 className="md:p-5 p-2 text-center justify-self-center md:text-2xl text-xl text-[#000]">Sadhe Sati Remedies</h5>
-                            <div className="p-6   l space-y-2">
+                            <div className="p-2 md:p-6 space-y-2 text-sm">
                                 <h2 className="text-xl  text-gray-800">What is Sadhe Sati?</h2>
                                 <p className="text-gray-700 leading-relaxed">{what_is_sadhesati}</p>
 

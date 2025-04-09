@@ -77,12 +77,12 @@ export default function Numerokundli() {
 
                         <div>
                             {predarr.map((pred, index) => (
-                                <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-5 py-3">
+                                <div key={index} className="flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg px-3 md:px-5 py-3">
                                     <div className="flex flex-col gap-2">
                                         <span className="text-center text-xl">Today's Prediction : </span>
                                         <span className="text-sm">{pred.prediction}</span>
                                     </div>
-                                    <div className="grid grid-cols-2 px-20 gap-10">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 px-5 md:px-20 gap-5 md:gap-10">
                                         <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full  px-5 py-2 "><span className="font-semibold">Lucky Color : </span> <span>{pred.lucky_color}</span></div>
                                         <div className="flex items-center bg-purple-100 justify-between shadow-lg rounded-full px-5 py-2"><span className="font-semibold">Lucky Number : </span> <span>{pred.lucky_number}</span></div>
 
@@ -94,54 +94,54 @@ export default function Numerokundli() {
                             {numeroarr.map((numero, index) => (
                                 <div className="flex flex-col gap-10">
 
-                                    <div key={index} className="grid grid-cols-5 gap-5 text-[#000]">
-                                        <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.destiny_number}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Destiny Number</span>
+                                    <div key={index} className="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-5 text-[#000]">
+                                        <div className="flex flex-col items-center justify-center p-2 md:p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
+                                            <span className=" md:text-xl font-semibold">{numero.destiny_number}</span>
+                                            <span className="bg-white rounded-full text-center  px-2 md:px-4 py-1 text-xs md:text-sm">Destiny Number</span>
                                         </div>
                                         <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.radical_number}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Radical Number</span>
+                                            <span className=" md:text-xl font-semibold">{numero.radical_number}</span>
+                                            <span className="bg-white rounded-full text-center  px-2 md:px-4 py-1 text-xs md:text-sm">Radical Number</span>
                                         </div>
                                         <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.name_number}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Name Number</span>
+                                            <span className=" md:text-xl font-semibold">{numero.name_number}</span>
+                                            <span className="bg-white rounded-full text-center px-2 md:px-4 py-1 text-xs md:text-sm">Name Number</span>
                                         </div>
                                         <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.evil_num}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Evil Number</span>
+                                            <span className=" md:text-xl font-semibold">{numero.evil_num}</span>
+                                            <span className="bg-white rounded-full text-center  px-2 md:px-4 py-1 text-xs md:text-sm">Evil Number</span>
                                         </div>
                                         <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.fav_color}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Favorite Color</span>
+                                            <span className=" md:text-xl font-semibold">{numero.fav_color}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Favorite Color</span>
                                         </div> <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.fav_god}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Favorite God</span>
+                                            <span className=" md:text-xl font-semibold">{numero.fav_god}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Favorite God</span>
                                         </div> <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.fav_metal}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Favorite Metal</span>
+                                            <span className=" md:text-xl font-semibold">{numero.fav_metal}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Favorite Metal</span>
                                         </div> <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.radical_ruler}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Radical Ruler</span>
+                                            <span className=" md:text-xl font-semibold">{numero.radical_ruler}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Radical Ruler</span>
                                         </div> <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.neutral_num}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Neutral Number</span>
+                                            <span className=" md:text-xl font-semibold">{numero.neutral_num}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Neutral Number</span>
                                         </div> <div className="flex flex-col items-center justify-center p-4 shadow-lg rounded-lg gap-2 bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c]">
-                                            <span className=" text-xl font-semibold">{numero.friendly_num}</span>
-                                            <span className="bg-white rounded-full px-4 py-1 text-sm">Friendly Number</span>
+                                            <span className=" md:text-xl font-semibold">{numero.friendly_num}</span>
+                                            <span className="bg-white rounded-full text-center g px-2 md:px-4 py-1 text-xs md:text-sm">Friendly Number</span>
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-2 gap-5">
-                                        <div className="flex items-center justify-between shadow-lg rounded-lg px-4 py-3">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="flex flex-col md:flex-row items-center justify-between shadow-lg rounded-lg px-4 py-3">
                                             <span className="text-[#000] font-semibold">Favorite Day</span> <span className="text-orange-400 font-semibold">{numero.fav_day}</span>
                                         </div>
-                                        <div className="flex items-center justify-between shadow-lg rounded-lg px-4 py-3">
+                                        <div className="flex flex-col md:flex-row items-center justify-between shadow-lg rounded-lg px-4 py-3">
                                             <span className="text-[#000] font-semibold">Favorite Mantra</span> <span className="text-orange-400 font-semibold">{numero.fav_mantra}</span>
                                         </div>
-                                        <div className="flex items-center justify-between shadow-lg rounded-lg px-4 py-3">
+                                        <div className="flex flex-col md:flex-row items-center justify-between shadow-lg rounded-lg px-4 py-3">
                                             <span className="text-[#000] font-semibold">Favorite Stone</span> <span className="text-orange-400 font-semibold">{numero.fav_stone}</span>
-                                        </div> <div className="flex items-center justify-between shadow-lg rounded-lg px-4 py-3">
+                                        </div> <div className="flex flex-col md:flex-row items-center justify-between shadow-lg rounded-lg px-4 py-3">
                                             <span className="text-[#000] font-semibold">Favorite Substance</span> <span className="text-orange-400 font-semibold">{numero.fav_substone}</span>
                                         </div>
                                     </div>
@@ -151,14 +151,14 @@ export default function Numerokundli() {
                             ))}
                         </div>
 
-                        <div className="numero-rep flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg p-5">
+                        <div className="numero-rep flex flex-col gap-5 text-[#000] border border-purple-200 rounded-lg shadow-lg md:p-5 p-2">
                             <h5 className="text-xl font-semibold py-1 text-center">Numerology Reports</h5>
-                            <div className="grid grid-cols-3 gap-5">
+                            <div className="grid grid-cols-2 md:grid-cols-3 md:gap-5 gap-2">
                                 {numreparr.map((nrep, index) => (
 
                                     <div key={index} className=" gap-3">
                                         <h5 onClick={() => setActfav(nrep.id)}
-                                         className={`text-sm cursor-pointer text-center bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c] rounded-lg shadow-lg px-3 py-2 ${actFav === nrep.id ? "bg-[#00000050] text-white" : ""}`}>{nrep.title}</h5>
+                                         className={`md:text-sm text-xs cursor-pointer text-center bg-gradient-to-r from-[#c54e5a8a] to-[#7042ac8c] rounded-lg shadow-lg px-3 py-2 ${actFav === nrep.id ? "bg-[#00000050] text-white" : ""}`}>{nrep.title}</h5>
                                     </div>
                                 ))}
 
@@ -168,7 +168,7 @@ export default function Numerokundli() {
                                 <div className=" border border-purple-100 rounded-lg shadow-lg p-5">
                                 <span className="text-base font-semibold">{numreparr[actFav].title} :</span>
 
-                                    <p>{numreparr[actFav].description}</p>
+                                    <p className="text-sm">{numreparr[actFav].description}</p>
                                 </div>
                             </div>
                         </div>
