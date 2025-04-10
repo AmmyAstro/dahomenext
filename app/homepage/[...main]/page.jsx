@@ -11,6 +11,7 @@ import Healing from "@/components/Healing/Healing";
 import Kuninter from "@/components/Kundli/Kundliinter/Kuninter";
 import Blogcomp from "@/components/Blogsec/Blogcomp";
 import Matchkuinter from "@/components/Kundli/Kundliinter/Matchkundli/Matchkuinter";
+import Panchangmain from "@/components/Panchang/Panchangmain";
 
 
 
@@ -29,7 +30,8 @@ export default function ServicePage() {
         inHoroscope: <Inhoro />,
         inKundli: <Kundlimain />,
         blogComp: <Blogcomp />,
-        problemBaseLove: <Lovecat />
+        problemBaseLove: <Lovecat />,
+        panchangmain : <Panchangmain/>,
     }
 
     const getKundlibtn = {

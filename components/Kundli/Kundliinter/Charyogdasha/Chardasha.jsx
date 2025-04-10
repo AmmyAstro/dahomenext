@@ -258,7 +258,6 @@ export default function Chardasha() {
                                 </div>
                             ))}
                         </div>
-
                     </div>
                 ))}
             </div>
