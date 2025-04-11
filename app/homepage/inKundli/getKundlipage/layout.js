@@ -21,7 +21,7 @@ export default function layout({ children }) {
             {children}
           </div>
           <div className="kundli-side flex flex-col items-center justify-start gap-3">
-            <Kundliother/>
+            <Kundliother />
             {/* <Kunservice/> */}
             <Ytvideo />
             <Bestsell />
